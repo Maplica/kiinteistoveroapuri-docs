@@ -1,0 +1,8 @@
+{
+  "label": "Prosessointi",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Näin parsit kiinteistörekisterin ja verottajan tiedot yhtenäiseksi kokonaisuudeksi."
+  }
+}
