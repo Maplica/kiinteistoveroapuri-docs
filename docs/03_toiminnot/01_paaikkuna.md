@@ -39,54 +39,74 @@ Mitä se tekee: Avaa valintaikkunan, jossa voit valita kaksi saraketta vertailta
 
 ### Edellinen rivi -painike
 
+![kuva käyttöliittymästä](\img\edellinenSeuraavaRivi.png)
+
 Kuvake: Ylöspäin osoittava nuoli (käännetty vasen nuoli)
 Mitä se tekee: Valitsee edellisen näkyvän rivin vasemmasta taulukosta ja keskittää kartan automaattisesti kyseiseen kohteeseen mittakaavassa 1:1000. Jos olet ensimmäisellä rivillä, se siirtyy viimeiselle rivillä (kehäkierto). Karttapohja jäädytetään toimenpiteen ajaksi valkoisten välähdysten estämiseksi, ja kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille).
 
 ### Seuraava rivi -painike
 
+![kuva käyttöliittymästä](\img\edellinenSeuraavaRivi.png)
+
 Kuvake: Alaspäin osoittava nuoli (käännetty oikea nuoli)
 Mitä se tekee: Valitsee seuraavan näkyvän rivin vasemmasta taulukosta ja keskittää kartan automaattisesti kyseiseen kohteeseen mittakaavassa 1:1000. Jos olet viimeisellä rivillä, se pysyy viimeisellä rivillä. Karttapohja jäädytetään toimenpiteen ajaksi, ja kohde korostetaan punaisella merkillä.
 
-8. Näytä kartalla -painike (pushButton_zoomTo)
+8. Näytä kartalla -painike
+
+![kuva käyttöliittymästä](\img\naytaKartalla.png)
 
 Teksti: "Näytä kartalla"
  Vihjeteksti: Kohdenna karttanäkymä valittuun kohteeseen
 Mitä se tekee: Keskittää QGIS-karttapohjan valittuun kohteeseen (joko vasemmasta tai oikeasta taulukosta) mittakaavassa 1:1000. Jos vasemmasta taulukosta ei ole mitään valittuna, se valitsee ensimmäisen näkyvän rivin. Kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille). Tämä ei muuta nykyistä valintaa. Toimii molemmissa taulukoissa: vasemmassa (kohteet) ja oikeassa (lisätyt kohteet).
 
-9. Siirrä lisättyihin -painike (pushButton_moveToAdded)
+9. Siirrä lisättyihin -painike
+
+![kuva käyttöliittymästä](\img\siirraLisattyihin.png)
 
 Kuvake: Oikea nuoli
  Teksti: "→"
 Mitä se tekee: Siirtää valitut kohteet vasemmasta taulukosta oikeaan taulukkoon (lisättyjen kohteiden luettelo). Useita kohteita voidaan valita käyttämällä Ctrl+napsautus tai Shift+napsautus. Jokainen siirretty kohde merkitään "raportoiduksi" (lisää pisteen • "Raportissa"-sarakkeeseen vasempaan taulukkoon) ja määritetään aktiiviseen kategoriaan (Rakennus tai Maapohja). Kohteen alkuperäinen taso, kenttäarvot ja metatiedot tallennetaan myöhempää muokkausta ja raportointia varten. Jos taso on nimeltään "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)", kohteen status-kenttä päivitetään arvoon 1.
 
-10. Siirrä kohteisiin -painike (pushButton_moveToFeatures)
+10. Siirrä kohteisiin -painike
+
+![kuva käyttöliittymästä](\img\siirraLisattyihin.png)
 
 Kuvake: Vasen nuoli
  Teksti: "←"
 Mitä se tekee: Poistaa valitut kohteet oikeasta taulukosta (lisättyjen kohteiden luettelo) ja siirtää ne takaisin tavalliseen kohteiden joukkoon. "Raportoitu"-merkki (•) poistetaan vasemmasta taulukosta, jos mikään muu merkintä ei viittaa kyseiseen kohteeseen. Myös poistettujen kohteiden keltaiset muokkauskorostukset kartalla poistetaan. Voit valita useita rivejä kerralla napsauttamalla mitä tahansa solua kyseisiltä riveiltä. Jos taso on "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)", kohteen status-kenttä päivitetään arvoon 0.
 
-11. Rakennus-kategoriapainike (pushButton_3)
+11. Rakennus-kategoriapainike
+
+![kuva käyttöliittymästä](\img\rakennusKategoria.png)
 
 Teksti: "Rakennus"
 Mitä se tekee: Toimii vaihtopainikkeena (kuin radiopainike), joka vaihtaa oikean taulukon näyttämään vain rakennuksiin liittyviä kohteita. Kun aktiivinen (vihreä), oikea taulukko näyttää rakennuksille ominaisia sarakkeita (Pysyvä rakennustunnus, Kiinteistötunnus, Rakennuksen numero, Taso, Kommentti). Vain yksi kategoriapainike (Rakennus tai Maapohja) voi olla aktiivinen kerrallaan. Painike toimii eksklusiivisesti Maapohja-painikkeen kanssa samalla tavalla kuin "Valitse kartalta" -painike (vihreä korostus aktiivisena).
 
 12. Maapohja-kategoriapainike (pushButton_2)
 
+![kuva käyttöliittymästä](\img\maapohjaKategoria.png)
+
 Teksti: "Maapohja"
 Mitä se tekee: Toimii vaihtopainikkeena, joka vaihtaa oikean taulukon näyttämään vain maa-alueisiin liittyviä kohteita (palstat, määrä-ala). Kun aktiivinen (vihreä), oikea taulukko näyttää maa-alueille ominaisia sarakkeita (Kiinteistötunnus, Maapohjan Numero, Taso, Kommentti). Vain yksi kategoriapainike voi olla aktiivinen kerrallaan. Rakennus on oletuskategoria käynnistyksen jälkeen.
 
-13. Näytä muokkauskorostukset -valintaruutu (checkBox_showEditHighlights)
+13. Näytä muokkauskorostukset -valintaruutu
+
+![kuva käyttöliittymästä](\img\naytaKorostukset.png)
 
 Teksti: "Näytä/piilota muokattujen kohteiden korostukset kartalla"
 Mitä se tekee: Vaihtaa kartalla kaikkien muokattujen kohteiden keltaisten korostusmerkkien näkyvyyttä oikeassa taulukossa. Kun valittuna, muokatut kohteet (joilla on muokattuja verotietokenttiä, ei pelkästään kommentteja) näytetään keltaisilla X-merkeillä (pisteille) tai keltaisilla ääriviivoilla (monikulmioille). Kun valitsematon, kaikki muokkauskorostukset piilotetaan. Tämä auttaa visualisoimaan, mitä kohteita on muokattu. Korostukset päivittyvät automaattisesti kun muokkaat kohteita tai lataat istunnon.
 
-14. Prosessointiasetukset-painike (pushButton_proc_settings)
+14. Prosessointiasetukset-painike
+
+![kuva käyttöliittymästä](\img\tiedonProsessointi.png)
 
 Kuvake: Hammasrataskuvake
  Vihjeteksti: Avaa Prosessointi-laajennuksen valintaikkunan
 Mitä se tekee: Avaa erillisen valintaikkunan Prosessointi-laajennuksesta. Tämä mahdollistaa datan käsittely- ja muunnostyökalujen käytön verotutkintaprosessin rinnalla. Tämä on integrointipiste toisen laajennuksen kanssa QGIS-ympäristössäsi. Valintaikkuna aukeaa erilliseksi ikkunaksi, eikä se vaikuta nykyiseen sessioon.
 
-15. Luo tiedosto -painike (pushButton_createFile)
+15. Luo tiedosto -painike
+
+![kuva käyttöliittymästä](\img\luoTiedosto.png)
 
 Teksti: "Luo tiedosto"
 Mitä se tekee: Avaa raportin asetusten valintaikkunan, jossa voit:
@@ -96,7 +116,9 @@ Valita tulostekansio selaus-painikkeen avulla
 Luoda CSV- tai Excel-raportteja korostuksineen muokatuille kentille
 Ohjelma jakaa lisätyt kohteesi kategorian ja muokkaustilan mukaan ja luo sitten erilliset tiedostot kullekin valitulle raporttityypille. "Uudet" raportit sisältävät kohteet, joilla ei ole muokattuja kenttiä (vain kommentti sallittu). "Muokatut" raportit ovat Excel-tiedostoja, joissa muutetut solut korostetaan keltaisella. Jos tiedosto on jo olemassa, ohjelma kysyy haluatko korvata vai lisätä (CSV:lle) vai peruuttaa.
 
-16. Asetukset-painike (Settings)
+16. Asetukset-painike
+
+![kuva käyttöliittymästä](\img\asetukset.png)
 
 Kuvake:
  Vihjeteksti: "Avaa asetukset"
