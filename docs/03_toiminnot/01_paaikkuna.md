@@ -4,23 +4,25 @@ sidebar_position: 1
 
 # Pääikkuna
 
+![kuva käyttöliittymästä](/img/paaikkuna.png)
+
 ### Tason valintavalikko
 
-![kuva käyttöliittymästä](\img\tasonValinta.png)
+![kuva käyttöliittymästä](/img/tasonValinta.png)
 
 Tarkoitus: Mahdollistaa sen QGIS-karttatason valinnan, jonka kanssa haluat työskennellä.
 Mitä se tekee: Kun valitset tason tästä valikosta, ohjelma lataa kaikki kyseisen tason kohteet vasempaan taulukkoon. Se suodattaa automaattisesti näyttääkseen vain tiettyjen ryhmien tasoja (Rakennukset, Rakennuksen Osat, Kiinteistöjen Palstat). Kun taso on valittu, sen kohteet näytetään sivutuksella, ja voit suodattaa, lajitella ja työskennellä datan kanssa. Valikko näyttää paikkamerkin "--- Valitse Taso ---" kun mitään ei ole valittuna.
 
 ### Sarakkeiden valintapainike
 
-![kuva käyttöliittymästä](\img\sarakkeidenValinta.png)
+![kuva käyttöliittymästä](/img/sarakkeidenValinta.png)
 
 Teksti: Näyttää "N/M ▼" ja "____", missä N on valittujen sarakkeiden määrä, M on sarakkeiden kokonaismäärä
 Mitä se tekee: Avaa valintaikkunan, jossa voit valita, mitkä sarakkeet valitusta tasosta tulisi näyttää vasemmassa taulukossa. Valintaikkuna näyttää valintaruudut jokaiselle kentälle, "Valitse kaikki" ja "Poista valinnat" -vaihtoehdoilla. Sarakkeiden nimet näytetään ilman teknisiä päätteitä (__vero, __kunta, __added) helpomman lukemisen vuoksi. Valintasi muistetaan tasokohtaisesti, joten kun palaat samaan tasoon, aikaisemmat valintasi palautetaan.
 
 ### Valitse kartalta -painike
 
-![kuva käyttöliittymästä](\img\valitseKartalta.png)
+![kuva käyttöliittymästä](/img/valitseKartalta.png)
 
 Kuvake: Käsi-osoitinkuvake
 Vihjeteksti: "Valitse haluamasi kohde kartalta"
@@ -28,7 +30,7 @@ Mitä se tekee: Vaihtaa kartan tunnistustilan päälle/pois. Kun aktivoitu (pain
 
 ### Tyhjennä suodattimet -painike
 
-![kuva käyttöliittymästä](\img\tyhjennaSuodattimet.png)
+![kuva käyttöliittymästä](/img/tyhjennaSuodattimet.png)
 
 Teksti: "Tyhjennä suodattimet"
 Mitä se tekee: Poistaa kaikki aktiiviset sarakesuodattimet ja vertailusuodattimet vasemmasta taulukosta. Tyhjennyksen jälkeen kaikki valitun tason kohteet tulevat jälleen näkyviin (sivutusta noudattaen). Taulukko palautuu sivulle 1, ja kaikki suodattimen merkkipisteet (•) tai vertailumerkit (≠) poistetaan sarakeotsikoista.
@@ -39,37 +41,37 @@ Mitä se tekee: Avaa valintaikkunan, jossa voit valita kaksi saraketta vertailta
 
 ### Edellinen rivi -painike
 
-![kuva käyttöliittymästä](\img\edellinenSeuraavaRivi.png)
+![kuva käyttöliittymästä](/img/edellinenSeuraavaRivi.png)
 
 Kuvake: Ylöspäin osoittava nuoli (käännetty vasen nuoli)
 Mitä se tekee: Valitsee edellisen näkyvän rivin vasemmasta taulukosta ja keskittää kartan automaattisesti kyseiseen kohteeseen mittakaavassa 1:1000. Jos olet ensimmäisellä rivillä, se siirtyy viimeiselle rivillä (kehäkierto). Karttapohja jäädytetään toimenpiteen ajaksi valkoisten välähdysten estämiseksi, ja kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille).
 
 ### Seuraava rivi -painike
 
-![kuva käyttöliittymästä](\img\edellinenSeuraavaRivi.png)
+![kuva käyttöliittymästä](/img/edellinenSeuraavaRivi.png)
 
 Kuvake: Alaspäin osoittava nuoli (käännetty oikea nuoli)
 Mitä se tekee: Valitsee seuraavan näkyvän rivin vasemmasta taulukosta ja keskittää kartan automaattisesti kyseiseen kohteeseen mittakaavassa 1:1000. Jos olet viimeisellä rivillä, se pysyy viimeisellä rivillä. Karttapohja jäädytetään toimenpiteen ajaksi, ja kohde korostetaan punaisella merkillä.
 
-8. Näytä kartalla -painike
+### Näytä kartalla -painike
 
-![kuva käyttöliittymästä](\img\naytaKartalla.png)
+![kuva käyttöliittymästä](/img/naytaKartalla.png)
 
 Teksti: "Näytä kartalla"
  Vihjeteksti: Kohdenna karttanäkymä valittuun kohteeseen
 Mitä se tekee: Keskittää QGIS-karttapohjan valittuun kohteeseen (joko vasemmasta tai oikeasta taulukosta) mittakaavassa 1:1000. Jos vasemmasta taulukosta ei ole mitään valittuna, se valitsee ensimmäisen näkyvän rivin. Kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille). Tämä ei muuta nykyistä valintaa. Toimii molemmissa taulukoissa: vasemmassa (kohteet) ja oikeassa (lisätyt kohteet).
 
-9. Siirrä lisättyihin -painike
+### Siirrä lisättyihin -painike
 
-![kuva käyttöliittymästä](\img\siirraLisattyihin.png)
+![kuva käyttöliittymästä](/img/siirraLisattyihin.png)
 
 Kuvake: Oikea nuoli
  Teksti: "→"
 Mitä se tekee: Siirtää valitut kohteet vasemmasta taulukosta oikeaan taulukkoon (lisättyjen kohteiden luettelo). Useita kohteita voidaan valita käyttämällä Ctrl+napsautus tai Shift+napsautus. Jokainen siirretty kohde merkitään "raportoiduksi" (lisää pisteen • "Raportissa"-sarakkeeseen vasempaan taulukkoon) ja määritetään aktiiviseen kategoriaan (Rakennus tai Maapohja). Kohteen alkuperäinen taso, kenttäarvot ja metatiedot tallennetaan myöhempää muokkausta ja raportointia varten. Jos taso on nimeltään "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)", kohteen status-kenttä päivitetään arvoon 1.
 
-10. Siirrä kohteisiin -painike
+### Siirrä kohteisiin -painike
 
-![kuva käyttöliittymästä](\img\siirraLisattyihin.png)
+![kuva käyttöliittymästä](/img/siirraLisattyihin.png)
 
 Kuvake: Vasen nuoli
  Teksti: "←"
@@ -77,28 +79,28 @@ Mitä se tekee: Poistaa valitut kohteet oikeasta taulukosta (lisättyjen kohteid
 
 11. Rakennus-kategoriapainike
 
-![kuva käyttöliittymästä](\img\rakennusKategoria.png)
+![kuva käyttöliittymästä](/img/rakennusKategoria.png)
 
 Teksti: "Rakennus"
 Mitä se tekee: Toimii vaihtopainikkeena (kuin radiopainike), joka vaihtaa oikean taulukon näyttämään vain rakennuksiin liittyviä kohteita. Kun aktiivinen (vihreä), oikea taulukko näyttää rakennuksille ominaisia sarakkeita (Pysyvä rakennustunnus, Kiinteistötunnus, Rakennuksen numero, Taso, Kommentti). Vain yksi kategoriapainike (Rakennus tai Maapohja) voi olla aktiivinen kerrallaan. Painike toimii eksklusiivisesti Maapohja-painikkeen kanssa samalla tavalla kuin "Valitse kartalta" -painike (vihreä korostus aktiivisena).
 
-12. Maapohja-kategoriapainike (pushButton_2)
+12. Maapohja-kategoriapainike
 
-![kuva käyttöliittymästä](\img\maapohjaKategoria.png)
+![kuva käyttöliittymästä](/img/maapohjaKategoria.png)
 
 Teksti: "Maapohja"
 Mitä se tekee: Toimii vaihtopainikkeena, joka vaihtaa oikean taulukon näyttämään vain maa-alueisiin liittyviä kohteita (palstat, määrä-ala). Kun aktiivinen (vihreä), oikea taulukko näyttää maa-alueille ominaisia sarakkeita (Kiinteistötunnus, Maapohjan Numero, Taso, Kommentti). Vain yksi kategoriapainike voi olla aktiivinen kerrallaan. Rakennus on oletuskategoria käynnistyksen jälkeen.
 
 13. Näytä muokkauskorostukset -valintaruutu
 
-![kuva käyttöliittymästä](\img\naytaKorostukset.png)
+![kuva käyttöliittymästä](/img/naytaKorostukset.png)
 
 Teksti: "Näytä/piilota muokattujen kohteiden korostukset kartalla"
 Mitä se tekee: Vaihtaa kartalla kaikkien muokattujen kohteiden keltaisten korostusmerkkien näkyvyyttä oikeassa taulukossa. Kun valittuna, muokatut kohteet (joilla on muokattuja verotietokenttiä, ei pelkästään kommentteja) näytetään keltaisilla X-merkeillä (pisteille) tai keltaisilla ääriviivoilla (monikulmioille). Kun valitsematon, kaikki muokkauskorostukset piilotetaan. Tämä auttaa visualisoimaan, mitä kohteita on muokattu. Korostukset päivittyvät automaattisesti kun muokkaat kohteita tai lataat istunnon.
 
 14. Prosessointiasetukset-painike
 
-![kuva käyttöliittymästä](\img\tiedonProsessointi.png)
+![kuva käyttöliittymästä](/img/tiedonProsessointi.png)
 
 Kuvake: Hammasrataskuvake
  Vihjeteksti: Avaa Prosessointi-laajennuksen valintaikkunan
@@ -106,7 +108,7 @@ Mitä se tekee: Avaa erillisen valintaikkunan Prosessointi-laajennuksesta. Täm�
 
 15. Luo tiedosto -painike
 
-![kuva käyttöliittymästä](\img\luoTiedosto.png)
+![kuva käyttöliittymästä](/img/luoTiedosto.png)
 
 Teksti: "Luo tiedosto"
 Mitä se tekee: Avaa raportin asetusten valintaikkunan, jossa voit:
@@ -118,7 +120,7 @@ Ohjelma jakaa lisätyt kohteesi kategorian ja muokkaustilan mukaan ja luo sitten
 
 16. Asetukset-painike
 
-![kuva käyttöliittymästä](\img\asetukset.png)
+![kuva käyttöliittymästä](/img/asetukset.png)
 
 Kuvake:
  Vihjeteksti: "Avaa asetukset"
