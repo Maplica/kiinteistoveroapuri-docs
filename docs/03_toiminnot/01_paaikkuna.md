@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ![kuva käyttöliittymästä](/img/paaikkuna.png)
 
+## Pääikkunan painikkeet
+
 ### Tason valintavalikko
 
 ![kuva käyttöliittymästä](/img/tasonValinta.png)
@@ -34,10 +36,6 @@ Mitä se tekee: Vaihtaa kartan tunnistustilan päälle/pois. Kun aktivoitu (pain
 
 Teksti: "Tyhjennä suodattimet"
 Mitä se tekee: Poistaa kaikki aktiiviset sarakesuodattimet ja vertailusuodattimet vasemmasta taulukosta. Tyhjennyksen jälkeen kaikki valitun tason kohteet tulevat jälleen näkyviin (sivutusta noudattaen). Taulukko palautuu sivulle 1, ja kaikki suodattimen merkkipisteet (•) tai vertailumerkit (≠) poistetaan sarakeotsikoista.
-
-### Vertaa sarakkeita -painike
-Teksti: "Vertaa"
-Mitä se tekee: Avaa valintaikkunan, jossa voit valita kaksi saraketta vertailtavaksi. Ohjelma suodattaa pois (piilottaa) rivit, joilla kahden valitun sarakkeen arvot ovat yhtä suuret. Numeerisille sarakkeille voit määrittää toleranssiarvon (esim. 2 tai 0.5), jolloin arvot, jotka eroavat alle toleranssin verran, käsitellään yhtäläisinä ja piilotetaan. Hyödyllinen veroaineiston ja kuntien tietokannan välisten erojen löytämiseen. Vertailuasetukset tallennetaan ja ne voidaan palauttaa käyttämällä valintaikkunan "Palauta"-painiketta.
 
 ### Edellinen rivi -painike
 
@@ -77,28 +75,28 @@ Kuvake: Vasen nuoli
  Teksti: "←"
 Mitä se tekee: Poistaa valitut kohteet oikeasta taulukosta (lisättyjen kohteiden luettelo) ja siirtää ne takaisin tavalliseen kohteiden joukkoon. "Raportoitu"-merkki (•) poistetaan vasemmasta taulukosta, jos mikään muu merkintä ei viittaa kyseiseen kohteeseen. Myös poistettujen kohteiden keltaiset muokkauskorostukset kartalla poistetaan. Voit valita useita rivejä kerralla napsauttamalla mitä tahansa solua kyseisiltä riveiltä. Jos taso on "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)", kohteen status-kenttä päivitetään arvoon 0.
 
-11. Rakennus-kategoriapainike
+### Rakennus-kategoriapainike
 
 ![kuva käyttöliittymästä](/img/rakennusKategoria.png)
 
 Teksti: "Rakennus"
 Mitä se tekee: Toimii vaihtopainikkeena (kuin radiopainike), joka vaihtaa oikean taulukon näyttämään vain rakennuksiin liittyviä kohteita. Kun aktiivinen (vihreä), oikea taulukko näyttää rakennuksille ominaisia sarakkeita (Pysyvä rakennustunnus, Kiinteistötunnus, Rakennuksen numero, Taso, Kommentti). Vain yksi kategoriapainike (Rakennus tai Maapohja) voi olla aktiivinen kerrallaan. Painike toimii eksklusiivisesti Maapohja-painikkeen kanssa samalla tavalla kuin "Valitse kartalta" -painike (vihreä korostus aktiivisena).
 
-12. Maapohja-kategoriapainike
+### Maapohja-kategoriapainike
 
 ![kuva käyttöliittymästä](/img/maapohjaKategoria.png)
 
 Teksti: "Maapohja"
 Mitä se tekee: Toimii vaihtopainikkeena, joka vaihtaa oikean taulukon näyttämään vain maa-alueisiin liittyviä kohteita (palstat, määrä-ala). Kun aktiivinen (vihreä), oikea taulukko näyttää maa-alueille ominaisia sarakkeita (Kiinteistötunnus, Maapohjan Numero, Taso, Kommentti). Vain yksi kategoriapainike voi olla aktiivinen kerrallaan. Rakennus on oletuskategoria käynnistyksen jälkeen.
 
-13. Näytä muokkauskorostukset -valintaruutu
+### Näytä muokkauskorostukset -valintaruutu
 
 ![kuva käyttöliittymästä](/img/naytaKorostukset.png)
 
 Teksti: "Näytä/piilota muokattujen kohteiden korostukset kartalla"
 Mitä se tekee: Vaihtaa kartalla kaikkien muokattujen kohteiden keltaisten korostusmerkkien näkyvyyttä oikeassa taulukossa. Kun valittuna, muokatut kohteet (joilla on muokattuja verotietokenttiä, ei pelkästään kommentteja) näytetään keltaisilla X-merkeillä (pisteille) tai keltaisilla ääriviivoilla (monikulmioille). Kun valitsematon, kaikki muokkauskorostukset piilotetaan. Tämä auttaa visualisoimaan, mitä kohteita on muokattu. Korostukset päivittyvät automaattisesti kun muokkaat kohteita tai lataat istunnon.
 
-14. Prosessointiasetukset-painike
+### Prosessointiasetukset-painike
 
 ![kuva käyttöliittymästä](/img/tiedonProsessointi.png)
 
@@ -106,7 +104,7 @@ Kuvake: Hammasrataskuvake
  Vihjeteksti: Avaa Prosessointi-laajennuksen valintaikkunan
 Mitä se tekee: Avaa erillisen valintaikkunan Prosessointi-laajennuksesta. Tämä mahdollistaa datan käsittely- ja muunnostyökalujen käytön verotutkintaprosessin rinnalla. Tämä on integrointipiste toisen laajennuksen kanssa QGIS-ympäristössäsi. Valintaikkuna aukeaa erilliseksi ikkunaksi, eikä se vaikuta nykyiseen sessioon.
 
-15. Luo tiedosto -painike
+### Luo tiedosto -painike
 
 ![kuva käyttöliittymästä](/img/luoTiedosto.png)
 
@@ -118,7 +116,25 @@ Valita tulostekansio selaus-painikkeen avulla
 Luoda CSV- tai Excel-raportteja korostuksineen muokatuille kentille
 Ohjelma jakaa lisätyt kohteesi kategorian ja muokkaustilan mukaan ja luo sitten erilliset tiedostot kullekin valitulle raporttityypille. "Uudet" raportit sisältävät kohteet, joilla ei ole muokattuja kenttiä (vain kommentti sallittu). "Muokatut" raportit ovat Excel-tiedostoja, joissa muutetut solut korostetaan keltaisella. Jos tiedosto on jo olemassa, ohjelma kysyy haluatko korvata vai lisätä (CSV:lle) vai peruuttaa.
 
-16. Asetukset-painike
+### Sivutusohjaimet
+#### Sivukoko-valikko
+
+![kuva käyttöliittymästä](/img/sivukoko1.png)
+![kuva käyttöliittymästä](/img/sivukoko2.png)
+ 
+Vaihtoehdot: 25, 50, 100, 250, 500, 1000, "Kaikki"
+
+Mitä se tekee: Ohjaa, kuinka monta kohdetta näytetään sivua kohden vasemmassa taulukossa. Oletusarvo on 100. "Kaikki"-vaihtoehdon valitseminen poistaa sivutuksen käytöstä ja näyttää kaikki suodatetut kohteet kerralla (voi olla hidas suurilla aineistoilla). Sivukoon muuttaminen palauttaa sivulle 1. Tämä auttaa hallitsemaan suorituskykyä suurten aineistojen kanssa työskennellessä. Suodattimet ja lajittelu säilyvät sivukokoa vaihdettaessa.
+
+#### Sivuvalintapainikkeet
+
+![kuva käyttöliittymästä](/img/sivuvalinta.png)
+
+Toiminto: Siirry kohdetaulukon edelliselle (←) tai seuraavalle (→) sivulle. Painike on pois käytöstä (harmaa) kun valittuna on taulukon äärimmäinen sivu. Sivuosoitinteksti (Sivu X/Y) kuvaa valitun sivun numeroa ja päivittyy sivua vaihtaessa.
+
+## Valikkopalkin valinnat
+
+### Asetukset-pudotusvalikko
 
 ![kuva käyttöliittymästä](/img/asetukset.png)
 
@@ -132,137 +148,135 @@ Raportit: Oletustulostekansio raporteille
 Lisäasetukset: Varattu tuleville asetuksille (tyhjä tällä hetkellä)
 Muutokset otetaan käyttöön välittömästi kun napsautat "Käytä" tai "OK". Asetukset säilyvät istuntojen välillä. "Käytä"-painike tallentaa muutokset mutta pitää ikkunan auki; "OK" tallentaa ja sulkee; "Peruuta" sulkee tallentamatta.
 
-Valikkopalkin valinnat
-17. Tiedosto > Lataa
+### Tiedosto-pudotusvalikko
 
-Mitä se tekee: Avaa tiedostovalintaikkunan aiemmin tallennetun istunnon lataamiseksi (.json-tiedosto). Kysyy haluatko korvata nykyiset lisätyt kohteet vai liittää ladatut kohteet olemassa oleviin. Ohjelma yrittää sovittaa ladatut kohteet nykyisen projektin tasoihin geometrian ja avainkenttien avulla (1 metrin säde). Palauttaa kaiken muokkaushistorian ja korostukset. Jos ladatun istunnon projekti ei täsmää nykyiseen projektiin, ohjelma varoittaa sinua. Jos kohteen FID ja taso on tallennettu, ohjelma käyttää niitä suoraan; muuten etsitään vastaavuutta avaintietojen perusteella.
+![kuva käyttöliittymästä](/img/tiedosto_lataa.png)
 
-18. Tiedosto > Tallenna
+| Painike | Toiminto |
+|---------|----------|
+| Lataa   | Avaa tiedostovalintaikkunan aiemmin tallennetun istunnon lataamiseksi (.json-tiedosto). Kysyy haluatko korvata nykyiset lisätyt kohteet vai liittää ladatut kohteet olemassa oleviin. Ohjelma yrittää sovittaa ladatut kohteet nykyisen projektin tasoihin geometrian ja avainkenttien avulla (1 metrin säde). Palauttaa kaiken muokkaushistorian ja korostukset. Jos ladatun istunnon projekti ei täsmää nykyiseen projektiin, ohjelma varoittaa sinua. Jos kohteen FID ja taso on tallennettu, ohjelma käyttää niitä suoraan; muuten etsitään vastaavuutta avaintietojen perusteella.
+| Tallenna| Tallentaa nykyisen istunnon aiemmin valittuun tiedostopolkuun. Jos polkua ei ole vielä olemassa (ensimmäinen tallennus), se käyttää "Tallenna nimellä" -toimintoa ja pyytää valitsemaan sijainnin. Kaikki lisätyt kohteet, niiden muokkaukset, kommentit, kategoriat ja geometriatiedot tallennetaan JSON-muotoon. Istunto sisältää myös projektin metatiedot (polku, otsikko, muokkausaika) tunnistamista varten. Tämä painike on harmaa kunnes olet käyttänyt "Tallenna nimellä" tai "Lataa" vähintään kerran.
+| Tallenna nimellä | Avaa tiedostovalintaikkunan uuden sijainnin ja tiedostonimen valitsemiseksi nykyisen istunnon tallentamiseen. Oletustiedostonimi on "verosession.json" projektin kansiossa tai kotikansiossasi. Tallentamisen jälkeen tästä polusta tulee "Tallenna"-vaihtoehdon oletusarvo nopeatallennusta varten. Istunto sisältää: <ul><li>Projektin metatiedot (polku, otsikko, viimeisin muokkaus)</li><li>Kaikki lisätyt kohteet kategorioittain</li><li>Alkuperäiset arvot ja muokatut arvot jokaiselle kentälle</li><li>Geometriatiedot (WKT, tyyppi, CRS) spatiaalista sovitusta varten</li><li>Kommentit ja tasotiedot</li><li>Versio 2 -skeema merkinnöillä (__vero, __kunta, __added)</li></ul>
+| Luo tiedosto | Sama toiminnallisuus kuin painike [Luo tiedosto](#luo-tiedosto--painike) - avaa raportin luomisen valintaikkunan. Tämä on pikanäppäin valikkopalkista raportointiin.
 
-Mitä se tekee: Tallentaa nykyisen istunnon aiemmin valittuun tiedostopolkuun. Jos polkua ei ole vielä olemassa (ensimmäinen tallennus), se käyttää "Tallenna nimellä" -toimintoa ja pyytää valitsemaan sijainnin. Kaikki lisätyt kohteet, niiden muokkaukset, kommentit, kategoriat ja geometriatiedot tallennetaan JSON-muotoon. Istunto sisältää myös projektin metatiedot (polku, otsikko, muokkausaika) tunnistamista varten. Tämä painike on harmaa kunnes olet käyttänyt "Tallenna nimellä" tai "Lataa" vähintään kerran.
 
-19. Tiedosto > Tallenna nimellä
+### Vertailu-pudotusvalikko
 
-Mitä se tekee: Avaa tiedostovalintaikkunan uuden sijainnin ja tiedostonimen valitsemiseksi nykyisen istunnon tallentamiseen. Oletustiedostonimi on "verosession.json" projektin kansiossa tai kotikansiossasi. Tallentamisen jälkeen tästä polusta tulee "Tallenna"-vaihtoehdon oletusarvo nopeatallennusta varten. Istunto sisältää:
-Projektin metatiedot (polku, otsikko, viimeisin muokkaus)
-Kaikki lisätyt kohteet kategorioittain
-Alkuperäiset arvot ja muokatut arvot jokaiselle kentälle
-Geometriatiedot (WKT, tyyppi, CRS) spatiaalista sovitusta varten
-Kommentit ja tasotiedot
-Versio 2 -skeema merkinnöillä (__vero, __kunta, __added)
+![kuva käyttöliittymästä](/img/vertailu.png)
 
-20. Tiedosto > Luo tiedosto
+| Painike | Toiminto |
+|---------|----------|
+| Vuosivertailu | Avaa itsenäisen [kolmivälilehtisen vertailun valintaikkunan](#vuosivertailu-ikkuna). |
+| Vertaa | Avaa valintaikkunan, jossa voit valita kaksi saraketta vertailtavaksi. Ohjelma suodattaa pois (piilottaa) rivit, joilla kahden valitun sarakkeen arvot ovat yhtä suuret. Numeerisille sarakkeille voit määrittää toleranssiarvon (esim. 2 tai 0.5), jolloin arvot, jotka eroavat alle toleranssin verran, käsitellään yhtäläisinä ja piilotetaan. Hyödyllinen veroaineiston ja kuntien tietokannan välisten erojen löytämiseen. Vertailuasetukset tallennetaan ja ne voidaan palauttaa käyttämällä valintaikkunan "Palauta"-painiketta. |
 
-Mitä se tekee: Sama toiminnallisuus kuin painike #15 - avaa raportin luomisen valintaikkunan. Tämä on pikanäppäin valikkopalkista raportointiin.
+#### Vuosivertailu-ikkuna
 
-21. Vertailu > Vuosi vertailu
-
-Mitä se tekee: Avaa itsenäisen vertailun valintaikkunan kolmella välilehdellä:
 Korjaus tarkistus -välilehti:
-Lataa istuntotiedoston "Lataa sessio…" -painikkeella
-Näyttää ladatut kohteet taulukossa nykyisen kategorian mukaan
-"Vaihda kategoria" -painike vaihtaa Rakennus/Maapohja välillä
-"Tarkista tiedot" -painike suorittaa geometriapohjaisen validoinnin (1 m säde)
-Validointi käyttää ryhmärajoitteita: Rakennus → Rakennukset/Rakennuksen Osat, Maapohja → Määrä-alat
-Näyttää kunkin kohteen tilan (OK/Check), nykyisen tason ja huomiot
-Rivit värjätään: vihreä (OK), punainen (Check), valkoinen (ei validoitu)
-Kaksoisnapsautus avaa vain luku -näkymän kaikista tiedoista + Candidate Data -välilehden
+- Lataa istuntotiedoston "Lataa sessio…" -painikkeella
+- Näyttää ladatut kohteet taulukossa nykyisen kategorian mukaan
+- "Vaihda kategoria" -painike vaihtaa Rakennus/Maapohja välillä
+- "Tarkista tiedot" -painike suorittaa geometriapohjaisen validoinnin (1 m säde)
+- Validointi käyttää ryhmärajoitteita: Rakennus → Rakennukset/Rakennuksen Osat, Maapohja → Määrä-alat
+- Näyttää kunkin kohteen tilan (OK/Check), nykyisen tason ja huomiot
+- Rivit värjätään: vihreä (OK), punainen (Check), valkoinen (ei validoitu)
+- Kaksoisnapsautus avaa vain luku -näkymän kaikista tiedoista + Candidate Data -välilehden
+
 Tilastot & kaaviot -välilehti:
-Näyttää OK/Check-määrät kategoriaa kohden (Rakennus, Maapohja)
-Näyttää Kiinteistövero-summia:
-Kiinteistövero lisä: summa siirroista puuttuvat→yhdistetty
-Kiinteistövero erot: summa päivitetyistä arvoista joissa ero
-Sisältää selityksen laskentalogiikasta
+- Näyttää OK/Check-määrät kategoriaa kohden (Rakennus, Maapohja)
+- Näyttää Kiinteistövero-summia:
+  - Kiinteistövero lisä: summa siirroista puuttuvat→yhdistetty
+  - Kiinteistövero erot: summa päivitetyistä arvoista joissa ero
+- Sisältää selityksen laskentalogiikasta
+
 Info-välilehti:
-Näyttää ladatun istunnon metatiedot (otsikko, polku, muokkausaika)
-Näyttää nykyisen projektin metatiedot
-Näyttää yhteenvedon (yhteensä kohteet, löydetty, ei löydetty)
-Sisältää selitykset kaikista Huomio-viesteistä
+- Näyttää ladatun istunnon metatiedot (otsikko, polku, muokkausaika)
+- Näyttää nykyisen projektin metatiedot
+- Näyttää yhteenvedon (yhteensä kohteet, löydetty, ei löydetty)
+- Sisältää selitykset kaikista Huomio-viesteistä
+
 Tämä valintaikkuna toimii itsenäisesti eikä vaikuta pääikkunan oikeaan taulukkoon. Sitä käytetään aiemmin tallennettujen istuntojen tarkasteluun ja validointiin päivitettyä projektiaineistoa vastaan.
 
-22. Vertailu > Vertaa
+## Taulukkotoiminnot
 
-Mitä se tekee: Sama toiminnallisuus kuin painike #5 - avaa sarakkeiden vertailun valintaikkunan. Tämä on toinen tapa päästä käsiksi vertailutoimintoon.
+### Kohdetaulukon sarakeotsikot
 
-Sivutusohjaimet
-23. Sivukoko-valikko (comboBox_pageSize)
- 
-Vaihtoehdot: 25, 50, 100, 250, 500, 1000, "Kaikki"
-Mitä se tekee: Ohjaa, kuinka monta kohdetta näytetään sivua kohden vasemmassa taulukossa. Oletusarvo on 100. "Kaikki"-vaihtoehdon valitseminen poistaa sivutuksen käytöstä ja näyttää kaikki suodatetut kohteet kerralla (voi olla hidas suurilla aineistoilla). Sivukoon muuttaminen palauttaa sivulle 1. Tämä auttaa hallitsemaan suorituskykyä suurten aineistojen kanssa työskennellessä. Suodattimet ja lajittelu säilyvät sivukokoa vaihdettaessa.
+#### Hiiren vasen painike
 
-24. Edellinen sivu -painike (pushButton_pagePrev)
+Napautus järjestää rivit sarakkeen arvojen perusteella. Uusi napautus muuttaa järjestyksen arvojen mukaan laskevaksi.
 
-Teksti: "◄"
-Mitä se tekee: Siirtyy edelliselle sivulle kohteiden vasemmassa taulukossa. Pois käytöstä (harmaa), kun olet sivulla 1. Taulukko säilyttää suodatin- ja lajitteluasetukset sivujen vaihtumisen välillä. Sivuosoitin päivittyy näyttämään nykyisen sijainnin ("Sivu X/Y"). Valittu rivi säilyy jos mahdollista.
+#### Hiiren oikea painike
 
-25. Seuraava sivu -painike (pushButton_pageNext)
-
-Teksti: 
-Mitä se tekee: Siirtyy seuraavalle sivulle kohteiden vasemmassa taulukossa. Pois käytöstä (harmaa), kun olet viimeisellä sivulla. Taulukko säilyttää suodatin- ja lajitteluasetukset sivujen vaihtumisen välillä. Sivuosoitin päivittyy näyttämään nykyisen sijainnin. Toimii yhdessä suodattimien kanssa - näyttää vain suodatetut kohteet, ei kaikkia tason kohteita.
-
-26. Sivuosoitin-teksti (label_pageIndicator)
-
-Muoto: "Sivu X/Y"
-Mitä se tekee: Näyttää nykyisen sivunumeron ja sivujen kokonaismäärän (1-pohjainen numerointi). Päivittyy automaattisesti, kun vaihdat sivukokoa, käytät suodattimia tai navigoit sivuja. Näyttää "Sivu 1/1", kun sivutus on pois käytöstä ("Kaikki" valittuna sivukoko-valikossa). Sivujen kokonaismäärä lasketaan suodatettujen kohteiden perusteella, ei kaikkien tason kohteiden.
-
-Kontekstivalikon toiminnot (hiiren oikea painike)
-27. Sarakeotsikon kontekstivalikko
-Laukaisu: Napsauta hiiren oikealla painikkeella mitä tahansa sarakeotsikkoa vasemmassa taulukossa
-Mitä se tekee: Avaa suodatinvalintaikkunan kyseiselle sarakkeelle vaihtoehdoilla:
+Napautus avaa suodatinvalintaikkunan kyseiselle sarakkeelle vaihtoehdoilla:
 Luettelotila (kaikille sarakkeille):
-Näyttää listan yksilöllisistä arvoista sarakkeessa
-Hakukenttä suodattaa listaa reaaliajassa
-"Valitse kaikki" / "Tyhjennä valinnat" -painikkeet
-Suurille sarakkeille (>50 arvoa): lista alkaa tyhjänä, täyttyy haun mukaan (≤50 tulosta kerralla)
-Voit valita useita arvoja ja vain ne rivit, joissa on valitut arvot, näytetään
-Aikaisemmat valinnat muistetaan ja esitäytetään
+- Näyttää listan yksilöllisistä arvoista sarakkeessa
+- Hakukenttä suodattaa listaa reaaliajassa
+- "Valitse kaikki" / "Tyhjennä valinnat" -painikkeet
+- Suurille sarakkeille (>50 arvoa): lista alkaa tyhjänä, täyttyy haun mukaan (≤50 tulosta kerralla)
+- Voit valita useita arvoja ja vain ne rivit, joissa on valitut arvot, näytetään
+- Aikaisemmat valinnat muistetaan ja esitäytetään
+
 Numeerinen alue (numeerisille sarakkeille):
-Min/Max -kentät alarajan ja ylärajan asettamiseen
-Sisältävä alue (inclusive): rivit joissa arvo on välillä [min, max]
-Tyhjä kenttä = ei rajoitusta kyseiseltä puolelta
-Käsittelee eurooppalaisia numeroformaatteja (pilkku desimaalierottimena)
+- Min/Max -kentät alarajan ja ylärajan asettamiseen
+- Sisältävä alue (inclusive): rivit joissa arvo on välillä [min, max]
+- Tyhjä kenttä = ei rajoitusta kyseiseltä puolelta
+- Käsittelee eurooppalaisia numeroformaatteja (pilkku desimaalierottimena)
+
 Palauta-painike: Tyhjentää suodattimen tälle sarakkeelle
+
 Suodatetut sarakkeet näyttävät pisteen (•) otsikossaan. Suodattimet toimivat yhdessä: kaikki aktiiviset suodattimet on täytettävä.
 
-28. Oikean taulukon kontekstivalikko
-Laukaisu: Napsauta hiiren oikealla painikkeella missä tahansa oikeassa taulukossa (lisätyt kohteet)
-Mitä se tekee: Avaa valikon kolmella vaihtoehdolla:
-Tallenna: Pikatallenna nykyiseen istuntotiedostoon (harmaa jos ei polkua vielä valittu)
-Tallenna nimellä: Valitse uusi tiedosto ja tallenna
-Lataa: Lataa aiempi istunto (kysyy korvataanko vai liitetäänkö)
+### Kohdetaulukon rivit
+
+Hiiren vasemmalla-, oikealla- ja keskipainikkeella on kaikilla samat toiminnot.
+
+Napautus korostaa osoitetun rivin valituksi. Valitun rivin voi lisätä raporttiin painamalla [Siirrä lisättyihin](#siirrä-lisättyihin--painike) -painikkeella.
+
+Kaksoisnapautus avaa rivin kohteen tiedot katseltavaksi uuteen ikkunaan.
+
+### Valintataulukon sarakeotsikot
+
+#### Hiiren vasen painike
+
+Napautus korostaa sarakkeen arvot taulukossa.
+
+#### Hiiren oikea painike
+
+Napautus avaa suodatinvalintaikkunan kyseiselle sarakkeelle vaihtoehdoilla:
+Luettelotila (kaikille sarakkeille):
+- Näyttää listan yksilöllisistä arvoista sarakkeessa
+- Hakukenttä suodattaa listaa reaaliajassa
+- "Valitse kaikki" / "Tyhjennä valinnat" -painikkeet
+- Suurille sarakkeille (>50 arvoa): lista alkaa tyhjänä, täyttyy haun mukaan (≤50 tulosta kerralla)
+- Voit valita useita arvoja ja vain ne rivit, joissa on valitut arvot, näytetään
+- Aikaisemmat valinnat muistetaan ja esitäytetään
+
+Numeerinen alue (numeerisille sarakkeille):
+- Min/Max -kentät alarajan ja ylärajan asettamiseen
+- Sisältävä alue (inclusive): rivit joissa arvo on välillä [min, max]
+- Tyhjä kenttä = ei rajoitusta kyseiseltä puolelta
+- Käsittelee eurooppalaisia numeroformaatteja (pilkku desimaalierottimena)
+
+Palauta-painike: Tyhjentää suodattimen tälle sarakkeelle
+
+Suodatetut sarakkeet näyttävät pisteen (•) otsikossaan. Suodattimet toimivat yhdessä: kaikki aktiiviset suodattimet on täytettävä.
+
+### Valintataulukon rivit
+
+#### Hiiren vasen painike
+
+Napautus korostaa yksittäisen taulukon solun valituksi esimerkiksi arvojen kopiointia varten.
+
+Kaksoisnapautus avaa kohteen tiedot erilliseen ikkunaan muokkausta varten.
+
+#### Hiiren oikea painike
+
+Mitä se tekee: Avaa valikon kontekstivalikon vaihtoehdolla:
+- Tallenna: Pikatallenna nykyiseen istuntotiedostoon (harmaa jos ei polkua vielä valittu)
+- Tallenna nimellä: Valitse uusi tiedosto ja tallenna
+- Lataa: Lataa aiempi istunto (kysyy korvataanko vai liitetäänkö)
+
 Tämä tarjoaa nopean pääsyn istuntojen hallintaan ilman valikkopalkkia. Sama toiminnallisuus kuin valikkopalkissa, mutta kätevämpää kun työskentelet oikean taulukon kanssa.
 
-Vuorovaikutteiset taulukkotoiminnot
-29. Vasemman taulukon kaksoisnapsautus
-Laukaisu: Kaksoisnapsauta mitä tahansa riviä vasemmassa taulukossa
-Mitä se tekee: Tällä hetkellä ei tehä mitään. Taulukko on oletuksena vain luku tahattoman datan muokkauksen estämiseksi. Kaikki muokkaus tapahtuu oikean taulukon kautta, johon kohteet siirretään "→"-painikkeella. Tämä suunnitteluratkaisu estää vahingossa muokattuja alkuperäisiä tasoja.
-
-30. Oikean taulukon kaksoisnapsautus
-Laukaisu: Kaksoisnapsauta mitä tahansa riviä oikeassa taulukossa (lisätyt kohteet)
-Mitä se tekee toimii kahdessa tilassa:
-Normaali kaksoisnapsautus (ilman Shift):
-Avaa muokattavan valintaikkunan kaikilla kentillä
-Kentät jaettu kahteen sarakkeeseen:
-Vasemmalla: Database values (__kunta-kentät) - Muokattavissa
-Oikealla: Tax data (__vero ja __added-kentät) - Muokattavissa
-Aiemmin muokatut kentät näytetään keltaisella taustalla
-Kommenttikenttä alareunassa (noin 4 riviä korkea)
-Muutokset seurataan: vain kentät joiden arvo eroaa alkuperäisestä tallennetaan
-OK tallentaa muutokset ja päivittää keltaiset korostukset kartalla
-Peruuta hylkää muutokset
-Shift + kaksoisnapsautus:
-Avaa vain luku -näkymän samoista tiedoista
-Sama kaksi saraketta (Database values / Tax data)
-Aiemmin muokatut kentät keltaisella
-Näyttää tunnistavat avaimet (PRT, Kiinteistötunnus jne.) alareunassa
-Candidate Data -välilehti (jos validointi suoritettu):
-Näyttää löydetyn kohteen tiedot nykyisestä tasosta
-Sama kaksipalstainen asettelu kuin pääikkunassa
-Kentät joita ei löydy kandidaatista näytetään oranssilla
-Kentät jotka löydetään ja täsmäävät näytetään valkoisella
-Kentät jotka löydetään mutta eivät täsmää näytetään oranssilla
-Hyödyllinen tarkistamaan mitä tiedot ovat päivittyneet projektissa
-Sulku-painike sulkee ikkunan
 
 Alivalintaikkunoiden painikkeet
 31. Sarakkeiden valintaikkunan painikkeet (ColumnSelectionDialog)
