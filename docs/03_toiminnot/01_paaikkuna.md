@@ -140,7 +140,7 @@ Toiminto: Siirry kohdetaulukon edelliselle (←) tai seuraavalle (→) sivulle. 
 
 Kuvake:
  Vihjeteksti: "Avaa asetukset"
-Mitä se tekee: Avaa monisivuisen asetusten valintaikkunan kategorioilla:
+Mitä se tekee: Avaa monisivuisen [asetusten valintaikkunan](./02_prosessointiasetukset.md) kategorioilla:
 Yleiset: Ikkunakoon muisti (palauta edellisen istunnon koko)
 Tietokanta: Kenttien kartoitus kiinteistötunnukselle, PRT:lle, rakennusnumerolle, määrä-alan kentille. Täällä määrität mitkä tietokantakentät vastaavat mitäkin avaintietoja. Pudotusvalikot täytetään automaattisesti projektin tasojen kentillä.
 Taulukko: Automaattinen sarakkeiden koon muutos, lisättyjen kohteiden näyttötila (verokentät/tietokantakentät/molemmat)
@@ -207,6 +207,7 @@ Napautus järjestää rivit sarakkeen arvojen perusteella. Uusi napautus muuttaa
 #### Hiiren oikea painike
 
 Napautus avaa suodatinvalintaikkunan kyseiselle sarakkeelle vaihtoehdoilla:
+
 Luettelotila (kaikille sarakkeille):
 - Näyttää listan yksilöllisistä arvoista sarakkeessa
 - Hakukenttä suodattaa listaa reaaliajassa
@@ -242,6 +243,7 @@ Napautus korostaa sarakkeen arvot taulukossa.
 #### Hiiren oikea painike
 
 Napautus avaa suodatinvalintaikkunan kyseiselle sarakkeelle vaihtoehdoilla:
+
 Luettelotila (kaikille sarakkeille):
 - Näyttää listan yksilöllisistä arvoista sarakkeessa
 - Hakukenttä suodattaa listaa reaaliajassa
@@ -277,103 +279,85 @@ Mitä se tekee: Avaa valikon kontekstivalikon vaihtoehdolla:
 
 Tämä tarjoaa nopean pääsyn istuntojen hallintaan ilman valikkopalkkia. Sama toiminnallisuus kuin valikkopalkissa, mutta kätevämpää kun työskentelet oikean taulukon kanssa.
 
+## Alaikkunoiden painikkeet
 
-Alivalintaikkunoiden painikkeet
-31. Sarakkeiden valintaikkunan painikkeet (ColumnSelectionDialog)
-Avautuu kun: Napsautat painiketta #2 (pushButton_column_selector)
-Hakukenttä:
-Ei aktiivinen (completer poistettu)
-Tyhjä placeholder "Hae sarakkeita..."
-Valitse kaikki -painike:
+### Sarakeotsikon suodatinvalintaikkunan painikkeet
 
-Valitsee kaikki sarakkeet listasta
-Hyödyllinen kun haluat näyttää kaiken
-Tyhjennä valinnat -painike:
+Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-sarakeotsikot) tai [valintataulukon otsikoita](#valintataulukon-sarakeotsikot)
 
-Poistaa kaikki valinnat
-Hyödyllinen kun haluat aloittaa alusta
-Valintaruudut jokaiselle kentälle:
-Yksi valintaruutu per tason kenttä
-Näyttää kentän nimen ilman __vero/__kunta/__added -päätteitä
-Esitäytetty edellisten valintojen mukaan tälle tasolle
-Ensimmäisellä kerralla kaikki valittu
-OK-painike:
-Tallentaa valinnat ja sulkee ikkunan
-Päivittää vasemman taulukon sarakkeet välittömästi
-Valinnat muistetaan tasokohtaisesti
-Peruuta-painike:
-Sulkee ikkunan tallentamatta muutoksia
-Säilyttää vanhat valinnat
+**Hakukenttä:**  
+- Suodattaa listan arvoja reaaliajassa  
+- Piilottaa ei-täsmäävät arvot (pienille listoille)  
+- Näyttää vain täsmäävät arvot (≤50, suurille listoille)
 
-32. Sarakeotsikon suodatinvalintaikkunan painikkeet (ColumnHeaderDialog)
+**Arvolista:**
+- Näyttää yksilölliset arvot sarakkeessa
+- Useita arvoja voi valita (ExtendedSelection)
+- Suuret listat (>50): alkaa tyhjänä, täyttyy haun mukaan
+- Pienet listat (≤50): esitäytetty kaikilla arvoilla
+- Esitäytetty edellisten valintojen mukaan
 
-Avautuu kun: Napsautat hiiren oikealla sarakeotikkoa (toiminto #27)
-Hakukenttä:
-Suodattaa listan arvoja reaaliajassa
-Piilottaa ei-täsmäävät arvot (pienille listoille)
-Näyttää vain täsmäävät arvot (≤50, suurille listoille)
-Placeholder: "Hae arvoista…"
-Arvolista (QListWidget):
-Näyttää yksilölliset arvot sarakkeessa
-Useita arvoja voi valita (ExtendedSelection)
-Suuret listat (>50): alkaa tyhjänä, täyttyy haun mukaan
-Pienet listat (≤50): esitäytetty kaikilla arvoilla
-Esitäytetty edellisten valintojen mukaan
-Numeerinen alue -rivi (vain numeeriset sarakkeet):
-Min-kenttä: "min" placeholder
-Max-kenttä: "max" placeholder
-Väliteksti: "Väli:" ja "–" kenttien välissä
-Piilotettu oletuksena, näytetään kun sarake on numeerinen
-Esitäytetty jos aikaisempi aluesuodatin aktiivinen
-Valitse kaikki -painike:
+**Numeerinen alue -rivi (vain numeeriset sarakkeet):**
+- Min-kenttä: "min" placeholder
+- Max-kenttä: "max" placeholder
+- Väliteksti: "Väli:" ja "–" kenttien välissä
+- Piilotettu oletuksena, näytetään kun sarake on numeerinen
+- Esitäytetty jos aikaisempi aluesuodatin aktiivinen
 
-Valitsee kaikki näkyvät arvot listasta
-Toimii haun jälkeen - valitsee vain hakutulokset
-Tyhjennä valinnat -painike:
+**Valitse kaikki -painike:**
 
-Poistaa kaikki valinnat listasta
-Nollaa valintasi
-OK-painike:
-Käyttää suodatinta:
-Numeerinen alue (jos annettu) ottaa etusijan
-Muuten käyttää lista-arvoja
-Tyhjä valinta = tyhjentää suodattimen
-Sulkee ikkunan
-Päivittää vasemman taulukon välittömästi
-Lisää •-merkin sarakeotikkoon
-Peruuta-painike:
-Sulkee ikkunan tallentamatta muutoksia
-Ei muuta aktiivista suodatinta
-Palauta-painike:
-Tyhjentää suodattimen tälle sarakkeelle
-Sulkee ikkunan
-Poistaa •-merkin sarakeotikosta
+- Valitsee kaikki näkyvät arvot listasta
+- Toimii haun jälkeen - valitsee vain hakutulokset
 
-33. Muokkausvalintaikkunan painikkeet (AddedFeatureEditDialog)
-Avautuu kun: Kaksoisnapsautat riviä oikeassa taulukossa ilman Shift-näppäintä
+**Tyhjennä valinnat -painike:**
+- Poistaa kaikki valinnat listasta
+- Nollaa valintasi
+
+**OK-painike:**
+- Käyttää suodatinta:
+  - Numeerinen alue (jos annettu) ottaa etusijan
+  - Muuten käyttää lista-arvoja
+  - Tyhjä valinta = tyhjentää suodattimen
+- Sulkee ikkunan
+- Päivittää vasemman taulukon välittömästi
+- Lisää •-merkin sarakeotikkoon
+
+**Peruuta-painike:**
+- Sulkee ikkunan tallentamatta muutoksia
+- Ei muuta aktiivista suodatinta
+
+
+**Palauta-painike:**
+- Tyhjentää suodattimen tälle sarakkeelle
+- Sulkee ikkunan
+- Poistaa •-merkin sarakeotikosta
+
+### Muokkausvalintaikkunan painikkeet
+Avautuu kun: Kaksoisnapsautat riviä kohdetaulukossa
+
 Kentät (kaikki muokattavissa):
-Vasemman palstan kentät: Database values (__kunta-kentät)
-Oikean palstan kentät: Tax data (__vero ja __added-kentät)
-Jokainen kenttä on QLineEdit
-Aiemmin muokatut kentät keltaisella taustalla
-Teksti muuttuu samalla kun kirjoitat
-Muutokset seurataan automaattisesti
+- Vasemman palstan kentät: Database values (__kunta-kentät)
+- Oikean palstan kentät: Tax data (__vero ja __added-kentät)
+- Jokainen kenttä on QLineEdit
+- Aiemmin muokatut kentät keltaisella taustalla
+- Teksti muuttuu samalla kun kirjoitat
+- Muutokset seurataan automaattisesti
+
 Kommenttikenttä:
-Monirivisä tekstikenttä (QPlainTextEdit)
-Kiinteä korkeus ~80 pikseliä (noin 4 riviä)
-"Kommentti:"-otsikko yläpuolella
-Esitäytetty olemassa olevalla kommentilla
+- Avoin tekstikenttä vapaiden muistiinpanojen tallettamiseen
+
 OK-painike:
-Tallentaa kaikki muutokset
-Päivittää tax_data vain muuttuneille kentille
-Päivittää kommentin
-Lisää/päivittää keltaiset korostukset kartalla
-Päivittää oikean taulukon näkymän
-Sulkee valintaikkunan
+- Tallentaa kaikki muutokset
+- Päivittää tax_data vain muuttuneille kentille
+- Päivittää kommentin
+- Lisää/päivittää keltaiset korostukset kartalla
+- Päivittää oikean taulukon näkymän
+- Sulkee valintaikkunan
+
 Peruuta-painike:
-Hylkää kaikki muutokset
-Ei tallenna mitään
-Sulkee valintaikkunan
+- Hylkää kaikki muutokset
+- Ei tallenna mitään
+- Sulkee valintaikkunan
 
 34. Vain luku -näkymän painikkeet (ReadOnlyFeatureViewDialog)
 Avautuu kun: Shift+kaksoisnapsautat riviä oikeassa taulukossa
@@ -446,64 +430,7 @@ Nollaa valinnat oletusarvoihin (sarake 0, 0, ei toleranssia)
 Päivittää vasemman taulukon
 Sulkee valintaikkunan
 
-36. Asetusvalintaikkunan painikkeet (SettingsDialog)
 
-Avautuu kun: Napsautat valikosta Asetukset → Asetukset
-Vasemman palstan kategorialuettelo:
-Vieritettävä lista kategorioista
-Kategoriat: Yleiset, Tietokanta, Taulukko, Raportit, Lisäasetukset
-Napsauta kategoriaa vaihtaaksesi oikean puolen sisältöä
-Yksi kategoria valittuna kerrallaan
-Oikean palstan sisältö (per kategoria):
-Yleiset-sivu:
-Valintaruutu: "Muista pääikkunan koko"
-Kun valittu, tallentaa ja palauttaa ikkunan koon
-Kun ei valittu, käyttää oletuskokoa
-Tietokanta-sivu:
-
-Kolme ryhmää: Kiinteistöt, Määrä-ala, Rakennukset
-Jokaisessa ryhmässä pudotusvalikot:
-Kiinteistöt: Kiinteistötunnus (Palstat) -pudotusvalikko
-Määrä-ala: Määräalatunnus-pudotusvalikko
-Rakennukset: Kiinteistötunnus, PRT, Rakennuksen numero -pudotusvalikot
-Pudotusvalikot täytetty projektin tasojen kentillä
-Ensimmäinen vaihtoehto on tyhjä (ei valintaa)
-Esitäytetty aikaisemmilla valinnoilla jos saatavilla
-Käytetään avaintietojen tunnistamiseen kun __vero/__kunta-kenttiä ei ole
-Taulukko-sivu:
-
-Valintaruutu: "Sovita sarakkeiden leveys automaattisesti aineiston latauksen jälkeen"
-Kun valittu (oletus), sarakkeet sovitetaan sisällön mukaan
-Kun ei valittu, sarakkeet käyttävät oletusleveyttä
-Ryhmälaatikko: "Lisättyjen kohteiden taulukon sarakkeet"
-Radiopainike 1: "Verotietojen kentät (oletus)" - Näyttää vain __vero/__added-kentät
-Radiopainike 2: "Tietokannan valitut kentät" - Näyttää vain __kunta-kentät
-Radiopainike 3: "Molemmat (vero ensin, sitten tietokanta)" - Näyttää molemmat
-Raportit-sivu:
-
-Tekstikenttä: "Oletuskansio raporteille"
-Selaa-painike: Avaa kansion valintaikkunan
-Valitse missä raportit tallennetaan oletuksena
-Esitäytetty aikaisemmalla valinnalla
-Lisäasetukset-sivu:
-Tyhjä (varattu tuleville asetuksille)
-Teksti: "Lisäasetukset (ei asetuksia vielä)."
-Tilatieto-otsikko (alareunassa):
-Näyttää vihreällä tekstillä "Tallennettu" kun napsautat Käytä
-
-Tyhjenee automaattisesti 2.5 sekunnin kuluttua
-Käytä-painike:
-Tallentaa asetukset QSettings-järjestelmään
-Pitää ikkunan auki
-Näyttää "Tallennettu"-viestin
-Muutokset otetaan käyttöön välittömästi
-OK-painike:
-Tallentaa asetukset
-Sulkee valintaikkunan
-Sama toiminta kuin Käytä + Sulku
-Peruuta-painike:
-Sulkee valintaikkunan tallentamatta muutoksia
-Palauttaa kaikki asetukset edellisiin arvoihin
 
 37. Raportin asetusvalintaikkunan painikkeet (ReportOptionsDialog)
 
@@ -620,43 +547,3 @@ Huomio-viestien selitykset -ryhmä:
 Pitkä selitysteksti kaikista mahdollisista Huomio-viesteistä
 Kuvaa mitä kukin viesti tarkoittaa
 Auttaa tulkitsemaan validointituloksia
-
-Pikanäppäimet ja näppäimistötoiminnot
-39. Ctrl + napsautus (vasemmassa taulukossa)
-Mitä se tekee: Lisää napsautetun rivin valintaan poistamatta muita valintoja. Mahdollistaa useiden yksittäisten rivien valinnan satunnaisesti. Hyödyllinen kun haluat siirtää tiettyjä kohteita oikeaan taulukkoon "→"-painikkeella.
-
-40. Shift + napsautus (vasemmassa taulukossa)
-Mitä se tekee: Valitsee kaikki rivit nykyisen valinnan ja napsautetun rivin välillä (aluevalinta). Hyödyllinen kun haluat valita peräkkäisiä rivejä nopeasti. Toimii yhdessä Ctrl-valintojen kanssa.
-
-41. Shift + kaksoisnapsautus (oikeassa taulukossa)
-Mitä se tekee: Avaa vain luku -näkymän kohteesta sen sijaan että avaisi muokkausvalintaikkunan. Näyttää kaikki tiedot kahdessa palstassa + Candidate Data -välilehden jos validointi on suoritettu. Hyödyllinen kun haluat vain tarkastella tietoja muokkaamatta.
-
-42. Sarakeotsikoiden napsautus
-Mitä se tekee: Lajittelee taulukon kyseisen sarakkeen mukaan. Ensimmäinen napsautus lajittelee nousevasti (↑), toinen napsautus laskevasti (↓), kolmas napsautus poistaa lajittelun. Lajittelu on numeerisesti tietoinen: numerot lajitellaan arvoina, ei merkkijonoina. Tyhjät arvot sijoitetaan loppuun. Lajittelu säilyy suodattimien ja sivutuksen aikana.
-
-Automaattiset toiminnot
-43. Automaattinen tason suodatus
-Mitä se tekee: Tasojen valintavalikko (painike #1) näyttää automaattisesti vain tiettyjen ryhmien tasoja: Rakennukset, Rakennuksen Osat ja Kiinteistöjen Palstat. Kaikki muut tasot (mukaan lukien tasot ilman ryhmää) piilotetaan. Tämä estää väärän tason valitsemisen ja pitää käyttöliittymän siistinä. Suodatin päivittyy automaattisesti kun lisäät uusia tasoja projektiin.
-
-44. Automaattinen tyhjä valinta uusien tasojen jälkeen
-Mitä se tekee: Kun QGIS lisää uusia tasoja projektiin (esim. "Avaa tiedostot" -toiminnon jälkeen), ohjelma pitää tason valinnan tyhjänä sen sijaan että hyväksyisi automaattisen valinnan. Tämä estää tahattoman datan latauksen ja antaa sinun valita tason tietoisesti. Vain kun napsautat tasojen valintavalikosta, ohjelma hyväksyy sen käyttäjän valinnaksi.
-
-45. Automaattinen sarakkeiden koon muutos
-Mitä se tekee: Kun asetuksissa (painike #16 > Taulukko > "Sovita sarakkeiden leveys automaattisesti...") on valittuna (oletus), vasemman taulukon sarakkeet muuttuvat automaattisesti sisällön mukaan kun lataat tason tai muutat sarakkeita. Tämä varmistaa että kaikki teksti on näkyvissä ilman vieritystä. Voit poistaa tämän käytöstä jos haluat hallita sarakkeiden leveyksiä manuaalisesti.
-
-46. Automaattinen korostusten päivitys
-Mitä se tekee: Kun muokkaat kohdetta oikeassa taulukossa ja tallennat muutokset (kaksoisnapsautus → muokkaa → OK), ohjelma päivittää automaattisesti keltaiset korostukset kartalla. Jos poistat kohteen oikeasta taulukosta ("←"-painike), keltaiset korostukset poistetaan kartalta. Korostukset päivittyvät myös kun lataat istunnon tai vaihdat korostusten näkyvyyttä (valintaruutu #13).
-
-47. Automaattinen sivutuksen päivitys
-Mitä se tekee: Kun käytät suodattimia (sarakeotsikoiden napsautus tai vertailupainike), ohjelma laskee automaattisesti uuden suodatettujen kohteiden määrän ja päivittää sivujen kokonaismäärän. Jos nykyinen sivu ei ole enää saatavilla (esim. suodatin poisti viimeisen sivun kohteet), ohjelma siirtyy automaattisesti viimeiselle saatavilla olevalle sivulle.
-
-48. Automaattinen status-päivitys
-Mitä se tekee: Kun siirrät kohteet oikeaan taulukkoon ("→"-painike) tai pois oikeasta taulukosta ("←"-painike), ja jos taso on nimeltään "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)" tai vastaava, ohjelma päivittää automaattisesti kyseisen tason status-kentän arvoksi 1 (mukana) tai 0 (ei mukana). Tämä auttaa seuraamaan mitä kohteita on käsitelty.
-
-49. Automaattinen kartan keskitys tunnistustilassa
-Mitä se tekee: Kun tunnistustila on aktiivinen (painike #3, "Valitse kartalta"), ja napsautat kohdetta kartalla, ohjelma ei vain valitse riviä vasemmassa taulukossa vaan myös keskittää kartan kyseiseen kohteeseen mittakaavassa 1:1000 ja korostaa sen punaisella merkillä. Jos kohde on toisella sivulla, ohjelma siirtyy automaattisesti oikealle sivulle ensin.
-
-50. Automaattinen geometrian tallennus
-Mitä se tekee: Kun siirrät kohteen oikeaan taulukkoon ("→"-painike), ohjelma tallentaa automaattisesti kohteen geometrian WKT-muodossa, geometrian tyypin ja koordinaattijärjestelmän (CRS). Tämä mahdollistaa geometriapohjaisen sovituksen kun lataat istunnon myöhemmin, vaikka kohteen FID tai tason nimi olisi muuttunut. Geometriatiedot tallennetaan istuntotiedostoon (JSON) ja käytetään 1 metrin säteen hakuun validoinnissa.
- 
-
