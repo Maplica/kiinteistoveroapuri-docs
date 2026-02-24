@@ -22,14 +22,14 @@ Käytä-painike:
 - Näyttää "Tallennettu"-viestin merkkinä onnistumisesta
 - Muutokset otetaan käyttöön välittömästi
 
-## Yleiset-sivu:
+## Yleiset-sivu
 
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_yleiset.png)
 
 Valintaruutu: *Muista pääikkunan koko*  
 Kun valittu, ohjelma tallentaa ja muistaa ikkunan koon sessioiden yli  
 Kun ei valittu, käyttää oletuskokoa
-## Tietokanta-sivu:
+## Tietokanta-sivu
 
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_tietokanta.png)
 
@@ -42,7 +42,7 @@ Kolme ryhmää: Kiinteistöt, Määrä-ala, Rakennukset
 - Ensimmäinen vaihtoehto on tyhjä (ei valintaa)
 - Esitäytetty aikaisemmilla valinnoilla jos saatavilla
 - Käytetään avaintietojen tunnistamiseen kun __vero/__kunta-kenttiä ei ole
-## Taulukko-sivu:
+## Taulukko-sivu
 
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_taulukko.png)
 
@@ -54,11 +54,11 @@ Ryhmälaatikko: *Lisättyjen kohteiden taulukon sarakkeet*
 - "Verotietojen kentät (oletus)" - Näyttää vain __vero/__added-kentät
 - "Tietokannan valitut kentät" - Näyttää vain __kunta-kentät
 - "Molemmat (vero ensin, sitten tietokanta)" - Näyttää molemmat
-## Raportit-sivu:
+## Raportit-sivu
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_raportit.png)
 Tekstikenttä: *Oletuskansio raporteille*:  
 Määrittelee oletussijainnin raporttitiedostojen talletukseen.
 
-## Lisäasetukset-sivu:
+## Lisäasetukset-sivu
 
 Tällä hetkellä lisäasetuksia ei ole. Kategoria on tulevaisuutta varten varalla.

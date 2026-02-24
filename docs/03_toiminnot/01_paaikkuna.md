@@ -134,20 +134,6 @@ Toiminto: Siirry kohdetaulukon edelliselle (←) tai seuraavalle (→) sivulle. 
 
 ## Valikkopalkin valinnat
 
-### Asetukset-pudotusvalikko
-
-![kuva käyttöliittymästä](/img/asetukset.png)
-
-Kuvake:
- Vihjeteksti: "Avaa asetukset"
-Mitä se tekee: Avaa monisivuisen [asetusten valintaikkunan](./02_prosessointiasetukset.md) kategorioilla:
-Yleiset: Ikkunakoon muisti (palauta edellisen istunnon koko)
-Tietokanta: Kenttien kartoitus kiinteistötunnukselle, PRT:lle, rakennusnumerolle, määrä-alan kentille. Täällä määrität mitkä tietokantakentät vastaavat mitäkin avaintietoja. Pudotusvalikot täytetään automaattisesti projektin tasojen kentillä.
-Taulukko: Automaattinen sarakkeiden koon muutos, lisättyjen kohteiden näyttötila (verokentät/tietokantakentät/molemmat)
-Raportit: Oletustulostekansio raporteille
-Lisäasetukset: Varattu tuleville asetuksille (tyhjä tällä hetkellä)
-Muutokset otetaan käyttöön välittömästi kun napsautat "Käytä" tai "OK". Asetukset säilyvät istuntojen välillä. "Käytä"-painike tallentaa muutokset mutta pitää ikkunan auki; "OK" tallentaa ja sulkee; "Peruuta" sulkee tallentamatta.
-
 ### Tiedosto-pudotusvalikko
 
 ![kuva käyttöliittymästä](/img/tiedosto_lataa.png)
@@ -166,35 +152,31 @@ Muutokset otetaan käyttöön välittömästi kun napsautat "Käytä" tai "OK". 
 
 | Painike | Toiminto |
 |---------|----------|
-| Vuosivertailu | Avaa itsenäisen [kolmivälilehtisen vertailun valintaikkunan](#vuosivertailu-ikkuna). |
+| Vuosivertailu | Avaa itsenäisen [kolmivälilehtisen vertailun valintaikkunan](03_vuosivertailu.md). |
 | Vertaa | Avaa valintaikkunan, jossa voit valita kaksi saraketta vertailtavaksi. Ohjelma suodattaa pois (piilottaa) rivit, joilla kahden valitun sarakkeen arvot ovat yhtä suuret. Numeerisille sarakkeille voit määrittää toleranssiarvon (esim. 2 tai 0.5), jolloin arvot, jotka eroavat alle toleranssin verran, käsitellään yhtäläisinä ja piilotetaan. Hyödyllinen veroaineiston ja kuntien tietokannan välisten erojen löytämiseen. Vertailuasetukset tallennetaan ja ne voidaan palauttaa käyttämällä valintaikkunan "Palauta"-painiketta. |
 
-#### Vuosivertailu-ikkuna
+### Tyylit-pudotusvalikko
 
-Korjaus tarkistus -välilehti:
-- Lataa istuntotiedoston "Lataa sessio…" -painikkeella
-- Näyttää ladatut kohteet taulukossa nykyisen kategorian mukaan
-- "Vaihda kategoria" -painike vaihtaa Rakennus/Maapohja välillä
-- "Tarkista tiedot" -painike suorittaa geometriapohjaisen validoinnin (1 m säde)
-- Validointi käyttää ryhmärajoitteita: Rakennus → Rakennukset/Rakennuksen Osat, Maapohja → Määrä-alat
-- Näyttää kunkin kohteen tilan (OK/Check), nykyisen tason ja huomiot
-- Rivit värjätään: vihreä (OK), punainen (Check), valkoinen (ei validoitu)
-- Kaksoisnapsautus avaa vain luku -näkymän kaikista tiedoista + Candidate Data -välilehden
+Tyylivalikko listaa esimääritellyt kuvaustyylit prosessoidulle aineistolle.  
+Valitsemalla tasoa vastaavan kuvaustyylin valikon listauksesta ohjelma muuttaa tason kuvauksen vastaamaan valittua tyyliä.
 
-Tilastot & kaaviot -välilehti:
-- Näyttää OK/Check-määrät kategoriaa kohden (Rakennus, Maapohja)
-- Näyttää Kiinteistövero-summia:
-  - Kiinteistövero lisä: summa siirroista puuttuvat→yhdistetty
-  - Kiinteistövero erot: summa päivitetyistä arvoista joissa ero
-- Sisältää selityksen laskentalogiikasta
+:::tip Vinkki
+Tyylit helpottavat tiedon tarkastelua. Erilaisten tyylien avulla voit ohjata tarkastelua oleellisiin kohteisiin, tai havainnollistettua alueellisia eroja aineistossa.
+:::
 
-Info-välilehti:
-- Näyttää ladatun istunnon metatiedot (otsikko, polku, muokkausaika)
-- Näyttää nykyisen projektin metatiedot
-- Näyttää yhteenvedon (yhteensä kohteet, löydetty, ei löydetty)
-- Sisältää selitykset kaikista Huomio-viesteistä
+### Asetukset-pudotusvalikko
 
-Tämä valintaikkuna toimii itsenäisesti eikä vaikuta pääikkunan oikeaan taulukkoon. Sitä käytetään aiemmin tallennettujen istuntojen tarkasteluun ja validointiin päivitettyä projektiaineistoa vastaan.
+![kuva käyttöliittymästä](/img/asetukset.png)
+
+Mitä se tekee: Avaa monisivuisen [asetusten valintaikkunan](./02_prosessointiasetukset.md). Asetukset on jaettu seuraaviin kategorioihin:
+- **Yleiset**: Ikkunakoon muisti (palauta edellisen istunnon koko)
+- **Tietokanta**: Kenttien kartoitus kiinteistötunnukselle, PRT:lle, rakennusnumerolle, määrä-alan kentille. Täällä määrität mitkä tietokantakentät vastaavat mitäkin avaintietoja.
+- **Pudotusvalikot** täytetään automaattisesti projektin tasojen kentillä.
+- **Taulukko**: Automaattinen sarakkeiden koon muutos, lisättyjen kohteiden näyttötila (verokentät/tietokantakentät/molemmat)
+- **Raportit**: Oletustulostekansio raporteille
+- **Lisäasetukset**: Varattu tuleville asetuksille (tyhjä tällä hetkellä)
+
+Muutokset otetaan käyttöön välittömästi kun napsautat "Käytä" tai "OK". Asetukset säilyvät istuntojen välillä. "Käytä"-painike tallentaa muutokset mutta pitää ikkunan auki; "OK" tallentaa ja sulkee; "Peruuta" sulkee tallentamatta.
 
 ## Taulukkotoiminnot
 
