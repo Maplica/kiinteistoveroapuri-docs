@@ -5,16 +5,7 @@ sidebar_position: 1
 # Esivalmistelut
 
 ## 1. Valmistele lähtötiedot
-Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
-
-Parhaat käytännöt tiedostojen nimeämisessä:
-- ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`
-- ✅ Välttää välilyöntejä: käytä `ala_viivaa` tai `CamelCase`
-- ✅ Lisää päivämäärä: `rakennukset_2025-01-15.gpkg`
-- ❌ Vältä erikoismerkkejä: `äö!@$%`
-- ❌ Älä käytä liian lyhyitä nimiä: `data.gpkg`
-
- Tuetut tiedostomuodot
+### Tuetut tiedostomuodot
 
 Prosessointi tukee sekä **Shapefile**- että **GeoPackage**-tiedostoja:
 
@@ -43,7 +34,7 @@ Yleisimmät ongelmat:
 - 🔴 GeoPackage sisältää väärän tason → varmista oikea taso valittuna
 
 
- Vaaditut sarakkeet tasoittain
+### Vaaditut sarakkeet tasoittain
 
 :::warning Tärkeää
 Seuraavien tasojen sarakkeiden **täytyy olla olemassa** oikeilla nimillä, jotta prosessointi toimii. Tarkista jokainen taso ennen käynnistystä.
@@ -70,6 +61,13 @@ Seuraavien tasojen sarakkeiden **täytyy olla olemassa** oikeilla nimillä, jott
 
 **Aluejakojen tiedosto:**
 - Pakollinen sarake: `Alueen tunniste`
+
+### Parhaat käytännöt tiedostojen nimeämisessä:
+- ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`
+- ✅ Välttää välilyöntejä: käytä `ala_viivaa` tai `CamelCase`
+- ✅ Lisää päivämäärä: `rakennukset_2025-01-15.gpkg`
+- ❌ Vältä erikoismerkkejä: `äö!@$%`
+- ❌ Älä käytä liian lyhyitä nimiä: `data.gpkg`
 
 ## 2. Tutki tietosisältö
 
@@ -123,3 +121,7 @@ Yleisimmät ongelmat:
 - 🔴 Tiedot alkavat väärältä riviltä (esim. rivi 1 on tyhjä)
 - 🔴 Erikoismerkit otsikoissa
 
+
+:::warning Tärkeää
+Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
+:::
