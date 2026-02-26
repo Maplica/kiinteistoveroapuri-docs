@@ -4,6 +4,10 @@ sidebar_position: 1
 
 # Esivalmistelut
 
+:::warning Tärkeää
+Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
+:::
+
 ## 1. Valmistele lähtötiedot
 ### Tuetut tiedostomuodot
 
@@ -120,8 +124,3 @@ Avaa Excel-tiedostot ja tarkista:
 Yleisimmät ongelmat:
 - 🔴 Tiedot alkavat väärältä riviltä (esim. rivi 1 on tyhjä)
 - 🔴 Erikoismerkit otsikoissa
-
-
-:::warning Tärkeää
-Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
-:::
