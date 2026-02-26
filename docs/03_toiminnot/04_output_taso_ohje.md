@@ -384,7 +384,7 @@ Alla tyylin luokitusarvot ja värit:
 
 ---
 
-### 🏠 **Rakennusosat – 2 tasoa**
+### **Rakennusosat – 2 tasoa**
 
 #### 6. **Rakennusosat_Yhdistetty_vero_ja_tietokanta**
 *(Yhdistetyt rakennusosat: vero + tietokanta)*
@@ -480,7 +480,7 @@ Alla tyylin symbolin kuvaus:
 
 ---
 
-### 🌍 **Kiinteistöt – 2 tasoa**
+### **Kiinteistöt – 2 tasoa**
 
 #### 8. **Kiinteistöt_Yhdistetty_vero_ja_tietokanta**
 *(Yhdistetyt kiinteistöt: vero + tietokanta)*
