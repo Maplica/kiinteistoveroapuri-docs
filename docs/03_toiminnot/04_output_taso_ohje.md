@@ -223,8 +223,8 @@ Alla tyylin symbolit ja värit:
 
 | Status-arvo | Merkitys | Symboli | Väri |
 |-------------|----------|---------|------|
-| **0** | ⚠️ Tarkistettava (Check) | Kuusikulmio 4,4 mm + sisäkuusikulmio 1,8 mm | 🟠 Oranssi + beige |
-| **"1"** (tyhjä) | ✅ OK (käsitelty) | Kuusikulmio 4,4 mm | 🟢 Vihreä |
+| **0** | ⚠️ Tarkistettava (Check) | Kuusikulmio | 🟠 Oranssi |
+| **"1"** | ✅ OK (käsitelty) | Kuusikulmio | 🟢 Vihreä |
 
 > **Tulkinta:** Oranssit kuusikulmiot ovat vielä käsittelemättä ja vaativat tarkistuksen. Vihreät kuusikulmiot on jo tarkistettu. Status-kenttää muokkaamalla voi seurata selvitystyön etenemistä kartalla reaaliajassa.
 
