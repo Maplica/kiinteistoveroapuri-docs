@@ -8,22 +8,28 @@ sidebar_position: 1
 Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
 
 Parhaat käytännöt tiedostojen nimeämisessä:
-- ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp`
+- ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`
 - ✅ Välttää välilyöntejä: käytä `ala_viivaa` tai `CamelCase`
-- ✅ Lisää päivämäärä: `rakennukset_2025-01-15.shp`
+- ✅ Lisää päivämäärä: `rakennukset_2025-01-15.gpkg`
 - ❌ Vältä erikoismerkkejä: `äö!@$%`
-- ❌ Älä käytä liian lyhyitä nimiä: `data.shp`
+- ❌ Älä käytä liian lyhyitä nimiä: `data.gpkg`
 
- Tarkista shapefile-tiedostojen eheys
+ Tuetut tiedostomuodot
 
+Prosessointi tukee sekä **Shapefile**- että **GeoPackage**-tiedostoja:
+
+**Shapefile (.shp)**
 Jokaisen .shp-tiedoston tulee sisältää vähintään:
 - `.shp` - geometria
 - `.dbf` - attribuuttitiedot
 - `.prj` - koordinaattijärjestelmä
 - `.shx` - indeksitiedosto
 
+**GeoPackage (.gpkg)**
+Yksi .gpkg-tiedosto voi sisältää useita tasoja. Suositellaan erityisesti silloin, kun aineisto toimitetaan yhtenä pakettina.
+
 Tarkistus QGIS:ssä:
-1. Avaa shapefile QGIS:iin (vedä ja pudota tai Add Layer)
+1. Avaa tiedosto QGIS:iin (vedä ja pudota tai Add Layer)
 2. Tarkista että:
    - Taso latautuu ilman virheitä
    - Geometriat näkyvät kartalla
@@ -31,20 +37,49 @@ Tarkistus QGIS:ssä:
    - Koordinaattijärjestelmä on määritelty (katso Layer Properties → Source)
 
 Yleisimmät ongelmat:
-- 🔴 Puuttuva .prj-tiedosto → koordinaattijärjestelmä tuntematon
-- 🔴 Korruptoitunut .dbf → attribuutit eivät avaudu
+- 🔴 Puuttuva .prj-tiedosto (Shapefile) → koordinaattijärjestelmä tuntematon
+- 🔴 Korruptoitunut .dbf (Shapefile) → attribuutit eivät avaudu
 - 🔴 Epäyhteensopivat tiedostot → väärät tiedostot eri lähteistä
+- 🔴 GeoPackage sisältää väärän tason → varmista oikea taso valittuna
 
+
+ Vaaditut sarakkeet tasoittain
+
+:::warning Tärkeää
+Seuraavien tasojen sarakkeiden **täytyy olla olemassa** oikeilla nimillä, jotta prosessointi toimii. Tarkista jokainen taso ennen käynnistystä.
+:::
+
+**Kiinteistöjen palstatiedosto:**
+- Pakolliset sarakkeet:
+  - `Kiinteistötunnus` (esim. "XXX-001-0001-0001")
+  - `Palstan pinta-ala` (numeerinen arvo)
+  - `Kaavan käyttötarkoitus` (esim. "AO", "AP", "VL")
+  - `Vesialueen pinta-ala` (numeerinen arvo)
+
+**Rakennusten tiedosto:**
+- Pakolliset sarakkeet:
+  - `Pysyvä rakennustunnus (PRT)` (numero)
+  - `Kiinteistötunnus` (linkki kiinteistöön)
+  - `Rakennuksen numero`
+  - `Kokonaisala`
+  - `Kerrosala`
+  - `Tilavuus`
+
+**Määräalojen tiedosto:**
+- Pakollinen sarake: `Määräalatunnus`
+
+**Aluejakojen tiedosto:**
+- Pakollinen sarake: `Alueen tunniste`
 
 ## 2. Tutki tietosisältö
 
 Ennen prosessoinnin aloittamista, tutustu datan rakenteeseen:
 
- Avaa attribuuttitaulut QGIS:ssä:
+ Avaa attribuuttitaulut QGIS:ssä ja varmista, että vaaditut sarakkeet löytyvät (ks. kohta 1 yllä).
 
 Kiinteistöjen palstatiedosto:
 - Etsi sarakkeet:
-  - `Kiinteistötunnus` (esim. "091-001-0001-0001")
+  - `Kiinteistötunnus` (esim. "XXX-001-0001-0001")
   - `Palstan pinta-ala` (numeerinen arvo)
   - `Kaavan käyttötarkoitus` (esim. "AO", "AP", "VL")
   - `Vesialueen pinta-ala` (numeerinen arvo)
