@@ -4,9 +4,21 @@ sidebar_position: 1
 
 # Esivalmistelut
 
+## Yleiskatsaus
+
+KiinteistöveroApuri-sovellus yhdistää kunnan tietokannasta saatavat tiedot Verottajan tietoihin ja luo kattavat raportit kiinteistöverotusta varten.
+
+## Miksi hyvä valmistelu on tärkeää?
+- Säästää aikaa - oikein valmisteltu data prosessoituu ensimmäisellä yrityksellä
+- Varmistaa tiedon laadun - estää virheelliset tulokset
+- Helpottaa tulosten tulkintaa - johdonmukainen data tuottaa selkeitä raportteja
+- Mahdollistaa toistettavuuden
+
 :::warning Tärkeää
 Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
 :::
+
+---
 
 ## 1. Valmistele lähtötiedot
 ### Tuetut tiedostomuodot
@@ -30,6 +42,9 @@ Tarkistus QGIS:ssä:
    - Geometriat näkyvät kartalla
    - Attribuuttitaulu avautuu (oikea klikkaus → Open Attribute Table)
    - Koordinaattijärjestelmä on määritelty (katso Layer Properties → Source)
+
+<!-- TODO: Lisää kuvakaappaus - QGIS:n Add Layer -dialogi tai tason lataaminen -->
+![QGIS tason lataaminen](/img/placeholder_qgis_add_layer.png)
 
 Yleisimmät ongelmat:
 - 🔴 Puuttuva .prj-tiedosto (Shapefile) → koordinaattijärjestelmä tuntematon
@@ -66,6 +81,9 @@ Seuraavien tasojen sarakkeiden **täytyy olla olemassa** oikeilla nimillä, jott
 **Aluejakojen tiedosto:**
 - Pakollinen sarake: `Alueen tunniste`
 
+<!-- TODO: Lisää kuvakaappaus - esimerkki attribuuttitaulusta jossa vaaditut sarakkeet näkyvät -->
+![Esimerkki attribuuttitaulusta](/img/placeholder_attribuuttitaulu.png)
+
 ### Parhaat käytännöt tiedostojen nimeämisessä:
 - ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`
 - ✅ Välttää välilyöntejä: käytä `ala_viivaa` tai `CamelCase`
@@ -73,11 +91,13 @@ Seuraavien tasojen sarakkeiden **täytyy olla olemassa** oikeilla nimillä, jott
 - ❌ Vältä erikoismerkkejä: `äö!@$%`
 - ❌ Älä käytä liian lyhyitä nimiä: `data.gpkg`
 
+---
+
 ## 2. Tutki tietosisältö
 
 Ennen prosessoinnin aloittamista, tutustu datan rakenteeseen:
 
- Avaa attribuuttitaulut QGIS:ssä ja varmista, että vaaditut sarakkeet löytyvät (ks. kohta 1 yllä).
+Avaa attribuuttitaulut QGIS:ssä ja varmista, että vaaditut sarakkeet löytyvät (ks. kohta 1 yllä).
 
 Kiinteistöjen palstatiedosto:
 - Etsi sarakkeet:
@@ -101,8 +121,7 @@ Määräalojen tiedosto:
 Aluejakojen tiedosto:
 - Etsi `Alueen tunniste` sarake
 
-
- Tarkista koordinaattijärjestelmät (CRS)
+### Tarkista koordinaattijärjestelmät (CRS)
 
 Miksi tämä on tärkeää?
 - Eri tiedostoilla voi olla eri koordinaattijärjestelmät
@@ -112,6 +131,11 @@ Miksi tämä on tärkeää?
 QGIS:ssä:
 1. Oikea klikkaus taso → Properties → Source
 2. Katso "Coordinate Reference System (CRS)"
+
+<!-- TODO: Lisää kuvakaappaus - Layer Properties → Source -välilehti jossa CRS näkyy -->
+![CRS tarkistus QGIS:ssä](/img/placeholder_crs_tarkistus.png)
+
+---
 
 ## 3. Tutki Excel-tiedostot (Verottajan tiedot)
 Avaa Excel-tiedostot ja tarkista:
@@ -124,3 +148,12 @@ Avaa Excel-tiedostot ja tarkista:
 Yleisimmät ongelmat:
 - 🔴 Tiedot alkavat väärältä riviltä (esim. rivi 1 on tyhjä)
 - 🔴 Erikoismerkit otsikoissa
+
+<!-- TODO: Lisää kuvakaappaus - esimerkki oikein muotoillusta Excel-tiedostosta -->
+![Esimerkki Verottajan Excel-tiedostosta](/img/placeholder_verottaja_excel.png)
+
+---
+
+:::tip Seuraava vaihe
+Kun esivalmistelut on tehty, siirry seuraavaan osioon: [Prosessoinnin käynnistys](./01_kaynnistys.md)
+:::
