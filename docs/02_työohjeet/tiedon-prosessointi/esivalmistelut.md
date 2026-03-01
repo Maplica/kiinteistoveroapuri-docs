@@ -56,7 +56,7 @@ Yleisimmät ongelmat:
 ### Vaaditut sarakkeet tasoittain
 
 :::warning Tärkeää
-Seuraavien tasojen sarakkeiden **täytyy olla olemassa** oikeilla nimillä, jotta prosessointi toimii. Tarkista jokainen taso ennen käynnistystä.
+Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessointi toimii. Tarkista jokainen taso ennen käynnistystä.
 :::
 
 **Kiinteistöjen palstatiedosto:**
