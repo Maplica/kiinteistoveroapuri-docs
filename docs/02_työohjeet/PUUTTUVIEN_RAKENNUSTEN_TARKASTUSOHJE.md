@@ -43,15 +43,16 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
 
 1. Avaa taso QGISissä (tuplaklikkaa GeoPackage)
 2. **Karttasymboli:** 🔶 Oranssi kuusikulmio (Status=0 "Check") tai 🟩 Vihreä kuusikulmio (Status=1 "OK")
-
-   ![](\img\logo.svg)
+   
+   ![Kuva Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu) symbooleista](/img/TasojenSymbooleja/Rekisterin_rakennukset_puuttuvat_verotiedosta/Rekisterin_rakennukset_puuttuvat_verotiedosta.png)
+   
 
 3. **Suodata ja priorisoi:** Järjestä verosumman tai kiinteistötunnuksen mukaan. Suodata ulos vähemmän tärkeät rakennukset tyypin tai pinta-alan mukaan.
 4. **Tunnista syyt:** Uusi rakennus / Väärä PRT / Todella puuttuu verorekisteristä
 5. **Korjaa:** Jos ei verovapaa → ilmoita verottajalle
    - Valitsemalla rivi vasemmassa tieto-ikkunassa ja siirtämällä se oikeaan käsittelyikkunaan painikkeella
    
-    ![Kuva Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu) symbooleista](/img/TasojenSymbooleja/Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)/Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu).png)
+    ![](\img\logo.svg)
    
    Jos tulee virhe voi rivin siirtää takaisin toisella painikkeella.
    
