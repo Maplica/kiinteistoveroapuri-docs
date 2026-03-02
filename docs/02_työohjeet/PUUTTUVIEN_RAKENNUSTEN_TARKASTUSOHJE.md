@@ -51,7 +51,7 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
 5. **Korjaa:** Jos ei verovapaa → ilmoita verottajalle
    - Valitsemalla rivi vasemmassa tieto-ikkunassa ja siirtämällä se oikeaan käsittelyikkunaan painikkeella
    
-   ![](\img\logo.svg)
+    ![Kuva Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu) symbooleista](/img/TasojenSymbooleja/Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)/Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu).png)
    
    Jos tulee virhe voi rivin siirtää takaisin toisella painikkeella.
    
