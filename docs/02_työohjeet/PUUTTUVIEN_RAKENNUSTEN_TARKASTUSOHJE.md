@@ -44,7 +44,7 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
 1. Avaa taso QGISissä (tuplaklikkaa GeoPackage)
 2. **Karttasymboli:** 🔶 Oranssi kuusikulmio (Status=0 "Check") tai 🟩 Vihreä kuusikulmio (Status=1 "OK")
    
-   ![Kuva Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu) symbooleista](/img/TasojenSymbooleja/Rekisterin_rakennukset_puuttuvat_verotiedosta/Rekisterin_rakennukset_puuttuvat_verotiedosta.png)
+   ![Kuva Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu) symbooleista](static/img/TasojenSymbooleja/Rekisterin_rakennukset_puuttuvat_verotiedosta/Rekisterin_rakennukset_puuttuvat_verotiedosta.png)
    
 
 3. **Suodata ja priorisoi:** Järjestä verosumman tai kiinteistötunnuksen mukaan. Suodata ulos vähemmän tärkeät rakennukset tyypin tai pinta-alan mukaan.
