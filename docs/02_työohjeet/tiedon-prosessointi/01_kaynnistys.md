@@ -21,8 +21,7 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
 
 ## Vaihe 2: Täytä Välilehti 1 - Kunnan tietokanta
 
-<!-- TODO: Lisää kuvakaappaus - Välilehti 1 kokonaisuudessaan -->
-![Välilehti 1 - Kunnan tietokanta](/img/placeholder_valilehti1.png)
+<!-- PLACEHOLDER: Kuvakaappaus Välilehti 1 - Kunnan tietokanta kokonaisuudessaan -->
 
 ### A. Kiinteistöjen palsta tiedosto:
 
@@ -41,8 +40,7 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
      - Esim: VL (Virkistysalue), VP (Puisto), Katualueet
    - **Vesialueen pinta-ala** → valitse vesialueen sarake
 
-<!-- TODO: Lisää kuvakaappaus - Kiinteistöjen palsta -osion täytetyt kentät -->
-![Kiinteistöjen palsta -sarakkeiden valinta](/img/placeholder_palsta_sarakkeet.png)
+<!-- PLACEHOLDER: Kuvakaappaus Kiinteistöjen palsta -osion täytetyistä kentistä -->
 
 ### B. Määräalojen palstatiedot:
 
@@ -77,8 +75,7 @@ Plugin muistaa aiemmat valinnat. Jos olet jo prosessoinut dataa aiemmin, kentät
 
 ## Vaihe 3: Täytä Välilehti 2 - Verottajan tiedot
 
-<!-- TODO: Lisää kuvakaappaus - Välilehti 2 kokonaisuudessaan -->
-![Välilehti 2 - Verottajan tiedot](/img/placeholder_valilehti2.png)
+<!-- PLACEHOLDER: Kuvakaappaus Välilehti 2 - Verottajan tiedot kokonaisuudessaan -->
 
 1. **Verottajan kiinteistöverotiedot:**
    - Valitse verottajan kiinteistövero tiedosto. CSV-tiedosto, joka sisältää kaikki kunnan verotiedot.
@@ -90,8 +87,7 @@ Plugin muistaa aiemmat valinnat. Jos olet jo prosessoinut dataa aiemmin, kentät
 
 ## Vaihe 4: Täytä Välilehti 3 - Tallennus
 
-<!-- TODO: Lisää kuvakaappaus - Välilehti 3 kokonaisuudessaan -->
-![Välilehti 3 - Tallennus](/img/placeholder_valilehti3.png)
+<!-- PLACEHOLDER: Kuvakaappaus Välilehti 3 - Tallennus kokonaisuudessaan -->
 
 ### A. Tulostiedostot:
 
@@ -122,8 +118,7 @@ Tallennusvälilehdellä määrityt polut määrittävät, minne prosessoinnin tu
    - Käynnistää prosessointiohjelman taustalla
    - Näyttää edistymis-ikkunan
 
-<!-- TODO: Lisää kuvakaappaus - Edistymis-ikkuna prosessoinnin aikana -->
-![Prosessoinnin edistymisikkuna](/img/placeholder_edistymisikkuna.png)
+<!-- PLACEHOLDER: Kuvakaappaus edistymis-ikkunasta prosessoinnin aikana -->
 
 4. **Odota prosessoinnin valmistumista**
    - Prosessointi voi kestää muutamasta sekunnista useisiin minuutteihin riippuen datan koosta
@@ -134,8 +129,7 @@ Tallennusvälilehdellä määrityt polut määrittävät, minne prosessoinnin tu
    - Tulostiedostot löytyvät määrittämistäsi sijainneista
    - Tiedostot aukeavat painamalla suurta vihreää **"Avaa tiedostot"** nappia
 
-<!-- TODO: Lisää kuvakaappaus - Valmis-ilmoitus ja "Avaa tiedostot" -nappi -->
-![Prosessointi valmis](/img/placeholder_prosessointi_valmis.png)
+<!-- PLACEHOLDER: Kuvakaappaus Valmis-ilmoituksesta ja "Avaa tiedostot" -napista -->
 
 ---
 

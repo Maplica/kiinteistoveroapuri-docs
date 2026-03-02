@@ -39,8 +39,7 @@ Tässä osiossa käydään läpi yleisimmät virhetilanteet ja niiden ratkaisut 
 | "CRS mismatch" | Eri koordinaattijärjestelmät | Plugin muuntaa automaattisesti, mutta tarkista että lähtö-CRS on oikein |
 | "Buildings outside parcels" | Koordinaatit väärin | Tarkista että kaikki tasot ovat samassa CRS:ssä |
 
-<!-- TODO: Lisää kuvakaappaus - Esimerkki geometria-ongelmasta kartalla (esim. rakennukset väärässä paikassa) -->
-![Geometria-ongelma kartalla](/img/placeholder_geometria_ongelma.png)
+<!-- PLACEHOLDER: Kuvakaappaus geometria-ongelmasta kartalla (esim. rakennukset väärässä paikassa) -->
 
 ---
 
@@ -64,8 +63,7 @@ Tässä osiossa käydään läpi yleisimmät virhetilanteet ja niiden ratkaisut 
 | "Write permission denied" | Ei oikeutta kirjoittaa tuloshakemistoon | Valitse hakemisto johon sinulla on kirjoitusoikeus |
 | "Executable not found" | Prosessointiohjelma ei löydy | Tarkista että .exe on rakennettu ja oikeassa paikassa |
 
-<!-- TODO: Lisää kuvakaappaus - Esimerkki virheilmoituksesta prosessoinnin aikana -->
-![Esimerkki virheilmoituksesta](/img/placeholder_virheilmoitus.png)
+<!-- PLACEHOLDER: Kuvakaappaus virheilmoituksesta prosessoinnin aikana -->
 
 ---
 

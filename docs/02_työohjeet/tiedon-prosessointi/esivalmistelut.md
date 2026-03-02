@@ -43,8 +43,7 @@ Tarkistus QGIS:ssä:
    - Attribuuttitaulu avautuu (oikea klikkaus → Open Attribute Table)
    - Koordinaattijärjestelmä on määritelty (katso Layer Properties → Source)
 
-<!-- TODO: Lisää kuvakaappaus - QGIS:n Add Layer -dialogi tai tason lataaminen -->
-![QGIS tason lataaminen](/img/placeholder_qgis_add_layer.png)
+<!-- PLACEHOLDER: Kuvakaappaus QGIS:n Add Layer -dialogista tai tason lataamisesta -->
 
 Yleisimmät ongelmat:
 - 🔴 Puuttuva .prj-tiedosto (Shapefile) → koordinaattijärjestelmä tuntematon
@@ -81,8 +80,7 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
 **Aluejakojen tiedosto:**
 - Pakollinen sarake: `Alueen tunniste`
 
-<!-- TODO: Lisää kuvakaappaus - esimerkki attribuuttitaulusta jossa vaaditut sarakkeet näkyvät -->
-![Esimerkki attribuuttitaulusta](/img/placeholder_attribuuttitaulu.png)
+<!-- PLACEHOLDER: Kuvakaappaus esimerkki attribuuttitaulusta jossa vaaditut sarakkeet näkyvät -->
 
 ### Parhaat käytännöt tiedostojen nimeämisessä:
 - ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`
@@ -132,8 +130,7 @@ QGIS:ssä:
 1. Oikea klikkaus taso → Properties → Source
 2. Katso "Coordinate Reference System (CRS)"
 
-<!-- TODO: Lisää kuvakaappaus - Layer Properties → Source -välilehti jossa CRS näkyy -->
-![CRS tarkistus QGIS:ssä](/img/placeholder_crs_tarkistus.png)
+<!-- PLACEHOLDER: Kuvakaappaus Layer Properties → Source -välilehdestä jossa CRS näkyy -->
 
 ---
 
@@ -149,8 +146,7 @@ Yleisimmät ongelmat:
 - 🔴 Tiedot alkavat väärältä riviltä (esim. rivi 1 on tyhjä)
 - 🔴 Erikoismerkit otsikoissa
 
-<!-- TODO: Lisää kuvakaappaus - esimerkki oikein muotoillusta Excel-tiedostosta -->
-![Esimerkki Verottajan Excel-tiedostosta](/img/placeholder_verottaja_excel.png)
+<!-- PLACEHOLDER: Kuvakaappaus oikein muotoillusta Verottajan Excel-tiedostosta -->
 
 ---
 

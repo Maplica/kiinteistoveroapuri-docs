@@ -17,8 +17,7 @@ Tässä osiossa käydään läpi prosessoinnin parhaat käytännöt tietojen val
 - Poista tyhjät rivit Verottajan CSV-tiedostosta
 - Tarkista että pakolliset sarakkeet eivät sisällä tyhjiä arvoja
 
-<!-- TODO: Lisää kuvakaappaus - QGIS:n Check Validity -työkalu -->
-![Geometrian validointi QGIS:ssä](/img/placeholder_check_validity.png)
+<!-- PLACEHOLDER: Kuvakaappaus QGIS:n Check Validity -työkalusta -->
 
 ---
 
@@ -50,8 +49,7 @@ Tässä osiossa käydään läpi prosessoinnin parhaat käytännöt tietojen val
    - Onko tämä odotettu määrä?
    - Tutki miksi rakennukset puuttuvat
 
-<!-- TODO: Lisää kuvakaappaus - Esimerkkitulostiedostot kansiossa tai QGIS:ssä avattuna -->
-![Tulostiedostot](/img/placeholder_tulostiedostot.png)
+<!-- PLACEHOLDER: Kuvakaappaus esimerkkitulostiedostoista kansiossa tai QGIS:ssä avattuna -->
 
 **🚩 Punaiset liput (merkkejä ongelmista):**
 - Tyhjät tulostiedostot
