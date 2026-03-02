@@ -236,7 +236,6 @@ Ota käyttöön Area_difference (Tax - database) tyyli tasolle rakennukset_Yhdis
 Katso myös:
 - [Puuttuvien rakennusten tarkastusohje](/työohjeet/PUUTTUVIEN_RAKENNUSTEN_TARKASTUSOHJE) - Rakennusten tunnistaminen ja yhdistäminen
 - [Kiinteistöjen tarkastusohje](/työohjeet/KIINTEISTOJEN_TARKASTUSOHJE) - Kiinteistöjen pinta-alojen tarkastus
-- [Prosessoinnin aloitusohje](/työohjeet/PROSESSOINNIN_ALOITUSOHJE) - Aineiston prosessointi
 
 **Tuki:**
 - contact.maplica@gmail.com
