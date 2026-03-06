@@ -138,7 +138,7 @@ Pinta-alojen tarkastus tehdään pääasiassa **listapohjaisesti** käyttäen Ki
      - Rakennuksen käyttötarkoitus
 
 4. **Lisäsuodatus (tarvittaessa):**
-   - Oikea klikkaus sarakkeen otsikkoa (esim. `Building_Area_difference (Tax - database)__added`)
+   - Oikea klikkaus sarakkeen otsikkoa (esim. `Pinta-ala ero (vero - tietokanta)__added`)
    - Valitse **"Suodata"** tai **"Järjestä"**
    - Suodata esim. vain erot > 100 m² tai < -100 m²
    - Järjestä suurimmasta pienimpään priorisoidaksesi kriittisimmät
@@ -223,7 +223,7 @@ Ota käyttöön Area_difference (Tax - database) tyyli tasolle rakennukset_Yhdis
 - ❌ Älä korjaa kaikkia pieniä eroja - keskity merkittäviin
 
 **Tehostusvinkit:**
-- 🔍 Käytä "Building_Area_difference" -visualisointia karttapohjaiseen priorisoitiin
+- 🔍 Käytä "Pinta-ala ero (vero - tietokanta)" -visualisointia karttapohjaiseen priorisoitiin
 - 📊 Järjestä attribuuttitaulu eron mukaan suurimmasta pienimpään
 - 🎯 Suodata vain erot > 50 m² tai > 10%
 - 🗂️ Käsittele alueittain - tehokkaampi työnkulku

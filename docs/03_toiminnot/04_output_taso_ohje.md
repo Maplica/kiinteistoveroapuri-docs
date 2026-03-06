@@ -18,7 +18,7 @@ Jokaiselle tasolle on määritelty valmiit **QML-karttatyylit**, jotka ladataan 
 #### 1. **Rakennukset_Yhdistetty_vero_ja_tietokanta**
 *(Yhdistetyt rakennukset: vero + tietokanta)*
 
-**Tarkoitus:** Tästä tasosta löytyy, rakennukset, jotka löytyvät sekä kunnan tietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain, joten pinta-aloja, tilavuuksia, valmistumisvuosia, omistajatietoja ja kiinteistöveroja voi vertailla suoraan. Automaattisesti lasketut erotuskentät (`Building_Area_difference`, `Building_Volume_difference`) osoittavat numeraalisesti, kuinka paljon tietokannan ja verotuksen pinta-ala- ja tilavuusarvot poikkeavat toisistaan rakennuskohtaisesti.
+**Tarkoitus:** Tästä tasosta löytyy, rakennukset, jotka löytyvät sekä kunnan tietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain, joten pinta-aloja, tilavuuksia, valmistumisvuosia, omistajatietoja ja kiinteistöveroja voi vertailla suoraan. Automaattisesti lasketut erotuskentät (`Pinta-ala ero (vero - tietokanta)`, `Tilavuus ero (vero - tietokanta)`) osoittavat numeraalisesti, kuinka paljon tietokannan ja verotuksen pinta-ala- ja tilavuusarvot poikkeavat toisistaan rakennuskohtaisesti.
 Tasolle löytyy lisäksi kolme erillaista kuvastyyliä. 1. Pinta-alaero (Area_difference), 2. Kiinteistövero (euroina) ja 3. Verotusarvo (euroina). Näitä voi käyttää visualisoidakseen kartalle miten tiedot sjioittuvat ja tehdä karttapohjista tutkimusta tiedoista. Alla selitys tason tyyleistä, mitä ne esittävät ja millä tavalla. 
 
 <!-- PLACEHOLDER: Kuvakaappaus kartalta, jossa näkyy Rakennukset_Yhdistetty-taso pinta-alaerojen värityksellä (punainen-keltainen-sininen) -->
@@ -119,8 +119,8 @@ Alla tyylin luokitusrajat ja symbolien koot:
   - Erityisen tärkeä tietyissä verolaskelmissa ja rakennusten luokittelussa
 
 - **Automaattisesti lasketut vertailukentät:**
-  - `Building_Area_difference (vero – tietokanta)` – näyttää, kuinka monta neliömetriä Verohallinnon käyttämä pinta-ala poikkeaa kunnan tiedoista. Positiivinen arvo tarkoittaa, että verotuksen pinta-ala on suurempi, negatiivinen että kunnan tietokannan pinta-ala on suurempi. Auttaa priorisoimaan tarkistettavat rakennukset.
-  - `Building_Volume_difference (vero – tietokanta)` – vastaava vertailu tilavuustiedoille. Suuret erot voivat viitata tiedonsyöttövirheisiin tai erilaisiin mittaustapoihin.
+  - `Pinta-ala ero (vero - tietokanta)__added` – näyttää, kuinka monta neliömetriä Verohallinnon käyttämä pinta-ala poikkeaa kunnan tiedoista. Positiivinen arvo tarkoittaa, että verotuksen pinta-ala on suurempi, negatiivinen että kunnan tietokannan pinta-ala on suurempi. Auttaa priorisoimaan tarkistettavat rakennukset.
+  - `Tilavuus ero (vero - tietokanta)__added` – vastaava vertailu tilavuustiedoille. Suuret erot voivat viitata tiedonsyöttövirheisiin tai erilaisiin mittaustapoihin.
 
 - **Vero- ja luokitustiedot:**
   - Kiinteistöveron arvot – vuosittainen kiinteistöveron määrä
