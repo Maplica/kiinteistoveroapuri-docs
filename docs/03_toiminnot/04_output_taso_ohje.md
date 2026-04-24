@@ -13,9 +13,9 @@ Jokaiselle tasolle on määritelty valmiit **QML-karttatyylit**, jotka ladataan 
 
 ## Tasojen yleiskuvaus
 
-### **Rakennukset – 5 tasoa**
+### Rakennukset – 5 tasoa
 
-#### 1. **Rakennukset_Yhdistetty_vero_ja_tietokanta**
+#### 1. Rakennukset_Yhdistetty_vero_ja_tietokanta
 *(Yhdistetyt rakennukset: vero + tietokanta)*
 
 **Tarkoitus:** Tästä tasosta löytyy, rakennukset, jotka löytyvät sekä kunnan tietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain, joten pinta-aloja, tilavuuksia, valmistumisvuosia, omistajatietoja ja kiinteistöveroja voi vertailla suoraan. Automaattisesti lasketut erotuskentät (`Pinta-ala ero (vero - tietokanta)`, `Tilavuus ero (vero - tietokanta)`) osoittavat numeraalisesti, kuinka paljon tietokannan ja verotuksen pinta-ala- ja tilavuusarvot poikkeavat toisistaan rakennuskohtaisesti.
@@ -57,7 +57,7 @@ Tälle tasolle on määritelty **3 erilaista karttatyyliä**, jotka korostavat e
 
 ---
 
-**Tyyli 1: Pinta-ala ero (vero - tietokanta)**
+##### Tyyli 1: Pinta-ala ero (vero - tietokanta)
 Tyyli esittää kunnan rakennustietokannan ja Verohallinnon pinta-alatietojen välisen eron rakennustyyppikohtaisilla SVG-ikoneilla. **Ikonin koko** kertoo pinta-ala-eron suuruuden – mitä suurempi ikoni, sitä suurempi ero. Ikonin muoto kertoo rakennuksen tyypin.
 
 Tyylin avulla voidaan tunnistaa rakennusten pinta-alaerot ja tarvittaessa tarkistaa sekä korjata tiedot rakennusrekisterin mukaisiksi, mikäli verotiedoissa esiintyy virheitä. Koska rakennuksen pinta-ala vaikuttaa suoraan verotukseen, tietojen oikeellisuus on tärkeää, jotta kunta ei menetä verotuloja.
@@ -85,7 +85,7 @@ Normaalikokoiset ikonit tarkoittavat, että pinta-alat täsmäävät eikä väli
 
 <!-- PLACEHOLDER: Kuvakaappaus pinta-alaeron karttatyylistä, jossa timanttisymbolit punaisesta siniseen -->
 
-**Tyyli 2: Kiinteistövero (euroina)**
+##### Tyyli 2: Kiinteistövero (euroina)
 Esittää rakennuksen kiinteistöveron suuruuden rakennustyyppikohtaisilla SVG-ikoneilla. Ikonin muoto kertoo rakennuksen tyypin (sama kuvajärjestelmä kuin Tyyli 1). **Ikonin koko** kasvaa eksponentiaalisesti kiinteistöveron mukaan — suurempi ikoni tarkoittaa suurempaa vuosittaista kiinteistöveroa.
 
 Tyylin avulla voidaan tunnistaa kartalta nopeasti eniten veroa tuottavat rakennukset ja verrata niiden sijaintia sekä tyyppiä keskenään. Tyyli korostaa sekä veroa tuottavan kohteen sijaintia että sen rakennustyyppiä.
@@ -106,7 +106,7 @@ Tyylin avulla voidaan tunnistaa kartalta nopeasti eniten veroa tuottavat rakennu
 
 <!-- PLACEHOLDER: Kuvakaappaus kiinteistöveron karttatyylistä, jossa erikokoiset keltaiset ympyrät -->
 
-**Tyyli 3: Verotusarvo (euroina)**
+##### Tyyli 3: Verotusarvo (euroina)
 Esittää rakennuksen verotusarvon suuruuden **rakennustyyppikohtaisilla SVG-ikoneilla**. Ikonin muoto kertoo rakennuksen käyttötarkoituksen (sama kuvajärjestelmä kuin Tyylit 1 ja 2). **Ikonin koko** kasvaa eksponentiaalisesti verotusarvon mukaan — suurempi ikoni tarkoittaa korkeampaa verotusarvoa.
 
 Tyylin avulla voidaan vertailla rakennusten arvostustasoja kartalla ja tunnistaa kohteet, joiden verotusarvo on poikkeuksellisen korkea. Verotusarvo on kiinteistöveron laskentaperuste, joten se kertoo myös, mitkä rakennukset ovat potentiaalisesti merkittäviä verokohteita.
@@ -176,7 +176,7 @@ Huomio: Verotusarvo ei ole sama kuin kiinteistövero — korkea verotusarvo voi 
 
 ---
 
-#### 2. **Veroaineiston_rakennukset_puuttuvat_rekisteristä**
+#### 2. Veroaineiston_rakennukset_puuttuvat_rekisteristä
 *(Verotuksen rakennukset, joita ei löydy kunnan rekisteristä)*
 
 **Tarkoitus:** Rakennukset, jotka esiintyvät Verohallinnon aineistossa mutta joille ei löydy vastaavaa rakennusta kunnan rakennusrekisteristä. Rakennuksista maksetaan kiinteistöveroa, mutta niitä ei ole rekisteröity kunnan järjestelmään. Tasoa voi käyttää rakennusrekisterin täydentämiseen. Taso on myös yksi keskeinen taso, kun etsitään verotuksesta puuttuvia rakennuksia. Tällöin on tarksitettava löytyykö kiintiestöltä rakennuksia tältä tasolta jotka saattavat olla jo verotuksen piirissä, mutta jostain syystä eivät ole yhdistyneet kunnan tietokantaan esim. puuttuvien PRT:den takia. 
@@ -187,7 +187,7 @@ Tasolle on määritelty yksi karttatyyli. Alla selitys siitä, mitä se esittä�
 
 ---
 
-**🎨 Karttatyyli**
+##### 🎨 Karttatyyli
 
 **Tyyli:**
 Esittää puuttuvat rakennukset **kirkkaanvihreänä bullseye-ympyränä**, joka muodostuu ulkoympyrästä ja pienestä sisäpisteestä. Kirkkaan vihreä väri on valittu tarkoituksella erottumaan selkeästi muista tasoista.
@@ -233,7 +233,7 @@ Alla tyylin symbolien kuvaukset:
 
 ---
 
-#### 3. **Rekisterin_rakennukset_puuttuvat_verotiedosta**
+#### 3. Rekisterin_rakennukset_puuttuvat_verotiedosta
 *(Kunnan rekisterin rakennukset, joita ei löydy verotiedoista)*
 
 **Tarkoitus:** Rakennukset, jotka löytyvät kunnan rakennusrekisteristä mutta joille ei löydy vastaavaa tietoa Verohallinnon aineistosta. Rakennukset voivat olla ilmoittamatta jääneitä verovelvollisia kohteita tai verovapaita rakennuksia, joiden vapautusperuste tulee varmistaa. Tasoa voi käyttää verotuksen kattavuuden tarkistamiseen. Taso on myös yksi keskeinen taso, kun etsitään rakennuksia, jotka saattavat olla verotuksen ulkopuolella ilman perustetta. Tällöin on tarkistettava, löytyykö kiinteistöltä rakennuksia tältä tasolta, jotka saattavat olla verovelvollisia mutta jostain syystä eivät näy Verohallinnon aineistossa — esim. puuttuvien tai virheellisten tunnistetietojen takia. 
@@ -244,7 +244,7 @@ Tasolle on määritelty yksi karttatyyli. Alla selitys siitä, mitä se esittä�
 
 ---
 
-**🎨 Karttatyyli**
+##### 🎨 Karttatyyli
 Esittää rakennukset **kuusikulmiosymboleina** (hexagoni), joiden väri kertoo, onko kohde jo käsitelty vai ei. Oranssi tarkoittaa vielä käsittelemätöntä kohdetta ja vihreä jo tarkistettua.
 
 Rivin siirtäminen käsittely ikkunaan vaihtaa symboolin automaattisesti. Tällöin oletetaan, että rakennus on tarkistettu ja on puuttuva kohde. Tämä mahdollistaa selvitystyön etenemisen seuraamisen suoraan kartalla ilman erillisiä listoja.
@@ -292,7 +292,7 @@ Alla tyylin symbolit ja värit:
 
 ---
 
-#### 4. **Veroaineiston_muut_kohteet**
+#### 4. Veroaineiston_muut_kohteet
 *(Muut erityiset verotettavat kohteet)*
 
 **Tarkoitus:** Verohallinnon aineistossa esiintyvät verotettavat kohteet, jotka ovat luokiteltu muiksi kohteiksi. Nämä voivat olla esimerkiksi maaviljelyrakennukset, voimalaitoksia ja muut erikoisrakenteet, joista peritään kiinteistöveroa. Taso sisältää verotuslaskennan tiedot ja kohteiden sijainnin kiinteistön keskipisteessä. Tasolle on määritelty kaksi karttatyyliä: 1. Kiinteistövero (euroina) ja 2. Verotusarvo (euroina). Alla selitys siitä, mitä ne esittävät ja millä tavalla. Taso on tarkoitus käyttää samalla tavalla kuin Yhdistetyt rakennukset. Ainoana erona, että nämä on yhdistetty vain kiinteistöön, jolloin on tarkistettava puuttuvasta rakennustasosta onko tälle oma rakennus kunnan teitokannassa.
@@ -315,7 +315,7 @@ Tälle tasolle on määritelty **2 karttatyyliä**. Molemmat käyttävät **koht
 
 ---
 
-**Tyyli 1: Kiinteistövero (euroina)**
+##### Tyyli 1: Kiinteistövero (euroina)
 Esittää muun kohteen kiinteistöveron kohdetyyppiä kuvaavilla **SVG-ikoneilla**. Ikonin muoto ja väri kertovat kohteen tyypin. **Ikonin koko** kasvaa eksponentiaalisesti kiinteistöveron mukaan — suurempi ikoni tarkoittaa suurempaa vuosittaista kiinteistöveroa.
 
 Tyylin avulla voidaan tunnistaa kartalta nopeasti eniten veroa tuottavat erikoiskohteet ja verrata niitä keskenään sekä muihin alueen rakennuksiin.
@@ -334,7 +334,7 @@ Huomio: Kohteet esitetään kiinteistön keskipisteessä, ei todellisessa sijain
 
 > **Tulkinta:** Muut kohteet esitetään kiinteistön keskipisteessä (todellista geometriaa ei ole). Ikonin muoto kertoo välittömästi kohteen tyypin (maatalous, metsä/teollisuus tai vesihuolto). Suuret ikonit osoittavat merkittävimmät verokohteet.
 
-**Tyyli 2: Verotusarvo (euroina)**
+##### Tyyli 2: Verotusarvo (euroina)
 Esittää erikoiskohteen verotusarvon samoilla **kohdetyyppikohtaisilla SVG-ikoneilla** kuin Tyyli 1. Ikonin muoto ja väri kertovat edelleen kohteen käyttötarkoituksen, mutta ikonin koko kasvaa nyt **verotusarvon** mukaan — suurempi ikoni tarkoittaa korkeampaa verotusarvoa.
 
 Tyyliä voi käyttää vertailemaan erikoiskohteiden arvostustasoja tai tarkistamaan, onko kohteen verotusarvo suhteessa muihin alueen kohteisiin. Korkea verotusarvo ei aina tarkoita korkeaa veroa, jos veroprosentti on matala.
@@ -386,7 +386,7 @@ Huomio: Kohteet esitetään kiinteistön keskipisteessä, ei todellisessa sijain
 
 ---
 
-#### 5. **Rakennukset_Pistepuutteet_lkm_Vero_vs_Rekisteri**
+#### 5. Rakennukset_Pistepuutteet_lkm_Vero_vs_Rekisteri
 *(Rakennusten lukumääräpoikkeamat: veroaineisto vs. rekisteri)*
 
 **Tarkoitus:** Taso korostaa kiinteistöjä sen perusteella, miten puuttuvat rakennusmäärät jakautuvat verotusaineiston ja kunnan rekisterin välillä. Tarkoituksena on helpottaa puutteiden havaitsemista. Kiinteistöt, joilla rakennusmäärä täsmää molemmissa järjestelmissä, voivat silti sisältää ongelmia — sama lukumäärä viittaa siihen, että rakennukset ovat todennäköisesti samoja, mutta eivät ole yhdistyneet toisiinsa esim. tunnistetietojen puutteiden takia. Eri lukumäärä puolestaan viittaa suoraan puutteisiin: joko rekisteristä tai verotuksesta puuttuu rakennuksia. Tasoa voi käyttää priorisoimaan, mitkä kiinteistöt kaipaavat tarkempaa selvitystä. Tasolle on määritelty yksi karttatyyli. Alla selitys siitä, mitä se esittää ja millä tavalla.
@@ -395,7 +395,7 @@ Huomio: Kohteet esitetään kiinteistön keskipisteessä, ei todellisessa sijain
 
 ---
 
-**🎨 Karttatyyli**
+##### 🎨 Karttatyyli
 Värjää kiinteistöpolygonit **kolmella selkeällä värillä** sen mukaan, täsmääkö kiinteistön rakennusten lukumäärä järjestelmien välillä.
 
 Tyylin avulla saa nopeasti yleiskuvan siitä, millä kiinteistöillä lukumäärä täsmää ja missä on ero. Kaikki värit voivat viitata selvitystarpeeseen — vihreäkin kiinteistö voi sisältää rakennuksia, jotka eivät ole yhdistyneet toisiinsa tunnistetietojen puutteiden takia.
@@ -428,9 +428,9 @@ Alla tyylin luokitusarvot ja värit:
 
 ---
 
-### **Rakennusosat – 2 tasoa**
+### Rakennusosat – 2 tasoa
 
-#### 6. **Rakennusosat_Yhdistetty_vero_ja_tietokanta**
+#### 6. Rakennusosat_Yhdistetty_vero_ja_tietokanta
 *(Yhdistetyt rakennusosat: vero + tietokanta)*
 
 **Tarkoitus:** Tästä tasosta löytyvät Verohallinnon rakennusosat, jotka on onnistuneesti yhdistetty kunnan rakennusrekisterin rakennuksiin. Taso sisältää molempien järjestelmien kaikki tiedot rinnakkain rakennusosakohtaisesti — kunnan tietokannasta täydelliset rakennustiedot ja Verohallinnolta kaikki rakennusosatiedot — joten pinta-aloja, käyttötarkoituksia ja muita rakennusosan ominaisuuksia voi vertailla suoraan. Tätä voi tarkistella jos kiinnostaa verottajalle ilmoitetut rakennusten ominasiuudet. Rakennusten pinta-alat löytyvät verottajan rakennusosatiedoista, pinta-ala tiedot ovat prosessoinssa tuotu myös rakennustasolle. Mikäli joku rakennus on rakennettu eri aikaan tai laajennettu, kannattaa tarkastella tätä tasoa. Tasolle on määritelty yksi karttatyyli. Alla selitys siitä, mitä se esittää ja millä tavalla.
@@ -439,7 +439,7 @@ Alla tyylin luokitusarvot ja värit:
 
 ---
 
-**🎨 Karttatyyli**
+##### 🎨 Karttatyyli
 Esittää rakennusosat **timanttisymboleina**, joiden väri vaihtelee **rakennusosan numeron** mukaan. Jokaiselle rakennusosan numerolle on oma värinsä, joten eri osia voi erottaa toisistaan kartalla.
 
 Tyylin avulla voidaan nähdä yhdellä silmäyksellä, kuinka monta eri rakennusosaa samalla rakennuksella on. Useita eri värisiä timantteja samassa kohdassa tarkoittaa, että rakennuksella on verottajan teidoissa useampia osia — tyypillisesti kerrostaloissa tai sekakäyttökohteissa.
@@ -483,7 +483,7 @@ Alla tyylin osakohtaiset värit:
 
 ---
 
-#### 7. **Veroaineiston_rakennusosat_puuttuvat_rekisteristä**
+#### 7. Veroaineiston_rakennusosat_puuttuvat_rekisteristä
 *(Veroaineiston rakennusosat, joita ei löydy rekisteristä)*
 
 **Tarkoitus:** Rakennusosat, jotka esiintyvät Verohallinnon aineistossa mutta joille ei löydy vastaavaa kohdetta kunnan rakennusrekisteristä. Rakennuosat korjautuvat kun rakennusten PRT:t korjataan. Tämä taso on enemmän vain katselua varten. Ei anna mitään enemmän lisäarvoa kuin taso 2 Veroaineiston_rakennukset_puuttuvat_rekisteristä. Taso voi hyödyntää, jos tutkitaan rakennustietokannasta puuttuvan rakennuksen ominaispiirteitä.
@@ -494,7 +494,7 @@ Tasolle on määritelty yksi karttatyyli. Alla selitys siitä, mitä se esittä�
 
 ---
 
-**🎨 Karttatyyli**
+##### 🎨 Karttatyyli
 Esittää puuttuvat rakennusosat **punaisina kolmioina**. Punainen väri ja kolmiomuoto on valittu selkeäksi varoitussymboliksi, joka erottuu muista tasoista.
 
 Tyylin avulla voidaan nähdä, missä rakennuksissa tai kiinteistöillä on verotuksessa rakennusosia, joita ei löydy kunnan rekisteristä. Useita kolmioita samassa rakennuksessa tarkoittaa useampaa puuttuvaa rakennusosaa.
@@ -524,9 +524,9 @@ Alla tyylin symbolin kuvaus:
 
 ---
 
-### **Kiinteistöt – 2 tasoa**
+### Kiinteistöt – 2 tasoa
 
-#### 8. **Kiinteistöt_Yhdistetty_vero_ja_tietokanta**
+#### 8. Kiinteistöt_Yhdistetty_vero_ja_tietokanta
 *(Yhdistetyt kiinteistöt: vero + tietokanta)*
 
 **Tarkoitus:** Kiinteistöt, jotka löytyvät sekä kunnan kiinteistötietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien kiinteistötiedot, kuten pinta-alat, omistajatiedot, kaavamerkinnät ja kiinteistöverot, rinnakkain vertailua varten. Taso toimii pääsäntöisenä tasona kun tarkastellaan maapohjan verotusta. Tähän kuuluu kaikki yhdistyneet tiedot, joten tämä antaa parhaan kuvan kunnan maapohjan kiintiestöveron jakautumisesta. Tasolle on määritelty viisi karttatyyliä: 1. Aluehinta (HotnCold), 2. Aluehinta (kategorinen), 3. Kaava-alue, 4. Kiinteistövero (euroina) ja 5. Ranta. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
@@ -539,7 +539,7 @@ Alla tyylin symbolin kuvaus:
 
 Tälle tasolle on määritelty **5 erilaista karttatyyliä**, jotka korostavat kiinteistöjen eri ominaisuuksia:
 
-**Tyyli 1: Aluehinta (HotnCold) – lämpökartta**
+##### Tyyli 1: Aluehinta (HotnCold) – lämpökartta
 Näyttää kiinteistön aluehinnan **Turbo-värirampin** avulla 20 luokassa. Värit etenevät tumman violetista sinisen ja vihreän kautta keltaiseen ja tummanpunaiseen — kalleimmat kiinteistöt näkyvät punaisina, halvimmat violetin sävyissä.
 
 Tyylin avulla voidaan hahmottaa nopeasti maan arvon jakautuminen alueella. Tyyli on erityisen hyödyllinen, kun halutaan verrata miten maapohjan arvo on kunnassa jakautunut.
@@ -559,7 +559,7 @@ Alla tyylin väriskaala ja miten värit jakautuvat aluehinnan mukaan:
 
 <!-- PLACEHOLDER: Kuvakaappaus Aluehinta HotnCold -tyylistä, jossa tubo-värirampin koko kirjo näkyy kartalla -->
 
-**Tyyli 2: Aluehinta (kategorinen)**
+##### Tyyli 2: Aluehinta (kategorinen)
 Näyttää aluehinnan **71 erillisenä luokkana**, joista jokaisella on oma värinsä (HSV-pohjainen satunnaisväritys). Jokainen yksittäinen aluehinta-arvo saa oman värinsä, joten saman värisiä kiinteistöjä yhdistää sama hinta.
 
 Tyyliä käytetään tilanteissa, joissa halutaan erottaa eri aluehintaisten kiinteistöjen rajat selkeästi toisistaan. HotnCold-tyyli (tyyli 1) sopii paremmin yleiskuvan saamiseen, mutta kategorinen tyyli on tarkempi silloin, kun tarkastella eroja enemmän paikallisesti.
@@ -569,7 +569,7 @@ Huomio: Värit ovat HSV-pohjaisia satunnaisvärejä — ne eivät edusta hinnan 
 <!-- PLACEHOLDER: Kuvakaappaus Aluehinta -tyylistä, jossa HSV näkyy kartalla --> 
 <!-- PLACEHOLDER: Kuvakaappaus Aluehinta -tyylistä, jossa skaala näkyy -->
 
-**Tyyli 3: Kaava-alue**
+##### Tyyli 3: Kaava-alue
 Näyttää kiinteistön kaavalajin **4 selkeällä värillä**: keltainen (ei kaavaa), sininen (rantakaava), pinkki-violetti (asemakaava) ja harmaa (tieto puuttuu). Luokitus perustuu `Kaavan_laji`-kenttään.
 
 Tyylin avulla näkee nopeasti, onko kiinteistölle merkitty asemakaava tai rantaasemakaava. Tieto on tärkeä, koska veroprosentti voi vaihdella kaavalajin mukaan.
@@ -587,7 +587,7 @@ Alla tyylin kaavalajit ja niitä vastaavat värit:
 
 <!-- PLACEHOLDER: Kuvakaappaus Kaava_alue -tyylistä, jossa keltaiset, siniset ja pinkit alueet näkyvät selkeästi -->
 
-**Tyyli 4: Kiinteistövero (euroina)**
+##### Tyyli 4: Kiinteistövero (euroina)
 Värjää kiinteistöpolygonit **sinisestä punaiseen** veron suuruuden mukaan (11 luokkaa). Matalan veron kiinteistöt näkyvät sinisinä ja korkean veron kiinteistöt punaisina.
 
 Tyylin avulla voidaan tunnistaa alueelta eniten veroa tuottavat kiinteistöt nopeasti. Tyyli sopii erityisesti budjettiarvioon ja tärkeimpien verokohteiden paikantamiseen kartalta. Tämän avulla voidaan myös yrittää tulkita miten eri kaavamuutokset ovat vaikuttaneet maapohjan kiinitestöverotuloihin.
@@ -608,7 +608,7 @@ Alla tyylin luokitusrajat ja värit:
 
 <!-- PLACEHOLDER: Kuvakaappaus Kiinteistövero-tyylistä sinisestä punaiseen -->
 
-**Tyyli 5: Ranta (kyllä/ei)**
+##### Tyyli 5: Ranta (kyllä/ei)
 Näyttää kiinteistön rantastatuksen **kahdella värillä**: vihreä (ei rantaa) ja syaani (rantakiinteistö). Luokitus perustuu `Ranta`-kenttään.
 
 Rantakiinteistöillä on usein eri veroprosentti kuin muilla kiinteistöillä. Tyylin avulla voidaan tarkistaa nopeasti, onko verotiedoissa rantaluokittelu tehty oikein. 
@@ -666,7 +666,7 @@ Alla tyylin arvot ja värit:
 
 ---
 
-#### 9. **Rekisterin_Kiinteistöt_puuttuvat_verotiedosta**
+#### 9. Rekisterin_Kiinteistöt_puuttuvat_verotiedosta
 *(Kunnan rekisterin kiinteistöt, joita ei löydy verotiedoista)*
 
 **Tarkoitus:** Rakennettu kiinteistöt, jotka löytyvät kunnan paikkatietokannasta mutta joille ei löydy vastaavaa tietoa Verohallinnon aineistosta. Syy voi olla verovapautus, uusi kiinteistö jota ei ole vielä verotettu tai tunnisteiden ero järjestelmien välillä. Tämä taso auttaa havaitsemaan mahdolliset kiinteistöt jotka ovat jääneet kiintiestöverotuksen ulkopuolelle. Tasolle on määritelty yksi karttatyyli. Alla selitys siitä, mitä se esittää ja millä tavalla.
@@ -675,7 +675,7 @@ Alla tyylin arvot ja värit:
 
 ---
 
-**🎨 Karttatyyli**
+##### 🎨 Karttatyyli
 Esittää kiinteistöt **kuvioiduilla täytöillä** eikä tasavärillä, jolloin pohjalla olevat karttatasot näkyvät kuvioiden läpi. Oranssi ristikkokuvio tarkoittaa vielä selvittämätöntä kohdetta ja vihreä pistekuvio jo tarkistettua.
 
 Symbooli vaihtuu siirtämällä kiintiestörivin käsittelyikkunaan. Tämä mahdollistaa selvitystyön etenemisen seuraamisen suoraan kartalla.
@@ -715,9 +715,9 @@ Alla tyylin Status-arvot, kuviotyypit ja värit:
 
 ---
 
-### **Määräalat – 1 taso**
+### Määräalat – 1 taso
 
-#### 10. **Maara-ala_Yhdistetty_vero_ja_tietokanta**
+#### 10. Maara-ala_Yhdistetty_vero_ja_tietokanta
 *(Yhdistetyt määräalat: vero + tietokanta)*
 
 **Tarkoitus:** Määräalat, jotka löytyvät sekä kunnan kiinteistörekisteristä että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain vertailua varten — pinta-alat, kaavamerkinnät ja kiinteistöverot. Taso toimii pääasiallisena tasona maapohjan verotuksen tarkasteluun määräalojen osalta. Taso käyttää samoja karttatyylejä kuin Kiinteistöt-taso (taso 8): 1. Aluehinta (HotnCold), 2. Aluehinta (kategorinen), 3. Kaava-alue, 4. Kiinteistövero (euroina) ja 5. Ranta. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
@@ -759,9 +759,9 @@ Tälle tasolle käytetään **samoja karttatyylejä kuin kiinteistötasolle (tas
 
 ---
 
-### **Tilastolliset aggregaatiot – 2 tasoa**
+### Tilastolliset aggregaatiot – 2 tasoa
 
-#### 11. **Rakennukset_Tilastot**
+#### 11. Rakennukset_Tilastot
 *(Rakennustilastot alueittain)*
 
 **Tarkoitus:** Aluejaon mukaan lasketut tilastotiedot rakennuksista. Taso kokoaa rakennusten pinta-alaerot, tilavuuserot ja kiinteistöverot alueittain vertailua varten. Tason tarkoitus on antaa parempi ymmärrys alueellisista eroista. Tasolle on määritelty neljä karttatyyliä: 1. Kiinteistövero – keskiarvo, 2. Kiinteistövero – summa, 3. Pinta-alaero – keskiarvo ja 4. Tilavuusero – keskiarvo. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
@@ -774,7 +774,7 @@ Tälle tasolle käytetään **samoja karttatyylejä kuin kiinteistötasolle (tas
 
 Rakennustilastoille on määritelty **4 karttatyyliä**, jotka kaikki käyttävät **Turbo-värirampia** (violetista → sininen → vihreä → keltainen → oranssi → punainen).
 
-**Tyyli 1: Kiinteistövero – keskiarvo (€/rakennus)**
+##### Tyyli 1: Kiinteistövero – keskiarvo (€/rakennus)
 Näyttää alueen rakennusten **keskimääräisen kiinteistöveron**. Violetti tarkoittaa matalaa keskimääräistä kiinteistöveroa ja punainen korkeaa.
 
 Tyylin avulla voidaan vertailla kiintiestöveron kesskimääräistä jakautumista eri alueiden välillä. Korkea keskim. vero ei välttämättä tarkoita kalliita rakennuksia — se voi myös kertoa, että alueella on muutama hyvin korkean veron rakennus, jotka nostavat keskiarvoa.
@@ -793,7 +793,7 @@ Alla tyylin luokitusrajat ja värit:
 
 > **Tulkinta:** Violetti tarkoittaa alueen rakennusten matalinta keskimääräistä kiinteistöveroa ja punainen korkeinta. Tyyli näyttää, millä alueilla rakennusten verotaso on korkeimillaan.
 
-**Tyyli 2: Kiinteistövero – summa (€/alue)**
+##### Tyyli 2: Kiinteistövero – summa (€/alue)
 Näyttää alueen rakennuksista kertyvän **kokonaisverotuoton**. Violetti tarkoittaa matalaa summaveroa ja punainen korkeaa.
 
 Tyylin avulla voidaan tunnistaa verotuoton kannalta tärkeimmät alueet. Suuri summa voi tarkoittaa paljon rakennuksia, muutamaa hyvin arvokasta rakennusta tai näitä molempia.
@@ -810,7 +810,7 @@ Alla tyylin luokitusrajat ja värit:
 
 > **Tulkinta:** Violetti tarkoittaa alueen matalinta rakennusverotuottoa yhteensä ja punainen korkeinta. Tyyli näyttää, millä alueilla rakennuksista kertyy eniten kiinteistöveroa kokonaisuutena.
 
-**Tyyli 3: Pinta-alaero – keskiarvo (m²)**
+##### Tyyli 3: Pinta-alaero – keskiarvo (m²)
 Näyttää alueen rakennusten **keskimääräisen pinta-alaeron** (vero − tietokanta). Sininen tarkoittaa, että kunnan rekisterissä on suurempi pinta-ala kuin verotuksessa, ja punainen tarkoittaa päinvastaista. Valkoinen tarkoittaa, että erotus on lähellä nollaa.
 
 Tyylin avulla voidaan tunnistaa alueet, joilla pinta-alatietojen välinen ero on systemaattista. Jos kokonainen alue on tummansininen tai tummanpunainen, se voi viitata laajempaan tietojenkeruuvirheeseen tai alueen erityispiirteeseen.
@@ -831,7 +831,7 @@ Alla tyylin luokitusrajat ja värit:
 
 > **Tulkinta:** Valkoinen tarkoittaa, että alueen rakennusten pinta-alat täsmäävät keskimäärin. Tummat violetit tarkoittavat, että rekisterissä on selvästi enemmän pinta-alaa kuin verotuksessa. Tummat punaiset tarkoittavat, että verotuksessa on selvästi enemmän pinta-alaa kuin rekisterissä.
 
-**Tyyli 4: Tilavuusero – keskiarvo (m³)**
+##### Tyyli 4: Tilavuusero – keskiarvo (m³)
 Näyttää alueen rakennusten **keskimääräisen tilavuuseron** (vero − tietokanta). Sininen tarkoittaa, että kunnan rekisterissä on suurempi tilavuus kuin verotuksessa, ja punainen päinvastaista. Vihreä/valkoinen tarkoittaa, että erotus on pieni.
 
 Tyylin avulla voidaan tunnistaa alueet, joilla tilavuustiedoissa on systemaattisia eroja järjestelmien välillä. Tilavuusero voi kertoa esimerkiksi erilaisista mittaustavoista tai puuttuvista kerroksista toisessa järjestelmässä.
@@ -858,7 +858,7 @@ Alla tyylin luokitusrajat ja värit:
 
 ---
 
-#### 12. **Kiinteistöt_Tilastot**
+#### 12. Kiinteistöt_Tilastot
 *(Kiinteistötilastot alueittain)*
 
 **Tarkoitus:** Aluejaon mukaan lasketut yhteenvetotiedot kiinteistöistä. Taso kokoaa kiinteistöjen aluehinnat, kiinteistöverot ja tonttitehokkuudet alueittain vertailua varten. Tason tarkoitus on antaa parempi ymmärrys alueellisista eroista. Tasolle on määritelty neljä karttatyyliä: 1. Aluehinta – keskiarvo, 2. Kiinteistövero – keskiarvo, 3. Kiinteistövero – summa ja 4. Tonttitehokkuus. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
@@ -871,7 +871,7 @@ Alla tyylin luokitusrajat ja värit:
 
 Kiinteistötilastoille on määritelty **4 karttatyyliä**, kaikki käyttävät **Turbo-värirampia** alueiden polygonitäyttönä:
 
-**Tyyli 1: Aluehinta – keskiarvo (€/m²)**
+##### Tyyli 1: Aluehinta – keskiarvo (€/m²)
 Näyttää alueen **keskimääräisen tonttimaan aluehinnan**. Violetti tarkoittaa matalinta aluehintaa ja tummanpunainen korkeinta.
 
 Tyylin avulla voidaan vertailla maan arvon jakautumista eri alueiden välillä. Korkea arvo tarkoittaa, että alueen kiinteistöjen maa on arvokkaampaa.
@@ -892,7 +892,7 @@ Alla tyylin luokitusrajat ja värit:
 
 > **Tulkinta:** Tummanvioletit alueet tarkoittavat matalinta aluehintaa ja tummanpunaiset korkeinta. Tyyli näyttää maan arvon jakautumisen alueittain – kalleimmat alueet erottuvat punaisina ja halvimmat violetin sävyissä.
 
-**Tyyli 2: Kiinteistövero – keskiarvo (€/kiinteistö)**
+##### Tyyli 2: Kiinteistövero – keskiarvo (€/kiinteistö)
 Näyttää alueen kiinteistöjen **keskimääräisen kiinteistöveron**. Violetti tarkoittaa matalaa keskim. veroa ja punainen korkeaa.
 
 Tyylin avulla voidaan vertailla, millä alueilla kiinteistöt maksavat eniten veroa keskim. Korkea arvo voi kertoa kalliista maa-alueista tai korkeammasta veroprosentista kyseisellä alueella.
@@ -909,7 +909,7 @@ Alla tyylin luokitusrajat ja värit:
 
 > **Tulkinta:** Violetti tarkoittaa alueen kiinteistöjen matalinta keskimääräistä veroa ja punainen korkeinta. Tyyli näyttää, millä alueilla kiinteistöt maksavat eniten veroa keskimäärin.
 
-**Tyyli 3: Kiinteistövero – summa (€/alue)**
+##### Tyyli 3: Kiinteistövero – summa (€/alue)
 Näyttää alueen kiinteistöistä kertyvän **kokonaisverotuoton**. Violetti tarkoittaa matalaa summaveroa ja punainen korkeaa.
 
 Tyylin avulla voidaan tunnistaa verotuoton kannalta tärkeimmät alueet kiinteistöverotuksen näkökulmasta. Suuri summa voi kertoa paljon kiinteistöjä, arvokkaita maa-alueita tai näitä molempia.
@@ -926,7 +926,7 @@ Alla tyylin luokitusrajat ja värit:
 
 > **Tulkinta:** Violetti tarkoittaa alueen matalinta kiinteistöverotuottoa yhteensä ja punainen korkeinta. Tyyli näyttää, millä alueilla kiinteistöistä kertyy eniten veroa kokonaisuutena.
 
-**Tyyli 4: Tonttitehokkuus (keskiarvo)**
+##### Tyyli 4: Tonttitehokkuus (keskiarvo)
 Näyttää alueen **keskimääräisen tonttitehokkuuden**. Violetti tarkoittaa matalaa tehokkuutta ja punainen korkeaa.
 
 Tonttitehokkuus kertoo, kuinka paljon maalle on rakennettu suhteessa tontin kokoon. Matala arvo tarkoittaa väljää rakentamista, korkea arvo tiivistä kaupunkimaista rakentamista.
@@ -959,7 +959,7 @@ Alla tyylin luokitusrajat, tehokkuusarvot ja tyypilliset alueet:
 
 GeoPackage-tasojen lisäksi tuotetaan kaksi Excel-tiedostoa niille tietueille, joita ei saatu yhdistettyä ja jotka vaativat manuaalista selvitystä. Nämä ovat niin sanottuja "viimeisen keinon" tapauksia, joissa automaattinen spatiaalinen ja attribuuttipohjainen yhdistys epäonnistui. Tyypillisesti ne viittaavat datan laatuongelmiin, jotka edellyttävät asiantuntijan harkintaa.
 
-### **TaxBuildings_not_Combined_[date].xlsx**
+### TaxBuildings_not_Combined_[date].xlsx
 
 **Tarkoitus:** Verotuksen rakennustietueet, joita ei voitu linkittää mihinkään geometriaan. Rakennukset esiintyvät veroaineistossa, mutta järjestelmä ei pysty määrittämään niiden sijaintia tai oikeaa kohdetta. Kyseessä on kriittinen ongelma, joka vaatii manuaalista yhdistämistä tai tietojen korjaamista.
 
@@ -989,7 +989,7 @@ GeoPackage-tasojen lisäksi tuotetaan kaksi Excel-tiedostoa niille tietueille, j
 
 ---
 
-### **Property_Not_Combined_[date].xlsx**
+### Property_Not_Combined_[date].xlsx
 
 **Tarkoitus:** Verotuksen kiinteistötietueet, joita ei voitu linkittää mihinkään palstageometriaan. Kiinteistöt esiintyvät veroaineistossa, mutta järjestelmä ei pysty yhdistämään niitä paikkatietopohjaiseen kiinteistörekisteriin. Kyseessä on kriittinen ongelma, joka vaatii manuaalista selvitystä tai tietojen korjaamista.
 
