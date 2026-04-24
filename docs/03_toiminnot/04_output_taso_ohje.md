@@ -19,7 +19,7 @@ Jokaiselle tasolle on määritelty valmiit **QML-karttatyylit**, jotka ladataan 
 *(Yhdistetyt rakennukset: vero + tietokanta)*
 
 **Tarkoitus:** Tästä tasosta löytyy, rakennukset, jotka löytyvät sekä kunnan tietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain, joten pinta-aloja, tilavuuksia, valmistumisvuosia, omistajatietoja ja kiinteistöveroja voi vertailla suoraan. Automaattisesti lasketut erotuskentät (`Pinta-ala ero (vero - tietokanta)`, `Tilavuus ero (vero - tietokanta)`) osoittavat numeraalisesti, kuinka paljon tietokannan ja verotuksen pinta-ala- ja tilavuusarvot poikkeavat toisistaan rakennuskohtaisesti.
-Tasolle löytyy lisäksi kolme erillaista kuvastyyliä. 1. Pinta-alaero (Area_difference), 2. Kiinteistövero (euroina) ja 3. Verotusarvo (euroina). Näitä voi käyttää visualisoidakseen kartalle miten tiedot sjioittuvat ja tehdä karttapohjista tutkimusta tiedoista. Alla selitys tason tyyleistä, mitä ne esittävät ja millä tavalla. 
+Tasolle löytyy lisäksi kolme erillaista kuvastyyliä. 1. Pinta-ala ero (vero - tietokanta), 2. Kiinteistövero (euroina) ja 3. Verotusarvo (euroina). Näitä voi käyttää visualisoidakseen kartalle miten tiedot sjioittuvat ja tehdä karttapohjista tutkimusta tiedoista. Alla selitys tason tyyleistä, mitä ne esittävät ja millä tavalla. 
 
 <!-- PLACEHOLDER: Kuvakaappaus kartalta, jossa näkyy Rakennukset_Yhdistetty-taso pinta-alaerojen värityksellä (punainen-keltainen-sininen) -->
 
@@ -27,75 +27,105 @@ Tasolle löytyy lisäksi kolme erillaista kuvastyyliä. 1. Pinta-alaero (Area_di
 
 **🎨 Käytettävissä olevat karttatyylit**
 
-Tälle tasolle on määritelty **3 erilaista karttatyyliä**, jotka korostavat eri tietoja:
+Tälle tasolle on määritelty **3 erilaista karttatyyliä**, jotka korostavat eri tietoja. Kaikissa tyyleissä rakennukset esitetään **rakennuksen käyttötarkoitusta kuvaavilla SVG-ikoneilla** — ikonin muoto kertoo heti, minkä tyyppinen rakennus on kyseessä, ilman erillisen attribuutin avaamista. Luokitus perustuu VRK:n viralliseen rakennustyyppiluokitukseen.
 
-**Tyyli 1: Pinta-alaero (Area_difference)**
-Tyyli esittää kunnan rakennustietokannan ja Verohallinnon pinta-alatietojen välisen eron timanttisymboleilla. Väriskaala etenee **punaisesta keltaisen kautta siniseen** (ns. Hot–Cold), jolloin poikkeamat erottuvat visuaalisesti selkeästi.
+**Rakennustyyppien ikonit (käytetään kaikissa kolmessa tyylissä):**
+
+| Ikoni | Rakennustyyppi |
+|-------|----------------|
+| ![Omakotitalo](/map_icons/omakotitalot.svg) | Omakotitalot |
+| ![Paritalo](/map_icons/paritalot.svg) | Paritalot |
+| ![Rivitalo](/map_icons/rivitalo.svg) | Rivitalot |
+| ![Asuinrakennus](/map_icons/asuinrakennukset.svg) | Kerros- ja muut asuinrakennukset |
+| ![Vapaa-ajan rakennus](/map_icons/vapaa_ajan_asuinrakennukset.svg) | Vapaa-ajan asuinrakennukset |
+| ![Liikerakennus](/map_icons/liikerakennukset.svg) | Liike- ja majoitusrakennukset |
+| ![Toimistorakennus](/map_icons/toimistorakennukset.svg) | Toimistorakennukset |
+| ![Liikenteen rakennus](/map_icons/liikenteen_rakennukset.svg) | Liikenteen rakennukset |
+| ![Hoitoalan rakennus](/map_icons/hoitoalan_rakennukset.svg) | Hoitoalan rakennukset |
+| ![Kulttuurirakennus](/map_icons/kulttuurirakennukset.svg) | Kulttuuri- ja kokoontumisrakennukset |
+| ![Uskonnollinen rakennus](/map_icons/uskonnollisten_rakennukset.svg) | Uskonnolliset rakennukset |
+| ![Opetusrakennus](/map_icons/opetusrakennukset.svg) | Opetusrakennukset |
+| ![Teollisuusrakennus](/map_icons/teollisuuden_rakennukset.svg) | Teollisuusrakennukset |
+| ![Energiahuoltorakennus](/map_icons/energiahuoltorakennukset.svg) | Energiahuollon rakennukset |
+| ![Vesihuoltorakennus](/map_icons/vesihuollon_rakennukset.svg) | Vesihuollon rakennukset |
+| ![Jätehuoltorakennus](/map_icons/jätehuollon_rakennukset.svg) | Jätehuollon rakennukset |
+| ![Varastorakennus](/map_icons/varastorakennukset.svg) | Varastorakennukset |
+| ![Pelastustoimen rakennus](/map_icons/pelastustoimen_rakennukset.svg) | Pelastustoimen rakennukset |
+| ![Maatalousrakennus](/map_icons/maatalousrakennukset.svg) | Maatalousrakennukset |
+| ![Saunarakennus](/map_icons/saunarakennukset.svg) | Saunarakennukset |
+| ![Talousrakennus](/map_icons/talousrakennukset.svg) | Talousrakennukset |
+
+---
+
+**Tyyli 1: Pinta-ala ero (vero - tietokanta)**
+Tyyli esittää kunnan rakennustietokannan ja Verohallinnon pinta-alatietojen välisen eron rakennustyyppikohtaisilla SVG-ikoneilla. **Ikonin koko** kertoo pinta-ala-eron suuruuden – mitä suurempi ikoni, sitä suurempi ero. Ikonin muoto kertoo rakennuksen tyypin.
 
 Tyylin avulla voidaan tunnistaa rakennusten pinta-alaerot ja tarvittaessa tarkistaa sekä korjata tiedot rakennusrekisterin mukaisiksi, mikäli verotiedoissa esiintyy virheitä. Koska rakennuksen pinta-ala vaikuttaa suoraan verotukseen, tietojen oikeellisuus on tärkeää, jotta kunta ei menetä verotuloja.
 
 Tyyli on kuitenkin riippuvainen kunnan rakennustietokannan oikeellisuudesta. Mikäli rekisterin tiedot eivät ole ajan tasalla tai paikkansapitäviä, tulkinnassa on noudatettava erityistä huolellisuutta. Toisaalta samaa visualisointia voidaan hyödyntää myös oman rekisterin laadun parantamiseen, sillä se korostaa selkeitä pinta-alaeroja rakennusten välillä.
 
-Alla tyylin väriskaala ja miten värit jakautuvat arvoväleihin:
+**Ikonin koko kertoo pinta-ala-eron (vero − tietokanta):**
 
-| Luokka | Arvoväli (m²) | Väri |
-|--------|--------------|------|
-| Suuri negatiivinen ero | < −18 000 | 🔴 Punainen |
-| Keskisuuri negatiivinen | −18 000 – −500 | 🟠 Oranssinpunainen |
-| Pieni negatiivinen | −500 – −25 | 🟡 Oranssi |
-| Lähes nolla (neg.) | −25 – −1 | 🟡 Vaaleankeltainen |
-| Lähes nolla (pos.) | −1 – 25 | 🔵 Vaaleansininen |
-| Pieni positiivinen | 25 – 500 | 🔵 Keskisininen |
-| Keskisuuri positiivinen | 500 – 18 000 | 🔵 Sininen |
-| Suuri positiivinen ero | > 18 000 | 🔵 Tummansininen |
+| Koko | Ero (m²) | Merkitys |
+|------|----------|----------|
+| **Erittäin suuri** | < −18 000 | Kriittinen: veroaineistossa paljon pienempi kuin rekisterissä |
+| **Suuri** | −18 000 – −500 | Veroaineistossa huomattavasti pienempi |
+| **Keskisuuri** | −500 – −25 | Veroaineistossa selkeästi pienempi |
+| **Normaali** | −25 – −1 | Veroaineistossa hieman pienempi |
+| **Pieni** | −1 – 1 | Pinta-alat täsmäävät (OK) |
+| **Pienempi** | 1 – 25 | Veroaineistossa hieman suurempi |
+| **Pienin** | 25 – 500 | Veroaineistossa huomattavasti suurempi |
+| **Hyvin pieni** | > 500 | Kriittinen: veroaineistossa paljon suurempi kuin rekisterissä |
 
-> **Tulkinta:** 
-Punaiset ja oranssit timantit tarkoittavat, että verotuksen pinta-ala on pienempi kuin kunnan rekisterin – tämä on kriittinen havainto, koska verosaatavaa voi puuttua. 
-Siniset timantit tarkoittavat, että verotuksessa on enemmän pinta-alaa kuin rekisterissä – syy voi olla yliverotus tai virheellinen tieto tietokannassa. 
-Keltainen väri tarkoittaa, että erotus on lähellä nollaa eikä välitöntä toimenpidetarvetta ole.
+**Ikonin muoto** kertoo rakennuksen käyttötarkoituksen — katso *Rakennustyyppien ikonit* yllä.
+
+> **Tulkinta:** Suuret ikonit (negatiivinen ero) tarkoittavat, että verotuksen pinta-ala on pienempi kuin kunnan rekisterin – tämä on kriittinen havainto, koska verosaatavaa voi puuttua.
+Pienet ikonit (positiivinen ero) tarkoittavat, että verotuksessa on enemmän pinta-alaa kuin rekisterissä – syy voi olla yliverotus tai virheellinen tieto tietokannassa.
+Normaalikokoiset ikonit tarkoittavat, että pinta-alat täsmäävät eikä välitöntä toimenpidetarvetta ole.
 
 <!-- PLACEHOLDER: Kuvakaappaus pinta-alaeron karttatyylistä, jossa timanttisymbolit punaisesta siniseen -->
 
 **Tyyli 2: Kiinteistövero (euroina)**
-Esittää rakennuksen kiinteistöveron suuruuden **keltaisena ympyränä**, jonka koko kasvaa veron määrän mukaan. Kaikki ympyrät ovat samankeltaisia — koko on ainoa muuttuva tekijä.
+Esittää rakennuksen kiinteistöveron suuruuden rakennustyyppikohtaisilla SVG-ikoneilla. Ikonin muoto kertoo rakennuksen tyypin (sama kuvajärjestelmä kuin Tyyli 1). **Ikonin koko** kasvaa eksponentiaalisesti kiinteistöveron mukaan — suurempi ikoni tarkoittaa suurempaa vuosittaista kiinteistöveroa.
 
-Tyylin avulla voidaan tunnistaa kartalta nopeasti eniten veroa tuottavat rakennukset. Suuret ympyrät osoittavat kohteet, joihin kannattaa kohdistaa tarkempi tarkistus tai jotka ovat tärkeitä budjettiarviossa.
+Tyylin avulla voidaan tunnistaa kartalta nopeasti eniten veroa tuottavat rakennukset ja verrata niiden sijaintia sekä tyyppiä keskenään. Tyyli korostaa sekä veroa tuottavan kohteen sijaintia että sen rakennustyyppiä.
 
-Luokitus perustuu Jenks-menetelmään (luonnolliset rajat), joten raja-arvot mukautuvat aineiston jakaumaan eivätkä ole kiinteää arvoja.
+**Ikonin muoto** kertoo rakennuksen käyttötarkoituksen — katso *Rakennustyyppien ikonit* yllä.
 
-Alla tyylin luokitusrajat ja symbolien koot:
+**Ikonin koko kertoo kiinteistöveron (eksponentiaalinen asteikko, 12–35 pt):**
 
-| Luokka | Vero (€) | Symboli |
-|--------|----------|--------|
-| Hyvin pieni | 0 – 417 | <font size="1">●</font> |
-| Pieni | 417 – 1 907 | <font size="2">●</font> |
-| Keskisuuri | 4 699 – 13 959 | <font size="3">●</font> |
-| Suuri | 30 407 – 64 394 | <font size="4">●</font> |
-| Erittäin suuri | 90 226 – 191 130 | <font size="5">●</font> |
-| Poikkeuksellinen | > 191 130 | <font size="6">●</font> |
+| Koko | Kiinteistövero (€) | Merkitys |
+|------|-------------------|----------|
+| Pienin (12 pt) | ≈ 0 | Hyvin pieni tai ei veroa |
+| Pienehkö | ≈ 100 – 1 000 | Tavallinen asuin- tai vapaa-ajanrakennus |
+| Keskisuuri | ≈ 1 000 – 5 000 | Suurempi asuinrakennus tai liikerakennus |
+| Suuri | ≈ 5 000 – 15 000 | Teollisuus- tai liikerakennus |
+| Maksimikoko (35 pt) | ≥ 15 000 | Merkittävä verokohde |
 
-> **Tulkinta:** Suuret keltaiset ympyrät osoittavat merkittävät verokohteet – kohdista niihin tarkempi tarkistus.
+> **Tulkinta:** Suuret ikonit osoittavat merkittävät verokohteet – kohdista niihin tarkempi tarkistus. Ikonin muoto paljastaa samalla rakennuksen tyypin, jolloin ei tarvitse erikseen tarkistaa attribuutteja.
 
 <!-- PLACEHOLDER: Kuvakaappaus kiinteistöveron karttatyylistä, jossa erikokoiset keltaiset ympyrät -->
 
 **Tyyli 3: Verotusarvo (euroina)**
-Esittää rakennuksen verotusarvon suuruuden **keltaisena ympyränä**, jonka koko kasvaa arvon mukaan. Kaikki ympyrät ovat samankeltaisia — koko on ainoa muuttuva tekijä.
+Esittää rakennuksen verotusarvon suuruuden **rakennustyyppikohtaisilla SVG-ikoneilla**. Ikonin muoto kertoo rakennuksen käyttötarkoituksen (sama kuvajärjestelmä kuin Tyylit 1 ja 2). **Ikonin koko** kasvaa eksponentiaalisesti verotusarvon mukaan — suurempi ikoni tarkoittaa korkeampaa verotusarvoa.
 
 Tyylin avulla voidaan vertailla rakennusten arvostustasoja kartalla ja tunnistaa kohteet, joiden verotusarvo on poikkeuksellisen korkea. Verotusarvo on kiinteistöveron laskentaperuste, joten se kertoo myös, mitkä rakennukset ovat potentiaalisesti merkittäviä verokohteita.
 
-Huomio: Verotusarvo ei ole sama kuin kiinteistövero — korkea verotusarvo voi silti tuottaa pienen veron, jos veroprosentti on alhainen. Luokitus perustuu Jenks-menetelmään kuten kiinteistövero-tyylissäkin.
+Huomio: Verotusarvo ei ole sama kuin kiinteistövero — korkea verotusarvo voi silti tuottaa pienen veron, jos veroprosentti on alhainen.
 
-Alla tyylin luokitusrajat ja symbolien koot:
+**Ikonin muoto** kertoo rakennuksen käyttötarkoituksen — katso *Rakennustyyppien ikonit* yllä.
 
-| Luokka | Verotusarvo (€) | Symboli |
-|--------|----------------|--------|
-| Pieni arvo | 0 – 49 891 | <font size="1">●</font> |
-| Keskiarvo | 155 875 – 653 548 | <font size="3">●</font> |
-| Korkea arvo | 980 198 – 2 776 980 | <font size="4">●</font> |
-| Erittäin korkea | 3 724 117 – 11 700 917 | <font size="5">●</font> |
-| Poikkeuksellinen | > 11 700 917 | <font size="6">●</font> |
+**Ikonin koko kertoo verotusarvon (eksponentiaalinen asteikko, 12–35 pt):**
 
-> **Tulkinta:** Suuret keltaiset ympyrät osoittavat rakennukset, joiden verotusarvo on korkein. Vertaa kiinteistövero-tyyliin (tyyli 2) — jos suuri ympyrä verotusarvolla on pieni ympyrä verolla, voi veroprosentti olla poikkeuksellisen matala.
+| Koko | Verotusarvo (€) | Merkitys |
+|------|----------------|----------|
+| Pienin (12 pt) | ≈ 0 | Hyvin pieni verotusarvo |
+| Pienehkö | ≈ 10 000 – 100 000 | Tavallinen asuinrakennus |
+| Keskisuuri | ≈ 100 000 – 500 000 | Suurempi rakennus |
+| Suuri | ≈ 500 000 – 2 000 000 | Teollisuus- tai liikerakennus |
+| Maksimikoko (35 pt) | Aineiston suurimmat | Poikkeuksellisen arvokas kohde |
+
+> **Tulkinta:** Suuret ikonit osoittavat rakennukset, joiden verotusarvo on korkein. Vertaa Tyyli 2:een (kiinteistövero) — jos kohteella on suuri ikoni verotusarvotyylillä mutta pieni ikoni verotyylillä, voi veroprosentti olla poikkeuksellisen matala.
 
 <!-- PLACEHOLDER: Kuvakaappaus verotusarvon karttatyylistä -->
 
@@ -224,7 +254,7 @@ Alla tyylin symbolit ja värit:
 | Status-arvo | Merkitys | Symboli | Väri |
 |-------------|----------|---------|------|
 | **0** | ⚠️ Tarkistettava (Check) | Kuusikulmio | 🟠 Oranssi |
-| **"1"** | ✅ OK (käsitelty) | Kuusikulmio | 🟢 Vihreä |
+| **""** (tyhjä) | ✅ OK (käsitelty) | Kuusikulmio | 🟢 Vihreä |
 
 > **Tulkinta:** Oranssit kuusikulmiot ovat vielä käsittelemättä ja vaativat tarkistuksen. Vihreät kuusikulmiot on jo tarkistettu. Status-kenttää muokkaamalla voi seurata selvitystyön etenemistä kartalla reaaliajassa.
 
@@ -273,42 +303,56 @@ Alla tyylin symbolit ja värit:
 
 **🎨 Käytettävissä olevat karttatyylit**
 
-Tälle tasolle on määritelty **2 karttatyyliä**, molemmat käyttävät keltaisia kokoasteikollisia ympyröitä:
+Tälle tasolle on määritelty **2 karttatyyliä**. Molemmat käyttävät **kohteen käyttötarkoitusta kuvaavia SVG-ikoneita**, joiden koko kasvaa veron tai verotusarvon mukaan. Ikonin muoto ja väri kertovat kohteen tyypin Verohallinnon luokituksen mukaan.
+
+**Kohdetyyppien ikonit (käytetään molemmissa tyyleissä):**
+
+| Ikoni | Kohdetyyppi | Väri |
+|-------|-------------|------|
+| ![Maatalousrakennus](/map_icons/maatalousrakennukset.svg) | AGBUILDING – Maatalousrakennukset | 🟠 Oranssi |
+| ![Teollisuusrakennus](/map_icons/teollisuuden_rakennukset.svg) | FORBUILDING – Metsä- ja teollisuusrakennukset | 🟣 Violetti |
+| ![Energiahuoltorakennus](/map_icons/energiahuoltorakennukset.svg) | HYDRO – Vesihuollon rakennukset | 🔴 Tummanpunainen |
+
+---
 
 **Tyyli 1: Kiinteistövero (euroina)**
-Keltaiset ympyrät, joiden koko kasvaa kiinteistöveron mukaan. Luokitus: **Jenks** (luonnolliset rajat).
+Esittää muun kohteen kiinteistöveron kohdetyyppiä kuvaavilla **SVG-ikoneilla**. Ikonin muoto ja väri kertovat kohteen tyypin. **Ikonin koko** kasvaa eksponentiaalisesti kiinteistöveron mukaan — suurempi ikoni tarkoittaa suurempaa vuosittaista kiinteistöveroa.
 
 Tyylin avulla voidaan tunnistaa kartalta nopeasti eniten veroa tuottavat erikoiskohteet ja verrata niitä keskenään sekä muihin alueen rakennuksiin.
 Huomio: Kohteet esitetään kiinteistön keskipisteessä, ei todellisessa sijainnissaan.
 
-Alla tyylin symbolin koot verotusarvojen mukaan (12 luokkaa, 6–25 pt):
+**Kohdetyypin ikoni ja väri:** katso *Kohdetyyppien ikonit* yllä.
 
-| Luokka | Vero (€) | Symboli |
-|--------|----------|--------|
-| Pienin | 0 – 417 | <font size="1">●</font> |
-| Keskitaso | ~5 000 – 14 000 | <font size="3">●</font> |
-| Suuri | ~30 000 – 64 000 | <font size="5">●</font> |
-| Erittäin suuri | > 191 130 | <font size="6">●</font> |
+**Ikonin koko kertoo kiinteistöveron (eksponentiaalinen asteikko, 12–35 pt):**
 
-> **Tulkinta:** Muut kohteet esitetään kiinteistön keskipisteessä (todellista geometriaa ei ole). Suuret ympyrät = merkittävät verokohteet.
+| Koko | Kiinteistövero (€) | Merkitys |
+|------|-------------------|----------|
+| Pienin (12 pt) | ≈ 0 | Hyvin pieni tai ei veroa |
+| Pienehkö | ≈ 100 – 1 000 | Pieni erikoiskohde |
+| Suuri | ≈ 5 000 – 10 000 | Merkittävä erikoiskohde |
+| Maksimikoko (35 pt) | ≥ 15 000 | Suurin verokohde |
+
+> **Tulkinta:** Muut kohteet esitetään kiinteistön keskipisteessä (todellista geometriaa ei ole). Ikonin muoto kertoo välittömästi kohteen tyypin (maatalous, metsä/teollisuus tai vesihuolto). Suuret ikonit osoittavat merkittävimmät verokohteet.
 
 **Tyyli 2: Verotusarvo (euroina)**
-Esittää erikoiskohteen verotusarvon **keltaisena ympyränä**, jonka koko kasvaa verotusarvon mukaan. Tyyli on muuten samanlainen kuin Kiinteistövero-tyyli, mutta perustuu verotusarvoon eikä lopulliseen veron määrään.
+Esittää erikoiskohteen verotusarvon samoilla **kohdetyyppikohtaisilla SVG-ikoneilla** kuin Tyyli 1. Ikonin muoto ja väri kertovat edelleen kohteen käyttötarkoituksen, mutta ikonin koko kasvaa nyt **verotusarvon** mukaan — suurempi ikoni tarkoittaa korkeampaa verotusarvoa.
 
-Tyyliä voi käyttää vertailemaan erikoiskohteiden arvostustasoja tai tarkistamaan, onko kohteen verotusarvo suhteessa muihin alueen kohteisiin. Tyyliä voi käyttää vertailemaan erikoiskohteiden arvostustasoja tai tarkistamaan, onko kohteen verotusarvo suhteessa muihin alueen kohteisiin. Korkea verotusarvo ei aina tarkoita korkeaa veroa, jos veroprosentti on matala.
+Tyyliä voi käyttää vertailemaan erikoiskohteiden arvostustasoja tai tarkistamaan, onko kohteen verotusarvo suhteessa muihin alueen kohteisiin. Korkea verotusarvo ei aina tarkoita korkeaa veroa, jos veroprosentti on matala.
 
 Huomio: Kohteet esitetään kiinteistön keskipisteessä, ei todellisessa sijainnissaan.
 
-Alla tyylin symbolin koot verotusarvojen mukaan (12 luokkaa, 6–25 pt):
+**Kohdetyypin ikoni ja väri:** katso *Kohdetyyppien ikonit* yllä.
 
-| Luokka | Verotusarvo | Symboli |
-|--------|------------|--------|
-| Pienin | Alueen pienimmät | <font size="1">●</font> |
-| Kasvava | → | <font size="3">●</font> |
-| Suuri | → | <font size="5">●</font> |
-| Suurin | Alueen suurimmat | <font size="6">●</font> |
+**Ikonin koko kertoo verotusarvon (eksponentiaalinen asteikko, 12–35 pt):**
 
-> **Tulkinta:** Muut kohteet esitetään kiinteistön keskipisteessä (todellista geometriaa ei ole). Suuret ympyrät = merkittävät verokohteet.
+| Koko | Verotusarvo (€) | Merkitys |
+|------|----------------|----------|
+| Pienin (12 pt) | ≈ 0 | Hyvin pieni verotusarvo |
+| Pienehkö | ≈ 50 000 – 200 000 | Pieni erikoiskohde |
+| Suuri | ≈ 500 000 – 2 000 000 | Merkittävä erikoiskohde |
+| Maksimikoko (35 pt) | Aineiston suurimmat | Suurin verotusarvo |
+
+> **Tulkinta:** Muut kohteet esitetään kiinteistön keskipisteessä (todellista geometriaa ei ole). Vertaa Tyyli 1:een (kiinteistövero) — jos kohteella on suuri ikoni verotusarvotyylillä mutta pieni ikoni verotyylillä, voi veroprosentti olla poikkeuksellisen matala.
 
 <!-- PLACEHOLDER: Kuvakaappaus verotusarvon karttatyylistä muiden kohteiden osalta -->
 
