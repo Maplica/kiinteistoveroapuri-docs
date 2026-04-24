@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="100" viewBox="0 0 260 100">
+  <rect width="260" height="100" fill="white" stroke="#cccccc" stroke-width="1" rx="4"/>
+  <text x="130" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Aluehinta (kategorinen)</text>
+  <text x="130" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">71 ainutlaatuista aluehinta-arvoa – HSV-väritys</text>
+  <!-- HSV rainbow spectrum bar -->
+  <defs>
+    <linearGradient id="hsv" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"    stop-color="#ff0000"/>
+      <stop offset="14.3%" stop-color="#ff9900"/>
+      <stop offset="28.6%" stop-color="#ffff00"/>
+      <stop offset="42.9%" stop-color="#00ff00"/>
+      <stop offset="57.1%" stop-color="#00ffff"/>
+      <stop offset="71.4%" stop-color="#0000ff"/>
+      <stop offset="85.7%" stop-color="#9900ff"/>
+      <stop offset="100%"  stop-color="#ff0099"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="44" width="240" height="28" fill="url(#hsv)" stroke="#999" stroke-width="0.5" rx="2"/>
+  <text x="10"  y="86" font-family="Arial, sans-serif" font-size="9" fill="#555">Alhaisin €-arvo</text>
+  <text x="130" y="86" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">Satunnaisväri per aluehinta-luokka</text>
+  <text x="250" y="86" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="end">Korkein €-arvo</text>
+</svg>

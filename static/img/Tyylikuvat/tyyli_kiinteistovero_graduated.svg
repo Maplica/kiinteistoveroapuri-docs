@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="300" viewBox="0 0 260 300">
+  <rect width="260" height="300" fill="white" stroke="#cccccc" stroke-width="1" rx="4"/>
+  <text x="130" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Kiinteistöt – Kiinteistövero</text>
+  <text x="130" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Polygoni – 11 luokkaa, sinisestä punaiseen</text>
+  <!-- 11 color classes from blue to red -->
+  <!-- Class 0: 0-60 €, dark blue #2c29e2 -->
+  <rect x="10" y="40" width="22" height="18" fill="#2c29e2" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="53" font-family="Arial, sans-serif" font-size="10" fill="#333">0 – 60 €</text>
+  <!-- Class 1: 60-90 €, #3a78e5 -->
+  <rect x="10" y="62" width="22" height="18" fill="#3a78e5" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="75" font-family="Arial, sans-serif" font-size="10" fill="#333">60 – 90 €</text>
+  <!-- Class 2: 90-150 € interpolated #4aaee0 -->
+  <rect x="10" y="84" width="22" height="18" fill="#4aaee0" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="97" font-family="Arial, sans-serif" font-size="10" fill="#333">90 – 150 €</text>
+  <!-- Class 3: 150-300 € #36ccd0 -->
+  <rect x="10" y="106" width="22" height="18" fill="#36ccd0" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="119" font-family="Arial, sans-serif" font-size="10" fill="#333">150 – 300 €</text>
+  <!-- Class 4: 300-700 € #40d080 -->
+  <rect x="10" y="128" width="22" height="18" fill="#40d080" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="141" font-family="Arial, sans-serif" font-size="10" fill="#333">300 – 700 €</text>
+  <!-- Class 5: 700-1700 € #a0e030 -->
+  <rect x="10" y="150" width="22" height="18" fill="#a0e030" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="163" font-family="Arial, sans-serif" font-size="10" fill="#333">700 – 1 700 €</text>
+  <!-- Class 6: 1700-4300 € #e0c020 -->
+  <rect x="10" y="172" width="22" height="18" fill="#e0c020" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="185" font-family="Arial, sans-serif" font-size="10" fill="#333">1 700 – 4 300 €</text>
+  <!-- Class 7: 4300-11000 € #f07820 -->
+  <rect x="10" y="194" width="22" height="18" fill="#f07820" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="207" font-family="Arial, sans-serif" font-size="10" fill="#333">4 300 – 11 000 €</text>
+  <!-- Class 8: 11000-25000 € #e83010 -->
+  <rect x="10" y="216" width="22" height="18" fill="#e83010" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="229" font-family="Arial, sans-serif" font-size="10" fill="#333">11 000 – 25 000 €</text>
+  <!-- Class 9: 25000-70000 € #c01005 -->
+  <rect x="10" y="238" width="22" height="18" fill="#c01005" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="251" font-family="Arial, sans-serif" font-size="10" fill="#333">25 000 – 70 000 €</text>
+  <!-- Class 10: 70000+ € #b70200 -->
+  <rect x="10" y="260" width="22" height="18" fill="#b70200" stroke="#555" stroke-width="0.5" rx="1"/>
+  <text x="38" y="273" font-family="Arial, sans-serif" font-size="10" fill="#333">70 000 € +</text>
+  <!-- gradient bar on the right -->
+  <defs>
+    <linearGradient id="blueRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c29e2"/>
+      <stop offset="25%" stop-color="#4aaee0"/>
+      <stop offset="50%" stop-color="#40d080"/>
+      <stop offset="75%" stop-color="#f07820"/>
+      <stop offset="100%" stop-color="#b70200"/>
+    </linearGradient>
+  </defs>
+  <rect x="210" y="40" width="20" height="238" fill="url(#blueRed)" stroke="#999" stroke-width="0.5" rx="2"/>
+  <text x="218" y="36" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#666">€</text>
+  <text x="234" y="44" font-family="Arial, sans-serif" font-size="9" fill="#666">matala</text>
+  <text x="234" y="283" font-family="Arial, sans-serif" font-size="9" fill="#666">korkea</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="95" viewBox="0 0 260 95">
+  <rect width="260" height="95" fill="white" stroke="#cccccc" stroke-width="1" rx="4"/>
+  <text x="130" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Veroaineiston rakennusosat – karttatyyli</text>
+  <text x="130" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Punainen kolmio – puuttuva rakennusosa</text>
+  <!-- Triangle pointing up, cx=40 cy=68 -->
+  <!-- Equilateral: top (40,44) lower-left (22,80) lower-right (58,80) -->
+  <polygon points="40,44 58,80 22,80" fill="#db1e2a" stroke="#801119" stroke-width="1.5"/>
+  <text x="76" y="60" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">Puuttuva rakennusosa</text>
+  <text x="76" y="74" font-family="Arial, sans-serif" font-size="10" fill="#555">(verotuksessa, ei rekisterissä)</text>
+  <text x="76" y="87" font-family="Arial, sans-serif" font-size="10" fill="#888">Rakennuksen sijainnissa</text>
+</svg>

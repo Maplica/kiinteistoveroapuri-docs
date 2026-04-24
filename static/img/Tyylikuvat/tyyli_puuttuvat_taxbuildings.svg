@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="110" viewBox="0 0 260 110">
+  <rect width="260" height="110" fill="white" stroke="#cccccc" stroke-width="1" rx="4"/>
+  <text x="130" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Veroaineiston rakennukset – karttatyyli</text>
+  <text x="130" y="32" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Bullseye-ympyrä – kirkkaan vihreä</text>
+  <!-- Large bullseye symbol centered -->
+  <!-- Outer circle -->
+  <circle cx="80" cy="72" r="22" fill="#16ff00" stroke="#000000" stroke-width="1.5"/>
+  <!-- Inner dot -->
+  <circle cx="80" cy="72" r="6" fill="#16ff00" stroke="#000000" stroke-width="1.2"/>
+  <!-- Label -->
+  <text x="115" y="66" font-family="Arial, sans-serif" font-size="11" fill="#333">Puuttuva rakennus</text>
+  <text x="115" y="82" font-family="Arial, sans-serif" font-size="10" fill="#666">(verotuksessa, ei rekisterissä)</text>
+  <text x="115" y="97" font-family="Arial, sans-serif" font-size="10" fill="#555">Kiinteistön keskipiste</text>
+</svg>

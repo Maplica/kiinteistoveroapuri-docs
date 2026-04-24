@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="175" viewBox="0 0 260 175">
+  <rect width="260" height="175" fill="white" stroke="#cccccc" stroke-width="1" rx="4"/>
+  <text x="130" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Rakennusosat_Yhdistetty – karttatyyli</text>
+  <text x="130" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Timanttisymboli – rakennusosan numero</text>
+  <!-- Diamond macro: cx cy r → points="cx,cy-r  cx+r,cy  cx,cy+r  cx-r,cy" -->
+  <!-- Part 1: white, blue outline, cx=22 cy=52 r=14 -->
+  <polygon points="22,38 36,52 22,66 8,52" fill="#ffffff" stroke="#325780" stroke-width="1.5"/>
+  <text x="46" y="49" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">Osa 1</text>
+  <text x="46" y="62" font-family="Arial, sans-serif" font-size="10" fill="#555">Valkoinen – päärakennusosa</text>
+  <!-- Part 2: teal green -->
+  <polygon points="22,78 36,92 22,106 8,92" fill="#5ed099" stroke="#325780" stroke-width="1"/>
+  <text x="46" y="89" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">Osa 2</text>
+  <text x="46" y="102" font-family="Arial, sans-serif" font-size="10" fill="#555">Teal-vihreä</text>
+  <!-- Part 3: blue -->
+  <polygon points="22,118 36,132 22,146 8,132" fill="#5090f0" stroke="#325780" stroke-width="1"/>
+  <text x="46" y="129" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">Osa 3</text>
+  <text x="46" y="142" font-family="Arial, sans-serif" font-size="10" fill="#555">Sininen</text>
+  <!-- Part 4: cyan -->
+  <polygon points="22,158 36,168 22,175 8,168" fill="#87e3e8" stroke="#325780" stroke-width="1"/>
+  <text x="46" y="162" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">Osa 4</text>
+  <text x="46" y="172" font-family="Arial, sans-serif" font-size="10" fill="#555">Syaani</text>
+  <!-- NULL: orange-brown -->
+  <polygon points="160,118 174,132 160,146 146,132" fill="#db7d4d" stroke="#325780" stroke-width="1"/>
+  <text x="184" y="129" font-family="Arial, sans-serif" font-size="11" fill="#333" font-weight="bold">NULL</text>
+  <text x="184" y="142" font-family="Arial, sans-serif" font-size="10" fill="#555">Oranssi–ruskea</text>
+  <!-- "more" note -->
+  <text x="148" y="60" font-family="Arial, sans-serif" font-size="9" fill="#888">Osat 5–10:</text>
+  <text x="148" y="73" font-family="Arial, sans-serif" font-size="9" fill="#888">muita sävyjä</text>
+</svg>

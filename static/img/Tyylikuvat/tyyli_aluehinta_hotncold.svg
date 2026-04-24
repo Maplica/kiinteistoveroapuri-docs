@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="100" viewBox="0 0 260 100">
+  <rect width="260" height="100" fill="white" stroke="#cccccc" stroke-width="1" rx="4"/>
+  <text x="130" y="18" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#333">Aluehinta (HotnCold)</text>
+  <text x="130" y="31" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666">Turbo-värirampi – 20 luokkaa</text>
+  <!-- Turbo gradient bar -->
+  <defs>
+    <linearGradient id="turbo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#30123b"/>
+      <stop offset="12%"  stop-color="#3e3994"/>
+      <stop offset="25%"  stop-color="#466be3"/>
+      <stop offset="37%"  stop-color="#28bceb"/>
+      <stop offset="50%"  stop-color="#1be5b5"/>
+      <stop offset="60%"  stop-color="#a4fc3c"/>
+      <stop offset="70%"  stop-color="#b6f735"/>
+      <stop offset="80%"  stop-color="#fbb938"/>
+      <stop offset="90%"  stop-color="#e3440a"/>
+      <stop offset="100%" stop-color="#7a0403"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="44" width="240" height="28" fill="url(#turbo)" stroke="#999" stroke-width="0.5" rx="2"/>
+  <text x="10"  y="86" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="start">Matalin hinta</text>
+  <text x="130" y="86" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">→ €/m² →</text>
+  <text x="250" y="86" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="end">Korkein hinta</text>
+</svg>
