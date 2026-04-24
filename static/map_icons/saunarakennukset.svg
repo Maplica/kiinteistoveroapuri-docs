@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -16 168 168"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg69"
+   sodipodi:docname="saunarakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview69"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.415625"
+     inkscape:cx="73.272962"
+     inkscape:cy="93.764554"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg69" />
+  <!-- Saunarakennukset - Sauna buildings (Enhanced) -->
+  <defs
+     id="defs10">
+    <linearGradient
+       id="snWall"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#A0724E"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#8B5E3C"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="snSide"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#7D5233"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#6E4A2C"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="snRoof"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#6E3B00"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#5B3A1A"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="snGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#FDEBD0"
+         id="stop7" />
+      <stop
+         offset="30%"
+         stop-color="#F5CBA7"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#EDBB99"
+         id="stop9" />
+    </linearGradient>
+    <pattern
+       id="snLog"
+       width="120"
+       height="10"
+       patternUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="120"
+         height="10"
+         fill="none"
+         id="rect9" />
+      <line
+         x1="0"
+         y1="5"
+         x2="120"
+         y2="5"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.5"
+         id="line9" />
+      <line
+         x1="0"
+         y1="9"
+         x2="120"
+         y2="9"
+         stroke="rgba(0,0,0,0.08)"
+         stroke-width="0.3"
+         id="line10" />
+    </pattern>
+    <filter
+       id="snShad"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2"
+         flood-color="#1B3A5C"
+         flood-opacity="0.18" />
+    </filter>
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="65"
+     cy="130"
+     rx="60"
+     ry="4"
+     fill="#1B3A5C"
+     opacity="0.1"
+     id="ellipse10" />
+  <!-- 3D side wall -->
+  <path
+     id="polygon10"
+     style="fill:url(#snSide)"
+     d="m 115,50 12,-7 -0.20699,75.89263 L 115,128 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Round log ends on side -->
+  <circle
+     cx="117"
+     cy="60"
+     r="2.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="circle11" />
+  <circle
+     cx="117"
+     cy="60"
+     r="1"
+     fill="#6E4A2C"
+     id="circle12" />
+  <circle
+     cx="117"
+     cy="70"
+     r="2.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="circle13" />
+  <circle
+     cx="117"
+     cy="70"
+     r="1"
+     fill="#6E4A2C"
+     id="circle14" />
+  <circle
+     cx="117"
+     cy="80"
+     r="2.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="circle15" />
+  <circle
+     cx="117"
+     cy="80"
+     r="1"
+     fill="#6E4A2C"
+     id="circle16" />
+  <circle
+     cx="117"
+     cy="90"
+     r="2.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="circle17" />
+  <circle
+     cx="117"
+     cy="90"
+     r="1"
+     fill="#6E4A2C"
+     id="circle18" />
+  <circle
+     cx="117"
+     cy="100"
+     r="2.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="circle19" />
+  <circle
+     cx="117"
+     cy="100"
+     r="1"
+     fill="#6E4A2C"
+     id="circle20" />
+  <!-- Main sauna building -->
+  <g
+     filter="url(#snShad)"
+     id="g20">
+    <rect
+       x="10"
+       y="50"
+       width="105"
+       height="78"
+       rx="0"
+       fill="url(#snWall)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect20" />
+  </g>
+  <!-- Horizontal log lines -->
+  <rect
+     x="8.8824749"
+     y="127.86287"
+     width="106.6337"
+     height="4"
+     rx="0.96939725"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.49229"
+     id="rect66" />
+  <path
+     id="rect66-2"
+     transform="matrix(0.79464158,-0.60707888,0,1,0,0)"
+     style="fill:#95a5a6;stroke-width:0.560899"
+     d="m 145.74985,215.71769 13.84434,0.0231 0.0488,3.00766 -13.89318,0.96924 c -0.66778,0.0466 -1.25843,-0.56126 -1.25843,-1.25843 v -1.48314 c 0,-0.69717 0.55536,-1.26822 1.25843,-1.25843 z"
+     sodipodi:nodetypes="sccssss" />
+  <line
+     x1="10"
+     y1="60"
+     x2="115"
+     y2="60"
+     stroke="#7D5233"
+     stroke-width="0.6"
+     id="line21" />
+  <line
+     x1="10"
+     y1="70"
+     x2="115"
+     y2="70"
+     stroke="#7D5233"
+     stroke-width="0.6"
+     id="line22" />
+  <line
+     x1="10"
+     y1="80"
+     x2="115"
+     y2="80"
+     stroke="#7D5233"
+     stroke-width="0.6"
+     id="line23" />
+  <line
+     x1="10"
+     y1="90"
+     x2="115"
+     y2="90"
+     stroke="#7D5233"
+     stroke-width="0.6"
+     id="line24" />
+  <line
+     x1="10"
+     y1="100"
+     x2="115"
+     y2="100"
+     stroke="#7D5233"
+     stroke-width="0.6"
+     id="line25" />
+  <line
+     x1="10"
+     y1="110"
+     x2="115"
+     y2="110"
+     stroke="#7D5233"
+     stroke-width="0.6"
+     id="line26" />
+  <!-- Roof with 3D side -->
+  <polygon
+     points="5,50 62,16 120,50"
+     fill="url(#snRoof)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="param(outline-width) 2"
+     id="polygon26" />
+  <path
+     id="polygon27"
+     style="fill:#4a2800"
+     d="M 120,50 132,43 71.728331,9.4489004 62,16 Z"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     id="polygon27-6"
+     transform="matrix(-1,0,0,1,124.326,0.45407685)"
+     style="fill:#4a2800"
+     d="M 100.95213,36.997413 52.271669,9.0349288 62.206986,15.793014 121.4489,51.034929 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Chimney with brick texture -->
+  <path
+     id="rect27"
+     style="fill:#7b241c;stroke-width:1.2"
+     d="M 91.591202,12.341526 H 105.5912 v 24 L 91.17723,27.648124 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Brick lines on chimney -->
+  <line
+     x1="91.591202"
+     y1="17.341528"
+     x2="105.5912"
+     y2="17.341528"
+     stroke="#641e16"
+     stroke-width="0.4"
+     id="line28" />
+  <line
+     x1="91.591202"
+     y1="22.341528"
+     x2="105.5912"
+     y2="22.341528"
+     stroke="#641e16"
+     stroke-width="0.4"
+     id="line29" />
+  <line
+     x1="91.591202"
+     y1="27.341526"
+     x2="105.5912"
+     y2="27.341526"
+     stroke="#641e16"
+     stroke-width="0.4"
+     id="line30" />
+  <line
+     x1="98.591202"
+     y1="12.341526"
+     x2="98.591202"
+     y2="17.341528"
+     stroke="#641e16"
+     stroke-width="0.3"
+     id="line31" />
+  <line
+     x1="95.591202"
+     y1="17.341528"
+     x2="95.591202"
+     y2="22.341528"
+     stroke="#641e16"
+     stroke-width="0.3"
+     id="line32" />
+  <line
+     x1="101.5912"
+     y1="22.341528"
+     x2="101.5912"
+     y2="27.341526"
+     stroke="#641e16"
+     stroke-width="0.3"
+     id="line33" />
+  <!-- Chimney cap -->
+  <rect
+     x="88.591202"
+     y="10.341526"
+     width="20"
+     height="4"
+     rx="1"
+     fill="#641e16"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect33" />
+  <!-- Enhanced steam from chimney -->
+  <g
+     opacity="0.45"
+     fill="none"
+     stroke="#d5d8dc"
+     stroke-width="2"
+     stroke-linecap="round"
+     id="g35"
+     transform="translate(11.591203,-7.6584733)">
+    <path
+       d="M 87,17 Q 82,7 87,0"
+       id="path33" />
+    <path
+       d="M 90,16 Q 96,4 90,-5"
+       id="path34" />
+    <path
+       d="M 84,14 Q 78,5 83,-4"
+       id="path35" />
+  </g>
+  <!-- Extra steam wisps -->
+  <circle
+     cx="97.591202"
+     cy="-11.658474"
+     r="3"
+     fill="#d5d8dc"
+     opacity="0.2"
+     id="circle35" />
+  <circle
+     cx="92"
+     cy="-8"
+     r="2.5"
+     fill="#D5D8DC"
+     opacity="0.15"
+     id="circle36" />
+  <!-- Door with plank texture -->
+  <rect
+     x="46"
+     y="82"
+     width="22"
+     height="46"
+     rx="1"
+     fill="#6E2C00"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect36" />
+  <!-- Plank lines -->
+  <line
+     x1="52"
+     y1="82"
+     x2="52"
+     y2="128"
+     stroke="rgba(0,0,0,0.1)"
+     stroke-width="0.4"
+     id="line36" />
+  <line
+     x1="58"
+     y1="82"
+     x2="58"
+     y2="128"
+     stroke="rgba(0,0,0,0.1)"
+     stroke-width="0.4"
+     id="line37" />
+  <line
+     x1="64"
+     y1="82"
+     x2="64"
+     y2="128"
+     stroke="rgba(0,0,0,0.1)"
+     stroke-width="0.4"
+     id="line38" />
+  <!-- Door handle (round wooden) -->
+  <circle
+     cx="64"
+     cy="102"
+     r="2.5"
+     fill="#F5B041"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="circle38" />
+  <!-- Door glass pane -->
+  <rect
+     x="50"
+     y="85"
+     width="14"
+     height="10"
+     rx="0.5"
+     fill="url(#snGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect38" />
+  <!-- Small wooden porch/deck in front of door -->
+  <rect
+     x="40"
+     y="126"
+     width="34"
+     height="4"
+     rx="0.5"
+     fill="#8B5E3C"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect39" />
+  <line
+     x1="47"
+     y1="126"
+     x2="47"
+     y2="130"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line39" />
+  <line
+     x1="54"
+     y1="126"
+     x2="54"
+     y2="130"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line40" />
+  <line
+     x1="61"
+     y1="126"
+     x2="61"
+     y2="130"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line41" />
+  <!-- Porch step -->
+  <rect
+     x="38"
+     y="130"
+     width="38"
+     height="3"
+     rx="0.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect41" />
+  <!-- Windows (warm glow with 4-pane mullions) -->
+  <rect
+     x="20"
+     y="60"
+     width="16"
+     height="14"
+     rx="1"
+     fill="url(#snGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect42" />
+  <!-- Sill -->
+  <rect
+     x="19"
+     y="74"
+     width="18"
+     height="2"
+     rx="0.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="rect43" />
+  <!-- Glass reflection -->
+  <line
+     x1="22"
+     y1="62"
+     x2="25"
+     y2="65"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="line44" />
+  <rect
+     x="80"
+     y="60"
+     width="16"
+     height="14"
+     rx="1"
+     fill="url(#snGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect44" />
+  <rect
+     x="79"
+     y="74"
+     width="18"
+     height="2"
+     rx="0.5"
+     fill="#7D5233"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="rect46" />
+  <!-- Thermometer on wall -->
+  <g
+     transform="translate(100,62)"
+     id="g51">
+    <!-- Tube -->
+    <rect
+       x="0"
+       y="0"
+       width="3"
+       height="18"
+       rx="1.5"
+       fill="#FFF"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="rect47" />
+    <!-- Mercury -->
+    <rect
+       x="0.5"
+       y="5"
+       width="2"
+       height="13"
+       rx="1"
+       fill="#E74C3C"
+       id="rect48" />
+    <!-- Bulb -->
+    <circle
+       cx="1.5"
+       cy="18"
+       r="2.5"
+       fill="#E74C3C"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="circle48" />
+    <!-- Scale marks -->
+    <line
+       x1="3"
+       y1="3"
+       x2="5"
+       y2="3"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="line48" />
+    <line
+       x1="3"
+       y1="7"
+       x2="5"
+       y2="7"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="line49" />
+    <line
+       x1="3"
+       y1="11"
+       x2="5"
+       y2="11"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="line50" />
+    <line
+       x1="3"
+       y1="15"
+       x2="5"
+       y2="15"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="line51" />
+  </g>
+  <!-- Warm orange glow from windows (sauna heat effect) -->
+  <circle
+     cx="28"
+     cy="67"
+     r="10"
+     fill="#F39C12"
+     opacity="0.06"
+     id="circle51" />
+  <circle
+     cx="88"
+     cy="67"
+     r="10"
+     fill="#F39C12"
+     opacity="0.06"
+     id="circle52" />
+  <!-- Firewood stack (enhanced with split wood detail) -->
+  <g
+     transform="translate(120.7555,97.690815)"
+     id="g59">
+    <!-- Split log faces -->
+    <circle
+       cx="3"
+       cy="3"
+       fill="#a0522d"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="ellipse52"
+       r="3" />
+    <line
+       x1="1.5"
+       y1="1"
+       x2="4.5"
+       y2="5"
+       stroke="#7d3f00"
+       stroke-width="0.3"
+       id="line52" />
+    <circle
+       cx="9"
+       cy="3"
+       fill="#8b4513"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="ellipse53"
+       r="3" />
+    <circle
+       cx="9"
+       cy="3"
+       r="1"
+       fill="#6e3800"
+       id="circle53" />
+    <circle
+       cx="15"
+       cy="3"
+       fill="#a0522d"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="ellipse54"
+       r="3" />
+    <circle
+       cx="6"
+       cy="-3"
+       fill="#8b4513"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="ellipse55"
+       r="3" />
+    <circle
+       cx="12"
+       cy="-3"
+       fill="#a0522d"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="ellipse56"
+       r="3" />
+    <circle
+       cx="9"
+       cy="-9"
+       fill="#8b4513"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="ellipse57"
+       r="3" />
+    <!-- Stacked log bodies -->
+    <line
+       x1="3"
+       y1="6"
+       x2="3"
+       y2="28"
+       stroke="#a0522d"
+       stroke-width="1.2"
+       id="line57" />
+    <line
+       x1="9"
+       y1="6"
+       x2="9"
+       y2="28"
+       stroke="#8b4513"
+       stroke-width="1.2"
+       id="line58" />
+    <line
+       x1="15"
+       y1="6"
+       x2="15"
+       y2="28"
+       stroke="#a0522d"
+       stroke-width="1.2"
+       id="line59" />
+  </g>
+  <!-- Water bucket (enhanced with ladle) -->
+  <g
+     transform="translate(17,105)"
+     id="g61">
+    <path
+       d="M0,5 L0,20 Q5,24 10,20 L10,5"
+       fill="#5DADE2"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.6"
+       id="path59" />
+    <ellipse
+       cx="5"
+       cy="5"
+       rx="5"
+       ry="2.5"
+       fill="#85C1E9"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.6"
+       id="ellipse59" />
+    <!-- Water shimmer -->
+    <ellipse
+       cx="5"
+       cy="5"
+       rx="2"
+       ry="1"
+       fill="#AED6F1"
+       opacity="0.4"
+       id="ellipse60" />
+    <!-- Bucket bands -->
+    <line
+       x1="0"
+       y1="10"
+       x2="10"
+       y2="10"
+       stroke="#2E86C1"
+       stroke-width="0.6"
+       id="line60" />
+    <line
+       x1="0"
+       y1="16"
+       x2="10"
+       y2="16"
+       stroke="#2E86C1"
+       stroke-width="0.6"
+       id="line61" />
+    <!-- Handle -->
+    <path
+       d="M1,5 Q5,-2 9,5"
+       fill="none"
+       stroke="#2E86C1"
+       stroke-width="0.6"
+       id="path61" />
+  </g>
+  <!-- Birch whisk / vihta (enhanced) -->
+  <g
+     transform="translate(30,100)"
+     id="g66">
+    <line
+       x1="6"
+       y1="24"
+       x2="6"
+       y2="8"
+       stroke="#6E3B00"
+       stroke-width="2"
+       id="line62" />
+    <!-- Binding -->
+    <rect
+       x="4"
+       y="10"
+       width="4"
+       height="3"
+       rx="0.5"
+       fill="#8B5E3C"
+       id="rect62" />
+    <!-- Leaf cluster -->
+    <circle
+       cx="6"
+       cy="4"
+       r="5.5"
+       fill="#27AE60"
+       stroke="#1E8449"
+       stroke-width="0.4"
+       id="circle62" />
+    <circle
+       cx="3"
+       cy="1"
+       r="3.5"
+       fill="#229954"
+       id="circle63" />
+    <circle
+       cx="9"
+       cy="2"
+       r="3.5"
+       fill="#1E8449"
+       id="circle64" />
+    <circle
+       cx="6"
+       cy="-1"
+       r="2.5"
+       fill="#2ECC71"
+       id="circle65" />
+    <!-- Individual leaf shapes -->
+    <ellipse
+       cx="1"
+       cy="5"
+       rx="2"
+       ry="1"
+       fill="#1E8449"
+       transform="rotate(-30,1,5)"
+       id="ellipse65" />
+    <ellipse
+       cx="11"
+       cy="4"
+       rx="2"
+       ry="1"
+       fill="#229954"
+       transform="rotate(30,11,4)"
+       id="ellipse66" />
+  </g>
+  <!-- Foundation -->
+  <!-- Small lake/water element (Finnish sauna by the water) -->
+  <ellipse
+     cx="57.049053"
+     cy="139.65822"
+     rx="45"
+     ry="5"
+     fill="#5dade2"
+     opacity="0.3"
+     id="ellipse67" />
+  <ellipse
+     cx="57.049053"
+     cy="139.65822"
+     rx="35"
+     ry="3"
+     fill="#85c1e9"
+     opacity="0.2"
+     id="ellipse68" />
+  <!-- Water ripples -->
+  <path
+     d="m 27.049055,138.65822 q 10,-2 20,0 10,2 20,0"
+     fill="none"
+     stroke="#aed6f1"
+     stroke-width="0.5"
+     opacity="0.4"
+     id="path68" />
+  <path
+     d="m 37.049055,140.65822 q 10,-2 20,0 10,2 20,0"
+     fill="none"
+     stroke="#aed6f1"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="path69" />
+</svg>

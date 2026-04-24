@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -33 228 228"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg65"
+   sodipodi:docname="teollisuuden_rakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview65"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="6.516731"
+     inkscape:cx="23.784931"
+     inkscape:cy="101.3545"
+     inkscape:window-width="3200"
+     inkscape:window-height="1711"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg65" />
+  <!-- Teollisuuden ja kaivannaistoim. rakennukset - Industrial/mining (Enhanced) -->
+  <defs
+     id="defs12">
+    <linearGradient
+       id="swatch75"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop75" />
+    </linearGradient>
+    <linearGradient
+       id="swatch74"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop74" />
+    </linearGradient>
+    <linearGradient
+       id="swatch69"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop69" />
+    </linearGradient>
+    <linearGradient
+       id="swatch68"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop68" />
+    </linearGradient>
+    <linearGradient
+       id="swatch67"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#787878;stop-opacity:1;"
+         offset="0"
+         id="stop67" />
+    </linearGradient>
+    <linearGradient
+       id="swatch65"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop65" />
+    </linearGradient>
+    <linearGradient
+       id="fWall"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#D5D8DC"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#BDC3C7"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="fSide"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#ABB2B9"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#95A5A6"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="fGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#D6EAF8"
+         id="stop5" />
+      <stop
+         offset="40%"
+         stop-color="#AED6F1"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#85C1E9"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       id="fStack"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#7F8C8D"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#616A6B"
+         id="stop9" />
+    </linearGradient>
+    <pattern
+       id="fCorr"
+       width="5"
+       height="8"
+       patternUnits="userSpaceOnUse">
+      <line
+         x1="0"
+         y1="0"
+         x2="0"
+         y2="8"
+         stroke="rgba(0,0,0,0.04)"
+         stroke-width="1.5"
+         id="line9" />
+      <line
+         x1="2.5"
+         y1="0"
+         x2="2.5"
+         y2="8"
+         stroke="rgba(255,255,255,0.04)"
+         stroke-width="1"
+         id="line10" />
+    </pattern>
+    <pattern
+       id="fBrick"
+       width="8"
+       height="4"
+       patternUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="3.5"
+         height="1.5"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.25"
+         id="rect10" />
+      <rect
+         x="4"
+         y="0"
+         width="3.5"
+         height="1.5"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.25"
+         id="rect11" />
+      <rect
+         x="2"
+         y="2"
+         width="3.5"
+         height="1.5"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.25"
+         id="rect12" />
+    </pattern>
+    <filter
+       id="fShad"
+       x="-0.002"
+       y="-0.0020618557"
+       width="1.004"
+       height="1.0041237">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2"
+         flood-color="#1B3A5C"
+         flood-opacity="0.18" />
+    </filter>
+    <linearGradient
+       id="fGlass-6"
+       x1="38.233955"
+       y1="22.844381"
+       x2="54.401142"
+       y2="50.057789"
+       gradientTransform="scale(0.91287093,1.0954451)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#D6EAF8"
+         id="stop5-3" />
+      <stop
+         offset="0.78968865"
+         stop-color="#AED6F1"
+         id="stop6-7" />
+      <stop
+         offset="100%"
+         stop-color="#85C1E9"
+         id="stop7-8" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient67"
+       x1="113.87071"
+       y1="181.44186"
+       x2="124.55456"
+       y2="181.44186"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient68"
+       x1="8"
+       y1="152"
+       x2="110.0077"
+       y2="152"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.98299701,0,0,1.0004166,1.8712926,-0.06331906)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient69"
+       x1="20"
+       y1="108"
+       x2="50"
+       y2="108"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient70"
+       x1="20"
+       y1="116"
+       x2="50"
+       y2="116"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient71"
+       x1="20"
+       y1="124"
+       x2="50"
+       y2="124"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient72"
+       x1="20"
+       y1="132"
+       x2="50"
+       y2="132"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient73"
+       x1="20"
+       y1="140"
+       x2="50"
+       y2="140"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient74"
+       x1="10"
+       y1="103.5"
+       x2="110"
+       y2="103.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch67"
+       id="linearGradient75"
+       x1="110"
+       y1="100"
+       x2="122"
+       y2="100"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="67.417297"
+     cy="155"
+     rx="57.417301"
+     ry="5"
+     fill="#1b3a5c"
+     opacity="0.1"
+     id="ellipse12"
+     style="stroke-width:0.757742" />
+  <!-- 3D side wall -->
+  <polygon
+     points="110,55 122,48 122,152 110,152"
+     fill="url(#fSide)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="param(outline-width) 2"
+     id="polygon12"
+     style="stroke-width:0.4;stroke-dasharray:none;stroke:url(#linearGradient75);stroke-linejoin:round;paint-order:markers fill stroke" />
+  <!-- Main factory building -->
+  <g
+     filter="url(#fShad)"
+     id="g13"
+     style="stroke:url(#linearGradient74);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:normal">
+    <rect
+       x="10"
+       y="55"
+       width="100"
+       height="97"
+       rx="0"
+       fill="url(#fWall)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect13"
+       style="stroke:url(#linearGradient74);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:normal" />
+  </g>
+  <!-- Sawtooth roof with enhanced skylights -->
+  <polygon
+     points="10,55 35,25 35,55"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="polygon14" />
+  <polygon
+     points="35,55 60,25 60,55"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="polygon15" />
+  <polygon
+     points="60,55 85,25 85,55"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="polygon16" />
+  <polygon
+     points="85,55 110,25 110,55"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="polygon17" />
+  <!-- Glass skylight panels -->
+  <polygon
+     points="35,55 35,25 60,55"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="polygon18" />
+  <path
+     id="polygon18-2"
+     style="fill:url(#fGlass-6);stroke-width:0.6"
+     transform="matrix(0.81336906,-0.46713641,0,0.99638312,81.60375,16.457611)"
+     d="m 34.908285,55.038676 0.02097,-30.062219 14.740307,29.965105 z"
+     sodipodi:nodetypes="cccc" />
+  <polygon
+     points="60,55 60,25 85,55"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="polygon19" />
+  <polygon
+     points="85,55 85,25 110,55"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="polygon20" />
+  <!-- Skylight frame lines -->
+  <!-- Glass reflections -->
+  <line
+     x1="38"
+     y1="40"
+     x2="42"
+     y2="48"
+     stroke="#FFF"
+     stroke-width="0.5"
+     opacity="0.35"
+     id="line23" />
+  <line
+     x1="111.14432"
+     y1="37.344543"
+     x2="115.14432"
+     y2="45.344543"
+     stroke="#ffffff"
+     stroke-width="0.5"
+     opacity="0.35"
+     id="line23-1" />
+  <line
+     x1="63"
+     y1="40"
+     x2="67"
+     y2="48"
+     stroke="#FFF"
+     stroke-width="0.5"
+     opacity="0.35"
+     id="line24" />
+  <line
+     x1="88"
+     y1="40"
+     x2="92"
+     y2="48"
+     stroke="#FFF"
+     stroke-width="0.5"
+     opacity="0.35"
+     id="line25" />
+  <!-- Factory windows with glass gradient -->
+  <rect
+     x="18"
+     y="68"
+     width="18"
+     height="14"
+     rx="1"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect25" />
+  <rect
+     x="44"
+     y="68"
+     width="18"
+     height="14"
+     rx="1"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect26" />
+  <rect
+     x="70"
+     y="68"
+     width="18"
+     height="14"
+     rx="1"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect27" />
+  <rect
+     x="96"
+     y="68"
+     width="10"
+     height="14"
+     rx="1"
+     fill="url(#fGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect28" />
+  <!-- Factory large door (enhanced rolling door) -->
+  <rect
+     x="20"
+     y="100"
+     width="30"
+     height="52"
+     rx="2"
+     fill="#7F8C8D"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect29" />
+  <line
+     x1="20"
+     y1="108"
+     x2="50"
+     y2="108"
+     stroke="rgba(0,0,0,0.15)"
+     stroke-width="0.6"
+     id="line29"
+     style="stroke:url(#linearGradient69);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="20"
+     y1="116"
+     x2="50"
+     y2="116"
+     stroke="rgba(0,0,0,0.15)"
+     stroke-width="0.6"
+     id="line30"
+     style="stroke:url(#linearGradient70);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="20"
+     y1="124"
+     x2="50"
+     y2="124"
+     stroke="rgba(0,0,0,0.15)"
+     stroke-width="0.6"
+     id="line31"
+     style="stroke:url(#linearGradient71);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="20"
+     y1="132"
+     x2="50"
+     y2="132"
+     stroke="rgba(0,0,0,0.15)"
+     stroke-width="0.6"
+     id="line32"
+     style="stroke:url(#linearGradient72);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="20"
+     y1="140"
+     x2="50"
+     y2="140"
+     stroke="rgba(0,0,0,0.15)"
+     stroke-width="0.6"
+     id="line33"
+     style="stroke:url(#linearGradient73);stroke-width:0.3;stroke-dasharray:none" />
+  <!-- Door handle -->
+  <circle
+     cx="46"
+     cy="126"
+     r="1.5"
+     fill="#ABB2B9"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="circle33" />
+  <!-- Smokestack with brick texture -->
+  <rect
+     x="90"
+     y="5"
+     width="14"
+     height="50"
+     fill="url(#fStack)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="rect33" />
+  <rect
+     x="88"
+     y="2"
+     width="18"
+     height="5"
+     rx="1"
+     fill="#6C7A7A"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect35" />
+  <!-- Stack bands -->
+  <line
+     x1="90"
+     y1="20"
+     x2="104"
+     y2="20"
+     stroke="#616A6B"
+     stroke-width="0.8"
+     id="line35" />
+  <line
+     x1="90"
+     y1="35"
+     x2="104"
+     y2="35"
+     stroke="#616A6B"
+     stroke-width="0.8"
+     id="line36" />
+  <!-- Smoke -->
+  <!-- Mining tower/derrick (right - enhanced) -->
+  <!-- Gears symbol (enhanced) -->
+  <g
+     transform="translate(63,96)"
+     id="g62">
+    <circle
+       cx="12"
+       cy="12"
+       r="10"
+       fill="none"
+       stroke="#7F8C8D"
+       stroke-width="2"
+       id="circle50" />
+    <circle
+       cx="12"
+       cy="12"
+       r="4"
+       fill="#7F8C8D"
+       id="circle51" />
+    <line
+       x1="12"
+       y1="0"
+       x2="12"
+       y2="3"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line51" />
+    <line
+       x1="12"
+       y1="21"
+       x2="12"
+       y2="24"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line52" />
+    <line
+       x1="0"
+       y1="12"
+       x2="3"
+       y2="12"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line53" />
+    <line
+       x1="21"
+       y1="12"
+       x2="24"
+       y2="12"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line54" />
+    <line
+       x1="3.5"
+       y1="3.5"
+       x2="5.6"
+       y2="5.6"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line55" />
+    <line
+       x1="18.4"
+       y1="18.4"
+       x2="20.5"
+       y2="20.5"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line56" />
+    <line
+       x1="20.5"
+       y1="3.5"
+       x2="18.4"
+       y2="5.6"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line57" />
+    <line
+       x1="5.6"
+       y1="18.4"
+       x2="3.5"
+       y2="20.5"
+       stroke="#7F8C8D"
+       stroke-width="3"
+       id="line58" />
+    <!-- Second smaller gear -->
+    <circle
+       cx="28"
+       cy="22"
+       r="6"
+       fill="none"
+       stroke="#95A5A6"
+       stroke-width="1.5"
+       id="circle58" />
+    <circle
+       cx="28"
+       cy="22"
+       r="2.5"
+       fill="#95A5A6"
+       id="circle59" />
+    <line
+       x1="28"
+       y1="15"
+       x2="28"
+       y2="17"
+       stroke="#95A5A6"
+       stroke-width="2"
+       id="line59" />
+    <line
+       x1="28"
+       y1="27"
+       x2="28"
+       y2="29"
+       stroke="#95A5A6"
+       stroke-width="2"
+       id="line60" />
+    <line
+       x1="21"
+       y1="22"
+       x2="23"
+       y2="22"
+       stroke="#95A5A6"
+       stroke-width="2"
+       id="line61" />
+    <line
+       x1="33"
+       y1="22"
+       x2="35"
+       y2="22"
+       stroke="#95A5A6"
+       stroke-width="2"
+       id="line62" />
+  </g>
+  <!-- Dirt/sand pile (enhanced with texture) -->
+  <rect
+     x="9.7352686"
+     y="149.99916"
+     width="100.27326"
+     height="4.0016661"
+     rx="0"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.499812"
+     id="rect65"
+     style="stroke:url(#linearGradient68);stroke-width:0.198334;stroke-dasharray:none" />
+  <rect
+     x="113.87071"
+     y="179.44186"
+     width="10.683844"
+     height="4"
+     rx="0.1017509"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.161753"
+     id="rect65-4"
+     transform="matrix(0.96600256,-0.25853252,0,1,0,0)"
+     style="stroke:url(#linearGradient67);stroke-width:0.20348896;stroke-dasharray:none" />
+  <ellipse
+     fill="#d4a36a"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.801175"
+     id="ellipse62"
+     transform="matrix(1,0,-0.07650076,0.99706952,0,0)"
+     ry="4.7915673"
+     rx="22"
+     cy="152.13377"
+     cx="148.25789" />
+  <path
+     id="polygon62"
+     style="fill:#c49a6c"
+     d="m 156.61953,151.68796 h -40 c 0,0 12.99283,-22.47009 24.45008,-19.25328 10.74769,3.01758 15.54992,19.25328 15.54992,19.25328 z"
+     sodipodi:nodetypes="ccsc" />
+  <!-- Texture dots -->
+  <ellipse
+     cx="140.25789"
+     cy="142.1044"
+     fill="#b8860b"
+     opacity="0.4"
+     id="circle62"
+     rx="0.80000001"
+     ry="0.8023513"
+     transform="matrix(1,0,-0.07650076,0.99706952,0,0)"
+     style="stroke-width:1.00147" />
+  <ellipse
+     cx="150.25789"
+     cy="137.08971"
+     fill="#b8860b"
+     opacity="0.3"
+     id="circle63"
+     rx="0.60000002"
+     ry="0.60176349"
+     transform="matrix(1,0,-0.07650076,0.99706952,0,0)"
+     style="stroke-width:1.00147" />
+  <ellipse
+     cx="155.25789"
+     cy="144.11028"
+     fill="#b8860b"
+     opacity="0.4"
+     id="circle64"
+     rx="0.69999999"
+     ry="0.70205736"
+     transform="matrix(1,0,-0.07650076,0.99706952,0,0)"
+     style="stroke-width:1.00147" />
+  <ellipse
+     cx="145.25789"
+     cy="147.11908"
+     fill="#b8860b"
+     opacity="0.3"
+     id="circle65"
+     rx="0.5"
+     ry="0.50146955"
+     transform="matrix(1,0,-0.07650076,0.99706952,0,0)"
+     style="stroke-width:1.00147" />
+  <!-- Foundation -->
+</svg>

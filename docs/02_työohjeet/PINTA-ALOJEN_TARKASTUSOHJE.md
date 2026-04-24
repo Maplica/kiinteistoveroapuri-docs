@@ -15,26 +15,53 @@ Tämä ohje opastaa käyttämään KiinteistöveroApuri-työkalua rakennusten ja
 
 ### 1. Rakennusten pinta-ala erotus -visualisointi
 
-**Taso:** Rakennukset_Yhdistetty_vero_ja_tietokanta (prosessoitu), Area_difference (Tax - database)
+**Taso:** Rakennukset_Yhdistetty_vero_ja_tietokanta (prosessoitu), Pinta-ala ero (vero - tietokanta)
 
-**Karttasymbolit:** Timanttikuviot, väri kertoo eron suuruuden ja suunnan:
+**Karttasymbolit:** Rakennustyyppikohtaiset ikonit. **Ikonin koko** kertoo pinta-ala-eron suuruuden ja suunnan – mitä suurempi ikoni, sitä suurempi ero. Ikonin muoto kertoo rakennuksen tyypin.
 
-| Väri | Ero (m²) | Merkitys |
+**Ikonin koko kertoo pinta-ala-eron (vero − tietokanta):**
+
+| Koko | Ero (m²) | Merkitys |
 |------|----------|----------|
-| 🔴 **Tummanpunainen** | < -18000 | Verotiedoissa paljon pienempi kuin rekisterissä (kriittinen) |
-| 🟠 **Oranssi** | -18000 - -500 | Verotiedoissa huomattavasti pienempi |
-| 🟡 **Vaalean oranssi** | -500 - -25 | Verotiedoissa jonkin verran pienempi |
-| 🟨 **Keltainen** | -25 - -1 | Verotiedoissa hieman pienempi |
-| ⚪ **Valkoinen** | -1 - 1 | Pinta-alat täsmäävät (OK) |
-| 🟩 **Vaaleanvihreä** | 1 - 25 | Verotiedoissa hieman suurempi |
-| 🟢 **Vihreä** | 25 - 100 | Verotiedoissa jonkin verran suurempi |
-| 🔵 **Turkoosi** | 100 - 500 | Verotiedoissa huomattavasti suurempi |
-| 🔷 **Sininen** | > 500 | Verotiedoissa paljon suurempi kuin rekisterissä (kriittinen) |
+| **Erittäin suuri** | < −18 000 | Kriittinen: veroaineistossa paljon pienempi kuin rekisterissä |
+| **Suuri** | −18 000 – −500 | Veroaineistossa huomattavasti pienempi |
+| **Keskisuuri** | −500 – −25 | Veroaineistossa selkeästi pienempi |
+| **Normaali** | −25 – −1 | Veroaineistossa hieman pienempi |
+| **Pieni** | −1 – 1 | Pinta-alat täsmäävät (OK) |
+| **Pienempi** | 1 – 25 | Veroaineistossa hieman suurempi |
+| **Pienin** | 25 – 500 | Veroaineistossa huomattavasti suurempi |
+| **Hyvin pieni** | > 500 | Kriittinen: veroaineistossa paljon suurempi kuin rekisterissä |
+
+**Ikonin tyyppi kertoo rakennuslajin:**
+
+| Ikoni | Rakennustyyppi |
+|-------|----------------|
+| ![Omakotitalo](/map_icons/omakotitalot.svg) | Omakotitalot |
+| ![Paritalo](/map_icons/paritalot.svg) | Paritalot |
+| ![Rivitalo](/map_icons/rivitalo.svg) | Rivitalot |
+| ![Asuinrakennus](/map_icons/asuinrakennukset.svg) | Kerros- ja muut asuinrakennukset |
+| ![Vapaa-ajan rakennus](/map_icons/vapaa_ajan_asuinrakennukset.svg) | Vapaa-ajan asuinrakennukset |
+| ![Liikerakennus](/map_icons/liikerakennukset.svg) | Liike- ja majoitusrakennukset |
+| ![Toimistorakennus](/map_icons/toimistorakennukset.svg) | Toimistorakennukset |
+| ![Liikenteen rakennus](/map_icons/liikenteen_rakennukset.svg) | Liikenteen rakennukset |
+| ![Hoitoalan rakennus](/map_icons/hoitoalan_rakennukset.svg) | Hoitoalan rakennukset |
+| ![Kulttuurirakennus](/map_icons/kulttuurirakennukset.svg) | Kulttuuri- ja kokoontumisrakennukset |
+| ![Uskonnollinen rakennus](/map_icons/uskonnollisten_rakennukset.svg) | Uskonnolliset rakennukset |
+| ![Opetusrakennus](/map_icons/opetusrakennukset.svg) | Opetusrakennukset |
+| ![Teollisuusrakennus](/map_icons/teollisuuden_rakennukset.svg) | Teollisuusrakennukset |
+| ![Energiahuoltorakennus](/map_icons/energiahuoltorakennukset.svg) | Energiahuollon rakennukset |
+| ![Vesihuoltorakennus](/map_icons/vesihuollon_rakennukset.svg) | Vesihuollon rakennukset |
+| ![Jätehuoltorakennus](/map_icons/jätehuollon_rakennukset.svg) | Jätehuollon rakennukset |
+| ![Varastorakennus](/map_icons/varastorakennukset.svg) | Varastorakennukset |
+| ![Pelastustoimen rakennus](/map_icons/pelastustoimen_rakennukset.svg) | Pelastustoimen rakennukset |
+| ![Maatalousrakennus](/map_icons/maatalousrakennukset.svg) | Maatalousrakennukset |
+| ![Saunarakennus](/map_icons/saunarakennukset.svg) | Saunarakennukset |
+| ![Talousrakennus](/map_icons/talousrakennukset.svg) | Talousrakennukset |
 
 **Tulkinta:**
-- **Negatiiviset arvot (punaiset/oranssit):** Veroaineistossa pienempi pinta-ala → mahdollinen veronmenetys
-- **Positiiviset arvot (vihreät/siniset):** Veroaineistossa suurempi pinta-ala → mahdollisesti liikaa veroa
-- **Lähellä nollaa (valkoinen):** Pinta-alat täsmäävät, ei tarvetta toimenpiteisiin
+- **Suuret ikonit (negatiivinen ero):** Veroaineistossa pienempi pinta-ala kuin rekisterissä → mahdollinen veronmenetys
+- **Pienet ikonit (positiivinen ero):** Veroaineistossa suurempi pinta-ala kuin rekisterissä → mahdollisesti liikaa veroa
+- **Normaalikokoiset ikonit:** Pinta-alat täsmäävät, ei tarvetta toimenpiteisiin
 
 ### 2. Vertailu-työkalu - kahden sarakkeen automaattinen vertailu
 
@@ -150,9 +177,7 @@ Pinta-alojen tarkastus tehdään pääasiassa **listapohjaisesti** käyttäen Ki
 
 #### **Karttapohjaisesti:**
 
-⚠️ **Ei saatavilla kiinteistöjen pinta-ala-tarkastukseen.**
-
-Ota käyttöön Area_difference (Tax - database) tyyli tasolle rakennukset_Yhdistetty_vero_ja_tietokanta (prosessoitu). Löydä korjattava kohde kartalta värien avulla. Käytä "Valitse kartalta" -työkalua, joka näyttää valitut kohteet listassa (Vasen ikkuna). Priorisoi arvokkaimmat alueet käsittelyyn ensin hyödyntäen kartan värityksiä.
+Ota käyttöön **Pinta-ala ero (vero - tietokanta)** -tyyli tasolle Rakennukset_Yhdistetty_vero_ja_tietokanta (prosessoitu). Löydä korjattavat kohteet kartalta **ikonien koon** perusteella – suuret ikonit osoittavat suurimmat erot. Käytä "Valitse kartalta" -työkalua, joka näyttää valitut kohteet listassa (Vasen ikkuna). Priorisoi arvokkaimmat alueet käsittelyyn ensin.
 
 ---
 
@@ -223,7 +248,7 @@ Ota käyttöön Area_difference (Tax - database) tyyli tasolle rakennukset_Yhdis
 - ❌ Älä korjaa kaikkia pieniä eroja - keskity merkittäviin
 
 **Tehostusvinkit:**
-- 🔍 Käytä "Pinta-ala ero (vero - tietokanta)" -visualisointia karttapohjaiseen priorisoitiin
+- 🔍 Käytä **Pinta-ala ero (vero - tietokanta)** -tyyliä karttapohjaiseen priorisointiin – etsi suurimmat ikonit
 - 📊 Järjestä attribuuttitaulu eron mukaan suurimmasta pienimpään
 - 🎯 Suodata vain erot > 50 m² tai > 10%
 - 🗂️ Käsittele alueittain - tehokkaampi työnkulku

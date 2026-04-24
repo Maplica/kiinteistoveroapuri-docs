@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="200"
+   height="200"
+   viewBox="88 -100 652 652"
+   version="1.1"
+   id="svg53"
+   sodipodi:docname="rivitalo 2.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview53"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.2567981"
+     inkscape:cx="521.16564"
+     inkscape:cy="258.99147"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg53" />
+  <!-- Tausta -->
+  <!-- Maavarjo -->
+  <ellipse
+     cx="408.86057"
+     cy="330.10818"
+     rx="300"
+     ry="35"
+     fill="rgba(0,0,0,0.15)"
+     id="ellipse1"
+     style="fill:url(#linearGradient54)" />
+  <defs
+     id="defs10">
+    <linearGradient
+       id="linearGradient55"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#000"
+         stop-opacity="0.35"
+         id="stop54"
+         style="stop-color:#858585;stop-opacity:0.51861703;" />
+      <stop
+         offset="1"
+         stop-color="#000"
+         stop-opacity="0"
+         id="stop55"
+         style="stop-color:#6f6f6f;stop-opacity:0.40159577;" />
+    </linearGradient>
+    <!-- Tiili -->
+    <pattern
+       id="brickPattern"
+       width="20"
+       height="10"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="20"
+         height="10"
+         fill="#c75b4f"
+         id="rect2" />
+      <rect
+         width="10"
+         height="5"
+         fill="#b24d42"
+         id="rect3" />
+    </pattern>
+    <!-- Ikkunagradientti -->
+    <linearGradient
+       id="windowGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#dff4ff"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#8ecae6"
+         id="stop4" />
+    </linearGradient>
+    <!-- Varjot -->
+    <linearGradient
+       id="frontShade"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#000"
+         stop-opacity="0.15"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#000"
+         stop-opacity="0"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="sideShade"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#000"
+         stop-opacity="0.25"
+         id="stop7" />
+      <stop
+         offset="100%"
+         stop-color="#000"
+         stop-opacity="0"
+         id="stop8" />
+    </linearGradient>
+    <linearGradient
+       id="roofShade"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#000"
+         stop-opacity="0.35"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#000"
+         stop-opacity="0"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient55"
+       id="linearGradient54"
+       x1="120"
+       y1="350"
+       x2="720"
+       y2="350"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-11.139419,-19.891818)" />
+  </defs>
+  <!-- Sivuseinä -->
+  <polygon
+     points="700,150 740,130 740,280 700,300"
+     fill="#c75b4f"
+     id="polygon10" />
+  <polygon
+     points="700,150 740,130 740,280 700,300"
+     fill="url(#sideShade)"
+     id="polygon11" />
+  <!-- Etuseinä -->
+  <rect
+     x="100"
+     y="150"
+     width="600"
+     height="150"
+     fill="#d96b5f"
+     id="rect11" />
+  <rect
+     x="100"
+     y="150"
+     width="600"
+     height="150"
+     fill="url(#brickPattern)"
+     opacity="0.6"
+     id="rect12" />
+  <rect
+     x="100"
+     y="150"
+     width="600"
+     height="150"
+     fill="url(#frontShade)"
+     id="rect13" />
+  <rect
+     x="396.90756"
+     y="178.84796"
+     width="4"
+     height="136.47356"
+     fill="#bdbdbd"
+     id="rect41-1-1"
+     style="stroke-width:0.953847" />
+  <path
+     id="polygon43-6-8"
+     style="fill:#9e9e9e"
+     d="M 400.90758,315.32152 V 178.84796 l 8,-10 v 132.09736 z"
+     sodipodi:nodetypes="ccccc" />
+  <rect
+     x="248.31212"
+     y="178.7495"
+     width="4"
+     height="136.47356"
+     fill="#bdbdbd"
+     id="rect41-1-2"
+     style="stroke-width:0.953847" />
+  <path
+     id="polygon43-6-79"
+     style="fill:#9e9e9e"
+     d="M 252.31213,315.22306 V 178.7495 l 8,-10 v 132.09736 z"
+     sodipodi:nodetypes="ccccc" />
+  <rect
+     x="88.811119"
+     y="178.50101"
+     width="4"
+     height="136.47356"
+     fill="#bdbdbd"
+     id="rect41-1-4"
+     style="stroke-width:0.953847" />
+  <path
+     id="polygon43-6-3"
+     style="fill:#9e9e9e"
+     d="M 92.811129,314.97456 V 178.501 l 8.000001,-10 v 132.09736 z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Katto -->
+  <polygon
+     points="100,150 700,150 740,130 140,130"
+     fill="#444"
+     id="polygon13" />
+  <polygon
+     points="100,150 700,150 740,130 140,130"
+     fill="url(#roofShade)"
+     id="polygon14" />
+  <polygon
+     points="100,150 700,150 700,160 100,160"
+     fill="#2f2f2f"
+     id="polygon15" />
+  <polygon
+     points="700,150 740,130 740,140 700,160"
+     fill="#3a3a3a"
+     id="polygon16" />
+  <!-- Savupiiput -->
+  <g
+     id="g29"
+     transform="matrix(1,0,0,0.93569993,32.632284,-6.269257)">
+    <!-- loop manually -->
+    <g
+       id="g19">
+      <polygon
+         points="205,135 190,140 180,135 195,130 "
+         fill="#7a7a7a"
+         id="polygon17" />
+      <polygon
+         points="190,165 180,160 180,135 190,140 "
+         fill="#5f5f5f"
+         id="polygon18" />
+      <polygon
+         points="205,160 190,165 190,140 205,135 "
+         fill="#6b6b6b"
+         id="polygon19" />
+    </g>
+    <g
+       transform="translate(150)"
+       id="g22">
+      <polygon
+         points="205,135 190,140 180,135 195,130 "
+         fill="#7a7a7a"
+         id="polygon20" />
+      <polygon
+         points="190,165 180,160 180,135 190,140 "
+         fill="#5f5f5f"
+         id="polygon21" />
+      <polygon
+         points="205,160 190,165 190,140 205,135 "
+         fill="#6b6b6b"
+         id="polygon22" />
+    </g>
+    <g
+       transform="translate(300)"
+       id="g25">
+      <polygon
+         points="205,135 190,140 180,135 195,130 "
+         fill="#7a7a7a"
+         id="polygon23" />
+      <polygon
+         points="190,165 180,160 180,135 190,140 "
+         fill="#5f5f5f"
+         id="polygon24" />
+      <polygon
+         points="205,160 190,165 190,140 205,135 "
+         fill="#6b6b6b"
+         id="polygon25" />
+    </g>
+    <g
+       transform="translate(450)"
+       id="g28">
+      <polygon
+         points="205,135 190,140 180,135 195,130 "
+         fill="#7a7a7a"
+         id="polygon26" />
+      <polygon
+         points="190,165 180,160 180,135 190,140 "
+         fill="#5f5f5f"
+         id="polygon27" />
+      <polygon
+         points="205,160 190,165 190,140 205,135 "
+         fill="#6b6b6b"
+         id="polygon28" />
+    </g>
+  </g>
+  <!-- Ikkunat (parannettu lasiefekti) -->
+  <g
+     id="g35">
+    <rect
+       x="120"
+       y="200"
+       width="40"
+       height="30"
+       fill="url(#windowGlass)"
+       id="rect29" />
+    <rect
+       x="270"
+       y="200"
+       width="40"
+       height="30"
+       fill="url(#windowGlass)"
+       id="rect30" />
+    <rect
+       x="420"
+       y="200"
+       width="40"
+       height="30"
+       fill="url(#windowGlass)"
+       id="rect31" />
+    <rect
+       x="570"
+       y="200"
+       width="40"
+       height="30"
+       fill="url(#windowGlass)"
+       id="rect32" />
+    <!-- Kiilto -->
+    <ellipse
+       cx="574.13226"
+       cy="296.90387"
+       rx="16"
+       ry="12"
+       fill="#388e3c"
+       opacity="0.7"
+       id="ellipse51-1" />
+    <ellipse
+       cx="582.13226"
+       cy="289.90387"
+       rx="11"
+       ry="9"
+       fill="#4caf50"
+       opacity="0.7"
+       id="ellipse52-2" />
+    <ellipse
+       cx="568.13226"
+       cy="291.90387"
+       rx="10"
+       ry="8"
+       fill="#66bb6a"
+       opacity="0.6"
+       id="ellipse53" />
+    <rect
+       x="575.13226"
+       y="296.90387"
+       width="3"
+       height="10"
+       fill="#5d4037"
+       id="rect53" />
+  </g>
+  <!-- Ovet -->
+  <g
+     id="g41">
+    <rect
+       x="170"
+       y="220"
+       width="40"
+       height="80"
+       fill="#5a3e2b"
+       id="rect35" />
+    <rect
+       x="320"
+       y="220"
+       width="40"
+       height="80"
+       fill="#5a3e2b"
+       id="rect36" />
+    <rect
+       x="470"
+       y="220"
+       width="40"
+       height="80"
+       fill="#5a3e2b"
+       id="rect37" />
+    <rect
+       x="620"
+       y="220"
+       width="40"
+       height="80"
+       fill="#5a3e2b"
+       id="rect38" />
+    <circle
+       cx="205"
+       cy="260"
+       r="3"
+       fill="#e0e0e0"
+       id="circle38" />
+    <circle
+       cx="355"
+       cy="260"
+       r="3"
+       fill="#e0e0e0"
+       id="circle39" />
+    <circle
+       cx="505"
+       cy="260"
+       r="3"
+       fill="#e0e0e0"
+       id="circle40" />
+    <circle
+       cx="655"
+       cy="260"
+       r="3"
+       fill="#e0e0e0"
+       id="circle41" />
+  </g>
+  <!-- Aidat -->
+  <rect
+     x="687.4411"
+     y="179.47478"
+     width="4"
+     height="136.47356"
+     fill="#bdbdbd"
+     id="rect41-1"
+     style="stroke-width:0.953847" />
+  <path
+     id="polygon43-6"
+     transform="translate(439.44111,-0.52521862)"
+     style="fill:#9e9e9e"
+     d="M 252,316.47356 V 180 l 8,-10 v 132.09736 z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- 3D Pensaat -->
+  <rect
+     x="546.84894"
+     y="178.07771"
+     width="4"
+     height="137.03503"
+     fill="#bdbdbd"
+     id="rect41-1-5"
+     style="stroke-width:0.955807" />
+  <path
+     id="polygon43-6-7"
+     style="fill:#9e9e9e;stroke-width:1.00206"
+     d="M 550.84894,315.11275 V 178.07773 l 8,-10.04115 v 132.64083 z"
+     sodipodi:nodetypes="ccccc" />
+  <ellipse
+     cx="528.05286"
+     cy="296.26923"
+     rx="16"
+     ry="12"
+     fill="#388e3c"
+     opacity="0.7"
+     id="ellipse51" />
+  <ellipse
+     cx="536.05286"
+     cy="289.26923"
+     rx="11"
+     ry="9"
+     fill="#4caf50"
+     opacity="0.7"
+     id="ellipse52" />
+  <ellipse
+     cx="522.05286"
+     cy="291.26923"
+     rx="10"
+     ry="8"
+     fill="#66bb6a"
+     opacity="0.6"
+     id="ellipse53-3" />
+  <rect
+     x="529.05286"
+     y="296.26923"
+     width="3"
+     height="10"
+     fill="#5d4037"
+     id="rect53-3" />
+  <ellipse
+     cx="420.95673"
+     cy="294.4303"
+     rx="16"
+     ry="12"
+     fill="#388e3c"
+     opacity="0.7"
+     id="ellipse51-4" />
+  <ellipse
+     cx="428.95673"
+     cy="287.4303"
+     rx="11"
+     ry="9"
+     fill="#4caf50"
+     opacity="0.7"
+     id="ellipse52-1" />
+  <ellipse
+     cx="414.95673"
+     cy="289.4303"
+     rx="10"
+     ry="8"
+     fill="#66bb6a"
+     opacity="0.6"
+     id="ellipse53-1" />
+  <rect
+     x="421.95673"
+     y="294.4303"
+     width="3"
+     height="10"
+     fill="#5d4037"
+     id="rect53-38" />
+  <ellipse
+     cx="273"
+     cy="296.20432"
+     rx="16"
+     ry="12"
+     fill="#388e3c"
+     opacity="0.7"
+     id="ellipse51-7" />
+  <ellipse
+     cx="281"
+     cy="289.20432"
+     rx="11"
+     ry="9"
+     fill="#4caf50"
+     opacity="0.7"
+     id="ellipse52-4" />
+  <ellipse
+     cx="267"
+     cy="291.20432"
+     rx="10"
+     ry="8"
+     fill="#66bb6a"
+     opacity="0.6"
+     id="ellipse53-2" />
+  <rect
+     x="274"
+     y="296.20432"
+     width="3"
+     height="10"
+     fill="#5d4037"
+     id="rect53-7" />
+  <ellipse
+     cx="104"
+     cy="297"
+     rx="16"
+     ry="12"
+     fill="#388e3c"
+     opacity="0.7"
+     id="ellipse51-79" />
+  <ellipse
+     cx="112"
+     cy="290"
+     rx="11"
+     ry="9"
+     fill="#4caf50"
+     opacity="0.7"
+     id="ellipse52-3" />
+  <ellipse
+     cx="98"
+     cy="292"
+     rx="10"
+     ry="8"
+     fill="#66bb6a"
+     opacity="0.6"
+     id="ellipse53-19" />
+  <rect
+     x="105"
+     y="297"
+     width="3"
+     height="10"
+     fill="#5d4037"
+     id="rect53-8" />
+  <ellipse
+     cx="133.04327"
+     cy="296.02164"
+     rx="16"
+     ry="12"
+     fill="#388e3c"
+     opacity="0.7"
+     id="ellipse51-6" />
+  <ellipse
+     cx="141.04327"
+     cy="289.02164"
+     rx="11"
+     ry="9"
+     fill="#4caf50"
+     opacity="0.7"
+     id="ellipse52-5" />
+  <ellipse
+     cx="127.04327"
+     cy="291.02164"
+     rx="10"
+     ry="8"
+     fill="#66bb6a"
+     opacity="0.6"
+     id="ellipse53-0" />
+  <rect
+     x="134.04327"
+     y="296.02164"
+     width="3"
+     height="10"
+     fill="#5d4037"
+     id="rect53-2" />
+</svg>

@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -35 200 200"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg61"
+   sodipodi:docname="pientalot.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview61"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.9461538"
+     inkscape:cx="98.5511"
+     inkscape:cy="56.591203"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg61" />
+  <!-- Pientalot - Small Houses (Enhanced 3D + Textures) -->
+  <defs
+     id="defs20">
+    <linearGradient
+       id="swatch70"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop70" />
+    </linearGradient>
+    <linearGradient
+       id="swatch68"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop68" />
+    </linearGradient>
+    <linearGradient
+       id="swatch66"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop66" />
+    </linearGradient>
+    <linearGradient
+       id="swatch64"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop64" />
+    </linearGradient>
+    <linearGradient
+       id="swatch62"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop62" />
+    </linearGradient>
+    <linearGradient
+       id="swatch61"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop61" />
+    </linearGradient>
+    <!-- Plaster wall gradient left house -->
+    <linearGradient
+       id="pWallL"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#EDE8DD"
+         id="stop1" />
+      <stop
+         offset="80%"
+         stop-color="#E8E0D4"
+         id="stop2" />
+      <stop
+         offset="100%"
+         stop-color="#D6CEBC"
+         id="stop3" />
+    </linearGradient>
+    <linearGradient
+       id="pSideL"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#D6CEBC"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="#C4BCA8"
+         id="stop5" />
+    </linearGradient>
+    <!-- Orange tile roof gradient -->
+    <linearGradient
+       id="pRoofL"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#F5B041"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#E8961E"
+         id="stop7" />
+    </linearGradient>
+    <!-- Blue wall gradient right house -->
+    <linearGradient
+       id="pWallR"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#E0EEF9"
+         id="stop8" />
+      <stop
+         offset="80%"
+         stop-color="#D6E8F7"
+         id="stop9" />
+      <stop
+         offset="100%"
+         stop-color="#B8D4EC"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="pSideR"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#B8D4EC"
+         id="stop11" />
+      <stop
+         offset="100%"
+         stop-color="#96C0DE"
+         id="stop12" />
+    </linearGradient>
+    <!-- Blue tile roof -->
+    <linearGradient
+       id="pRoofR"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#5B8FCA"
+         id="stop13" />
+      <stop
+         offset="100%"
+         stop-color="#4A7AB5"
+         id="stop14" />
+    </linearGradient>
+    <!-- Glass -->
+    <linearGradient
+       id="pGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#E8F4FD"
+         id="stop15" />
+      <stop
+         offset="40%"
+         stop-color="#D6EAF8"
+         id="stop16" />
+      <stop
+         offset="100%"
+         stop-color="#AED6F1"
+         id="stop17" />
+    </linearGradient>
+    <!-- Tile pattern -->
+    <pattern
+       id="pTile"
+       width="12"
+       height="6"
+       patternUnits="userSpaceOnUse">
+      <path
+         d="M0,6 Q3,3 6,6 Q9,3 12,6"
+         fill="none"
+         stroke="rgba(0,0,0,0.15)"
+         stroke-width="0.6"
+         id="path17" />
+    </pattern>
+    <!-- Drop shadow -->
+    <filter
+       id="pShad"
+       x="-0.0022546763"
+       y="-0.0084745763"
+       width="1.0045094"
+       height="1.0103264">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2.5"
+         flood-color="#1B3A5C"
+         flood-opacity="0.2" />
+    </filter>
+    <!-- Chimney brick -->
+    <pattern
+       id="pChBrick"
+       width="6"
+       height="4"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="6"
+         height="4"
+         fill="none"
+         id="rect17" />
+      <rect
+         x="0"
+         y="0"
+         width="2.5"
+         height="1.7"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.2)"
+         stroke-width="0.3"
+         id="rect18" />
+      <rect
+         x="3"
+         y="0"
+         width="2.5"
+         height="1.7"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.2)"
+         stroke-width="0.3"
+         id="rect19" />
+      <rect
+         x="1.5"
+         y="2"
+         width="2.5"
+         height="1.7"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.2)"
+         stroke-width="0.3"
+         id="rect20" />
+    </pattern>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch62"
+       id="linearGradient62"
+       x1="116"
+       y1="73"
+       x2="136"
+       y2="73"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch62"
+       id="linearGradient63"
+       x1="126"
+       y1="73"
+       x2="126"
+       y2="73"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch64"
+       id="linearGradient64"
+       x1="157"
+       y1="73"
+       x2="157"
+       y2="73"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch64"
+       id="linearGradient65"
+       x1="148"
+       y1="73"
+       x2="166"
+       y2="73"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch66"
+       id="linearGradient66"
+       x1="50"
+       y1="67"
+       x2="70"
+       y2="67"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch66"
+       id="linearGradient67"
+       x1="60"
+       y1="67"
+       x2="60"
+       y2="67"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch68"
+       id="linearGradient68"
+       x1="18"
+       y1="67"
+       x2="38"
+       y2="67"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch68"
+       id="linearGradient69"
+       x1="28"
+       y1="67"
+       x2="28"
+       y2="67"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient70"
+       x1="176"
+       y1="82.5"
+       x2="188"
+       y2="82.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient71"
+       x1="108"
+       y1="86.5"
+       x2="176"
+       y2="86.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient72"
+       x1="102"
+       y1="33.5"
+       x2="178"
+       y2="33.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient73"
+       x1="140.02102"
+       y1="33.507987"
+       x2="190.69373"
+       y2="33.507987"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient74"
+       x1="4"
+       y1="26"
+       x2="90"
+       y2="26"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient75"
+       x1="47.088314"
+       y1="26.060851"
+       x2="100.58143"
+       y2="26.060851"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient76"
+       x1="82"
+       y1="80"
+       x2="94"
+       y2="80"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch70"
+       id="linearGradient77"
+       x1="10"
+       y1="84"
+       x2="82"
+       y2="84"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="100"
+     cy="124"
+     rx="95"
+     ry="5"
+     fill="#1B3A5C"
+     opacity="0.12"
+     id="ellipse20" />
+  <!-- ===== Left house ===== -->
+  <g
+     filter="url(#pShad)"
+     id="g26">
+    <!-- Front wall -->
+    <rect
+       x="10"
+       y="48"
+       width="72"
+       height="72"
+       rx="2"
+       fill="url(#pWallL)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect21"
+       style="stroke:url(#linearGradient77);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none" />
+    <!-- 3D side wall -->
+    <polygon
+       points="82,48 94,40 94,112 82,120"
+       fill="url(#pSideL)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1"
+       id="polygon21"
+       style="stroke:url(#linearGradient76);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none" />
+    <!-- Roof with overhang -->
+    <polygon
+       points="4,50 47,2 90,50"
+       fill="url(#pRoofL)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="polygon22"
+       style="stroke:url(#linearGradient74);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none" />
+    <!-- Roof 3D side -->
+    <path
+       id="polygon24"
+       style="opacity:1;fill:#d4840a;stroke:url(#linearGradient75);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none"
+       d="M 90,50 100.58143,44.801282 47.088314,2.1217027 Z"
+       sodipodi:nodetypes="cccc" />
+    <!-- Tile texture on roof -->
+    <!-- Roof ridge highlight -->
+    <line
+       x1="47"
+       y1="2"
+       x2="47"
+       y2="2"
+       stroke="#FDD835"
+       stroke-width="2"
+       stroke-linecap="round"
+       id="line25" />
+    <!-- Roof overhang shadow -->
+    <line
+       x1="10"
+       y1="50"
+       x2="82"
+       y2="50"
+       stroke="rgba(0,0,0,0.15)"
+       stroke-width="2"
+       id="line26" />
+  </g>
+  <!-- Left chimney with brick texture -->
+  <path
+     id="rect26"
+     style="fill:#8d6e63;stroke-width:1.2"
+     d="m 69.389389,8.0090561 h 12 l -0.336352,25.6998709 -12,-11.772316 z"
+     sodipodi:nodetypes="ccccc" />
+  <rect
+     x="67.389389"
+     y="6.0090556"
+     width="16"
+     height="4"
+     rx="1"
+     fill="#795548"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect28" />
+  <!-- Chimney smoke -->
+  <circle
+     cx="75.389389"
+     cy="1.0090556"
+     r="3"
+     fill="#d5d8dc"
+     opacity="0.4"
+     id="circle28" />
+  <circle
+     cx="166.25873"
+     cy="14.309185"
+     r="3"
+     fill="#d5d8dc"
+     opacity="0.4"
+     id="circle28-1" />
+  <circle
+     cx="168.25873"
+     cy="11.309185"
+     r="3"
+     fill="#d5d8dc"
+     opacity="0.4"
+     id="circle28-5" />
+  <circle
+     cx="169.25873"
+     cy="7.309185"
+     r="3"
+     fill="#d5d8dc"
+     opacity="0.4"
+     id="circle28-7" />
+  <circle
+     cx="35"
+     cy="-5"
+     r="2.5"
+     fill="#D5D8DC"
+     opacity="0.3"
+     id="circle29" />
+  <!-- Left house windows with frames, sills, mullions, glass highlight -->
+  <g
+     id="g32">
+    <rect
+       x="18"
+       y="56"
+       width="20"
+       height="22"
+       rx="1"
+       fill="url(#pGlass)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1.2"
+       id="rect29" />
+    <line
+       x1="28"
+       y1="56"
+       x2="28"
+       y2="78"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line29"
+       style="stroke:url(#linearGradient69);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="18"
+       y1="67"
+       x2="38"
+       y2="67"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line30"
+       style="stroke:url(#linearGradient68);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="19"
+       y1="58"
+       x2="26"
+       y2="64"
+       stroke="#FFFFFF"
+       stroke-width="0.6"
+       opacity="0.5"
+       id="line31" />
+    <rect
+       x="16"
+       y="78"
+       width="24"
+       height="3"
+       rx="0.5"
+       fill="#C4BCA8"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect31" />
+    <!-- Window frame top -->
+    <rect
+       x="16"
+       y="54"
+       width="24"
+       height="3"
+       rx="0.5"
+       fill="#D6CEBC"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect32" />
+  </g>
+  <g
+     id="g36">
+    <rect
+       x="50"
+       y="56"
+       width="20"
+       height="22"
+       rx="1"
+       fill="url(#pGlass)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1.2"
+       id="rect33" />
+    <line
+       x1="60"
+       y1="56"
+       x2="60"
+       y2="78"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line33"
+       style="stroke:url(#linearGradient67);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="50"
+       y1="67"
+       x2="70"
+       y2="67"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line34"
+       style="stroke:url(#linearGradient66);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="51"
+       y1="58"
+       x2="58"
+       y2="64"
+       stroke="#FFFFFF"
+       stroke-width="0.6"
+       opacity="0.5"
+       id="line35" />
+    <rect
+       x="48"
+       y="78"
+       width="24"
+       height="3"
+       rx="0.5"
+       fill="#C4BCA8"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect35" />
+    <rect
+       x="48"
+       y="54"
+       width="24"
+       height="3"
+       rx="0.5"
+       fill="#D6CEBC"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect36" />
+  </g>
+  <!-- Left door (wooden with planks) -->
+  <rect
+     x="33"
+     y="87"
+     width="24"
+     height="33"
+     rx="2"
+     fill="#D4840A"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect37" />
+  <linearGradient
+     id="pDoorL"
+     x1="0"
+     y1="0"
+     x2="1"
+     y2="0">
+    <stop
+       offset="0%"
+       stop-color="#E8A020"
+       id="stop37" />
+    <stop
+       offset="50%"
+       stop-color="#D4840A"
+       id="stop38" />
+    <stop
+       offset="100%"
+       stop-color="#C07808"
+       id="stop39" />
+  </linearGradient>
+  <rect
+     x="33"
+     y="87"
+     width="24"
+     height="33"
+     rx="2"
+     fill="url(#pDoorL)"
+     id="rect39" />
+  <!-- Wood plank lines -->
+  <line
+     x1="41"
+     y1="87"
+     x2="41"
+     y2="120"
+     stroke="#B8720A"
+     stroke-width="0.5"
+     id="line39" />
+  <line
+     x1="49"
+     y1="87"
+     x2="49"
+     y2="120"
+     stroke="#B8720A"
+     stroke-width="0.5"
+     id="line40" />
+  <!-- Door glass pane -->
+  <rect
+     x="37"
+     y="91"
+     width="16"
+     height="10"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect40" />
+  <line
+     x1="38"
+     y1="93"
+     x2="42"
+     y2="97"
+     stroke="#FFFFFF"
+     stroke-width="0.5"
+     opacity="0.4"
+     id="line41" />
+  <!-- Handle -->
+  <circle
+     cx="52"
+     cy="105"
+     r="1.8"
+     fill="#8B7355"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="circle41" />
+  <!-- Door step -->
+  <rect
+     x="30"
+     y="118"
+     width="30"
+     height="4"
+     rx="1"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect41" />
+  <!-- ===== Right house ===== -->
+  <g
+     filter="url(#pShad)"
+     id="g45">
+    <!-- Front wall -->
+    <rect
+       x="108"
+       y="53"
+       width="68"
+       height="67"
+       rx="2"
+       fill="url(#pWallR)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect42"
+       style="stroke:url(#linearGradient71);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none" />
+    <!-- 3D side wall -->
+    <polygon
+       points="176,53 188,45 188,112 176,120"
+       fill="url(#pSideR)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1"
+       id="polygon42"
+       style="stroke:url(#linearGradient70);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none" />
+    <!-- Roof -->
+    <polygon
+       points="102,55 140,12 178,55"
+       fill="url(#pRoofR)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="polygon43"
+       style="stroke:url(#linearGradient72);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none" />
+    <!-- Roof 3D side -->
+    <path
+       id="polygon44"
+       style="opacity:1;fill:#3b6e9f;stroke:url(#linearGradient73);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.4;stroke-dasharray:none"
+       d="M 178,55 190.69373,46.705692 140.02102,12.015974 Z"
+       sodipodi:nodetypes="cccc" />
+    <!-- Tile texture on roof -->
+    <line
+       x1="108"
+       y1="55"
+       x2="176"
+       y2="55"
+       stroke="rgba(0,0,0,0.15)"
+       stroke-width="2"
+       id="line45" />
+  </g>
+  <!-- Right chimney -->
+  <path
+     id="rect45"
+     style="fill:#8d6e63;stroke-width:1.2"
+     d="m 163.25873,17.309185 h 10 v 23.699871 l -10,-9.417853 z"
+     sodipodi:nodetypes="ccccc" />
+  <rect
+     x="161.25873"
+     y="15.309185"
+     width="14"
+     height="4"
+     rx="1"
+     fill="#795548"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect47" />
+  <!-- Right house windows -->
+  <g
+     id="g51">
+    <rect
+       x="116"
+       y="63"
+       width="20"
+       height="20"
+       rx="1"
+       fill="url(#pGlass)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1.2"
+       id="rect48" />
+    <line
+       x1="126"
+       y1="63"
+       x2="126"
+       y2="83"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line48"
+       style="fill:none;stroke:url(#linearGradient63);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="116"
+       y1="73"
+       x2="136"
+       y2="73"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line49"
+       style="fill:none;stroke:url(#linearGradient62);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="117"
+       y1="65"
+       x2="124"
+       y2="71"
+       stroke="#FFFFFF"
+       stroke-width="0.6"
+       opacity="0.5"
+       id="line50" />
+    <rect
+       x="114"
+       y="83"
+       width="24"
+       height="3"
+       rx="0.5"
+       fill="#96C0DE"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect50" />
+    <rect
+       x="114"
+       y="61"
+       width="24"
+       height="3"
+       rx="0.5"
+       fill="#B8D4EC"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect51" />
+  </g>
+  <g
+     id="g55">
+    <rect
+       x="148"
+       y="63"
+       width="18"
+       height="20"
+       rx="1"
+       fill="url(#pGlass)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1.2"
+       id="rect52" />
+    <line
+       x1="157"
+       y1="63"
+       x2="157"
+       y2="83"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line52"
+       style="stroke:url(#linearGradient64);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="148"
+       y1="73"
+       x2="166"
+       y2="73"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="line53"
+       style="stroke:url(#linearGradient65);stroke-width:0.4;stroke-dasharray:none" />
+    <line
+       x1="149"
+       y1="65"
+       x2="155"
+       y2="71"
+       stroke="#FFFFFF"
+       stroke-width="0.6"
+       opacity="0.5"
+       id="line54" />
+    <rect
+       x="146"
+       y="83"
+       width="22"
+       height="3"
+       rx="0.5"
+       fill="#96C0DE"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect54" />
+    <rect
+       x="146"
+       y="61"
+       width="22"
+       height="3"
+       rx="0.5"
+       fill="#B8D4EC"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect55" />
+  </g>
+  <!-- Right house door (dark wood) -->
+  <rect
+     x="127"
+     y="90"
+     width="22"
+     height="30"
+     rx="2"
+     fill="#3E2723"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect56" />
+  <line
+     x1="135"
+     y1="90"
+     x2="135"
+     y2="120"
+     stroke="#2C1B0E"
+     stroke-width="0.5"
+     id="line56" />
+  <line
+     x1="143"
+     y1="90"
+     x2="143"
+     y2="120"
+     stroke="#2C1B0E"
+     stroke-width="0.5"
+     id="line57" />
+  <rect
+     x="130"
+     y="94"
+     width="16"
+     height="8"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect57" />
+  <circle
+     cx="144"
+     cy="107"
+     r="1.5"
+     fill="#D4A36A"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="circle57" />
+  <rect
+     x="124"
+     y="118"
+     width="28"
+     height="4"
+     rx="1"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect58" />
+  <!-- Foundation lines -->
+  <rect
+     x="8"
+     y="118"
+     width="76"
+     height="4"
+     rx="1"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect59" />
+  <rect
+     x="106"
+     y="118"
+     width="72"
+     height="4"
+     rx="1"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect60" />
+  <!-- Small garden between houses -->
+  <circle
+     cx="98"
+     cy="112"
+     r="6"
+     fill="#4CAF50"
+     opacity="0.7"
+     id="circle60" />
+  <circle
+     cx="96"
+     cy="108"
+     r="5"
+     fill="#66BB6A"
+     opacity="0.6"
+     id="circle61" />
+  <rect
+     x="97"
+     y="112"
+     width="2"
+     height="8"
+     fill="#5D4037"
+     id="rect61" />
+</svg>

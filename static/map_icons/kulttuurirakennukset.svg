@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -26 210 210"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="kulttuurirakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.2227444"
+     inkscape:cx="122.25373"
+     inkscape:cy="40.11301"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <!-- Kulttuurirakennukset - Cultural buildings (Enhanced classical with columns) -->
+  <defs
+     id="defs9">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect64"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       id="kWall"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#FDF2C0"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#F9E79F"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="kPed"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#F9E79F"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#F0D969"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="kCol"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#FFFFFF"
+         id="stop5" />
+      <stop
+         offset="40%"
+         stop-color="#FAFAFA"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#E8E8E8"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       id="kStair"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#F0F0F0"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#D5D8DC"
+         id="stop9" />
+    </linearGradient>
+    <pattern
+       id="kFlute"
+       width="2.5"
+       height="68"
+       patternUnits="userSpaceOnUse">
+      <line
+         x1="1.25"
+         y1="0"
+         x2="1.25"
+         y2="68"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.5"
+         id="line9" />
+    </pattern>
+    <filter
+       id="kShad"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2"
+         flood-color="#1B3A5C"
+         flood-opacity="0.18" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#kCol"
+       id="linearGradient59"
+       x1="417.70281"
+       y1="20.914391"
+       x2="445.0524"
+       y2="20.914391"
+       gradientTransform="matrix(0.40219983,0,0,2.7338435,0,-5.1766722)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#kCol"
+       id="linearGradient60"
+       x1="94.480397"
+       y1="20.914391"
+       x2="121.82999"
+       y2="20.914391"
+       gradientTransform="matrix(0.40219983,0,0,2.743744,0,-5.3837391)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#kCol"
+       id="linearGradient61"
+       x1="159.12488"
+       y1="20.914391"
+       x2="186.47447"
+       y2="20.914391"
+       gradientTransform="matrix(0.40219983,0,0,2.743744,0,-5.3837391)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#kCol"
+       id="linearGradient62"
+       x1="223.76936"
+       y1="20.914391"
+       x2="251.11895"
+       y2="20.914391"
+       gradientTransform="matrix(0.40219983,0,0,2.743744,0,-5.3837391)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#kCol"
+       id="linearGradient63"
+       x1="288.41384"
+       y1="20.914391"
+       x2="315.76343"
+       y2="20.914391"
+       gradientTransform="matrix(0.40219983,0,0,2.743744,0,-5.3837391)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#kCol"
+       id="linearGradient64"
+       x1="353.05833"
+       y1="20.914391"
+       x2="380.40792"
+       y2="20.914391"
+       gradientTransform="matrix(0.40219983,0,0,2.743744,0,-5.3837391)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="105.54156"
+     cy="149.83376"
+     rx="95"
+     ry="5"
+     fill="#1b3a5c"
+     opacity="0.1"
+     id="ellipse9" />
+  <!-- Base/stairs with gradient and step shadows -->
+  <rect
+     x="15"
+     y="138"
+     width="180"
+     height="8"
+     rx="1"
+     fill="url(#kStair)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect9" />
+  <line
+     x1="15"
+     y1="140"
+     x2="195"
+     y2="140"
+     stroke="rgba(0,0,0,0.06)"
+     stroke-width="0.5"
+     id="line10" />
+  <rect
+     x="20"
+     y="130"
+     width="170"
+     height="8"
+     rx="1"
+     fill="#E8DAEF"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect10" />
+  <rect
+     x="25"
+     y="122"
+     width="160"
+     height="8"
+     rx="1"
+     fill="#F5EEF8"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect11" />
+  <!-- Main building body -->
+  <g
+     filter="url(#kShad)"
+     id="g12">
+    <rect
+       x="30"
+       y="50"
+       width="150"
+       height="74"
+       rx="0"
+       fill="url(#kWall)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect12" />
+  </g>
+  <!-- Pediment (triangular) with relief decoration -->
+  <polygon
+     points="22,50 105,8 188,50"
+     fill="url(#kPed)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="param(outline-width) 2"
+     id="polygon12" />
+  <!-- Pediment inner triangle (tympanum) -->
+  <polygon
+     points="50,50 105,22 160,50"
+     fill="none"
+     stroke="#D4AC0D"
+     stroke-width="0.8"
+     id="polygon13" />
+  <!-- Tympanum relief decoration (lyre) -->
+  <g
+     transform="translate(102,32)"
+     id="g15">
+    <path
+       d="M0,14 Q-4,7 -2,0 Q3,-2 8,0 Q10,7 6,14"
+       fill="none"
+       stroke="#B7950B"
+       stroke-width="1"
+       id="path13" />
+    <line
+       x1="0"
+       y1="5"
+       x2="6"
+       y2="5"
+       stroke="#B7950B"
+       stroke-width="0.5"
+       id="line13" />
+    <line
+       x1="0"
+       y1="8"
+       x2="6"
+       y2="8"
+       stroke="#B7950B"
+       stroke-width="0.5"
+       id="line14" />
+    <line
+       x1="0"
+       y1="11"
+       x2="6"
+       y2="11"
+       stroke="#B7950B"
+       stroke-width="0.5"
+       id="line15" />
+  </g>
+  <!-- Entablature (frieze band) -->
+  <rect
+     x="86.25"
+     y="48.25"
+     width="37.5"
+     height="1.5"
+     rx="0"
+     fill="#f0d969"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.25"
+     id="rect15" />
+  <!-- Dentil molding -->
+  <line
+     x1="42"
+     y1="48"
+     x2="42"
+     y2="52"
+     stroke="#D4AC0D"
+     stroke-width="1.5"
+     id="line17" />
+  <line
+     x1="49"
+     y1="48"
+     x2="49"
+     y2="52"
+     stroke="#D4AC0D"
+     stroke-width="1.5"
+     id="line18" />
+  <line
+     x1="63"
+     y1="48"
+     x2="63"
+     y2="52"
+     stroke="#D4AC0D"
+     stroke-width="1.5"
+     id="line20" />
+  <line
+     x1="168"
+     y1="48"
+     x2="168"
+     y2="52"
+     stroke="#D4AC0D"
+     stroke-width="1.5"
+     id="line24" />
+  <line
+     x1="175"
+     y1="48"
+     x2="175"
+     y2="52"
+     stroke="#D4AC0D"
+     stroke-width="1.5"
+     id="line25" />
+  <!-- Grand arched door (drawn before columns so it appears behind them) -->
+  <rect
+     x="85"
+     y="85"
+     width="40"
+     height="37"
+     rx="2"
+     fill="#6D4C41"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect25" />
+  <path
+     d="m 85.609254,85.473865 q 19.695366,-13 39.390746,0"
+     fill="#5d4037"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.992355"
+     id="path25" />
+  <!-- Door panels -->
+  <line
+     x1="105"
+     y1="75"
+     x2="105"
+     y2="122"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="line26" />
+  <rect
+     x="89"
+     y="90"
+     width="12"
+     height="14"
+     rx="0.5"
+     fill="#5D4037"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="rect26" />
+  <rect
+     x="109"
+     y="90"
+     width="12"
+     height="14"
+     rx="0.5"
+     fill="#5D4037"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="rect27" />
+  <!-- Door handles -->
+  <circle
+     cx="100"
+     cy="105"
+     r="1.5"
+     fill="#F4D03F"
+     id="circle27" />
+  <circle
+     cx="110"
+     cy="105"
+     r="1.5"
+     fill="#F4D03F"
+     id="circle28" />
+  <!-- Columns with gradient and fluting texture -->
+  <rect
+     x="38"
+     y="52"
+     width="11"
+     height="75.040276"
+     rx="2"
+     fill="url(#kCol)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.26059"
+     id="rect28"
+     style="fill:url(#linearGradient60)" />
+  <rect
+     x="64"
+     y="52"
+     width="11"
+     height="75.040276"
+     rx="2"
+     fill="url(#kCol)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.26059"
+     id="rect30"
+     style="fill:url(#linearGradient61)" />
+  <rect
+     x="90"
+     y="52"
+     width="11"
+     height="75.040276"
+     rx="2"
+     fill="url(#kCol)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.26059"
+     id="rect32"
+     style="fill:url(#linearGradient62)" />
+  <rect
+     x="116"
+     y="52"
+     width="11"
+     height="75.040276"
+     rx="2"
+     fill="url(#kCol)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.26059"
+     id="rect34"
+     style="fill:url(#linearGradient63)" />
+  <rect
+     x="142"
+     y="52"
+     width="11"
+     height="75.040276"
+     rx="2"
+     fill="url(#kCol)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.26059"
+     id="rect36"
+     style="fill:url(#linearGradient64)" />
+  <rect
+     x="168"
+     y="52"
+     width="11"
+     height="74.769493"
+     rx="2"
+     fill="url(#kCol)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.25831"
+     id="rect38"
+     style="fill:url(#linearGradient59)" />
+  <!-- Column capitals (Ionic scrolls represented) -->
+  <rect
+     x="36"
+     y="48"
+     width="15"
+     height="5"
+     rx="1"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect40" />
+  <rect
+     x="62"
+     y="48"
+     width="15"
+     height="5"
+     rx="1"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect41" />
+  <rect
+     x="88"
+     y="48"
+     width="15"
+     height="5"
+     rx="1"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect42" />
+  <rect
+     x="114"
+     y="48"
+     width="15"
+     height="5"
+     rx="1"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect43" />
+  <rect
+     x="140.1436"
+     y="48.143604"
+     width="15"
+     height="5"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect44" />
+  <rect
+     x="166"
+     y="48"
+     width="15"
+     height="5"
+     rx="1"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect45" />
+  <!-- Column bases -->
+  <rect
+     x="36"
+     y="125.27624"
+     width="15"
+     height="4.4409842"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect46" />
+  <rect
+     x="62"
+     y="125.27624"
+     width="15"
+     height="4.4409842"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect47" />
+  <rect
+     x="88"
+     y="125.27624"
+     width="15"
+     height="4.4409842"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect48" />
+  <rect
+     x="114"
+     y="125.27624"
+     width="15"
+     height="4.4409842"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect49" />
+  <rect
+     x="140"
+     y="125.27624"
+     width="15"
+     height="4.4409842"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect50" />
+  <rect
+     x="166"
+     y="125.27624"
+     width="15"
+     height="4.4409842"
+     rx="1"
+     fill="#fdfefe"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect51" />
+  <!-- Music notes (cultural symbol) - enhanced -->
+</svg>

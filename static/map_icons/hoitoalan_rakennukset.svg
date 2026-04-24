@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -22.5 210 210"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg46"
+   sodipodi:docname="hoitoalan_rakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview46"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.5005867"
+     inkscape:cx="-96.577335"
+     inkscape:cy="96.977241"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg46" />
+  <!-- Hoitoalan rakennukset - Healthcare buildings (Enhanced) -->
+  <defs
+     id="defs10">
+    <linearGradient
+       id="swatch50"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop50" />
+    </linearGradient>
+    <linearGradient
+       id="swatch48"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop48" />
+    </linearGradient>
+    <linearGradient
+       id="hWall"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0"
+         stop-color="#E8F8F0"
+         id="stop1"
+         style="stop-color:#8fdeb2;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#D5F5E3"
+         id="stop2"
+         style="stop-color:#69d8a0;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="hSide"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#ABEBC6"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#82D8A0"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="hGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#E8F4FD"
+         id="stop5" />
+      <stop
+         offset="35%"
+         stop-color="#D6EAF8"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#AED6F1"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       id="hCanopy"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#2ECC71"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#27AE60"
+         id="stop9" />
+    </linearGradient>
+    <pattern
+       id="hConc"
+       width="14"
+       height="7"
+       patternUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="6.5"
+         height="3"
+         fill="none"
+         stroke="rgba(0,0,0,0.03)"
+         stroke-width="0.25"
+         id="rect9" />
+      <rect
+         x="7"
+         y="3.5"
+         width="6.5"
+         height="3"
+         fill="none"
+         stroke="rgba(0,0,0,0.03)"
+         stroke-width="0.25"
+         id="rect10" />
+    </pattern>
+    <filter
+       id="hShad"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2"
+         flood-color="#1B3A5C"
+         flood-opacity="0.18" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient137"
+       id="linearGradient147"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.1381884,0,0,1.4518498,-1.3407853,32.325289)"
+       x1="108.12694"
+       y1="-1.9673916"
+       x2="145.63683"
+       y2="-1.9673916" />
+    <linearGradient
+       id="linearGradient137"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#E8F4FD"
+         id="stop135"
+         style="stop-color:#747474;stop-opacity:1;" />
+      <stop
+         offset="0.40000001"
+         stop-color="#D6EAF8"
+         id="stop136"
+         style="stop-color:#717171;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#AED6F1"
+         id="stop137"
+         style="stop-color:#6b6b6b;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient137"
+       id="linearGradient46"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-0.77058437,-2.9603224e-4,2.55654e-4,-1.4518498,141.86686,24.736532)"
+       x1="108.12694"
+       y1="-1.9673916"
+       x2="145.63683"
+       y2="-1.9673916" />
+    <linearGradient
+       id="hSide-7"
+       x1="494.48694"
+       y1="7.6847328"
+       x2="533.52538"
+       y2="7.6847328"
+       gradientTransform="scale(0.30738931,3.2532035)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#ABEBC6"
+         id="stop3-2" />
+      <stop
+         offset="100%"
+         stop-color="#82D8A0"
+         id="stop4-6" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#hGlass"
+       id="linearGradient47"
+       x1="32.880465"
+       y1="14.142136"
+       x2="41.365747"
+       y2="22.627417"
+       gradientTransform="scale(0.94280904,1.0606602)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch48"
+       id="linearGradient48"
+       x1="0"
+       y1="20"
+       x2="38"
+       y2="20"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch50"
+       id="linearGradient50"
+       x1="0"
+       y1="20"
+       x2="38"
+       y2="20"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#hWall"
+       id="linearGradient52"
+       x1="30"
+       y1="92"
+       x2="152"
+       y2="92"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="100"
+     cy="155"
+     rx="90"
+     ry="5"
+     fill="#1B3A5C"
+     opacity="0.1"
+     id="ellipse10" />
+  <!-- 3D side wall -->
+  <polygon
+     points="152,32 164,25 164,150 152,152"
+     fill="url(#hSide)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="param(outline-width) 2"
+     id="polygon10" />
+  <!-- Main hospital building -->
+  <g
+     filter="url(#hShad)"
+     id="g11"
+     style="fill:url(#linearGradient52);fill-opacity:1">
+    <rect
+       x="30"
+       y="32"
+       width="122"
+       height="120"
+       rx="0"
+       fill="url(#hWall)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect11"
+       style="fill:url(#linearGradient52);fill-opacity:1" />
+  </g>
+  <!-- Top floor / penthouse with gradient -->
+  <rect
+     x="55"
+     y="14"
+     width="72"
+     height="22"
+     rx="2"
+     fill="#ABEBC6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect13"
+     style="fill:#6cd9a2;fill-opacity:1" />
+  <!-- Red cross symbol -->
+  <rect
+     x="78"
+     y="17"
+     width="26"
+     height="16"
+     rx="2"
+     fill="#FFFFFF"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect14" />
+  <rect
+     x="87"
+     y="19"
+     width="8"
+     height="12"
+     rx="1"
+     fill="#E74C3C"
+     id="rect15" />
+  <rect
+     x="83"
+     y="23"
+     width="16"
+     height="4"
+     rx="1"
+     fill="#E74C3C"
+     id="rect16" />
+  <!-- Windows row 1 with glass gradients, sills, reflections -->
+  <rect
+     x="38"
+     y="42"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect17" />
+  <line
+     x1="48.5"
+     y1="42"
+     x2="48.5"
+     y2="58"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="line17" />
+  <line
+     x1="39"
+     y1="44"
+     x2="43"
+     y2="48"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="line18" />
+  <rect
+     x="36"
+     y="58"
+     width="25"
+     height="2.5"
+     rx="0.5"
+     fill="#8BC9A3"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.2"
+     id="rect18" />
+  <rect
+     x="66"
+     y="42"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect19" />
+  <line
+     x1="76.5"
+     y1="42"
+     x2="76.5"
+     y2="58"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="line19" />
+  <rect
+     x="64"
+     y="58"
+     width="25"
+     height="2.5"
+     rx="0.5"
+     fill="#8BC9A3"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.2"
+     id="rect20" />
+  <rect
+     x="94"
+     y="42"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect21" />
+  <line
+     x1="104.5"
+     y1="42"
+     x2="104.5"
+     y2="58"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="line21" />
+  <rect
+     x="92"
+     y="58"
+     width="25"
+     height="2.5"
+     rx="0.5"
+     fill="#8BC9A3"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.2"
+     id="rect22" />
+  <rect
+     x="122"
+     y="42"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect23" />
+  <line
+     x1="132.5"
+     y1="42"
+     x2="132.5"
+     y2="58"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="line23" />
+  <rect
+     x="120"
+     y="58"
+     width="25"
+     height="2.5"
+     rx="0.5"
+     fill="#8BC9A3"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.2"
+     id="rect24" />
+  <!-- Windows row 2 -->
+  <rect
+     x="38"
+     y="68"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect25" />
+  <rect
+     x="66"
+     y="68"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect26" />
+  <rect
+     x="94"
+     y="68"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect27" />
+  <rect
+     x="122"
+     y="68"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect28" />
+  <!-- Windows row 3 -->
+  <rect
+     x="38"
+     y="94"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect29" />
+  <rect
+     x="66"
+     y="94"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect30" />
+  <rect
+     x="94"
+     y="94"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect31" />
+  <rect
+     x="122"
+     y="94"
+     width="21"
+     height="16"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect32" />
+  <!-- Entrance / Emergency doors with canopy -->
+  <rect
+     x="65"
+     y="118"
+     width="52"
+     height="6"
+     rx="1"
+     fill="url(#hCanopy)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect33" />
+  <!-- Canopy shadow -->
+  <line
+     x1="68"
+     y1="125"
+     x2="114"
+     y2="125"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="1"
+     id="line33" />
+  <rect
+     x="72"
+     y="124"
+     width="38"
+     height="28"
+     rx="2"
+     fill="#2ECC71"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect34" />
+  <!-- Glass doors -->
+  <rect
+     x="76"
+     y="127"
+     width="14"
+     height="25"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect35" />
+  <line
+     x1="77"
+     y1="129"
+     x2="81"
+     y2="133"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="line35" />
+  <rect
+     x="92"
+     y="127"
+     width="14"
+     height="25"
+     rx="1"
+     fill="url(#hGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect36" />
+  <!-- Ambulance (enhanced with proper proportions and detail) -->
+  <!-- Foundation -->
+  <rect
+     x="28"
+     y="150"
+     width="126"
+     height="4"
+     rx="1"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect46" />
+  <path
+     d="m 127.08679,24.829514 -0.11933,7.200127 24.82117,0.104522 12.27811,-7.07159 z"
+     style="display:inline;mix-blend-mode:normal;fill:url(#linearGradient147);fill-rule:nonzero;stroke-width:0.751811"
+     id="path157"
+     sodipodi:nodetypes="ccccc" />
+  <path
+     d="m 54.987295,31.916127 0.01137,-6.917319 -11.431834,0.03041 -13.686609,6.927008 z"
+     style="display:inline;mix-blend-mode:normal;fill:url(#linearGradient46);fill-rule:nonzero;stroke-width:0.618603"
+     id="path157-3"
+     sodipodi:nodetypes="ccccc" />
+  <g
+     transform="translate(28.508997,120.08998)"
+     id="g45">
+    <!-- Shadow -->
+    <ellipse
+       cx="18"
+       cy="38"
+       rx="20"
+       ry="2"
+       fill="#1b3a5c"
+       opacity="0.1"
+       id="ellipse36" />
+    <!-- Body -->
+    <path
+       id="rect37"
+       style="fill:url(#linearGradient48);stroke:url(#linearGradient50);stroke-width:0.3;stroke-dasharray:none"
+       d="M 3.0007686 7.9998638 C 1.3387686 7.9998638 0.000768625 9.3378637 0.000768625 10.999864 L 0.000768625 28.999864 C 0.000768625 30.661864 1.3387686 31.999864 3.0007686 31.999864 L 30.000769 31.999864 L 35.000769 31.999864 L 40.000769 31.999864 C 41.108769 31.999864 42.000769 31.107864 42.000769 29.999864 L 42.000769 13.999864 C 42.000769 12.891864 41.108769 11.999864 40.000769 11.999864 L 38.000769 11.999864 L 38.000769 10.999864 C 38.000769 9.3378637 36.662769 7.9998638 35.000769 7.9998638 L 3.0007686 7.9998638 z " />
+    <!-- Cab -->
+    <!-- Windshield -->
+    <rect
+       x="31"
+       y="15"
+       width="8"
+       height="9"
+       rx="1"
+       fill="url(#hGlass)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.6"
+       id="rect39"
+       style="fill:url(#linearGradient47)" />
+    <line
+       x1="32"
+       y1="16"
+       x2="35"
+       y2="19"
+       stroke="#ffffff"
+       stroke-width="0.4"
+       opacity="0.3"
+       id="line39" />
+    <!-- Red cross on side -->
+    <rect
+       x="11"
+       y="16"
+       width="10"
+       height="4"
+       rx="0.5"
+       fill="#e74c3c"
+       id="rect40" />
+    <rect
+       x="14"
+       y="13"
+       width="4"
+       height="10"
+       rx="0.5"
+       fill="#e74c3c"
+       id="rect41" />
+    <!-- Red stripe -->
+    <line
+       x1="2"
+       y1="28"
+       x2="36"
+       y2="28"
+       stroke="#e74c3c"
+       stroke-width="1.5"
+       id="line41" />
+    <!-- Wheels -->
+    <circle
+       cx="10"
+       cy="34"
+       r="4"
+       fill="#2c3e50"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.8"
+       id="circle41" />
+    <circle
+       cx="10"
+       cy="34"
+       r="1.5"
+       fill="#95a5a6"
+       id="circle42" />
+    <circle
+       cx="32"
+       cy="34"
+       r="4"
+       fill="#2c3e50"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.8"
+       id="circle43" />
+    <circle
+       cx="32"
+       cy="34"
+       r="1.5"
+       fill="#95a5a6"
+       id="circle44" />
+    <!-- Light bar -->
+    <rect
+       x="5"
+       y="5"
+       width="8"
+       height="5"
+       rx="2"
+       fill="#e74c3c"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="rect44" />
+    <rect
+       x="15"
+       y="5"
+       width="8"
+       height="5"
+       rx="2"
+       fill="#3498db"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="rect45" />
+  </g>
+  <rect
+     x="114.81437"
+     y="129.79276"
+     width="16.002346"
+     height="12.000938"
+     rx="1.2309498"
+     fill="#ffffff"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.543554"
+     id="rect14-0" />
+  <rect
+     x="120.35365"
+     y="131.29288"
+     width="4.923799"
+     height="9.0007038"
+     rx="0.61547488"
+     fill="#e74c3c"
+     id="rect15-0"
+     style="stroke-width:0.679443" />
+  <rect
+     x="117.89175"
+     y="134.29312"
+     width="9.8475981"
+     height="3.0002346"
+     rx="0.61547488"
+     fill="#e74c3c"
+     id="rect16-1"
+     style="stroke-width:0.679443" />
+</svg>

@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-5 -45 220 220"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg59"
+   sodipodi:docname="toimistorakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview59"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.3931818"
+     inkscape:cx="76.329538"
+     inkscape:cy="193.18151"
+     inkscape:window-width="3200"
+     inkscape:window-height="1711"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg59" />
+  <!-- Toimistorakennukset - Office buildings (Enhanced 3D + Textures) -->
+  <defs
+     id="defs13">
+    <linearGradient
+       id="swatch71"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop71" />
+    </linearGradient>
+    <linearGradient
+       id="swatch68"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop68" />
+    </linearGradient>
+    <linearGradient
+       id="swatch66"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop66" />
+    </linearGradient>
+    <linearGradient
+       id="swatch65"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop65" />
+    </linearGradient>
+    <linearGradient
+       id="swatch63"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#626262;stop-opacity:1;"
+         offset="0"
+         id="stop63" />
+    </linearGradient>
+    <linearGradient
+       id="tWallD"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#34495E"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#2C3E50"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="tSideD"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#1C2833"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#17202A"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="tWallL"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#93C6E8"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#7FB3D8"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="tGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#B8E0F7"
+         id="stop7" />
+      <stop
+         offset="30%"
+         stop-color="#85C1E9"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#5DADE2"
+         id="stop9" />
+    </linearGradient>
+    <linearGradient
+       id="tGlassR"
+       x1="1"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#AED6F1"
+         id="stop10" />
+      <stop
+         offset="100%"
+         stop-color="#5DADE2"
+         id="stop11" />
+    </linearGradient>
+    <pattern
+       id="tConc"
+       width="14"
+       height="7"
+       patternUnits="userSpaceOnUse">
+      <rect
+         width="14"
+         height="7"
+         fill="none"
+         id="rect11" />
+      <rect
+         x="0"
+         y="0"
+         width="6.5"
+         height="3"
+         fill="none"
+         stroke="rgba(0,0,0,0.04)"
+         stroke-width="0.3"
+         id="rect12" />
+      <rect
+         x="7"
+         y="3.5"
+         width="6.5"
+         height="3"
+         fill="none"
+         stroke="rgba(0,0,0,0.04)"
+         stroke-width="0.3"
+         id="rect13" />
+    </pattern>
+    <filter
+       id="tShad"
+       x="-0.0033333335"
+       y="-0.001923077"
+       width="1.0066667"
+       height="1.0038462">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2.5"
+         flood-color="#1B3A5C"
+         flood-opacity="0.25" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient137"
+       id="linearGradient166"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.0813279,0,0,0.74385083,-261.95177,11.121377)"
+       x1="108.12694"
+       y1="-1.9673916"
+       x2="145.63683"
+       y2="-1.9673916" />
+    <linearGradient
+       id="linearGradient137"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#E8F4FD"
+         id="stop135"
+         style="stop-color:#747474;stop-opacity:1;" />
+      <stop
+         offset="0.40000001"
+         stop-color="#D6EAF8"
+         id="stop136"
+         style="stop-color:#717171;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#AED6F1"
+         id="stop137"
+         style="stop-color:#6b6b6b;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient137"
+       id="linearGradient166-5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(2.1851677,0,0,0.74385083,-228.10775,52.637117)"
+       x1="108.12694"
+       y1="-1.9673916"
+       x2="145.63683"
+       y2="-1.9673916" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#tGlassR"
+       id="linearGradient59"
+       x1="318.37308"
+       y1="64.416611"
+       x2="304.49472"
+       y2="79.748207"
+       gradientTransform="matrix(0.53956579,-0.12952877,0,1.8533421,0.44206296,38.422708)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#tGlassR"
+       id="linearGradient60"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.53956579,-0.12952877,0,1.8533421,0.38017414,5.3630234)"
+       x1="318.37308"
+       y1="64.416611"
+       x2="304.49472"
+       y2="79.748207" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#tGlassR"
+       id="linearGradient61"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.53956579,-0.12952877,0,1.8533421,0.44072592,-29.008984)"
+       x1="318.37308"
+       y1="64.416611"
+       x2="304.49472"
+       y2="79.748207" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#tGlassR"
+       id="linearGradient62"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.53956579,-0.12952877,0,1.8533421,0.3788371,-63.247504)"
+       x1="318.37308"
+       y1="64.416611"
+       x2="304.49472"
+       y2="79.748207" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient63"
+       x1="72"
+       y1="90"
+       x2="162"
+       y2="90"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient64"
+       x1="162"
+       y1="86.5"
+       x2="175"
+       y2="86.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient65"
+       x1="71.951736"
+       y1="8.2570124"
+       x2="174.98257"
+       y2="8.2570124"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient66"
+       x1="90"
+       y1="5"
+       x2="93"
+       y2="5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(4.4206296)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient67"
+       x1="141"
+       y1="5"
+       x2="144"
+       y2="5"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(4.4206296)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient68"
+       x1="8"
+       y1="56.5"
+       x2="84"
+       y2="56.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient69"
+       x1="8.167448"
+       y1="51.080521"
+       x2="72.123558"
+       y2="51.080521"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient70"
+       x1="10"
+       y1="113"
+       x2="82"
+       y2="113"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient71"
+       x1="18"
+       y1="73.5"
+       x2="33"
+       y2="73.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient72"
+       x1="39"
+       y1="73.5"
+       x2="54"
+       y2="73.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient73"
+       x1="59"
+       y1="73.5"
+       x2="74"
+       y2="73.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient74"
+       x1="59"
+       y1="93.5"
+       x2="74"
+       y2="93.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient75"
+       x1="39"
+       y1="93.5"
+       x2="54"
+       y2="93.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient76"
+       x1="18"
+       y1="93.5"
+       x2="33"
+       y2="93.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient77"
+       x1="18"
+       y1="113.5"
+       x2="33"
+       y2="113.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient78"
+       x1="39"
+       y1="113.5"
+       x2="54"
+       y2="113.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient79"
+       x1="59"
+       y1="113.5"
+       x2="74"
+       y2="113.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient80"
+       x1="59"
+       y1="133.5"
+       x2="74"
+       y2="133.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient81"
+       x1="39"
+       y1="133.5"
+       x2="54"
+       y2="133.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch63"
+       id="linearGradient82"
+       x1="18"
+       y1="133.5"
+       x2="33"
+       y2="133.5"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="110"
+     cy="170"
+     rx="98"
+     ry="5"
+     fill="#1B3A5C"
+     opacity="0.12"
+     id="ellipse13" />
+  <!-- ===== Shorter building (left/back) ===== -->
+  <g
+     filter="url(#tShad)"
+     id="g14">
+    <rect
+       x="10"
+       y="58"
+       width="72"
+       height="110"
+       rx="2"
+       fill="url(#tWallL)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect14"
+       style="stroke:url(#linearGradient70);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  </g>
+  <!-- Cornice -->
+  <rect
+     x="8"
+     y="53"
+     width="76"
+     height="7"
+     rx="2"
+     fill="#5DADE2"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect16"
+     style="stroke:url(#linearGradient68);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <!-- Left building windows (rows of 3 × 4) with glass gradient -->
+  <rect
+     x="18"
+     y="67"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect17"
+     style="stroke:url(#linearGradient71);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <line
+     x1="19"
+     y1="69"
+     x2="23"
+     y2="73"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="line17" />
+  <rect
+     x="39"
+     y="67"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect18"
+     style="stroke:url(#linearGradient72);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="59"
+     y="67"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect19"
+     style="stroke:url(#linearGradient73);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="18"
+     y="87"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect20"
+     style="stroke:url(#linearGradient76);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="39"
+     y="87"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect21"
+     style="stroke:url(#linearGradient75);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="59"
+     y="87"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect22"
+     style="stroke:url(#linearGradient74);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="18"
+     y="107"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect23"
+     style="stroke:url(#linearGradient77);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="39"
+     y="107"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect24"
+     style="stroke:url(#linearGradient78);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="59"
+     y="107"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect25"
+     style="stroke:url(#linearGradient79);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="18"
+     y="127"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect26"
+     style="stroke:url(#linearGradient82);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="39"
+     y="127"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect27"
+     style="stroke:url(#linearGradient81);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <rect
+     x="59"
+     y="127"
+     width="15"
+     height="13"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect28"
+     style="stroke:url(#linearGradient80);stroke-width:0.4;stroke-dasharray:none;stroke-linejoin:round;paint-order:markers fill stroke" />
+  <!-- ===== Tall main building (right/front) with 3D side ===== -->
+  <!-- 3D side wall -->
+  <path
+     id="polygon28"
+     style="fill:url(#tSideD);stroke:url(#linearGradient64);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.6;stroke-dasharray:none"
+     d="M 162,12 175,5 174.85265,159.04287 162,168 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Side windows -->
+  <path
+     id="rect32"
+     style="opacity:0.5;fill:url(#linearGradient59);stroke:#3498db;stroke-width:0.4"
+     d="m 164.94206,120.93265 7.13025,-4.57707 c 0.25702,-0.16498 0.5,0.10297 0.5,0.37997 v 25 c 0,0.277 -0.24298,0.45505 -0.5,0.62003 l -7.13025,4.57707 c -0.25702,0.16499 -0.5,-0.10297 -0.5,-0.37997 v -25 c 0,-0.277 0.24298,-0.45504 0.5,-0.62003 z"
+     sodipodi:nodetypes="sssssssss" />
+  <path
+     id="rect32-1"
+     style="opacity:0.5;fill:url(#linearGradient60);stroke:#3498db;stroke-width:0.4"
+     d="m 164.88017,87.872969 7.13025,-4.577066 c 0.25702,-0.164981 0.5,0.102969 0.5,0.379969 v 24.999998 c 0,0.277 -0.24298,0.45505 -0.5,0.62003 l -7.13025,4.57707 c -0.25702,0.16499 -0.5,-0.10297 -0.5,-0.37997 V 88.492999 c 0,-0.277 0.24298,-0.45504 0.5,-0.62003 z"
+     sodipodi:nodetypes="sssssssss" />
+  <path
+     id="rect32-3"
+     style="opacity:0.5;fill:url(#linearGradient61);stroke:#3498db;stroke-width:0.4"
+     d="m 164.94072,53.500961 7.13025,-4.577066 c 0.25702,-0.16498 0.5,0.10297 0.5,0.37997 v 25 c 0,0.277 -0.24298,0.45505 -0.5,0.62003 l -7.13025,4.577066 c -0.25702,0.164991 -0.5,-0.102969 -0.5,-0.379969 v -25 c 0,-0.277 0.24298,-0.45504 0.5,-0.620031 z"
+     sodipodi:nodetypes="sssssssss" />
+  <path
+     id="rect32-1-3"
+     style="opacity:0.5;fill:url(#linearGradient62);stroke:#3498db;stroke-width:0.4"
+     d="m 164.87883,19.262442 7.13025,-4.577065 c 0.25702,-0.164981 0.5,0.102969 0.5,0.379969 v 24.999997 c 0,0.277 -0.24298,0.45505 -0.5,0.620031 l -7.13025,4.577065 c -0.25702,0.164991 -0.5,-0.102969 -0.5,-0.379969 V 19.882473 c 0,-0.277 0.24298,-0.45504 0.5,-0.620031 z"
+     sodipodi:nodetypes="sssssssss" />
+  <g
+     filter="url(#tShad)"
+     id="g33"
+     style="stroke:url(#linearGradient63);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.6;stroke-dasharray:none">
+    <rect
+       x="72"
+       y="12"
+       width="90"
+       height="156"
+       rx="0"
+       fill="url(#tWallD)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect33"
+       style="stroke:url(#linearGradient63);stroke-linejoin:round;paint-order:markers fill stroke;stroke-width:0.6;stroke-dasharray:none" />
+  </g>
+  <path
+     d="M 162.218,11.761178 174.98257,4.863362 99.316267,5.0068823 71.951739,11.736203 Z"
+     style="display:inline;mix-blend-mode:normal;fill:url(#linearGradient166);fill-rule:nonzero;stroke:url(#linearGradient65);stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+     id="path168"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Glass curtain wall with gradient and reflections -->
+  <rect
+     x="80"
+     y="20"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect34" />
+  <line
+     x1="82"
+     y1="23"
+     x2="87"
+     y2="28"
+     stroke="#FFF"
+     stroke-width="0.5"
+     opacity="0.3"
+     id="line34" />
+  <rect
+     x="106"
+     y="20"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect35" />
+  <rect
+     x="132"
+     y="20"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect36" />
+  <rect
+     x="80"
+     y="54"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect37" />
+  <rect
+     x="106"
+     y="54"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect38" />
+  <rect
+     x="132"
+     y="54"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect39" />
+  <rect
+     x="80"
+     y="88"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect40" />
+  <rect
+     x="106"
+     y="88"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect41" />
+  <rect
+     x="132"
+     y="88"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect42" />
+  <rect
+     x="80"
+     y="122"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect43" />
+  <rect
+     x="106"
+     y="122"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect44" />
+  <rect
+     x="132"
+     y="122"
+     width="21"
+     height="28"
+     rx="1"
+     fill="url(#tGlass)"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     id="rect45" />
+  <!-- Entrance with glass doors -->
+  <rect
+     x="102"
+     y="152"
+     width="30"
+     height="16"
+     rx="2"
+     fill="#1A252F"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect46" />
+  <line
+     x1="117"
+     y1="152"
+     x2="117"
+     y2="168"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="line46" />
+  <rect
+     x="104"
+     y="154"
+     width="11"
+     height="12"
+     rx="0.5"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     opacity="0.6"
+     id="rect47" />
+  <rect
+     x="119"
+     y="154"
+     width="11"
+     height="12"
+     rx="0.5"
+     fill="url(#tGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     opacity="0.6"
+     id="rect48" />
+  <!-- Antenna on top -->
+  <!-- Smaller antenna rod -->
+  <!-- ===== Maplica Oy rooftop logo sign ===== -->
+  <!-- Sign support poles -->
+  <rect
+     x="94.420631"
+     y="-2"
+     width="3"
+     height="14"
+     fill="#5d6d7e"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect49"
+     style="stroke:url(#linearGradient66)" />
+  <rect
+     x="145.42062"
+     y="-2"
+     width="3"
+     height="14"
+     fill="#5d6d7e"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="rect50"
+     style="stroke:url(#linearGradient67)" />
+  <!-- Sign background -->
+  <rect
+     x="88.904221"
+     y="-23.201607"
+     width="64.738113"
+     height="26.73811"
+     rx="3.3199031"
+     fill="#0d47a1"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.11727"
+     id="rect51" />
+  <!-- Inner border accent -->
+  <rect
+     x="91.39415"
+     y="-21.196249"
+     width="59.758255"
+     height="22.727394"
+     rx="2.4899273"
+     fill="none"
+     stroke="#42a5f5"
+     stroke-width="0.446909"
+     opacity="0.5"
+     id="rect52" />
+  <!-- Map pin icon (Maplica logo) -->
+  <g
+     transform="matrix(0.82997578,0,0,0.80107167,98.033954,-19.196248)"
+     id="g54">
+    <circle
+       cx="8"
+       cy="6"
+       r="7"
+       fill="#1976d2"
+       opacity="0.9"
+       id="circle52" />
+    <circle
+       cx="8"
+       cy="4.5"
+       r="2.8"
+       fill="#ffffff"
+       opacity="0.9"
+       id="circle53" />
+    <polygon
+       points="12,7 8,15 4,7 "
+       fill="#1976d2"
+       opacity="0.9"
+       id="polygon53" />
+    <circle
+       cx="8"
+       cy="4.5"
+       r="1.2"
+       fill="#1976d2"
+       id="circle54" />
+  </g>
+  <!-- "Maplica" text -->
+  <text
+     x="110.98892"
+     y="-8.9393559"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="8.96935px"
+     font-weight="bold"
+     fill="#ffffff"
+     text-anchor="start"
+     id="text54"
+     transform="scale(1.017881,0.98243311)"
+     style="stroke-width:0.815396">Maplica</text>
+  <!-- "Oy" text -->
+  <text
+     x="110.98892"
+     y="-0.78539813"
+     font-family="Arial, Helvetica, sans-serif"
+     font-size="6.52317px"
+     fill="#90caf5"
+     text-anchor="start"
+     id="text55"
+     transform="scale(1.017881,0.98243311)"
+     style="stroke-width:0.815396">Oy</text>
+  <!-- Small decorative building (far right) -->
+  <path
+     d="m 71.784923,52.903296 v -4.192573 l -45.4544,0.182343 -17.0950737,4.132068 z"
+     style="display:inline;mix-blend-mode:normal;fill:url(#linearGradient166-5);fill-rule:nonzero;stroke:url(#linearGradient69);stroke-width:0.4;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+     id="path168-1"
+     sodipodi:nodetypes="ccccc" />
+</svg>

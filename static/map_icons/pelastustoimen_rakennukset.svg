@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -23 208 208"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg67"
+   sodipodi:docname="pelastustoimen_rakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview67"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.3858025"
+     inkscape:cx="11.736093"
+     inkscape:cy="176.25097"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg67" />
+  <!-- Pelastustoimen rakennukset - Fire station (Enhanced) -->
+  <defs
+     id="defs11">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect69"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       is_visible="true"
+       lpeversion="1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <linearGradient
+       id="linearGradient68"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#7f8c8d;stop-opacity:1;"
+         offset="0"
+         id="stop68" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop69" />
+    </linearGradient>
+    <linearGradient
+       id="pWall"
+       x1="13.247641"
+       y1="39.629696"
+       x2="79.461861"
+       y2="80.207108"
+       gradientTransform="scale(1.132277,0.88317609)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#F1948A"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#E74C3C"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="pSide"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#CB4335"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#B03A2E"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="pGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#D6EAF8"
+         id="stop5" />
+      <stop
+         offset="40%"
+         stop-color="#AED6F1"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#85C1E9"
+         id="stop7" />
+    </linearGradient>
+    <linearGradient
+       id="pTruck"
+       x1="0"
+       y1="5.7965507"
+       x2="28.982753"
+       y2="5.7965507"
+       gradientTransform="scale(1.4491377,0.69006556)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#E74C3C"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#C0392B"
+         id="stop9" />
+    </linearGradient>
+    <pattern
+       id="pBrick"
+       width="10"
+       height="5"
+       patternUnits="userSpaceOnUse">
+      <rect
+         x="0"
+         y="0"
+         width="4.5"
+         height="2"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.05)"
+         stroke-width="0.25"
+         id="rect9" />
+      <rect
+         x="5"
+         y="0"
+         width="4.5"
+         height="2"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.05)"
+         stroke-width="0.25"
+         id="rect10" />
+      <rect
+         x="2.5"
+         y="2.5"
+         width="4.5"
+         height="2"
+         rx="0.2"
+         fill="none"
+         stroke="rgba(0,0,0,0.05)"
+         stroke-width="0.25"
+         id="rect11" />
+    </pattern>
+    <filter
+       id="pShad"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2"
+         flood-color="#1B3A5C"
+         flood-opacity="0.18" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#pGlass"
+       id="linearGradient67"
+       x1="34"
+       y1="-2"
+       x2="44"
+       y2="8"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient68"
+       id="linearGradient69"
+       x1="172.5"
+       y1="80"
+       x2="173.5"
+       y2="80"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient137"
+       id="linearGradient135"
+       x1="108.12694"
+       y1="-1.9673916"
+       x2="145.63683"
+       y2="-1.9673916"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(4.4367597,0,0,0.9635683,-467.39423,26.86908)" />
+    <linearGradient
+       id="linearGradient137"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0"
+         stop-color="#E8F4FD"
+         id="stop135"
+         style="stop-color:#747474;stop-opacity:1;" />
+      <stop
+         offset="0.40000001"
+         stop-color="#D6EAF8"
+         id="stop136"
+         style="stop-color:#717171;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#AED6F1"
+         id="stop137"
+         style="stop-color:#6b6b6b;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="100"
+     cy="155"
+     rx="95"
+     ry="5"
+     fill="#1B3A5C"
+     opacity="0.1"
+     id="ellipse11" />
+  <path
+     id="path138"
+     style="display:inline;mix-blend-mode:normal;fill:url(#linearGradient135);fill-rule:nonzero;stroke-width:1.20925"
+     d="m 38.848397,23.357873 -26.861722,4.645343 156.004865,0.0057 10.24185,-5.930163 z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- 3D side wall -->
+  <path
+     id="polygon11"
+     style="fill:url(#pSide)"
+     d="M 165,35 177,28 176.70362,145.18323 165,152 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Main fire station building -->
+  <g
+     filter="url(#pShad)"
+     id="g12"
+     transform="matrix(0.99728869,0,0,1.000315,0.04109579,-0.047873)">
+    <path
+       id="rect12"
+       style="fill:url(#pWall)"
+       d="M 17.15718,34.352763 165.46248,34.981482 165.39625,152 17.15718,151.35276 c -1.107992,-0.005 -2,-0.892 -2,-2 V 36.352763 c 0,-1.108 0.89201,-2.004697 2,-2 z"
+       sodipodi:nodetypes="sccssss" />
+  </g>
+  <!-- Roof with 3D side -->
+  <rect
+     x="12"
+     y="28"
+     width="156"
+     height="10"
+     rx="0"
+     fill="#c0392b"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="rect14" />
+  <path
+     id="polygon14"
+     style="fill:#922b21;stroke-width:0.8"
+     d="m 168,28 12,-7 v 11 l -12,6 z"
+     sodipodi:nodetypes="ccccc" />
+  <line
+     x1="15"
+     y1="38"
+     x2="165"
+     y2="38"
+     stroke="rgba(0,0,0,0.1)"
+     stroke-width="1"
+     id="line14" />
+  <!-- Upper windows with glass gradient -->
+  <rect
+     x="25"
+     y="45"
+     width="22"
+     height="18"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect15" />
+  <line
+     x1="27"
+     y1="47"
+     x2="30"
+     y2="50"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="line16" />
+  <rect
+     x="55"
+     y="45"
+     width="22"
+     height="18"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect16" />
+  <rect
+     x="85"
+     y="45"
+     width="22"
+     height="18"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect17" />
+  <rect
+     x="115"
+     y="45"
+     width="22"
+     height="18"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect18" />
+  <rect
+     x="145"
+     y="45"
+     width="14"
+     height="18"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect19" />
+  <!-- Garage bay 1 (open, showing fire truck) -->
+  <rect
+     x="22"
+     y="78"
+     width="48"
+     height="74"
+     rx="3"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="rect20" />
+  <line
+     x1="22.35317"
+     y1="109.82135"
+     x2="70.353172"
+     y2="109.82135"
+     stroke="#bdc3c7"
+     stroke-width="0.6"
+     id="line20-5" />
+  <line
+     x1="22.35317"
+     y1="119.82135"
+     x2="70.353172"
+     y2="119.82135"
+     stroke="#bdc3c7"
+     stroke-width="0.6"
+     id="line21-1" />
+  <!-- Door panels -->
+  <line
+     x1="22"
+     y1="90"
+     x2="70"
+     y2="90"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line20" />
+  <line
+     x1="22"
+     y1="100"
+     x2="70"
+     y2="100"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line21" />
+  <!-- Fire truck visible inside (improved) -->
+  <!-- Garage bay 2 (closed) -->
+  <rect
+     x="78"
+     y="78"
+     width="48"
+     height="74"
+     rx="3"
+     fill="#FDFEFE"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="rect42" />
+  <line
+     x1="78"
+     y1="88"
+     x2="126"
+     y2="88"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line42" />
+  <line
+     x1="78"
+     y1="98"
+     x2="126"
+     y2="98"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line43" />
+  <line
+     x1="78"
+     y1="108"
+     x2="126"
+     y2="108"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line44" />
+  <line
+     x1="78"
+     y1="118"
+     x2="126"
+     y2="118"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line45" />
+  <line
+     x1="78"
+     y1="128"
+     x2="126"
+     y2="128"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line46" />
+  <line
+     x1="78"
+     y1="138"
+     x2="126"
+     y2="138"
+     stroke="#BDC3C7"
+     stroke-width="0.6"
+     id="line47" />
+  <!-- Side door -->
+  <rect
+     x="134"
+     y="112"
+     width="22"
+     height="40"
+     rx="2"
+     fill="#922B21"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect47" />
+  <circle
+     cx="152"
+     cy="132"
+     r="1.2"
+     fill="#F5B041"
+     id="circle47" />
+  <!-- Fire department emblem (enhanced with detail) -->
+  <g
+     transform="translate(72,10)"
+     id="g51">
+    <circle
+       cx="12"
+       cy="12"
+       r="12"
+       fill="#F4D03F"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1.2"
+       id="circle48" />
+    <circle
+       cx="12"
+       cy="12"
+       r="10"
+       fill="#F5B041"
+       id="circle49" />
+    <!-- Maltese cross -->
+    <rect
+       x="8"
+       y="3"
+       width="8"
+       height="18"
+       rx="1"
+       fill="#E74C3C"
+       id="rect49" />
+    <rect
+       x="3"
+       y="8"
+       width="18"
+       height="8"
+       rx="1"
+       fill="#E74C3C"
+       id="rect50" />
+    <circle
+       cx="12"
+       cy="12"
+       r="3.5"
+       fill="#F4D03F"
+       id="circle50" />
+    <!-- Axes inside -->
+    <line
+       x1="10"
+       y1="10"
+       x2="14"
+       y2="14"
+       stroke="#C0392B"
+       stroke-width="0.6"
+       id="line50" />
+    <line
+       x1="14"
+       y1="10"
+       x2="10"
+       y2="14"
+       stroke="#C0392B"
+       stroke-width="0.6"
+       id="line51" />
+  </g>
+  <!-- Siren/lights on roof -->
+  <rect
+     x="52.298672"
+     y="17.407238"
+     width="16"
+     height="12"
+     rx="3"
+     fill="#e74c3c"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect51" />
+  <rect
+     x="100"
+     y="18"
+     width="16"
+     height="12"
+     rx="3"
+     fill="#3498DB"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect52" />
+  <!-- Light flash effects -->
+  <line
+     x1="50.298672"
+     y1="21.407238"
+     x2="46.298672"
+     y2="19.407238"
+     stroke="#e74c3c"
+     stroke-width="0.6"
+     opacity="0.5"
+     id="line52" />
+  <line
+     x1="50.298672"
+     y1="25.407238"
+     x2="46.298672"
+     y2="27.407238"
+     stroke="#e74c3c"
+     stroke-width="0.6"
+     opacity="0.5"
+     id="line53" />
+  <line
+     x1="118"
+     y1="22"
+     x2="122"
+     y2="20"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     opacity="0.5"
+     id="line54" />
+  <line
+     x1="118"
+     y1="26"
+     x2="122"
+     y2="28"
+     stroke="#3498DB"
+     stroke-width="0.6"
+     opacity="0.5"
+     id="line55" />
+  <!-- Hose tower (enhanced with ladder rungs) -->
+  <rect
+     x="178"
+     y="10"
+     width="22"
+     height="142"
+     rx="1"
+     fill="#BDC3C7"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="rect55" />
+  <!-- Tower cap -->
+  <rect
+     x="176"
+     y="6"
+     width="26"
+     height="6"
+     rx="2"
+     fill="#95A5A6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect57" />
+  <!-- Tower windows -->
+  <rect
+     x="182"
+     y="20"
+     width="14"
+     height="10"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect58" />
+  <rect
+     x="182"
+     y="38"
+     width="14"
+     height="10"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect59" />
+  <rect
+     x="182"
+     y="56"
+     width="14"
+     height="10"
+     rx="1"
+     fill="url(#pGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.6"
+     id="rect60" />
+  <!-- Ladder on side -->
+  <line
+     x1="176"
+     y1="20"
+     x2="176"
+     y2="138.11385"
+     stroke="#7f8c8d"
+     stroke-width="1"
+     id="line60" />
+  <line
+     x1="173"
+     y1="22.074667"
+     x2="173"
+     y2="140"
+     stroke="#7f8c8d"
+     stroke-width="1"
+     id="line61"
+     style="fill:url(#linearGradient69)" />
+  <line
+     x1="173"
+     y1="30.838293"
+     x2="176"
+     y2="29.161707"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line62" />
+  <line
+     x1="173"
+     y1="42.838291"
+     x2="176"
+     y2="41.161709"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line63" />
+  <line
+     x1="173"
+     y1="54.838291"
+     x2="176"
+     y2="53.161709"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line64" />
+  <line
+     x1="173"
+     y1="66.838295"
+     x2="176"
+     y2="65.161705"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line65" />
+  <line
+     x1="173"
+     y1="78.838295"
+     x2="176"
+     y2="77.161705"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line66" />
+  <line
+     x1="173"
+     y1="90.838295"
+     x2="176"
+     y2="89.161705"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line67" />
+  <line
+     x1="173.46071"
+     y1="102.86343"
+     x2="176.46071"
+     y2="101.18684"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line65-9" />
+  <line
+     x1="173.46071"
+     y1="114.86343"
+     x2="176.46071"
+     y2="113.18684"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line66-4" />
+  <line
+     x1="173.46071"
+     y1="126.86343"
+     x2="176.46071"
+     y2="125.18684"
+     stroke="#7f8c8d"
+     stroke-width="0.6"
+     id="line67-8" />
+  <g
+     transform="matrix(1.3919179,0,0,1.1814237,28.391158,119.11466)"
+     id="g42">
+    <!-- Main truck body -->
+    <rect
+       x="0"
+       y="4"
+       width="42"
+       height="20"
+       rx="2"
+       fill="url(#pTruck)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="1"
+       id="rect21"
+       style="fill:url(#pTruck)" />
+    <!-- White stripe -->
+    <rect
+       x="0"
+       y="16"
+       width="42"
+       height="3"
+       rx="0.5"
+       fill="#ffffff"
+       opacity="0.4"
+       id="rect22" />
+    <!-- Cab (taller, set forward) -->
+    <rect
+       x="30"
+       y="-4"
+       width="16"
+       height="18"
+       rx="2"
+       fill="#c0392b"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.8"
+       id="rect23" />
+    <!-- Windshield (angled look) -->
+    <path
+       d="m 36,-2 h 8 V 8 H 34 Z"
+       fill="url(#pGlass)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="path23"
+       style="fill:url(#linearGradient67)" />
+    <line
+       x1="37"
+       y1="0"
+       x2="39"
+       y2="2"
+       stroke="#ffffff"
+       stroke-width="0.4"
+       opacity="0.4"
+       id="line23" />
+    <!-- Light bar (red + blue) -->
+    <rect
+       x="32"
+       y="-7"
+       width="12"
+       height="3"
+       rx="1.5"
+       fill="#e74c3c"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="rect24" />
+    <rect
+       x="32"
+       y="-7"
+       width="6"
+       height="3"
+       rx="1.5"
+       fill="#3498db"
+       id="rect25" />
+    <!-- Light flash -->
+    <line
+       x1="30"
+       y1="-6"
+       x2="28"
+       y2="-8"
+       stroke="#e74c3c"
+       stroke-width="0.5"
+       opacity="0.5"
+       id="line25" />
+    <line
+       x1="46"
+       y1="-6"
+       x2="48"
+       y2="-8"
+       stroke="#3498db"
+       stroke-width="0.5"
+       opacity="0.5"
+       id="line26" />
+    <!-- Headlight -->
+    <rect
+       x="44"
+       y="4"
+       width="2"
+       height="3"
+       rx="0.5"
+       fill="#f1c40f"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="rect26" />
+    <!-- Front bumper -->
+    <rect
+       x="43"
+       y="10"
+       width="3"
+       height="4"
+       rx="0.5"
+       fill="#bdc3c7"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="rect27" />
+    <!-- Hose compartments (roller-shutter doors) -->
+    <rect
+       x="2"
+       y="6"
+       width="8"
+       height="10"
+       rx="0.5"
+       fill="#f4d03f"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect28" />
+    <line
+       x1="2"
+       y1="9"
+       x2="10"
+       y2="9"
+       stroke="#d4ac0d"
+       stroke-width="0.3"
+       id="line28" />
+    <line
+       x1="2"
+       y1="12"
+       x2="10"
+       y2="12"
+       stroke="#d4ac0d"
+       stroke-width="0.3"
+       id="line29" />
+    <rect
+       x="12"
+       y="6"
+       width="8"
+       height="10"
+       rx="0.5"
+       fill="#f4d03f"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect29" />
+    <line
+       x1="12"
+       y1="9"
+       x2="20"
+       y2="9"
+       stroke="#d4ac0d"
+       stroke-width="0.3"
+       id="line30" />
+    <line
+       x1="12"
+       y1="12"
+       x2="20"
+       y2="12"
+       stroke="#d4ac0d"
+       stroke-width="0.3"
+       id="line31" />
+    <!-- Pump panel area -->
+    <rect
+       x="22"
+       y="6"
+       width="6"
+       height="14"
+       rx="0.5"
+       fill="#a93226"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.4"
+       id="rect31" />
+    <circle
+       cx="25"
+       cy="10"
+       r="1.5"
+       fill="#bdc3c7"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="circle31" />
+    <circle
+       cx="25"
+       cy="16"
+       r="1.5"
+       fill="#bdc3c7"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.3"
+       id="circle32" />
+    <!-- Ladder on top (extended) -->
+    <line
+       x1="0"
+       y1="1"
+       x2="28"
+       y2="1"
+       stroke="#bdc3c7"
+       stroke-width="1.2"
+       id="line32" />
+    <line
+       x1="0"
+       y1="-2"
+       x2="28"
+       y2="-2"
+       stroke="#bdc3c7"
+       stroke-width="1.2"
+       id="line33" />
+    <line
+       x1="4"
+       y1="-2"
+       x2="4"
+       y2="1"
+       stroke="#bdc3c7"
+       stroke-width="0.5"
+       id="line34" />
+    <line
+       x1="10"
+       y1="-2"
+       x2="10"
+       y2="1"
+       stroke="#bdc3c7"
+       stroke-width="0.5"
+       id="line35" />
+    <line
+       x1="16"
+       y1="-2"
+       x2="16"
+       y2="1"
+       stroke="#bdc3c7"
+       stroke-width="0.5"
+       id="line36" />
+    <line
+       x1="22"
+       y1="-2"
+       x2="22"
+       y2="1"
+       stroke="#bdc3c7"
+       stroke-width="0.5"
+       id="line37" />
+    <!-- "112" emergency number -->
+    <text
+       x="14.527768"
+       y="23"
+       font-family="Arial, sans-serif"
+       font-size="4px"
+       font-weight="bold"
+       fill="#ffffff"
+       opacity="0.8"
+       id="text37">112</text>
+    <!-- Wheels -->
+    <circle
+       cx="8"
+       cy="26"
+       r="5"
+       fill="#2c3e50"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.6"
+       id="circle37" />
+    <circle
+       cx="8"
+       cy="26"
+       r="2"
+       fill="#7f8c8d"
+       id="circle38" />
+    <circle
+       cx="38"
+       cy="26"
+       r="5"
+       fill="#2c3e50"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.6"
+       id="circle41" />
+    <circle
+       cx="38"
+       cy="26"
+       r="2"
+       fill="#7f8c8d"
+       id="circle42" />
+  </g>
+</svg>

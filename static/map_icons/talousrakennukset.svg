@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 -20 178 178"
+   width="200"
+   height="200"
+   version="1.1"
+   id="svg58"
+   sodipodi:docname="talousrakennukset.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview58"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.324205"
+     inkscape:cx="-46.928514"
+     inkscape:cy="34.143502"
+     inkscape:window-width="3200"
+     inkscape:window-height="1711"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg58" />
+  <!-- Talousrakennukset - Utility/outbuildings (Enhanced) -->
+  <defs
+     id="defs13">
+    <linearGradient
+       id="swatch58"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#4e4e4e;stop-opacity:1;"
+         offset="0"
+         id="stop58" />
+    </linearGradient>
+    <linearGradient
+       id="taWall"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#7E8C8D"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#6B7B7C"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="taSide"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#5D6D6E"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#4E5E5F"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="taGarWall"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="0">
+      <stop
+         offset="0%"
+         stop-color="#8E9E9F"
+         id="stop5" />
+      <stop
+         offset="100%"
+         stop-color="#7B8B8C"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       id="taGlass"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#E8F0FE"
+         id="stop7" />
+      <stop
+         offset="30%"
+         stop-color="#B0C4DE"
+         id="stop8" />
+      <stop
+         offset="100%"
+         stop-color="#8EAEC8"
+         id="stop9" />
+    </linearGradient>
+    <linearGradient
+       id="taRoof"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#6E7D8E"
+         id="stop10" />
+      <stop
+         offset="100%"
+         stop-color="#5D6D7E"
+         id="stop11" />
+    </linearGradient>
+    <pattern
+       id="taPlank"
+       width="16"
+       height="120"
+       patternUnits="userSpaceOnUse">
+      <line
+         x1="0"
+         y1="0"
+         x2="0"
+         y2="120"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.5"
+         id="line11" />
+    </pattern>
+    <pattern
+       id="taCorrugated"
+       width="6"
+       height="4"
+       patternUnits="userSpaceOnUse">
+      <line
+         x1="0"
+         y1="1"
+         x2="6"
+         y2="1"
+         stroke="rgba(255,255,255,0.07)"
+         stroke-width="0.4"
+         id="line12" />
+      <line
+         x1="0"
+         y1="3"
+         x2="6"
+         y2="3"
+         stroke="rgba(0,0,0,0.06)"
+         stroke-width="0.4"
+         id="line13" />
+    </pattern>
+    <filter
+       id="taShad"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feDropShadow
+         dx="2"
+         dy="3"
+         stdDeviation="2"
+         flood-color="#1B3A5C"
+         flood-opacity="0.18" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient58"
+       x1="30"
+       y1="89"
+       x2="30"
+       y2="89"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient59"
+       x1="50"
+       y1="89"
+       x2="50"
+       y2="89"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient60"
+       x1="70"
+       y1="89"
+       x2="70"
+       y2="89"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient61"
+       x1="40"
+       y1="98"
+       x2="40"
+       y2="98"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient62"
+       x1="34"
+       y1="98"
+       x2="34"
+       y2="98"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient63"
+       x1="28"
+       y1="98"
+       x2="28"
+       y2="98"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient64"
+       x1="22"
+       y1="98"
+       x2="22"
+       y2="98"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient65"
+       gradientUnits="userSpaceOnUse"
+       x1="70"
+       y1="89"
+       x2="70"
+       y2="89" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient66"
+       gradientUnits="userSpaceOnUse"
+       x1="70"
+       y1="89"
+       x2="70"
+       y2="89" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient67"
+       gradientUnits="userSpaceOnUse"
+       x1="70"
+       y1="89"
+       x2="70"
+       y2="89" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch58"
+       id="linearGradient68"
+       gradientUnits="userSpaceOnUse"
+       x1="70"
+       y1="89"
+       x2="70"
+       y2="89" />
+  </defs>
+  <!-- Ground shadow -->
+  <ellipse
+     cx="88"
+     cy="133"
+     rx="78"
+     ry="4"
+     fill="#1B3A5C"
+     opacity="0.1"
+     id="ellipse13" />
+  <!-- === SHED SECTION (left) === -->
+  <!-- 3D side wall -->
+  <polygon
+     points="85,50 95,43 95,128 85,128"
+     fill="url(#taSide)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="polygon13" />
+  <!-- Main shed body -->
+  <g
+     filter="url(#taShad)"
+     id="g14">
+    <rect
+       x="10"
+       y="50"
+       width="75"
+       height="78"
+       rx="0"
+       fill="url(#taWall)"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="param(outline-width) 2"
+       id="rect14" />
+  </g>
+  <!-- Extra plank lines -->
+  <line
+     x1="30"
+     y1="50"
+     x2="30"
+     y2="128"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line15"
+     style="stroke:url(#linearGradient58);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="50"
+     y1="50"
+     x2="50"
+     y2="128"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line16"
+     style="stroke:url(#linearGradient59);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="70"
+     y1="50"
+     x2="70"
+     y2="128"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line17"
+     style="stroke:url(#linearGradient60);stroke-width:0.3;stroke-dasharray:none" />
+  <!-- Shed roof (gabled) with 3D side -->
+  <polygon
+     points="5,50 47.5,25 90,50"
+     fill="url(#taRoof)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="param(outline-width) 2"
+     id="polygon17" />
+  <path
+     id="polygon18"
+     style="fill:#4d5d6e"
+     d="M 90,50 100.70711,46.181981 63.510408,24.717514 47.5,25 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Shed large door with plank texture -->
+  <rect
+     x="16"
+     y="68"
+     width="30"
+     height="60"
+     rx="1"
+     fill="#4E5E5F"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.2"
+     id="rect19" />
+  <!-- Door planks -->
+  <line
+     x1="22"
+     y1="68"
+     x2="22"
+     y2="128"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line19"
+     style="stroke:url(#linearGradient64);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="28"
+     y1="68"
+     x2="28"
+     y2="128"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line20"
+     style="stroke:url(#linearGradient63);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="34"
+     y1="68"
+     x2="34"
+     y2="128"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line21"
+     style="stroke:url(#linearGradient62);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="40"
+     y1="68"
+     x2="40"
+     y2="128"
+     stroke="rgba(0,0,0,0.08)"
+     stroke-width="0.4"
+     id="line22"
+     style="stroke:url(#linearGradient61);stroke-width:0.3;stroke-dasharray:none" />
+  <!-- Cross brace -->
+  <!-- Brace center plate -->
+  <!-- Door handle -->
+  <circle
+     cx="43"
+     cy="95"
+     r="2.2"
+     fill="#ABB2B9"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.5"
+     id="circle25" />
+  <!-- Hinges -->
+  <rect
+     x="16"
+     y="72"
+     width="4"
+     height="2"
+     rx="0.3"
+     fill="#34495E"
+     id="rect25" />
+  <rect
+     x="16"
+     y="108"
+     width="4"
+     height="2"
+     rx="0.3"
+     fill="#34495E"
+     id="rect26" />
+  <!-- Shed window with glass gradient -->
+  <rect
+     x="56"
+     y="62"
+     width="18"
+     height="15"
+     rx="1"
+     fill="url(#taGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.8"
+     id="rect27" />
+  <!-- Sill -->
+  <rect
+     x="55"
+     y="77"
+     width="20"
+     height="2"
+     rx="0.5"
+     fill="#5D6D6E"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="rect28" />
+  <!-- Glass reflection -->
+  <line
+     x1="58"
+     y1="64"
+     x2="62"
+     y2="68"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.35"
+     id="line29" />
+  <!-- === GARAGE SECTION (right) === -->
+  <!-- 3D side wall -->
+  <path
+     id="polygon29"
+     style="fill:#6b7b7c"
+     d="m 160,55 12,-7 -0.12624,73.30947 L 160,128 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Garage main body -->
+  <rect
+     x="95"
+     y="55"
+     width="65"
+     height="73"
+     rx="0"
+     fill="url(#taGarWall)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="rect29" />
+  <!-- Garage roof with 3D side -->
+  <line
+     x1="108.45083"
+     y1="52.85437"
+     x2="108.45083"
+     y2="130.85437"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line17-3"
+     style="stroke:url(#linearGradient65);stroke-width:0.3;stroke-dasharray:none" />
+  <line
+     x1="126.65411"
+     y1="54.850918"
+     x2="126.65411"
+     y2="129.39145"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line17-3-4"
+     style="stroke:url(#linearGradient66);stroke-width:0.293272;stroke-dasharray:none" />
+  <line
+     x1="143.66235"
+     y1="54.34547"
+     x2="143.66235"
+     y2="129.03641"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line17-3-6"
+     style="stroke:url(#linearGradient67);stroke-width:0.293567;stroke-dasharray:none" />
+  <polygon
+     points="90,55 127.5,28 165,55"
+     fill="url(#taRoof)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1.5"
+     id="polygon30" />
+  <path
+     id="polygon31"
+     style="fill:#4d5d6e"
+     d="M 165,55 176.95361,49.851325 141.07762,25.164992 127.5,28 Z"
+     sodipodi:nodetypes="ccccc" />
+  <!-- Garage door (roller door enhanced) -->
+  <rect
+     x="103"
+     y="78"
+     width="48"
+     height="50"
+     rx="1"
+     fill="#AEB6BF"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="1"
+     id="rect32" />
+  <!-- Roller door slats -->
+  <line
+     x1="103"
+     y1="84"
+     x2="151"
+     y2="84"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line32" />
+  <line
+     x1="103"
+     y1="90"
+     x2="151"
+     y2="90"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line33" />
+  <line
+     x1="103"
+     y1="96"
+     x2="151"
+     y2="96"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line34" />
+  <line
+     x1="103"
+     y1="102"
+     x2="151"
+     y2="102"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line35" />
+  <line
+     x1="103"
+     y1="108"
+     x2="151"
+     y2="108"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line36" />
+  <line
+     x1="103"
+     y1="114"
+     x2="151"
+     y2="114"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line37" />
+  <line
+     x1="103"
+     y1="120"
+     x2="151"
+     y2="120"
+     stroke="#95A5A6"
+     stroke-width="0.7"
+     id="line38" />
+  <!-- Door handle bar -->
+  <rect
+     x="120"
+     y="124"
+     width="14"
+     height="2"
+     rx="0.5"
+     fill="#808B94"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.3"
+     id="rect38" />
+  <!-- Garage window (small arch) with glass gradient -->
+  <rect
+     x="113"
+     y="60"
+     width="26"
+     height="13"
+     rx="3"
+     fill="url(#taGlass)"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.7"
+     id="rect39" />
+  <!-- Reflection -->
+  <line
+     x1="116"
+     y1="63"
+     x2="120"
+     y2="67"
+     stroke="#FFF"
+     stroke-width="0.4"
+     opacity="0.3"
+     id="line40" />
+  <!-- Enhanced garden tools leaning against shed -->
+  <!-- Enhanced wheelbarrow -->
+  <rect
+     x="94.704201"
+     y="126.89943"
+     width="65.218796"
+     height="3.9999998"
+     rx="0.33308628"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.386099"
+     id="rect58" />
+  <rect
+     x="188.7699"
+     y="227.60132"
+     width="14.680753"
+     height="4.0000253"
+     rx="0.20972505"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.183184"
+     id="rect58-5"
+     transform="matrix(0.84603447,-0.5331282,0,1,0,0)" />
+  <rect
+     x="8"
+     y="126"
+     width="77.222801"
+     height="4"
+     rx="0.965285"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.4"
+     id="rect57" />
+  <rect
+     x="85.112411"
+     y="134.39301"
+     width="10.241186"
+     height="4"
+     rx="0.12801482"
+     fill="#95a5a6"
+     stroke="param(outline) #1B3A5C"
+     stroke-width="0.145667"
+     id="rect57-8"
+     transform="matrix(0.99512608,-0.09861079,0,1,0,0)" />
+  <g
+     transform="translate(10,108)"
+     id="g56">
+    <!-- Handles -->
+    <line
+       x1="17.40621"
+       y1="1.4980597"
+       x2="29.40621"
+       y2="9.4980602"
+       stroke="#27ae60"
+       stroke-width="1.5"
+       id="line49" />
+    <line
+       x1="19.40621"
+       y1="4.4980597"
+       x2="31.406212"
+       y2="12.498059"
+       stroke="#27ae60"
+       stroke-width="1.5"
+       id="line50" />
+    <!-- Tray with soil load -->
+    <path
+       d="m 27.727038,5.6739974 4,9.9999996 h 14 l 2,-9.9999996"
+       fill="#2ecc71"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.7"
+       id="path50" />
+    <!-- Soil load -->
+    <path
+       d="m 28.59091,5.6739974 q 4,-4 9,-4 5,0 9,4"
+       fill="#8b6d3f"
+       stroke="#7a5c2e"
+       stroke-width="0.3"
+       id="path51" />
+    <!-- Soil texture dots -->
+    <circle
+       cx="34.727039"
+       cy="3.6739974"
+       r="0.5"
+       fill="#6e5428"
+       id="circle51" />
+    <circle
+       cx="39.727039"
+       cy="2.6739974"
+       r="0.40000001"
+       fill="#6e5428"
+       id="circle52" />
+    <circle
+       cx="42.727039"
+       cy="4.1739974"
+       r="0.5"
+       fill="#6e5428"
+       id="circle53" />
+    <!-- Wheel -->
+    <circle
+       cx="47.202312"
+       cy="20.23217"
+       r="3.5"
+       fill="#34495e"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="circle54" />
+    <circle
+       cx="47.202312"
+       cy="20.23217"
+       r="1.2"
+       fill="#4a6374"
+       id="circle55" />
+    <!-- Axle -->
+    <line
+       x1="45.202312"
+       y1="15.23217"
+       x2="47.202312"
+       y2="20.23217"
+       stroke="#34495e"
+       stroke-width="1"
+       id="line55" />
+    <!-- Leg -->
+    <line
+       x1="33.727039"
+       y1="15.673998"
+       x2="33.727039"
+       y2="22.673998"
+       stroke="#27ae60"
+       stroke-width="1"
+       id="line56" />
+  </g>
+  <g
+     transform="translate(86,82)"
+     id="g48">
+    <!-- Shovel -->
+    <line
+       x1="0"
+       y1="45"
+       x2="2"
+       y2="5"
+       stroke="#8B5E3C"
+       stroke-width="2"
+       id="line41" />
+    <path
+       d="M-2,5 L2,-1 L6,5 Q2,11 -2,5Z"
+       fill="#7F8C8D"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="path41" />
+    <!-- Shovel edge highlight -->
+    <path
+       d="M-1,5 L2,0 L5,5"
+       fill="none"
+       stroke="#A0A8AF"
+       stroke-width="0.3"
+       id="path42" />
+    <!-- Rake -->
+    <line
+       x1="7"
+       y1="45"
+       x2="9"
+       y2="8"
+       stroke="#8B5E3C"
+       stroke-width="1.5"
+       id="line42" />
+    <line
+       x1="4"
+       y1="8"
+       x2="14"
+       y2="8"
+       stroke="#7F8C8D"
+       stroke-width="1.5"
+       id="line43" />
+    <line
+       x1="5"
+       y1="8"
+       x2="5"
+       y2="13"
+       stroke="#7F8C8D"
+       stroke-width="0.7"
+       id="line44" />
+    <line
+       x1="7.5"
+       y1="8"
+       x2="7.5"
+       y2="13"
+       stroke="#7F8C8D"
+       stroke-width="0.7"
+       id="line45" />
+    <line
+       x1="10"
+       y1="8"
+       x2="10"
+       y2="13"
+       stroke="#7F8C8D"
+       stroke-width="0.7"
+       id="line46" />
+    <line
+       x1="12.5"
+       y1="8"
+       x2="12.5"
+       y2="13"
+       stroke="#7F8C8D"
+       stroke-width="0.7"
+       id="line47" />
+    <!-- Rake head highlight -->
+    <line
+       x1="4"
+       y1="7.5"
+       x2="14"
+       y2="7.5"
+       stroke="#A0A8AF"
+       stroke-width="0.3"
+       id="line48" />
+  </g>
+  <!-- Watering can (extra detail item) -->
+  <g
+     transform="translate(71.130481,118.76854)"
+     id="g57">
+    <ellipse
+       cx="6"
+       cy="6"
+       rx="6"
+       ry="5"
+       fill="#27ae60"
+       stroke="param(outline) #1B3A5C"
+       stroke-width="0.5"
+       id="ellipse56" />
+    <line
+       x1="12"
+       y1="4"
+       x2="18"
+       y2="0"
+       stroke="#27ae60"
+       stroke-width="1.2"
+       id="line57" />
+    <circle
+       cx="18"
+       cy="0"
+       r="1"
+       fill="#229954"
+       id="circle57" />
+    <path
+       d="M 3,2 Q 6,-3 9,2"
+       fill="none"
+       stroke="#229954"
+       stroke-width="0.8"
+       id="path57" />
+  </g>
+  <!-- Foundation -->
+  <line
+     x1="166.75165"
+     y1="54.272652"
+     x2="166.75165"
+     y2="122.6087"
+     stroke="rgba(0,0,0,0.07)"
+     stroke-width="0.5"
+     id="line17-3-49"
+     style="stroke:url(#linearGradient68);stroke-width:0.280802;stroke-dasharray:none" />
+</svg>
