@@ -1,6 +1,6 @@
 # Kiinteistöjen ja maapohjien tarkastusohje
 
-Tämä ohje opastaa käyttämään KiinteistöveroApuri-työkalua kiinteistöjen ja maapohjien tarkastamiseen. Työkalu vertaa kunnan rekisteriä ja verottajan tietoja, tunnistaa erot kiinteistötiedoissa ja auttaa korjaamaan virheellisiä tietoja.
+Tämä ohje opastaa kiinteistöjen ja maapohjien tarkastuksessa KiinteistöveroApurin avulla. Käytännössä se tarkoittaa kunnan rekisterin ja verottajan tietojen vertailua: mistä löytyy eroja, mitä ne tarkoittavat ja mitä niille pitää tehdä.
 
 Prosessointi luo kolme keskeistä tasoa kiinteistöjen tarkastukseen:
 
@@ -17,8 +17,8 @@ Taso sisältää yhdistetyt tiedot molemmista lähteistä ja mahdollistaa erojen
 - Kaava-alueiden tarkastelu
 - Kiinteistöverosummien vertailu
 
-**Karttasymboolit:**
-Visualisointitapa riippuu valitusta analyysistä (Aluehinta, Ranta, Kaava_alue, Kiinteistövero). Kaikki käyttävät graduated/categorized symbologiaa.
+**Karttatyylit:**
+Tasolle on määritelty useita tyylivaihtoehtoja: Aluehinta (lämpökartta tai kategorinen), Ranta, Kaava-alue ja Kiinteistövero. Tyylin voi vaihtaa QGIS-tasopaneelista tai lisäosan Tyylit-valikosta.
 
 **Kentät:**
 - Kiinteistötunnus (molemmista lähteistä)
@@ -26,7 +26,7 @@ Visualisointitapa riippuu valitusta analyysistä (Aluehinta, Ranta, Kaava_alue, 
 - Aluehinta (€/m²)
 - Kiinteistövero (€)
 - Kaavan käyttötarkoitus
-- Ranta (Kyllä/Ei)
+- Ranta (kyllä/ei)
 
 ### Taso 2: Rekisterin_Kiinteistöt_puuttuvat_verotiedosta
 
@@ -39,8 +39,8 @@ Tunnista kiinteistöt jotka:
 - Ovat uusia kiinteistöjä joita ei ole vielä verotettu
 - Sisältävät virheellisiä kiinteistötunnuksia
 
-**Karttasymboolit:**
-🟧 **Oranssi täyttö** = Tarkistettava kiinteistö
+**Karttatyyli:**
+🟧 Oranssi ristikkokuvio = tarkistamatta, 🟢 vihreä pistekuvio = käsitelty
 
 **Kentät:**
 - Kiinteistötunnus (kunta)
@@ -72,13 +72,13 @@ Visualisointitapa riippuu valitusta analyysistä (Aluehinta, Ranta, Kaava_alue, 
 
 ## Käytännön työnkulku
 
-Aloita avaamalla tallenettu verotarkastus QGIS-projekti. Voit valita kaksi työskentelytapaa:
+Aloita avaamalla tallennettu verotarkastus QGIS-projekti. Voit lähteä liikkeelle kahdella tavalla:
 
 **Listapohjaisesti:** Suodata suoraan Taso 1 ja Taso 2 listoja (Vasen ikkuna) ja käy kohteet läpi listasta. Suodatus aukeaa oikea-klikkaamalla sarakkeen otsikkoa. Käytä "Näytä kartalla" -nappia tarkastellaksesi valittua kohdetta kartalla.
 
 **Karttapohjaisesti:** Tutki Taso 1:n eri visualisointeja (Aluehinta, Ranta, Kaava_alue, Kiinteistövero) karttaa saadaksesi kokonaiskuvan tilanteesta. Käytä "Valitse kartalta" -työkalua, joka näyttää valitut kohteet listassa (vasen ikkuna). Priorisoi tarkastettavat kiinteistöt haluamallasi tavalla.
 
-Kiinteistöjen käsittelyjärjestystä kannattaa priorisoida käyttämällä suodatusta. Suodatus aukeaa oikea-klikkaamalla sarakkeen otsikkoa. Hae ja valitse haluamasi arvot ja paina OK. Suodatuksen saa pois joko menemällä takaisin kyseisen sarakkeen suodatus-ikkunaan ja poistamalla suodatus tai painamalla "Tyhjennä suodatus" -nappia, joka poistaa kaiken suodatuksen. Näkyviä sarakkeita voi muuttaa painamalla XX/XX-nappia ja valitsemalla ne sarakkeet jotka haluaa näkyvän.
+Kiinteistöjen käsittelijärjestystä kannattaa priorisoida suodatusta käyttämällä. Suodatin aukeaa oikea-klikkaamalla sarakkeen otsikkoa. Valitse haluamasi arvot ja paina OK. Suodatuksen saa pois palaamalla kyseiseen suodatusikkunaan tai painamalla “Tyhjenнä suodattimet”-nappia. Näkyviä sarakkeita voi säätää klikkaamalla sarakevalinnan näyttöä (esim. “8/45 ▼”) pääikkunan yläosassa.
 
 ### Taso 2: Puuttuvien kiinteistöjen käsittely
 
@@ -194,9 +194,10 @@ Käytä Taso 1:n Kiinteistövero-visualisointia:
 
 ## Lisätietoja
 
-Katso tarkemmat tiedot:
-- Järjestelmän kokonaiskuvaus
-- Yksityiskohtaiset tasokuvaukset
-- Yleinen prosessointiohje
-- Tekninen dokumentaatio
+Katso myös:
+- [Tulosaineistojen opas](../03_toiminnot/04_output_taso_ohje.md) — yksityiskohtaiset tasokuvaukset
+- [Puuttuvien rakennusten tarkastusohje](./PUUTTUVIEN_RAKENNUSTEN_TARKASTUSOHJE.md)
+- [Pinta-alojen tarkastusohje](./PINTA-ALOJEN_TARKASTUSOHJE.md)
+- [Pääikkuna](../03_toiminnot/01_paaikkuna.md) — painikkeiden toiminnot
 
+**Tuki:** contact.maplica@gmail.com

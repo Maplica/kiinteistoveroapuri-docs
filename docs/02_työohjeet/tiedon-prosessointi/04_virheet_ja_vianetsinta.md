@@ -63,7 +63,7 @@ Tässä osiossa käydään läpi yleisimmät virhetilanteet ja niiden ratkaisut 
 | "Write permission denied" | Ei oikeutta kirjoittaa tuloshakemistoon | Valitse hakemisto johon sinulla on kirjoitusoikeus |
 | "Executable not found" | Prosessointiohjelma ei löydy | Tarkista että .exe on rakennettu ja oikeassa paikassa |
 
-<!-- PLACEHOLDER: Kuvakaappaus virheilmoituksesta prosessoinnin aikana -->
+![Prosessointivirhe-ilmoitus](/img/system_images/dialog_processing_error.svg)
 
 ---
 

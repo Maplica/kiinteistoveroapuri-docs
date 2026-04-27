@@ -1,6 +1,6 @@
 # Pinta-alojen tarkastus- ja korjausohje
 
-Tämä ohje opastaa käyttämään KiinteistöveroApuri-työkalua rakennusten ja kiinteistöjen pinta-alojen tarkastamiseen ja korjaamiseen. Työkalu vertaa kunnan rekisterin ja verottajan pinta-alatietoja, visualisoi erot ja auttaa korjaamaan virheelliset tiedot.
+Tämä ohje opastaa rakennusten pinta-alojen tarkastamisessa KiinteistöveroApurin avulla. Työkalu vertaa kunnan rekisterin ja verottajan ilmoittamia pinta-aloja, näyttää erot kartalla ja auttaa korjaamaan virheelliset tiedot.
 
 ## Miksi pinta-alojen tarkastus on tärkeää?
 
@@ -23,14 +23,14 @@ Tämä ohje opastaa käyttämään KiinteistöveroApuri-työkalua rakennusten ja
 
 | Koko | Ero (m²) | Merkitys |
 |------|----------|----------|
-| **Erittäin suuri** | < −18 000 | Kriittinen: veroaineistossa paljon pienempi kuin rekisterissä |
-| **Suuri** | −18 000 – −500 | Veroaineistossa huomattavasti pienempi |
+| **Erittäin suuri** | < −18 000 | Kriittinen: veroaineistossa paljon pienempi kuin rekisterissä |
+| **Suuri** | −18 000 – −500 | Veroaineistossa huomattavasti pienempi |
 | **Keskisuuri** | −500 – −25 | Veroaineistossa selkeästi pienempi |
 | **Normaali** | −25 – −1 | Veroaineistossa hieman pienempi |
-| **Pieni** | −1 – 1 | Pinta-alat täsmäävät (OK) |
-| **Pienempi** | 1 – 25 | Veroaineistossa hieman suurempi |
-| **Pienin** | 25 – 500 | Veroaineistossa huomattavasti suurempi |
-| **Hyvin pieni** | > 500 | Kriittinen: veroaineistossa paljon suurempi kuin rekisterissä |
+| **Täsmää** | −1 – 1 | Pinta-alat täsmäävät (OK) |
+| **Pieniehkö** | 1 – 25 | Veroaineistossa hieman suurempi |
+| **Kohtalainen** | 25 – 500 | Veroaineistossa huomattavasti suurempi |
+| **Suuri positiivinen** | > 500 | Kriittinen: veroaineistossa paljon suurempi kuin rekisterissä |
 
 **Ikonin tyyppi kertoo rakennuslajin:**
 
@@ -259,12 +259,8 @@ Ota käyttöön **Pinta-ala ero (vero - tietokanta)** -tyyli tasolle Rakennukset
 ## Lisätietoja
 
 Katso myös:
-- [Puuttuvien rakennusten tarkastusohje](/työohjeet/PUUTTUVIEN_RAKENNUSTEN_TARKASTUSOHJE) - Rakennusten tunnistaminen ja yhdistäminen
-- [Kiinteistöjen tarkastusohje](/työohjeet/KIINTEISTOJEN_TARKASTUSOHJE) - Kiinteistöjen pinta-alojen tarkastus
+- [Puuttuvien rakennusten tarkastusohje](./PUUTTUVIEN_RAKENNUSTEN_TARKASTUSOHJE.md)
+- [Kiinteistöjen tarkastusohje](./KIINTEISTOJEN_TARKASTUSOHJE.md)
+- [Tulosaineistojen opas](../03_toiminnot/04_output_taso_ohje.md)
 
-**Tuki:**
-- contact.maplica@gmail.com
-
----
-
-**Muista:** Pinta-ala-erot vaikuttavat suoraan verotukseen - huolellinen tarkastus on tärkeää sekä kunnan että veronmaksajan kannalta!
+**Tuki:** contact.maplica@gmail.com

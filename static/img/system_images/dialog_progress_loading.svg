@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="140" viewBox="0 0 360 140">
+  <defs>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+  </defs>
+  <!-- Window shadow -->
+  <rect x="4" y="4" width="352" height="132" rx="6" fill="#00000022"/>
+  <!-- Window frame -->
+  <rect x="0" y="0" width="352" height="132" rx="6" fill="white" stroke="#c0c0c0" stroke-width="1.5"/>
+  <!-- Title bar -->
+  <rect x="0" y="0" width="352" height="28" rx="6" fill="url(#titleGrad)"/>
+  <rect x="0" y="20" width="352" height="8" fill="url(#titleGrad)"/>
+  <text x="176" y="18" font-family="Arial, sans-serif" font-size="12" font-weight="bold"
+        fill="white" text-anchor="middle">Processing</text>
+  <!-- Close button -->
+  <rect x="326" y="6" width="18" height="14" rx="3" fill="#cc3333" opacity="0.8"/>
+  <text x="335" y="17" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">✕</text>
+  <!-- Content area -->
+  <text x="176" y="62" font-family="Arial, sans-serif" font-size="13"
+        fill="#333333" text-anchor="middle">Processing, please wait...</text>
+  <!-- Indeterminate progress bar track -->
+  <rect x="24" y="76" width="304" height="16" rx="8" fill="#e8e8e8" stroke="#c0c0c0" stroke-width="1"/>
+  <!-- Animated-looking bar segment -->
+  <rect x="24" y="76" width="160" height="16" rx="8" fill="url(#titleGrad)" opacity="0.85"/>
+  <!-- Stripe effect on progress bar -->
+  <rect x="24" y="76" width="304" height="16" rx="8"
+        fill="none" stroke="#c0c0c0" stroke-width="1"/>
+</svg>

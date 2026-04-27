@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="160" viewBox="0 0 360 160">
+  <defs>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#66bb6a"/>
+      <stop offset="1" stop-color="#388e3c"/>
+    </linearGradient>
+  </defs>
+  <!-- Window shadow -->
+  <rect x="4" y="4" width="352" height="152" rx="6" fill="#00000022"/>
+  <!-- Window frame -->
+  <rect x="0" y="0" width="352" height="152" rx="6" fill="#f8f9fa" stroke="#c0c0c0" stroke-width="1.5"/>
+  <!-- Title bar -->
+  <rect x="0" y="0" width="352" height="28" rx="6" fill="url(#titleGrad)"/>
+  <rect x="0" y="20" width="352" height="8" fill="url(#titleGrad)"/>
+  <text x="176" y="18" font-family="Arial, sans-serif" font-size="12" font-weight="bold"
+        fill="white" text-anchor="middle">Prosessointi Valmis</text>
+  <!-- Close button -->
+  <rect x="326" y="6" width="18" height="14" rx="3" fill="#cc3333" opacity="0.8"/>
+  <text x="335" y="17" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">✕</text>
+  <!-- Content area -->
+  <!-- Check icon circle -->
+  <circle cx="176" cy="66" r="18" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+  <polyline points="165,66 173,75 188,56" fill="none" stroke="#2e7d32" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Message label -->
+  <text x="176" y="96" font-family="Arial, sans-serif" font-size="14" font-weight="bold"
+        fill="#2e7d32" text-anchor="middle">Tiedostot ovat valmiit!</text>
+  <!-- Avaa tiedostot button -->
+  <rect x="28" y="110" width="296" height="32" rx="8" fill="url(#greenGrad)" stroke="#388e3c" stroke-width="1"/>
+  <text x="176" y="131" font-family="Arial, sans-serif" font-size="16" font-weight="bold"
+        fill="white" text-anchor="middle">Avaa tiedostot</text>
+</svg>

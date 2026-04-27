@@ -6,13 +6,11 @@ sidebar_position: 1
 
 ## Yleiskatsaus
 
-KiinteistöveroApuri-sovellus yhdistää kunnan tietokannasta saatavat tiedot Verottajan tietoihin ja luo kattavat raportit kiinteistöverotusta varten.
+KiinteistöveroApuri yhdistää kunnan tietokannasta saatavat tiedot verottajan tietoihin ja tuottaa vertailukelpoisen aineiston kiinteistöverotarkastusta varten.
 
-## Miksi hyvä valmistelu on tärkeää?
-- Säästää aikaa - oikein valmisteltu data prosessoituu ensimmäisellä yrityksellä
-- Varmistaa tiedon laadun - estää virheelliset tulokset
-- Helpottaa tulosten tulkintaa - johdonmukainen data tuottaa selkeitä raportteja
-- Mahdollistaa toistettavuuden
+## Miksi hyvä valmistelu säästää aikaa?
+
+Hyvä valmistelu tarkoittaa käytännössä sitä, että tiedostot aukeavat QGIS:ssä ongelmitta ja sarakkeiden nimet vastaavat prosessoinnin odottamia kentänimiä. Kun lähtödata on kunnossa, prosessointi menee useimmiten läpi ensimmäisellä yrityksellä eikä arvaile virheellä tuottamattomaan tulosta.
 
 :::warning Tärkeää
 Varmista että jokaisen vuoden tarkastus on omalla QGIS projektissa!
@@ -80,7 +78,7 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
 **Aluejakojen tiedosto:**
 - Pakollinen sarake: `Alueen tunniste`
 
-<!-- PLACEHOLDER: Kuvakaappaus esimerkki attribuuttitaulusta jossa vaaditut sarakkeet näkyvät -->
+![Esimerkki attribuuttitaulusta](/img/system_images/example_attribute_table.svg)
 
 ### Parhaat käytännöt tiedostojen nimeämisessä:
 - ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`
@@ -93,31 +91,7 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
 
 ## 2. Tutki tietosisältö
 
-Ennen prosessoinnin aloittamista, tutustu datan rakenteeseen:
-
-Avaa attribuuttitaulut QGIS:ssä ja varmista, että vaaditut sarakkeet löytyvät (ks. kohta 1 yllä).
-
-Kiinteistöjen palstatiedosto:
-- Etsi sarakkeet:
-  - `Kiinteistötunnus` (esim. "XXX-001-0001-0001")
-  - `Palstan pinta-ala` (numeerinen arvo)
-  - `Kaavan käyttötarkoitus` (esim. "AO", "AP", "VL")
-  - `Vesialueen pinta-ala` (numeerinen arvo)
-
-Rakennusten tiedosto:
-- Etsi sarakkeet:
-  - `Pysyvä rakennustunnus (PRT)` (numero)
-  - `Kiinteistötunnus` (linkki kiinteistöön)
-  - `Rakennuksen numero`
-  - `Kokonaisala`
-  - `Kerrosala`
-  - `Tilavuus`
-
-Määräalojen tiedosto:
-- Etsi `Määräalatunnus` sarake
-
-Aluejakojen tiedosto:
-- Etsi `Alueen tunniste` sarake
+Avaa attribuuttitaulut QGIS:ssä ja varmista, että vaaditut sarakkeet löytyvät (ks. kohta 1 yllä). Jos sarakkeet ovat olemassa mutta nimetty eri tavalla kuin listassa, voit määrittää vastineet prosessointiasetuksissa.
 
 ### Tarkista koordinaattijärjestelmät (CRS)
 
@@ -146,7 +120,7 @@ Yleisimmät ongelmat:
 - 🔴 Tiedot alkavat väärältä riviltä (esim. rivi 1 on tyhjä)
 - 🔴 Erikoismerkit otsikoissa
 
-<!-- PLACEHOLDER: Kuvakaappaus oikein muotoillusta Verottajan Excel-tiedostosta -->
+![Esimerkki oikein muotoillusta verottajan Excel-tiedostosta](/img/system_images/example_tax_excel_file.svg)
 
 ---
 

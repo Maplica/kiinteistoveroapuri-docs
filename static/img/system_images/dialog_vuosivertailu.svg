@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="530" viewBox="0 0 760 530">
+  <defs>
+    <linearGradient id="titleBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f3f3"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
+    <linearGradient id="btnBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="tabActive" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="tabInactive" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8e8e8"/>
+      <stop offset="1" stop-color="#d0d0d0"/>
+    </linearGradient>
+    <linearGradient id="headerRow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f4fc"/>
+      <stop offset="1" stop-color="#d0e8f8"/>
+    </linearGradient>
+  </defs>
+  <!-- Window frame -->
+  <rect x="0" y="0" width="752" height="522" fill="#f8f9fa" stroke="#999" stroke-width="1"/>
+  <!-- Title bar (OS-native gray) -->
+  <rect x="0" y="0" width="752" height="30" fill="url(#titleBar)"/>
+  <line x1="0" y1="30" x2="752" y2="30" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="360" y="19" font-family="Arial, sans-serif" font-size="11" fill="#222" text-anchor="middle">Vuosi vertailu</text>
+  <rect x="706" y="7" width="38" height="18" rx="2" fill="#e81123"/>
+  <text x="725" y="20" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">✕</text>
+  <!-- Tab bar -->
+  <!-- Tab 1: Korjatun datan tarkistus (active) -->
+  <rect x="0" y="30" width="200" height="28" fill="url(#tabActive)" stroke="#1e5a8e" stroke-width="1"/>
+  <rect x="0" y="55" width="200" height="3" fill="#f5a623"/>
+  <text x="100" y="48" font-family="Arial, sans-serif" font-size="10" font-weight="bold"
+        fill="white" text-anchor="middle">Korjatun datan tarkistus</text>
+  <!-- Tab 2: Tilastot & kaaviot -->
+  <rect x="202" y="32" width="170" height="26" fill="url(#tabInactive)" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="287" y="48" font-family="Arial, sans-serif" font-size="10"
+        fill="#666" text-anchor="middle">Tilastot &amp; kaaviot</text>
+  <!-- Tab 3: info -->
+  <rect x="374" y="32" width="80" height="26" fill="url(#tabInactive)" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="414" y="48" font-family="Arial, sans-serif" font-size="10"
+        fill="#666" text-anchor="middle">info</text>
+  <!-- Tab content area (Korjatun datan tarkistus) -->
+  <rect x="0" y="58" width="752" height="418" fill="white" stroke="#4a9fd8" stroke-width="1"/>
+  <!-- Category switch bar -->
+  <rect x="0" y="58" width="752" height="32" fill="#f0f0f0" stroke="#c0c0c0" stroke-width="0.5"/>
+  <text x="12" y="78" font-family="Arial, sans-serif" font-size="11" fill="#333">Kategoria: <tspan font-weight="bold" fill="#1e5a8e">Rakennus</tspan></text>
+  <!-- Vaihda kategoria button -->
+  <rect x="636" y="64" width="108" height="20" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="690" y="78" font-family="Arial, sans-serif" font-size="10" font-weight="bold"
+        fill="white" text-anchor="middle">Vaihda kategoria</text>
+  <!-- Table header -->
+  <rect x="0" y="90" width="752" height="24" fill="url(#headerRow)" stroke="#4a9fd8" stroke-width="0.5"/>
+  <text x="40" y="106" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">FID</text>
+  <line x1="70" y1="90" x2="70" y2="476" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="145" y="106" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kiinteistötunnus</text>
+  <line x1="220" y1="90" x2="220" y2="476" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="285" y="106" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">MaplicaMaa</text>
+  <line x1="350" y1="90" x2="350" y2="476" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="425" y="106" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kiinteistövero (muok.)</text>
+  <line x1="500" y1="90" x2="500" y2="476" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="590" y="106" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Huomio</text>
+  <line x1="680" y1="90" x2="680" y2="476" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="716" y="106" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Status</text>
+  <!-- Data rows -->
+  <!-- Row 1 (white) -->
+  <rect x="0" y="114" width="752" height="22" fill="white"/>
+  <text x="40" y="129" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1042</text>
+  <text x="145" y="129" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">map-001-0001-0001</text>
+  <text x="285" y="129" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="425" y="129" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1 250,00</text>
+  <text x="590" y="129" font-family="Arial, sans-serif" font-size="9" fill="#2e7d32" text-anchor="middle">Siirretty yhdistettyyn (OK + vero)</text>
+  <rect x="686" y="117" width="56" height="16" rx="3" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+  <text x="714" y="129" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2e7d32" text-anchor="middle">OK</text>
+  <line x1="0" y1="136" x2="752" y2="136" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Row 2 (alternate) -->
+  <rect x="0" y="136" width="752" height="22" fill="#f8f9fa"/>
+  <text x="40" y="151" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1043</text>
+  <text x="145" y="151" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">map-001-0002-0001</text>
+  <text x="285" y="151" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="425" y="151" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">890,00</text>
+  <text x="590" y="151" font-family="Arial, sans-serif" font-size="9" fill="#2e7d32" text-anchor="middle">Kunta OK</text>
+  <rect x="686" y="139" width="56" height="16" rx="3" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+  <text x="714" y="151" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2e7d32" text-anchor="middle">OK</text>
+  <line x1="0" y1="158" x2="752" y2="158" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Row 3 (selected / Check) -->
+  <rect x="0" y="158" width="752" height="22" fill="#b3d9ff"/>
+  <text x="40" y="173" font-family="Arial, sans-serif" font-size="9" fill="#003d7a" text-anchor="middle">1044</text>
+  <text x="145" y="173" font-family="Arial, sans-serif" font-size="9" fill="#003d7a" text-anchor="middle">map-002-0001-0001</text>
+  <text x="285" y="173" font-family="Arial, sans-serif" font-size="9" fill="#003d7a" text-anchor="middle">MaplicaMaa</text>
+  <text x="425" y="173" font-family="Arial, sans-serif" font-size="9" fill="#003d7a" text-anchor="middle">3 450,00</text>
+  <text x="590" y="173" font-family="Arial, sans-serif" font-size="9" fill="#e65c00" font-weight="bold" text-anchor="middle">Kunta ero</text>
+  <rect x="686" y="161" width="56" height="16" rx="3" fill="#fff3e0" stroke="#ff9800" stroke-width="1"/>
+  <text x="714" y="173" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#e65c00" text-anchor="middle">Check</text>
+  <line x1="0" y1="180" x2="752" y2="180" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Row 4 -->
+  <rect x="0" y="180" width="752" height="22" fill="white"/>
+  <text x="40" y="195" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1045</text>
+  <text x="145" y="195" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">map-002-0002-0001</text>
+  <text x="285" y="195" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="425" y="195" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">620,00</text>
+  <text x="590" y="195" font-family="Arial, sans-serif" font-size="9" fill="#2e7d32" text-anchor="middle">Siirretty yhdistettyyn (OK + vero)</text>
+  <rect x="686" y="183" width="56" height="16" rx="3" fill="#e8f5e9" stroke="#4caf50" stroke-width="1"/>
+  <text x="714" y="195" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#2e7d32" text-anchor="middle">OK</text>
+  <line x1="0" y1="202" x2="752" y2="202" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Row 5 -->
+  <rect x="0" y="202" width="752" height="22" fill="#f8f9fa"/>
+  <text x="40" y="217" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1046</text>
+  <text x="145" y="217" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">map-003-0001-0001</text>
+  <text x="285" y="217" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="425" y="217" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">740,00</text>
+  <text x="590" y="217" font-family="Arial, sans-serif" font-size="9" fill="#c62828" text-anchor="middle">Ei löytynyt</text>
+  <rect x="686" y="205" width="56" height="16" rx="3" fill="#ffebee" stroke="#f44336" stroke-width="1"/>
+  <text x="714" y="217" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#c62828" text-anchor="middle">Check</text>
+  <line x1="0" y1="224" x2="752" y2="224" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Hint text (double-click to open) -->
+  <text x="376" y="470" font-family="Arial, sans-serif" font-size="10" fill="#888" text-anchor="middle" font-style="italic">Kaksoisnapsauta riviä nähdäksesi tiedot</text>
+  <!-- Bottom buttons bar -->
+  <rect x="0" y="476" width="752" height="46" fill="#eeeeee" stroke="#c0c0c0" stroke-width="0.5"/>
+  <line x1="0" y1="476" x2="752" y2="476" stroke="#c0c0c0" stroke-width="1"/>
+  <!-- Lataa sessio button -->
+  <rect x="12" y="488" width="110" height="22" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="67" y="503" font-family="Arial, sans-serif" font-size="10" font-weight="bold"
+        fill="white" text-anchor="middle">Lataa sessio…</text>
+  <!-- Tarkista tiedot button -->
+  <rect x="130" y="488" width="110" height="22" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="185" y="503" font-family="Arial, sans-serif" font-size="10" font-weight="bold"
+        fill="white" text-anchor="middle">Tarkista tiedot</text>
+  <!-- Sulje button (QDialogButtonBox.Close — blue per stylesheet) -->
+  <rect x="660" y="488" width="80" height="22" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="700" y="503" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Sulje</text>
+</svg>

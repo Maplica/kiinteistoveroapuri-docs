@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="200" viewBox="0 0 680 200">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f4fc"/>
+      <stop offset="1" stop-color="#d0e8f8"/>
+    </linearGradient>
+  </defs>
+  <!-- Table border -->
+  <rect x="0" y="0" width="680" height="200" rx="3" fill="white" stroke="#c0c0c0" stroke-width="1"/>
+  <!-- Header row -->
+  <rect x="0" y="0" width="680" height="28" fill="url(#headerGrad)" stroke="#4a9fd8" stroke-width="0.5"/>
+  <!-- Column headers -->
+  <text x="36" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">FID</text>
+  <text x="105" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kiinteistötunnus</text>
+  <text x="205" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kaavayksikkö</text>
+  <text x="368" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Pinta-ala (m²)</text>
+  <text x="448" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Rakennustyyppi</text>
+  <text x="535" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kiinteistövero</text>
+  <text x="616" y="18" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Status</text>
+  <!-- Column separator lines (header) -->
+  <line x1="62" y1="0" x2="62" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <line x1="152" y1="0" x2="152" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <line x1="252" y1="0" x2="252" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <line x1="320" y1="0" x2="320" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <line x1="416" y1="0" x2="416" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <line x1="480" y1="0" x2="480" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <line x1="590" y1="0" x2="590" y2="200" stroke="#d0e8f8" stroke-width="1"/>
+  <!-- Row 1 (alternate) -->
+  <rect x="0" y="28" width="680" height="28" fill="white"/>
+  <text x="36" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">1</text>
+  <text x="105" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">map-001-0001-0001</text>
+  <text x="205" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">AK</text>
+  <text x="368" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">1250.5</text>
+  <text x="448" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">Asuinkerrostalo</text>
+  <text x="535" y="46" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">1250.00</text>
+  <text x="616" y="46" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32" font-weight="bold" text-anchor="middle">Done</text>
+  <!-- Row 2 (alternate) -->
+  <rect x="0" y="56" width="680" height="28" fill="#f8f9fa"/>
+  <text x="36" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">2</text>
+  <text x="105" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">map-001-0001-0002</text>
+  <text x="205" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">AO</text>
+  <text x="368" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">890.0</text>
+  <text x="448" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">Omakotitalo</text>
+  <text x="535" y="74" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">890.00</text>
+  <text x="616" y="74" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32" font-weight="bold" text-anchor="middle">Done</text>
+  <!-- Row 3 (highlighted/selected) -->
+  <rect x="0" y="84" width="680" height="28" fill="#b3d9ff"/>
+  <text x="36" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">3</text>
+  <text x="105" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">map-001-0002-0001</text>
+  <text x="205" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">AK</text>
+  <text x="368" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">3450.8</text>
+  <text x="448" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">Kerrostalo</text>
+  <text x="535" y="102" font-family="Arial, sans-serif" font-size="10" fill="#003d7a" text-anchor="middle">3450.00</text>
+  <text x="616" y="102" font-family="Arial, sans-serif" font-size="10" fill="#e65c00" font-weight="bold" text-anchor="middle">Check</text>
+  <!-- Row 4 -->
+  <rect x="0" y="112" width="680" height="28" fill="white"/>
+  <text x="36" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">4</text>
+  <text x="105" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">map-001-0003-0001</text>
+  <text x="205" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">PL</text>
+  <text x="368" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">620.0</text>
+  <text x="448" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">Teollisuusrakennus</text>
+  <text x="535" y="130" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">620.00</text>
+  <text x="616" y="130" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32" font-weight="bold" text-anchor="middle">Done</text>
+  <!-- Row 5 -->
+  <rect x="0" y="140" width="680" height="28" fill="#f8f9fa"/>
+  <text x="36" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">5</text>
+  <text x="105" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">map-002-0001-0001</text>
+  <text x="205" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">AO</text>
+  <text x="368" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">740.2</text>
+  <text x="448" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">Omakotitalo</text>
+  <text x="535" y="158" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">NULL</text>
+  <text x="616" y="158" font-family="Arial, sans-serif" font-size="10" fill="#e65c00" font-weight="bold" text-anchor="middle">Check</text>
+  <!-- Row 6 -->
+  <rect x="0" y="168" width="680" height="28" fill="white"/>
+  <text x="36" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">6</text>
+  <text x="105" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">map-002-0001-0002</text>
+  <text x="205" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <text x="285" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">AK</text>
+  <text x="368" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">2100.0</text>
+  <text x="448" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">Asuinkerrostalo</text>
+  <text x="535" y="186" font-family="Arial, sans-serif" font-size="10" fill="#333" text-anchor="middle">2100.00</text>
+  <text x="616" y="186" font-family="Arial, sans-serif" font-size="10" fill="#2e7d32" font-weight="bold" text-anchor="middle">Done</text>
+  <!-- Row separators -->
+  <line x1="0" y1="56" x2="680" y2="56" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="0" y1="84" x2="680" y2="84" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="0" y1="112" x2="680" y2="112" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="0" y1="140" x2="680" y2="140" stroke="#e0e0e0" stroke-width="0.5"/>
+  <line x1="0" y1="168" x2="680" y2="168" stroke="#e0e0e0" stroke-width="0.5"/>
+</svg>

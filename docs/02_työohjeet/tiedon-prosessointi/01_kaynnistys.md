@@ -23,6 +23,8 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
 
 <!-- PLACEHOLDER: Kuvakaappaus Välilehti 1 - Kunnan tietokanta kokonaisuudessaan -->
 
+![Prosessointivälilehdet](/img/system_images/tabs_prosessointi.svg)
+
 ### A. Kiinteistöjen palsta tiedosto:
 
 1. **Valitse tiedosto:**
@@ -35,19 +37,25 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
    - **Palstan pinta-ala** → valitse numeerinen pinta-ala sarake
    - **Kaavan käyttötarkoitus** → valitse käyttötarkoitus sarake
      - Klikkaa "Valitse arvot" nappia
+
+       ![Valitse arvot -painike](/img/system_images/btn_valitse_arvot.svg)
      - Valitse checkbox-listasta ne **kaavamerkinnät jotka ovat yleisiä alueita**
      - **Tärkeää:** Valitut kaavamerkinnät vaikuttavat siihen, miten nämä alueet huomioidaan prosessoinnissa
      - Esim: VL (Virkistysalue), VP (Puisto), Katualueet
    - **Vesialueen pinta-ala** → valitse vesialueen sarake
 
-<!-- PLACEHOLDER: Kuvakaappaus Kiinteistöjen palsta -osion täytetyistä kentistä -->
+![Kiinteistöt-ryhmä](/img/system_images/groupbox_kiinteistot.svg)
 
 ### B. Määräalojen palstatiedot:
+
+![Määrä-alat-ryhmä](/img/system_images/groupbox_maaraalat.svg)
 
 1. Valitse tiedosto
 2. Valitse **Määräalatunnus** sarake
 
 ### C. Rakennusten tiedot:
+
+![Rakennukset-ryhmä](/img/system_images/groupbox_rakennukset.svg)
 
 1. Valitse tiedosto
 2. Valitse sarakkeet:
@@ -59,6 +67,8 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
    - **Tilavuus**
 
 ### D. Aluejakojen tiedot:
+
+![Aluejaot-ryhmä](/img/system_images/groupbox_aluejaot.svg)
 
 1. Valitse tiedosto
 2. Valitse **Alueen tunniste** sarake (Sarake, joka erottaa alueen toisistaan esim. Nimi)
@@ -75,19 +85,19 @@ Plugin muistaa aiemmat valinnat. Jos olet jo prosessoinut dataa aiemmin, kentät
 
 ## Vaihe 3: Täytä Välilehti 2 - Verottajan tiedot
 
-<!-- PLACEHOLDER: Kuvakaappaus Välilehti 2 - Verottajan tiedot kokonaisuudessaan -->
+![Verottajan tiedostot](/img/system_images/groupbox_verottajan_tiedostot.svg)
 
 1. **Verottajan kiinteistöverotiedot:**
-   - Valitse verottajan kiinteistövero tiedosto. CSV-tiedosto, joka sisältää kaikki kunnan verotiedot.
+   - Valitse verottajan CSV-tiedosto, joka sisältää kaikki kunnan kiinteistöverotiedot.
 
 2. **Verottajan kiinteistöveron tietue:**
-   - Valitse verottajan antama tietue tiedosto, joka kertoo miten CSV-tiedostoa luetaan. Yleensä tämä on Excel-tiedosto (.xlsx).
+   - Valitse verottajan toimittama tietuekuvaus, joka määrittelee miten CSV-tiedostoa luetaan. Yleensä tämä on Excel-tiedosto (.xlsx).
 
 ---
 
 ## Vaihe 4: Täytä Välilehti 3 - Tallennus
 
-<!-- PLACEHOLDER: Kuvakaappaus Välilehti 3 - Tallennus kokonaisuudessaan -->
+![Tallennuspaikat](/img/system_images/groupbox_tallennuspaikat.svg)
 
 ### A. Tulostiedostot:
 
@@ -114,22 +124,24 @@ Tallennusvälilehdellä määrityt polut määrittävät, minne prosessoinnin tu
 
 1. Tarkista että kaikki kentät on täytetty (plugin validoi automaattisesti)
 2. Klikkaa **"RUN"** nappia
+
+   ![RUN-painike](/img/system_images/btn_run.svg)
 3. Plugin:
    - Käynnistää prosessointiohjelman taustalla
    - Näyttää edistymis-ikkunan
 
-<!-- PLACEHOLDER: Kuvakaappaus edistymis-ikkunasta prosessoinnin aikana -->
+![Prosessoinnin edistymisikkuna](/img/system_images/dialog_progress_loading.svg)
 
 4. **Odota prosessoinnin valmistumista**
-   - Prosessointi voi kestää muutamasta sekunnista useisiin minuutteihin riippuen datan koosta
-   - **Älä sulje QGIS:ia** prosessoinnin aikana
+   - Prosessointi voi kestää muutamasta sekunnista useisiin minuutteihin aineiston koosta riippuen
+   - **Älä sulje QGIS:iä** prosessoinnin aikana
 
 5. **Valmis!**
    - Saat ilmoituksen kun prosessointi on valmis
    - Tulostiedostot löytyvät määrittämistäsi sijainneista
    - Tiedostot aukeavat painamalla suurta vihreää **"Avaa tiedostot"** nappia
 
-<!-- PLACEHOLDER: Kuvakaappaus Valmis-ilmoituksesta ja "Avaa tiedostot" -napista -->
+![Valmis-ilmoitus ja Avaa tiedostot](/img/system_images/dialog_completion_avaa_tiedostot.svg)
 
 ---
 

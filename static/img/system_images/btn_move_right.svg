@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 36 28">
+  <defs>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#e89610"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="35" height="27" rx="3" ry="3"
+        fill="url(#orangeGrad)" stroke="#d88600" stroke-width="1"/>
+  <!-- Right arrow icon scaled from 640x640 viewBox to 18x18 centered -->
+  <g transform="translate(9,5) scale(0.028,0.028)">
+    <path fill="white" d="M439.1 297.4C451.6 309.9 451.6 330.2 439.1 342.7L279.1 502.7C266.6 515.2 246.3 515.2 233.8 502.7C221.3 490.2 221.3 469.9 233.8 457.4L371.2 320L233.9 182.6C221.4 170.1 221.4 149.8 233.9 137.3C246.4 124.8 266.7 124.8 279.2 137.3L439.2 297.3z"/>
+  </g>
+</svg>

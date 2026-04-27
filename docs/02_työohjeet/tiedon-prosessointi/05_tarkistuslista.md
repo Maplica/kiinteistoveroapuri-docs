@@ -71,5 +71,5 @@ Katso tarkemmat kuvaukset: [Esivalmistelut → Vaaditut sarakkeet](./esivalmiste
 ---
 
 :::tip Kaikki kunnossa?
-Jos kaikki kohdat on tarkistettu, olet valmis aloittamaan prosessoinnin! Siirry [Prosessoinnin käynnistys](./01_kaynnistys.md) -sivulle.
+Jos jokainen kohta on ruksattu, olet valmis aloittamaan prosessoinnin. Siirry [Prosessoinnin käynnistys](./01_kaynnistys.md) -sivulle.
 :::

@@ -39,14 +39,14 @@ Mitä se tekee: Poistaa kaikki aktiiviset sarakesuodattimet ja vertailusuodattim
 
 ### Edellinen rivi -painike
 
-![kuva käyttöliittymästä](/img/edellinenSeuraavaRivi.png)
+![Edellinen rivi -painike](/img/system_images/btn_prev_row.svg)
 
 Kuvake: Ylöspäin osoittava nuoli (käännetty vasen nuoli)
 Mitä se tekee: Valitsee edellisen näkyvän rivin vasemmasta taulukosta ja keskittää kartan automaattisesti kyseiseen kohteeseen mittakaavassa 1:1000. Jos olet ensimmäisellä rivillä, se siirtyy viimeiselle rivillä (kehäkierto). Karttapohja jäädytetään toimenpiteen ajaksi valkoisten välähdysten estämiseksi, ja kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille).
 
 ### Seuraava rivi -painike
 
-![kuva käyttöliittymästä](/img/edellinenSeuraavaRivi.png)
+![Seuraava rivi -painike](/img/system_images/btn_next_row.svg)
 
 Kuvake: Alaspäin osoittava nuoli (käännetty oikea nuoli)
 Mitä se tekee: Valitsee seuraavan näkyvän rivin vasemmasta taulukosta ja keskittää kartan automaattisesti kyseiseen kohteeseen mittakaavassa 1:1000. Jos olet viimeisellä rivillä, se pysyy viimeisellä rivillä. Karttapohja jäädytetään toimenpiteen ajaksi, ja kohde korostetaan punaisella merkillä.
@@ -69,7 +69,7 @@ Mitä se tekee: Siirtää valitut kohteet vasemmasta taulukosta oikeaan taulukko
 
 ### Siirrä kohteisiin -painike
 
-![kuva käyttöliittymästä](/img/siirraLisattyihin.png)
+![Siirrä kohteisiin -painike](/img/system_images/btn_move_left.svg)
 
 Kuvake: Vasen nuoli
  Teksti: "←"
@@ -133,6 +133,8 @@ Mitä se tekee: Ohjaa, kuinka monta kohdetta näytetään sivua kohden vasemmass
 Toiminto: Siirry kohdetaulukon edelliselle (←) tai seuraavalle (→) sivulle. Painike on pois käytöstä (harmaa) kun valittuna on taulukon äärimmäinen sivu. Sivuosoitinteksti (Sivu X/Y) kuvaa valitun sivun numeroa ja päivittyy sivua vaihtaessa.
 
 ## Valikkopalkin valinnat
+
+![Valikkopalkin rakenne](/img/system_images/menubar.svg)
 
 ### Tiedosto-pudotusvalikko
 
@@ -302,7 +304,7 @@ Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-
   - Tyhjä valinta = tyhjentää suodattimen
 - Sulkee ikkunan
 - Päivittää vasemman taulukon välittömästi
-- Lisää •-merkin sarakeotikkoon
+- Lisää •-merkin sarakeotsikoihin
 
 **Peruuta-painike:**
 - Sulkee ikkunan tallentamatta muutoksia
@@ -312,7 +314,7 @@ Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-
 **Palauta-painike:**
 - Tyhjentää suodattimen tälle sarakkeelle
 - Sulkee ikkunan
-- Poistaa •-merkin sarakeotikosta
+- Poistaa •-merkin sarakeotsikoista
 
 ### Muokkausvalintaikkunan painikkeet
 Avautuu kun: Kaksoisnapsautat riviä kohdetaulukossa
@@ -343,6 +345,8 @@ Peruuta-painike:
 
 34. Vain luku -näkymän painikkeet (ReadOnlyFeatureViewDialog)
 Avautuu kun: Shift+kaksoisnapsautat riviä oikeassa taulukossa
+
+![Vain luku -näkymä](/img/system_images/dialog_vain_luku.svg)
 
 Välilehdet:
 Data-välilehti:
@@ -378,6 +382,8 @@ Ei tallenna mitään (kaikki vain luku)
 
 35. Vertaa sarakkeita -valintaikkunan painikkeet (CompareColumnsDialog)
 Avautuu kun: Napsautat valikkopalkista Vertailu > Vertaa
+
+![Vertaa sarakkeita -ikkuna](/img/system_images/dialog_vertaa_sarakkeita.svg)
 
 Sarake A -pudotusvalikko:
 Listaa kaikki sarakkeet vasemmasta taulukosta (paitsi "Raportissa")
@@ -417,6 +423,8 @@ Sulkee valintaikkunan
 37. Raportin asetusvalintaikkunan painikkeet (ReportOptionsDialog)
 
 Avautuu kun: Napsautat painiketta #15 tai valikkopalkista Tiedosto > Luo tiedosto
+
+![Raportin asetukset -ikkuna](/img/system_images/dialog_raportin_asetukset.svg)
 Yhteystietokentät:
 Kaupunki: Tekstikenttä kunnan nimelle, placeholder "Kaupunki / Kunta"
 Yhteyshenkilö: Tekstikenttä nimelle, placeholder "Yhteyshenkilö"

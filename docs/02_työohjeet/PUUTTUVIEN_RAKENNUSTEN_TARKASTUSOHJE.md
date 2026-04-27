@@ -14,7 +14,7 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
 **Käyttö:**
 
 1. Avaa taso QGISissä
-2. **Karttasymboli:** !!!Tähän KUVA!!! Vihreä ympyrä
+2. **Karttatyyli:** 🟢 Kirkkaan vihreä bullseye-ympyrä rakennusta per piste
 3. **Suodata ja priorisoi:** Järjestä verosumman tai kiinteistötunnuksen mukaan. Suodata ulos vähemmän tärkeät rakennukset tyypin tai pinta-alan mukaan.
 4. **Tunnista syyt:** Uusi rakennus / Väärä PRT / Todella puuttuu rekisteristä
 5. **Tutki:** Klikkaa kartalla, tarkista ilmakuvasta, etsi rekisteristä manuaalisesti
@@ -23,11 +23,11 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
    - Jos ei löydy → lisää rekisteriin.
    - Valitsemalla rivi vasemmassa tieto-ikkunassa ja siirtämällä se oikeaan käsittelyikkunaan painikkeella:
    
-   ![](\img\logo.svg)
+   ![Siirrä lisättyihin -painike](/img/system_images/btn_move_right.svg)
    
    Jos tulee virhe voi rivin siirtää takaisin toisella painikkeella.
    
-   ![](\img\logo.svg)
+   ![Siirrä kohteisiin -painike](/img/system_images/btn_move_left.svg)
    
    - Korjaa tiedot ja tallenna
 
@@ -50,11 +50,11 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
 5. **Korjaa:** Jos ei verovapaa → ilmoita verottajalle
    - Valitsemalla rivi vasemmassa tieto-ikkunassa ja siirtämällä se oikeaan käsittelyikkunaan painikkeella
    
-    ![](\img\logo.svg)
+   ![Siirrä lisättyihin -painike](/img/system_images/btn_move_right.svg)
    
    Jos tulee virhe voi rivin siirtää takaisin toisella painikkeella.
    
-   ![](\img\logo.svg)
+   ![Siirrä kohteisiin -painike](/img/system_images/btn_move_left.svg)
    
    - Korjaa tiedot tarvittaessa, kommentoi ja tallenna
    - Tallenna tasomuokkaukset
@@ -69,35 +69,40 @@ Prosessointi luo kolme keskeistä tasoa puuttuvien rakennusten tarkastukseen:
 
 **Sisältö:** Tilastollinen näkymä – kiinteistökohtaiset lukumääräerot.
 
-**Karttasymbolit:**
-- 🟨 **Keltainen** = Tietokannassa enemmän rakennuksia kuin verotuksessa
-- 🟪 **Pinkki/magenta** = Verotuksessa enemmän rakennuksia kuin tietokannassa
-- 🟩 **Vihreä** = Rakennukset tietokanta = verotus (OK)
+**Kartatyylit:**
+- 🟨 **Keltainen** = Verotuksessa enemmän rakennuksia kuin tietokannassa
+- 🟥 **Pinkki/magenta** = Tietokannassa enemmän rakennuksia kuin verotuksessa
+- 🟩 **Vihreä** = Lukumäärä täsmää kummassakin järjestelmässä
 
 **Käyttö:**
 
-Auttaa tunnistamaan ongelmakohteet kartalla. Pystyy käymään arvokkaammat alueet ensin läpi.
+Taso antaa nopean yleiskuvan tilanteesta alueittain. Käytä sitä tarkastuksen alussa priorisoimaan, mistä lähdeä liikkeelle:
+
+1. Avaa taso ja ota käyttöön `Valitse kartalta` -työkalu
+2. Keltaiset ja pinkit kiinteistöt ovat sellaiä, joilla lukumäärät eivät täsmää — näistä kannattaa aloittaa
+3. Vihreät kiinteistöt näyttävät tasaiselta, mutta voivat silti sisältää yhdistämättömiä rakennuksia — tarkista myös ne, jos aikaa jää
+4. Klikkaa kiinteistöä kartalta — tiedot näytetään listassa (vasen ikkuna), josta voit siirtää kohteen käsittelyyn
+
+Taso ei itsessään käynnistä käsittelytoimenpiteitä — sen perusteella priorisoidaan, minkä kiinteistöjen rakennukset otetaan tarkasteluun tasoilta 1 ja 2.
 
 
 ## 4. Käytännön työnkulku
 
 Aloita avaamalla tallennettu verotarkastus QGIS-projekti. Voit valita kaksi työskentelytapaa:
 
-**Listapohjaisesti:** Suodata suoraan Taso 1 ja Taso 2 -listoja (Vasen ikkuna) ja käy kohteet läpi listasta. Suodatus aukeaa oikea-klikkaamalla sarakkeen otsikkoa. Käytä "Näytä kartalla" -nappia tarkastellaksesi valittua kohdetta kartalla.
+**Listapohjaisesti:** Suodata suoraan Taso 1 ja Taso 2 -listoja (Vasen ikkuna) ja käy kohteet läpi listasta. Suodatus aukeaa oikea-klikkaamalla sarakkeen otsikkoa. Käytä “Näytä kartalla” -nappia tarkastellaksesi valittua kohdetta kartalla.
 
-![](\img\logo.svg)
+![Näytä kartalla -painike](/img/system_images/btn_nayta_kartalla.svg)
 
 **Karttapohjaisesti:** Tutki Taso 3 -karttaa saadaksesi kokonaiskuvan tilanteesta – keltaiset ja pinkit alueet näyttävät ongelmakiinteistöt. Käytä "Valitse kartalta" -työkalua, joka näyttää valitut kohteet listassa (Vasen ikkuna). Priorisoi arvokkaimmat alueet käsittelyyn ensin hyödyntäen kartan värityksiä.
 
-![](\img\logo.svg)
+![Valitse kartalta -painike](/img/system_images/btn_valitse_kartalta.svg)
 
 Rakennusten käsittelyjärjestystä kannattaa priorisoida suodatusta käyttäen. Suodatus aukeaa oikea-klikkaamalla sarakkeen otsikkoa. Valitse haluamasi arvot ja paina OK.
 
-![](\img\logo.svg)
-
 Suodatuksen saa pois joko menemällä takaisin kyseisen sarakkeen suodatusikkunaan ja poistamalla suodatuksen tai painamalla "Tyhjennä suodatus" -nappia. Näkyviä sarakkeita voi muuttaa painamalla XX/XX-nappia ja valitsemalla halutut sarakkeet.
 
-![](\img\logo.svg)
+![Tyhjennnä suodattimet](/img/system_images/btn_tyhjenna_suodatus.svg) ![Sarakkeiden valintapainike](/img/system_images/btn_column_selector.svg)
 
 ### Käsittele Taso 2 (Rekisterin_rakennukset_puuttuvat_verotiedosta) – oranssit kuusikulmiot:
 
@@ -124,9 +129,9 @@ Pidä samalla Taso 2 auki – tarkista onko samalla kiinteistöllä oransseja ku
 
 ### Raportointi
 
-Luo valmis raportti verottajalle painamalla "Luo tiedosto" -nappia. Tämä tekee kaikista käsitellyistä puuttuvista rakennuksista raportin. Lähetä lista verottajalle, päivitä rekisteri ja korjaa tunnisteet jatkotoimina.
+Luo valmis raportti verottajalle painamalla “Luo tiedosto” -nappia. Tämä tekee kaikista käsitellyistä puuttuvista rakennuksista raportin. Lähetä lista verottajalle, päivitä rekisteri ja korjaa tunnisteet jatkotoimina.
 
-![](\img\logo.svg)
+![Luo tiedosto -painike](/img/system_images/btn_luo_tiedosto.svg)
 
 Muista tallentaa käsitellyt kohteet ja QGIS-projekti lopettaessa.
 
@@ -197,10 +202,10 @@ Prosessointi luo kaksi Excel-raporttia taulukkolaskentakäsittelyä varten:
 
 ## 10. Lisätietoja
 
-Katso tarkemmat tiedot:
-- Järjestelmän kokonaiskuvaus
-- Yksityiskohtaiset tasokuvaukset
-- Yleinen prosessointiohje
-- Tekninen dokumentaatio
+Katso myös:
+- [Kiinteistöjen tarkastusohje](./KIINTEISTOJEN_TARKASTUSOHJE.md)
+- [Pinta-alojen tarkastusohje](./PINTA-ALOJEN_TARKASTUSOHJE.md)
+- [Tulosaineistojen opas](../03_toiminnot/04_output_taso_ohje.md)
+- [Pääikkuna](../03_toiminnot/01_paaikkuna.md) — painikkeiden toiminnot
 
-
+**Tuki:** contact.maplica@gmail.com

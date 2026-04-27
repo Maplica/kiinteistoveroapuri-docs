@@ -81,6 +81,6 @@ C:\Kiinteistovero\
 ```
 
 **🔒 Tietoturva ja varmuuskopiointi:**
-- Henkilötunnukset: poista käytöstä jos ei tarvetta
-- Säilytä arkaluontoista dataa suojatussa verkkolevyllä
-- !!!Älä jaa tulostiedostoja sähköpostitse (käytä turvallista tiedostonsiirtoa)!!!
+- Henkilötietoja sisältävät tiedostot: säilytä suojatussa verkkolevyssä
+- Käytä turvallista tiedostonsiirtoa (ei sähköposti) kun lähetät aineistoja
+- Varmuuskopioi tulostiedostot säännöllisesti

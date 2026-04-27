@@ -26,39 +26,41 @@ Käytä-painike:
 
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_yleiset.png)
 
-Valintaruutu: *Muista pääikkunan koko*  
-Kun valittu, ohjelma tallentaa ja muistaa ikkunan koon sessioiden yli  
-Kun ei valittu, käyttää oletuskokoa
+Valintaruutu: *Muista pääikkunan koko*
+
+Kun valittu, ohjelma tallentaa ikkunan koon ja palauttaa sen seuraavalla käynnistyskerralla. Kun ei valittu, käytetään aina oletuskokoa.
+
 ## Tietokanta-sivu
 
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_tietokanta.png)
 
-Kolme ryhmää: Kiinteistöt, Määrä-ala, Rakennukset
-- Jokaisessa ryhmässä pudotusvalikot:
-  - Kiinteistöt: Kiinteistötunnus (Palstat) -pudotusvalikko
-  - Määrä-ala: Määräalatunnus-pudotusvalikko
-  - Rakennukset: Kiinteistötunnus, PRT, Rakennuksen numero -pudotusvalikot
-- Pudotusvalikot täytetty projektin tasojen kentillä
-- Ensimmäinen vaihtoehto on tyhjä (ei valintaa)
-- Esitäytetty aikaisemmilla valinnoilla jos saatavilla
-- Käytetään avaintietojen tunnistamiseen kun __vero/__kunta-kenttiä ei ole
+Kolme ryhmää: Kiinteistöt, Määrä-ala, Rakennukset. Jokaisessa ryhmässä pudotusvalikot avainkenttien määrittämiseen:
+- **Kiinteistöt:** Kiinteistötunnus (Palstat)
+- **Määrä-ala:** Määräalatunnus
+- **Rakennukset:** Kiinteistötunnus, PRT, Rakennuksen numero
+
+Pudotusvalikot täytetään projektin tasojen kentillä. Täällä määrität, mitkä tietokantakentät vastaavat avaintietoja — tärkeää erityisesti kun käytetään tasoja joilla ei ole `__vero`/`__kunta`-päätteitä.
+
 ## Taulukko-sivu
 
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_taulukko.png)
 
 Valintaruutu: *Sovita sarakkeiden leveys automaattisesti aineiston latauksen jälkeen*
-- Kun valittu (oletus), sarakkeet sovitetaan sisällön mukaan
-- Kun ei valittu, sarakkeet käyttävät oletusleveyttä
+- Kun valittu (oletus): sarakkeet sovitetaan sisällön mukaan
+- Kun ei valittu: käytetään oletusleveyttä
 
 Ryhmälaatikko: *Lisättyjen kohteiden taulukon sarakkeet*
-- "Verotietojen kentät (oletus)" - Näyttää vain __vero/__added-kentät
-- "Tietokannan valitut kentät" - Näyttää vain __kunta-kentät
-- "Molemmat (vero ensin, sitten tietokanta)" - Näyttää molemmat
+- "Verotietojen kentät (oletus)" — näytetään vain `__vero`/`__added`-kentät
+- "Tietokannan valitut kentät" — näytetään vain `__kunta`-kentät
+- "Molemmat (vero ensin, sitten tietokanta)" — näytetään molemmat
+
 ## Raportit-sivu
+
 ![kuva käyttöliittymästä](/img/asetusikkuna/asetukset_raportit.png)
-Tekstikenttä: *Oletuskansio raporteille*:  
-Määrittelee oletussijainnin raporttitiedostojen talletukseen.
+
+Tekstikenttä: *Oletuskansio raporteille*
+Määrittelee oletussijainnin raporttitiedostojen tallennukseen.
 
 ## Lisäasetukset-sivu
 
-Tällä hetkellä lisäasetuksia ei ole. Kategoria on tulevaisuutta varten varalla.
+Tällä hetkellä lisäasetuksia ei ole. Kategoria on varattu tulevaisuuden asetuksille.

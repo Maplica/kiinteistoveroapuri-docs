@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
+  <defs>
+    <linearGradient id="titleBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f3f3"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
+    <linearGradient id="btnBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="gbGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="headerRow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f4fc"/>
+      <stop offset="1" stop-color="#d0e8f8"/>
+    </linearGradient>
+    <linearGradient id="tabActive" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="tabInactive" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8e8e8"/>
+      <stop offset="1" stop-color="#d0d0d0"/>
+    </linearGradient>
+  </defs>
+  <!-- Window frame -->
+  <rect x="0" y="0" width="892" height="612" fill="#f8f9fa" stroke="#999" stroke-width="1"/>
+  <!-- Title bar (OS-native gray) -->
+  <rect x="0" y="0" width="892" height="30" fill="url(#titleBar)"/>
+  <line x1="0" y1="30" x2="892" y2="30" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="446" y="19" font-family="Arial, sans-serif" font-size="11" fill="#222" text-anchor="middle">Tarkastele tietoja (vain luku)</text>
+  <rect x="846" y="7" width="38" height="18" rx="2" fill="#e81123"/>
+  <text x="865" y="20" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">✕</text>
+  <!-- Left GroupBox: Tietokanta arvot (__kunta) -->
+  <rect x="12" y="70" width="420" height="430" rx="4" fill="white" stroke="#4a9fd8" stroke-width="1.5"/>
+  <!-- GroupBox title: gradient rect with white text -->
+  <rect x="12" y="62" width="420" height="22" rx="4" fill="url(#gbGrad)"/>
+  <text x="22" y="77" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Tietokanta arvot (__kunta)</text>
+  <!-- Left table header -->
+  <rect x="18" y="86" width="408" height="22" fill="url(#headerRow)"/>
+  <text x="120" y="101" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kenttä</text>
+  <line x1="220" y1="86" x2="220" y2="490" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="320" y="101" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Arvo</text>
+  <!-- Left table rows -->
+  <rect x="18" y="108" width="408" height="20" fill="white"/>
+  <text x="120" y="122" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">kiinteistotunnus__kunta</text>
+  <text x="320" y="122" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">map-001-0001-0001</text>
+  <line x1="18" y1="128" x2="426" y2="128" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="18" y="128" width="408" height="20" fill="#f8f9fa"/>
+  <text x="120" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">maplicamaa__kunta</text>
+  <text x="320" y="142" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">MaplicaMaa</text>
+  <line x1="18" y1="148" x2="426" y2="148" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="18" y="148" width="408" height="20" fill="white"/>
+  <text x="120" y="162" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">pinta_ala__kunta</text>
+  <text x="320" y="162" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1250.5</text>
+  <line x1="18" y1="168" x2="426" y2="168" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="18" y="168" width="408" height="20" fill="#f8f9fa"/>
+  <text x="120" y="182" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">kaavayksikko__kunta</text>
+  <text x="320" y="182" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">AK</text>
+  <line x1="18" y1="188" x2="426" y2="188" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="18" y="188" width="408" height="20" fill="white"/>
+  <text x="120" y="202" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">omistaja__kunta</text>
+  <text x="320" y="202" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">Omistaja1</text>
+  <line x1="18" y1="208" x2="426" y2="208" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Edited field highlighted yellow -->
+  <rect x="18" y="208" width="408" height="20" fill="#fff9c4"/>
+  <text x="120" y="222" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">rakennustyyppi__kunta</text>
+  <text x="320" y="222" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">Asuinkerrostalo ✏</text>
+  <line x1="18" y1="228" x2="426" y2="228" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="18" y="228" width="408" height="20" fill="white"/>
+  <text x="120" y="242" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">postinumero__kunta</text>
+  <text x="320" y="242" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">00100</text>
+  <line x1="18" y1="248" x2="426" y2="248" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="18" y="248" width="408" height="20" fill="#f8f9fa"/>
+  <text x="120" y="262" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">status__kunta</text>
+  <text x="320" y="262" font-family="Arial, sans-serif" font-size="9" fill="#2e7d32" text-anchor="middle">Done</text>
+  <!-- Right GroupBox: Verotuksen arvot (__vero / __added) -->
+  <rect x="460" y="70" width="420" height="430" rx="4" fill="white" stroke="#4a9fd8" stroke-width="1.5"/>
+  <rect x="460" y="62" width="420" height="22" rx="4" fill="url(#gbGrad)"/>
+  <text x="470" y="77" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white">Verotuksen arvot (__vero / __added)</text>
+  <!-- Right table header -->
+  <rect x="466" y="86" width="408" height="22" fill="url(#headerRow)"/>
+  <text x="566" y="101" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Kenttä</text>
+  <line x1="668" y1="86" x2="668" y2="490" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="768" y="101" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#1e5a8e" text-anchor="middle">Arvo</text>
+  <!-- Right table rows -->
+  <rect x="466" y="108" width="408" height="20" fill="white"/>
+  <text x="566" y="122" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">kiinteistovero__vero</text>
+  <text x="768" y="122" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1 250,00</text>
+  <line x1="466" y1="128" x2="874" y2="128" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="466" y="128" width="408" height="20" fill="#f8f9fa"/>
+  <text x="566" y="142" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">veroprosentti__vero</text>
+  <text x="768" y="142" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1.0</text>
+  <line x1="466" y1="148" x2="874" y2="148" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="466" y="148" width="408" height="20" fill="white"/>
+  <text x="566" y="162" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">kohde_lisatty__added</text>
+  <text x="768" y="162" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">2025-03-14</text>
+  <line x1="466" y1="168" x2="874" y2="168" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Another yellow-highlighted (edited) field -->
+  <rect x="466" y="168" width="408" height="20" fill="#fff9c4"/>
+  <text x="566" y="182" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">kiinteistovero_muokattu__added</text>
+  <text x="768" y="182" font-family="Arial, sans-serif" font-size="9" fill="#333" text-anchor="middle">1 300,00 ✏</text>
+  <line x1="466" y1="188" x2="874" y2="188" stroke="#e0e0e0" stroke-width="0.5"/>
+  <rect x="466" y="188" width="408" height="20" fill="white"/>
+  <text x="566" y="202" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">huomio__added</text>
+  <text x="768" y="202" font-family="Arial, sans-serif" font-size="9" fill="#555" text-anchor="middle">-</text>
+  <line x1="466" y1="208" x2="874" y2="208" stroke="#e0e0e0" stroke-width="0.5"/>
+  <!-- Legend for yellow -->
+  <rect x="12" y="505" width="14" height="12" fill="#fff9c4" stroke="#ccc" stroke-width="1"/>
+  <text x="30" y="515" font-family="Arial, sans-serif" font-size="9" fill="#555">Muokattu kenttä (istunnossa)</text>
+  <!-- Close button area -->
+  <rect x="0" y="568" width="892" height="44" fill="#eeeeee" stroke="#c0c0c0" stroke-width="0.5"/>
+  <line x1="0" y1="568" x2="892" y2="568" stroke="#c0c0c0" stroke-width="1"/>
+  <rect x="808" y="580" width="72" height="20" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="844" y="594" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Sulje</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="36" viewBox="0 0 80 36">
+  <rect x="1" y="1" width="78" height="31" rx="8" ry="8"
+        fill="#e8e8e8" stroke="#c0c0c0" stroke-width="2"/>
+  <text x="40" y="21" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        fill="#666666" text-anchor="middle">Maapohja</text>
+</svg>

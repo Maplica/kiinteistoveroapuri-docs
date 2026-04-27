@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="480" viewBox="0 0 440 480">
+  <defs>
+    <linearGradient id="titleBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f3f3"/>
+      <stop offset="1" stop-color="#e6e6e6"/>
+    </linearGradient>
+    <linearGradient id="btnBlue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+  </defs>
+  <!-- Window frame -->
+  <rect x="0" y="0" width="440" height="480" fill="#f8f9fa" stroke="#999" stroke-width="1"/>
+  <!-- Title bar (OS-native gray) -->
+  <rect x="0" y="0" width="440" height="30" fill="url(#titleBar)"/>
+  <line x1="0" y1="30" x2="440" y2="30" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="200" y="19" font-family="Arial, sans-serif" font-size="11" fill="#222" text-anchor="middle">Raportin asetukset</text>
+  <rect x="394" y="7" width="38" height="18" rx="2" fill="#e81123"/>
+  <text x="413" y="20" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">✕</text>
+  <!-- Form rows (QFormLayout, inputs have #d0e8f8 border) -->
+  <!-- MaplicaMaa (Kaupunki in code) -->
+  <text x="12" y="55" font-family="Arial, sans-serif" font-size="10" fill="#333">MaplicaMaa:</text>
+  <rect x="130" y="41" width="296" height="22" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="138" y="56" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Kaupunki / Kunta</text>
+  <!-- Yhteyshenkilö -->
+  <text x="12" y="84" font-family="Arial, sans-serif" font-size="10" fill="#333">Yhteyshenkilö:</text>
+  <rect x="130" y="70" width="296" height="22" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="138" y="85" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Yhteyshenkilö</text>
+  <!-- Tehtävänimike -->
+  <text x="12" y="113" font-family="Arial, sans-serif" font-size="10" fill="#333">Tehtävänimike:</text>
+  <rect x="130" y="99" width="296" height="22" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="138" y="114" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Tehtävänimike</text>
+  <!-- Puhelin -->
+  <text x="12" y="142" font-family="Arial, sans-serif" font-size="10" fill="#333">Puhelin:</text>
+  <rect x="130" y="128" width="296" height="22" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="138" y="143" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Puhelin</text>
+  <!-- Sähköposti -->
+  <text x="12" y="171" font-family="Arial, sans-serif" font-size="10" fill="#333">Sähköposti:</text>
+  <rect x="130" y="157" width="296" height="22" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="138" y="172" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Sähköposti</text>
+  <!-- GroupBox: Valitse raportit — plain title (no gradient background on title) -->
+  <rect x="8" y="195" width="424" height="82" rx="4" fill="white" stroke="#4a9fd8" stroke-width="1"/>
+  <!-- GroupBox title as plain colored text, per QGroupBox::title { color: #1e5a8e } -->
+  <text x="18" y="192" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1e5a8e">Valitse raportit (voit valita useita)</text>
+  <!-- Checkbox 1 (checked, blue fill) -->
+  <rect x="18" y="206" width="16" height="16" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <polyline points="21,214 25,219 33,210" fill="none" stroke="white" stroke-width="2"/>
+  <text x="40" y="218" font-family="Arial, sans-serif" font-size="10" fill="#333">Rakennukset – uudet (ei muokattuja kenttiä)</text>
+  <!-- Checkbox 2 (unchecked) -->
+  <rect x="18" y="234" width="16" height="16" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="40" y="246" font-family="Arial, sans-serif" font-size="10" fill="#333">Maapohja – uudet (ei muokattuja kenttiä)</text>
+  <!-- Output folder row (plain HBoxLayout, not in GroupBox) -->
+  <text x="12" y="302" font-family="Arial, sans-serif" font-size="10" fill="#333">Tulostekansio:</text>
+  <rect x="130" y="288" width="210" height="22" rx="3" fill="white" stroke="#d0e8f8" stroke-width="1"/>
+  <text x="138" y="303" font-family="Arial, sans-serif" font-size="9" fill="#aaa">Tulostekansio</text>
+  <!-- Selaa… button — blue -->
+  <rect x="346" y="288" width="68" height="22" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="380" y="303" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Selaa…</text>
+  <!-- Separator -->
+  <line x1="0" y1="328" x2="440" y2="328" stroke="#d8d8d8" stroke-width="1"/>
+  <!-- Bottom buttons — both blue per stylesheet -->
+  <rect x="284" y="338" width="68" height="26" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="318" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Peruuta</text>
+  <rect x="360" y="338" width="68" height="26" rx="3" fill="url(#btnBlue)" stroke="#1e5a8e" stroke-width="1"/>
+  <text x="394" y="355" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">OK</text>
+</svg>

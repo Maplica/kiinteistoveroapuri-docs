@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="28" viewBox="0 0 50 28">
+  <defs>
+    <linearGradient id="blueGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="49" height="27" rx="3" ry="3"
+        fill="url(#blueGrad)" stroke="#1e5a8e" stroke-width="1"/>
+  <!-- Up arrow (left.svg rotated 90°) -->
+  <polyline points="14,18 25,8 36,18" fill="none" stroke="white" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

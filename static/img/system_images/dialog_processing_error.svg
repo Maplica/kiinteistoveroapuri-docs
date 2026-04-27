@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="180" viewBox="0 0 420 180">
+  <!-- Window shadow -->
+  <rect x="4" y="4" width="412" height="172" rx="6" fill="#00000022"/>
+  <!-- Dialog frame -->
+  <rect x="0" y="0" width="412" height="172" rx="6" fill="#f8f9fa" stroke="#c0c0c0" stroke-width="1.5"/>
+  <!-- Title bar (red for error) -->
+  <rect x="0" y="0" width="412" height="28" rx="6" fill="#c62828"/>
+  <rect x="0" y="20" width="412" height="8" fill="#c62828"/>
+  <text x="206" y="18" font-family="Arial, sans-serif" font-size="12" font-weight="bold"
+        fill="white" text-anchor="middle">Virhe</text>
+  <!-- Close button -->
+  <rect x="386" y="6" width="18" height="14" rx="3" fill="#99000088"/>
+  <text x="395" y="17" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">✕</text>
+  <!-- Error icon circle -->
+  <circle cx="42" cy="74" r="18" fill="#ffebee" stroke="#c62828" stroke-width="2"/>
+  <text x="42" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold"
+        fill="#c62828" text-anchor="middle">✕</text>
+  <!-- Error message text -->
+  <text x="70" y="56" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">Prosessi päättyi virheeseen</text>
+  <text x="70" y="74" font-family="Arial, sans-serif" font-size="11" fill="#555">Virheviesti:</text>
+  <rect x="70" y="82" width="328" height="50" rx="3" fill="#fff3f3" stroke="#f5c6cb" stroke-width="1"/>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="10" fill="#721c24">FileNotFoundError: Tiedostoa ei löydy:</text>
+  <text x="80" y="112" font-family="Arial, sans-serif" font-size="10" fill="#721c24">C:\data\kiinteistot.shp</text>
+  <text x="80" y="126" font-family="Arial, sans-serif" font-size="10" fill="#721c24">Tarkista tiedostopolku ja yritä uudelleen.</text>
+  <!-- OK button -->
+  <rect x="172" y="146" width="68" height="20" rx="3" fill="#c62828" stroke="#b71c1c" stroke-width="1"/>
+  <text x="206" y="160" font-family="Arial, sans-serif" font-size="11" font-weight="bold"
+        fill="white" text-anchor="middle">OK</text>
+</svg>

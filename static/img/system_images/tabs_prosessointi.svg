@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="36" viewBox="0 0 490 36">
+  <defs>
+    <linearGradient id="activeTab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a9fd8"/>
+      <stop offset="1" stop-color="#1e5a8e"/>
+    </linearGradient>
+    <linearGradient id="inactiveTab" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8e8e8"/>
+      <stop offset="1" stop-color="#d0d0d0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tab 1: Kunnan tietokanta (active) -->
+  <rect x="0"   y="1" width="118" height="32" rx="4" ry="4"
+        fill="url(#activeTab)" stroke="#1e5a8e" stroke-width="1"/>
+  <!-- Orange bottom accent on active tab -->
+  <rect x="0"   y="30" width="118" height="3" fill="#f5a623"/>
+  <text x="59"  y="22" font-family="Arial, sans-serif" font-size="11" font-weight="bold"
+        fill="white" text-anchor="middle">Kunnan tietokanta</text>
+
+  <!-- Tab 2: Verottajan tiedot (inactive) -->
+  <rect x="120" y="1" width="118" height="32" rx="4" ry="4"
+        fill="url(#inactiveTab)" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="179" y="22" font-family="Arial, sans-serif" font-size="11" font-weight="bold"
+        fill="#666666" text-anchor="middle">Verottajan tiedot</text>
+
+  <!-- Tab 3: Tallennus (inactive) -->
+  <rect x="240" y="1" width="118" height="32" rx="4" ry="4"
+        fill="url(#inactiveTab)" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="299" y="22" font-family="Arial, sans-serif" font-size="11" font-weight="bold"
+        fill="#666666" text-anchor="middle">Tallennus</text>
+
+  <!-- Tab 4: Lisensointi (inactive) -->
+  <rect x="360" y="1" width="118" height="32" rx="4" ry="4"
+        fill="url(#inactiveTab)" stroke="#c0c0c0" stroke-width="1"/>
+  <text x="419" y="22" font-family="Arial, sans-serif" font-size="11" font-weight="bold"
+        fill="#666666" text-anchor="middle">Lisensointi</text>
+</svg>

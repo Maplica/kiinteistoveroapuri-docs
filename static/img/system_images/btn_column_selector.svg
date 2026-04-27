@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="30" viewBox="0 0 80 30">
+  <rect x="0.5" y="0.5" width="79" height="29" rx="3" ry="3"
+        fill="#e8e8e8" stroke="#adadad" stroke-width="1"/>
+  <!-- Column count line -->
+  <text x="40" y="13" font-family="Arial, sans-serif" font-size="11"
+        fill="#333333" text-anchor="middle">5/20 ▼</text>
+  <!-- Column selector bar line -->
+  <text x="40" y="25" font-family="Arial, sans-serif" font-size="10"
+        fill="#555555" text-anchor="middle">▬▬▬▬</text>
+</svg>

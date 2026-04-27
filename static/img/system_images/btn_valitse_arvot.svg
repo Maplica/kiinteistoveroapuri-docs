@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="25" viewBox="0 0 120 25">
+  <defs>
+    <linearGradient id="orangeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5a623"/>
+      <stop offset="1" stop-color="#e89610"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="119" height="24" rx="3" ry="3"
+        fill="url(#orangeGrad)" stroke="#d88600" stroke-width="1"/>
+  <text x="60" y="17" font-family="Arial, sans-serif" font-size="12" font-weight="bold"
+        fill="white" text-anchor="middle">Valitse arvot</text>
+</svg>
