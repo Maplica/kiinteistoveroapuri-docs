@@ -8,15 +8,15 @@ sidebar_position: 4
 
 :::note
 
-Kiinteistöveroapuri on lisäosa QGIS-sovellukseen.  
-[Lataa](https://qgis.org/download/) ja asenna QGIS ennen Kiinteistöveroapurin käyttöönottoa.
+KiinteistöveroApuri on lisäosa QGIS-sovellukseen.  
+[Lataa](https://qgis.org/download/) ja asenna QGIS ennen KiinteistöveroApurin käyttöönottoa.
 
 :::
 
 :::info
 
-**Käytä QGISista pääversiona 3!**  
-Kiinteistöveroapuri tarvitsee Qt5-käyttöliittymäkirjastoa. Esijulkaisuvaiheessa olevaan QGIS 4 versioon on muutettu Qt6. 
+**Käytä QGISista pääversiota 3!**  
+KiinteistöveroApuri tarvitsee Qt5-käyttöliittymäkirjastoa. Esijulkaisuvaiheessa olevaan QGIS 4 versioon on muutettu Qt6. 
 
 :::
 
