@@ -78,7 +78,6 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
 **Aluejakojen tiedosto:**
 - Pakollinen sarake: `Alueen tunniste`
 
-![Esimerkki attribuuttitaulusta](/img/system_images/example_attribute_table.svg)
 
 ### Parhaat käytännöt tiedostojen nimeämisessä:
 - ✅ Käytä kuvaavia nimiä: `kiinteistot_2025.shp` tai `kiinteistot_2025.gpkg`

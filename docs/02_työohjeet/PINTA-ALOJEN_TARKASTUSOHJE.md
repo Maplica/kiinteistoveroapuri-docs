@@ -73,7 +73,7 @@ KiinteistöveroApurissa on sisäänrakennettu **Vertaa**-työkalu, joka suodatta
    - Klikkaa yläpalkin **"Vertailu"** -valikko
    - Valitse **"Vertaa"**
    
-   ![](\img\logo.svg)
+   ![Valikkopalkin rakenne](/img/system_images/menubar.svg)
 
 2. **Valitse vertailtavat sarakkeet:**
    
@@ -83,7 +83,7 @@ KiinteistöveroApurissa on sisäänrakennettu **Vertaa**-työkalu, joka suodatta
    - **Sarake B:** Valitse toinen sarake (esim. `Kokonaisala_Vero`)
    - **Toleranssi (numeroille):** Anna sallittu ero numeroarvoksi (esim. `10` tai `0.5`)
    
-   ![](\img\logo.svg)
+   ![Vertaa sarakkeita -ikkuna](/img/system_images/dialog_vertaa_sarakkeita.svg)
 
 3. **Klikkaa OK** → Taulukko suodattuu automaattisesti
 
@@ -152,7 +152,7 @@ Pinta-alojen tarkastus tehdään pääasiassa **listapohjaisesti** käyttäen Ki
      - **Toleranssi:** `10` (hyväksyy pienet pyöristyserot)
    - Klikkaa **OK** → Näytetään vain rakennukset joissa pinta-alat eroavat
 
-   ![](\img\logo.svg)
+   ![Vertaa sarakkeita -ikkuna](/img/system_images/dialog_vertaa_sarakkeita.svg)
 
 3. **Valitse näytettävät sarakkeet:**
    - Klikkaa sarakevalitsinta (esim. "8/45 ▼")
@@ -203,7 +203,7 @@ Ota käyttöön **Pinta-ala ero (vero - tietokanta)** -tyyli tasolle Rakennukset
 1. Valitse virheellinen rivi vasemmasta ikkunasta
 2. Klikkaa nuolinappia → siirrä oikeaan käsittelyikkunaan
 
-   ![](\img\logo.svg)
+   ![Siirrä lisättyihin -painike](/img/system_images/btn_move_right.svg)
 
 3. Tuplaklikkaa siirrettyä riviä → aukeaa käsittelyikkuna
 
