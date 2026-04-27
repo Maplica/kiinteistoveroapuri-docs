@@ -6,6 +6,20 @@ sidebar_position: 4
 
 ## Asennus
 
+:::note
+
+Kiinteistöveroapuri on lisäosa QGIS-sovellukseen.  
+[Lataa](https://qgis.org/download/) ja asenna QGIS ennen Kiinteistöveroapurin käyttöönottoa.
+
+:::
+
+:::info
+
+**Käytä QGISista pääversiona 3!**  
+Kiinteistöveroapuri tarvitsee Qt5-käyttöliittymäkirjastoa. Esijulkaisuvaiheessa olevaan QGIS 4 versioon on muutettu Qt6. 
+
+:::
+
 1. Lataa asennuspaketti
 2. Käynnistä QGIS ja valitse `Laajennukset → Laajennusten hallinta ja asennus`
 3. Valitse `Asenna laajennus ZIP-tiedostosta` ja osoita ladattu asennuspaketti
