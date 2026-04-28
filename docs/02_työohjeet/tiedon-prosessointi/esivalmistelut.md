@@ -59,13 +59,13 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
 **Kiinteistöjen palstatiedosto:**
 - Pakolliset sarakkeet:
   - `Kiinteistötunnus` (esim. "XXX-001-0001-0001")
-  - `Palstan pinta-ala` (numeerinen arvo)
+  - `Palstan pinta-ala`
   - `Kaavan käyttötarkoitus` (esim. "AO", "AP", "VL")
-  - `Vesialueen pinta-ala` (numeerinen arvo)
+  - `Vesialueen pinta-ala`
 
 **Rakennusten tiedosto:**
 - Pakolliset sarakkeet:
-  - `Pysyvä rakennustunnus (PRT)` (numero)
+  - `Pysyvä rakennustunnus (PRT)`
   - `Kiinteistötunnus` (linkki kiinteistöön)
   - `Rakennuksen numero`
   - `Kokonaisala`
@@ -73,10 +73,10 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
   - `Tilavuus`
 
 **Määräalojen tiedosto:**
-- Pakollinen sarake: `Määräalatunnus`
+- Pakollinen sarake: `Määräalatunnus` (esim. "XXX-001-0001-0001-M501")
 
 **Aluejakojen tiedosto:**
-- Pakollinen sarake: `Alueen tunniste`
+- Pakollinen sarake: `Alueen tunniste` (esim. Alueen nimi)
 
 
 ### Parhaat käytännöt tiedostojen nimeämisessä:
