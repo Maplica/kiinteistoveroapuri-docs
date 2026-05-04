@@ -386,6 +386,8 @@ Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-
 
 **Avautuu kun:** Napsautat valikkopalkista Vertailu > Vuosivertailu
 
+![Vuosivertailu-ikkuna](/img/system_images/dialog_vuosivertailu.svg)
+
 **Lataa sessio…:** Avaa tiedostovalintaikkunan `.json`-istuntotiedoston lataamiseksi. Päivittää kaikki välilehdet, muttei vaikuta pääikkunan dataan.
 
 **Sulku:** Sulkee ikkunan tallentamatta muutoksia.
