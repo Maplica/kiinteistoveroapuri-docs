@@ -56,7 +56,7 @@ Mitä se tekee: Valitsee seuraavan näkyvän rivin vasemmasta taulukosta ja kesk
 ![kuva käyttöliittymästä](/img/naytaKartalla.png)
 
 Teksti: "Näytä kartalla"
- Vihjeteksti: Kohdenna karttanäkymä valittuun kohteeseen
+Vihjeteksti: Kohdenna karttanäkymä valittuun kohteeseen
 Mitä se tekee: Keskittää QGIS-karttapohjan valittuun kohteeseen (joko vasemmasta tai oikeasta taulukosta) mittakaavassa 1:1000. Jos vasemmasta taulukosta ei ole mitään valittuna, se valitsee ensimmäisen näkyvän rivin. Kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille). Tämä ei muuta nykyistä valintaa. Toimii molemmissa taulukoissa: vasemmassa (kohteet) ja oikeassa (lisätyt kohteet).
 
 ### Siirrä lisättyihin -painike
@@ -64,7 +64,7 @@ Mitä se tekee: Keskittää QGIS-karttapohjan valittuun kohteeseen (joko vasemma
 ![kuva käyttöliittymästä](/img/siirraLisattyihin.png)
 
 Kuvake: Oikea nuoli
- Teksti: "→"
+Teksti: "→"
 Mitä se tekee: Siirtää valitut kohteet vasemmasta taulukosta oikeaan taulukkoon (lisättyjen kohteiden luettelo). Useita kohteita voidaan valita käyttämällä Ctrl+napsautus tai Shift+napsautus. Jokainen siirretty kohde merkitään "raportoiduksi" (lisää pisteen • "Raportissa"-sarakkeeseen vasempaan taulukkoon) ja määritetään aktiiviseen kategoriaan (Rakennus tai Maapohja). Kohteen alkuperäinen taso, kenttäarvot ja metatiedot tallennetaan myöhempää muokkausta ja raportointia varten. Jos taso on nimeltään "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)", kohteen status-kenttä päivitetään arvoon 1.
 
 ### Siirrä kohteisiin -painike
@@ -72,7 +72,7 @@ Mitä se tekee: Siirtää valitut kohteet vasemmasta taulukosta oikeaan taulukko
 ![Siirrä kohteisiin -painike](/img/system_images/btn_move_left.svg)
 
 Kuvake: Vasen nuoli
- Teksti: "←"
+Teksti: "←"
 Mitä se tekee: Poistaa valitut kohteet oikeasta taulukosta (lisättyjen kohteiden luettelo) ja siirtää ne takaisin tavalliseen kohteiden joukkoon. "Raportoitu"-merkki (•) poistetaan vasemmasta taulukosta, jos mikään muu merkintä ei viittaa kyseiseen kohteeseen. Myös poistettujen kohteiden keltaiset muokkauskorostukset kartalla poistetaan. Voit valita useita rivejä kerralla napsauttamalla mitä tahansa solua kyseisiltä riveiltä. Jos taso on "Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)", kohteen status-kenttä päivitetään arvoon 0.
 
 ### Rakennus-kategoriapainike
@@ -101,7 +101,7 @@ Mitä se tekee: Vaihtaa kartalla kaikkien muokattujen kohteiden keltaisten koros
 ![kuva käyttöliittymästä](/img/tiedonProsessointi.png)
 
 Kuvake: Hammasrataskuvake
- Vihjeteksti: Avaa Prosessointi-laajennuksen valintaikkunan
+Vihjeteksti: Avaa Prosessointi-laajennuksen valintaikkunan
 Mitä se tekee: Avaa erillisen valintaikkunan Prosessointi-laajennuksesta. Tämä mahdollistaa datan käsittely- ja muunnostyökalujen käytön verotutkintaprosessin rinnalla. Tämä on integrointipiste toisen laajennuksen kanssa QGIS-ympäristössäsi. Valintaikkuna aukeaa erilliseksi ikkunaksi, eikä se vaikuta nykyiseen sessioon.
 
 ### Luo tiedosto -painike
@@ -226,25 +226,7 @@ Napautus korostaa sarakkeen arvot taulukossa.
 
 #### Hiiren oikea painike
 
-Napautus avaa suodatinvalintaikkunan kyseiselle sarakkeelle vaihtoehdoilla:
-
-Luettelotila (kaikille sarakkeille):
-- Näyttää listan yksilöllisistä arvoista sarakkeessa
-- Hakukenttä suodattaa listaa reaaliajassa
-- "Valitse kaikki" / "Tyhjennä valinnat" -painikkeet
-- Suurille sarakkeille (>50 arvoa): lista alkaa tyhjänä, täyttyy haun mukaan (≤50 tulosta kerralla)
-- Voit valita useita arvoja ja vain ne rivit, joissa on valitut arvot, näytetään
-- Aikaisemmat valinnat muistetaan ja esitäytetään
-
-Numeerinen alue (numeerisille sarakkeille):
-- Min/Max -kentät alarajan ja ylärajan asettamiseen
-- Sisältävä alue (inclusive): rivit joissa arvo on välillä [min, max]
-- Tyhjä kenttä = ei rajoitusta kyseiseltä puolelta
-- Käsittelee eurooppalaisia numeroformaatteja (pilkku desimaalierottimena)
-
-Palauta-painike: Tyhjentää suodattimen tälle sarakkeelle
-
-Suodatetut sarakkeet näyttävät pisteen (•) otsikossaan. Suodattimet toimivat yhdessä: kaikki aktiiviset suodattimet on täytettävä.
+Toimii samoin kuin [Kohdetaulukon sarakeotsikot](#kohdetaulukon-sarakeotsikot) — avaa saman suodatinvalintaikkunan listaus- ja numeerinen alue -toiminnoilla.
 
 ### Valintataulukon rivit
 
@@ -317,223 +299,109 @@ Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-
 - Poistaa •-merkin sarakeotsikoista
 
 ### Muokkausvalintaikkunan painikkeet
-Avautuu kun: Kaksoisnapsautat riviä kohdetaulukossa
 
-Kentät (kaikki muokattavissa):
-- Vasemman palstan kentät: Database values (__kunta-kentät)
-- Oikean palstan kentät: Tax data (__vero ja __added-kentät)
-- Jokainen kenttä on QLineEdit
-- Aiemmin muokatut kentät keltaisella taustalla
-- Teksti muuttuu samalla kun kirjoitat
-- Muutokset seurataan automaattisesti
+**Avautuu kun:** Kaksoisnapsautat riviä kohdetaulukossa
 
-Kommenttikenttä:
-- Avoin tekstikenttä vapaiden muistiinpanojen tallettamiseen
+**Kentät (kaikki muokattavissa):**
+- Vasemman palstan kentät: tietokanta-arvot (`__kunta`-kentät)
+- Oikean palstan kentät: verotiedot (`__vero`- ja `__added`-kentät)
+- Aiemmin muokatut kentät näkyvät keltaisella taustalla
+- Muutoksia seurataan automaattisesti
 
-OK-painike:
-- Tallentaa kaikki muutokset
-- Päivittää tax_data vain muuttuneille kentille
-- Päivittää kommentin
-- Lisää/päivittää keltaiset korostukset kartalla
-- Päivittää oikean taulukon näkymän
-- Sulkee valintaikkunan
+**Kommenttikenttä:** Avoin tekstikenttä vapaiden muistiinpanojen tallettamiseen
 
-Peruuta-painike:
-- Hylkää kaikki muutokset
-- Ei tallenna mitään
-- Sulkee valintaikkunan
+**OK:** Tallentaa muutokset, päivittää keltaiset korostukset kartalla ja sulkee ikkunan.
 
-34. Vain luku -näkymän painikkeet (ReadOnlyFeatureViewDialog)
-Avautuu kun: Shift+kaksoisnapsautat riviä oikeassa taulukossa
+**Peruuta:** Hylkää kaikki muutokset ja sulkee ikkunan.
+
+### Vain luku -näkymä
+
+**Avautuu kun:** Shift+kaksoisnapsautat riviä oikeassa taulukossa
 
 ![Vain luku -näkymä](/img/system_images/dialog_vain_luku.svg)
 
-Välilehdet:
-Data-välilehti:
-Näyttää taustietorivi yläreunassa: "Tasolta: [tason nimi]" sinisellä taustalla
-Kaksi palstaa kuten muokkausikkunassa:
-Vasemmalla: Database values (__kunta)
-Oikealla: Tax data (__vero/__added)
-Kaikki kentät vain luku (QLineEdit read-only)
-Värjäys:
-Keltainen: kenttä muokattu istunnossa
-Oranssi: kenttä ei täsmää kandidaatin kanssa (jos validoitu)
-Valkoinen: muut kentät
-Tunnistavat avaimet -osio alareunassa:
-Näyttää PRT, Kiinteistötunnus, Rakennuksen numero jne.
-Keltaisella taustalla
-Näyttää alkuperäisen arvon (muokatun jos muokattu)
-Kommentti-osio alareunassa (vain luku, ~2 riviä)
-Candidate Data -välilehti:
-Näkyy vain jos validointi on suoritettu ja kandidaatti löytynyt
-Taustietorivi: "Löydetty tasolta: [tason nimi]" sinisellä taustalla
-Sama kaksi palstaa kuten Data-välilehdessä
-Näyttää nykyisen tason tiedot (ei istunnon tietoja)
-Värjäys:
-Valkoinen: kenttä täsmää istunnon arvoon
-Oranssi: kenttä ei täsmää istunnon arvoon
-Sisältää myös tagaamattomat kentät (ilman __vero/__kunta)
-Erotinviiva tagaamattomien ja __kunta-kenttien välillä vasemmassa palstassa
-Tunnistavat avaimet -osio alareunassa kandidaatin avaimilla
-Hyödyllinen vertailuun: näet mitä projektissa on vs. mitä istunnossa on
-Sulku-painike:
-Sulkee valintaikkunan
-Ei tallenna mitään (kaikki vain luku)
+#### Data-välilehti
 
-35. Vertaa sarakkeita -valintaikkunan painikkeet (CompareColumnsDialog)
-Avautuu kun: Napsautat valikkopalkista Vertailu > Vertaa
+- Yläreunassa sininen taustatieto: "Tasolta: [tason nimi]"
+- Kaksi palstaa:
+  - Vasemmalla: tietokanta-arvot (`__kunta`-kentät)
+  - Oikealla: verotiedot (`__vero`/`__added`-kentät)
+- Kaikki kentät vain luku
+- Värjäys:
+  - Keltainen: kenttä muokattu istunnossa
+  - Oranssi: kenttä ei täsmää kandidaatin kanssa (jos validoitu)
+  - Valkoinen: muut kentät
+- Tunnistavat avaimet alareunassa (PRT, Kiinteistötunnus, Rakennuksen numero jne.) keltaisella taustalla
+- Kommenttikenttä alareunassa (vain luku)
+
+#### Candidate Data -välilehti
+
+- Näkyy vain jos validointi on suoritettu ja kandidaatti löytynyt
+- Yläreunassa sininen taustatieto: "Löydetty tasolta: [tason nimi]"
+- Sama rakenne kuin Data-välilehdessä, mutta näyttää projektin nykyiset tiedot
+- Värjäys: Valkoinen = täsmää istunnon arvoon, Oranssi = ei täsmää
+- Hyödyllinen vertailuun: näet mitä projektissa on vs. mitä istunnossa on
+
+**Sulku-painike:** Sulkee ikkunan tallentamatta muutoksia.
+
+### Vertaa sarakkeita -ikkuna
+
+**Avautuu kun:** Napsautat valikkopalkista Vertailu > Vertaa
 
 ![Vertaa sarakkeita -ikkuna](/img/system_images/dialog_vertaa_sarakkeita.svg)
 
-Sarake A -pudotusvalikko:
-Listaa kaikki sarakkeet vasemmasta taulukosta (paitsi "Raportissa")
-Valitse ensimmäinen sarake vertailuun
-Esitäytetty viimeisimmästä vertailusta jos saatavilla
-Sarake B -pudotusvalikko:
-Sama listaus kuin Sarake A
-Valitse toinen sarake vertailuun
-Esitäytetty viimeisimmästä vertailusta jos saatavilla
-Ei saa olla sama kuin Sarake A
-Toleranssi-kenttä:
-QLineEdit numeeriselle toleranssille
-Placeholder: "esim. 2 tai 0.5"
-Käytetään vain kun molemmat sarakkeet ovat numeerisia
-Rivit, joissa erotus ≤ toleranssi, piilotetaan
-Esitäytetty viimeisimmästä vertailusta
-Hyväksyy pilkun desimaalierottimena
-OK-painike:
-Käyttää vertailusuodatinta
-Piilottaa rivit joissa sarakkeet ovat yhtä suuret (toleranssin sisällä)
-Lisää ≠-merkin molempien sarakkeiden otsikoihin
-Tallentaa asetukset seuraavaa kertaa varten
-Sulkee valintaikkunan
-Päivittää vasemman taulukon välittömästi
-Peruuta-painike:
-Sulkee valintaikkunan tallentamatta muutoksia
-Ei muuta aktiivista vertailua
-Palauta-painike:
-Tyhjentää vertailusuodattimen
-Poistaa ≠-merkit sarakeotsikoista
-Nollaa valinnat oletusarvoihin (sarake 0, 0, ei toleranssia)
-Päivittää vasemman taulukon
-Sulkee valintaikkunan
+**Sarake A / Sarake B:** Valitse kaksi saraketta vertailuun. Sarakkeet eivät voi olla samat. Esitäytetty viimeisimmästä vertailusta.
+
+**Toleranssi:** Numeerinen kynnysarvo – rivit joissa sarakkeiden ero ≤ toleranssi piilotetaan. Toimii vain numeerisilla sarakkeilla. Hyväksyy pilkun desimaalierottimena.
+
+**OK:** Käyttää vertailusuodatinta, lisää ≠-merkin sarakeotsikoihin ja tallentaa asetukset.
+
+**Peruuta:** Sulkee ikkunan tallentamatta muutoksia.
+
+**Palauta:** Tyhjentää vertailusuodattimen, poistaa ≠-merkit ja nollaa valinnat oletuksiin.
 
 
 
-37. Raportin asetusvalintaikkunan painikkeet (ReportOptionsDialog)
+### Raportin asetukset -ikkuna
 
-Avautuu kun: Napsautat painiketta #15 tai valikkopalkista Tiedosto > Luo tiedosto
+**Avautuu kun:** Napsautat [Luo tiedosto](#luo-tiedosto--painike) -painiketta tai valikkopalkista Tiedosto > Luo tiedosto
 
 ![Raportin asetukset -ikkuna](/img/system_images/dialog_raportin_asetukset.svg)
-Yhteystietokentät:
-Kaupunki: Tekstikenttä kunnan nimelle, placeholder "Kaupunki / Kunta"
-Yhteyshenkilö: Tekstikenttä nimelle, placeholder "Yhteyshenkilö"
-Tehtävänimike: Tekstikenttä nimikkeelle, placeholder "Tehtävänimike"
-Puhelin: Tekstikenttä puhelinnumerolle, placeholder "Puhelin"
-Sähköposti: Tekstikenttä sähköpostille, placeholder "Sähköposti"
-Raporttityyppien valintaruudut:
-"Valitse raportit (voit valita useita)" -ryhmälaatikko
-4 valintaruutua:
-Rakennukset – uudet (ei muokattuja kenttiä): CSV-raportti ilman muokattuja kenttiä
-Rakennukset – muokatut (korostus): Excel-raportti keltaisilla korostuksilla
-Maapohja – uudet (ei muokattuja kenttiä): CSV-raportti ilman muokattuja kenttiä
-Maapohja – muokatut (korostus): Excel-raportti keltaisilla korostuksilla
-Voit valita useita raportteja kerralla
-Tulostekansio:
-Tekstikenttä kansion polulle, placeholder "Tulostekansio"
-Selaa…-painike: Avaa kansion valintaikkunan
-Valitse mihin raportit tallennetaan
-Esitäytetty asetuksista jos määritelty
-OK-painike:
-Validoi että:
-Vähintään yksi raporttityyppi valittu
-Tulostekansio määritelty
-Luo valitut raportit
-Kysyy ylikirjoitusta jos tiedosto on olemassa:
-Korvaa: Ylikirjoittaa vanhan tiedoston
-Lisää: Lisää loppuun (vain CSV)
-Peruuta: Ohittaa tämän tiedoston
-Näyttää yhteenvedon luoduista/virheellisistä raporteista
-Muistutus lähettää raportit Ilmoitin-palvelussa
-Peruuta-painike:
-Sulkee valintaikkunan luomatta raportteja
-Ei tallenna mitään
 
-38. Vertailutulokset-valintaikkunan painikkeet (CompareResultsDialog)
-Avautuu kun: Napsautat valikkopalkista Vertailu > Vuosi vertailu
+**Yhteystietokentät:** Kaupunki, Yhteyshenkilö, Tehtävänimike, Puhelin, Sähköposti.
 
-Yleiset painikkeet (alareunassa):
-Lataa sessio…-painike:
-Avaa tiedostovalintaikkunan
-Lataa .json-istuntotiedoston
-Päivittää kaikki kolme välilehteä
-Näyttää ladatun istunnon metatiedot
-Ei vaikuta pääikkunan dataan
-Sulku-painike:
-Sulkee vertailuikkunan
-Ei tallenna mitään
-Korjaus tarkistus -välilehti:
-Nykyinen kategoria -teksti:
-Näyttää "Kategoria: [Rakennus/Maapohja]"
-Päivittyy kun vaihdat kategoriaa
-Vaihda kategoria -painike:
-Vaihtaa näkymän Rakennus ↔ Maapohja välillä
-Kehäkierto: Rakennus → Maapohja → Rakennus
-Päivittää taulukon välittömästi
-Pois käytöstä jos vain yksi kategoria
-Tarkista tiedot -painike:
-Suorittaa geometriapohjaisen validoinnin
-Etsii kohteita 1 metrin säteellä
-Käyttää ryhmärajoitteita:
-Rakennus → Rakennukset/Rakennuksen Osat
-Maapohja → Määrä-alat
-Laskee OK/Check-määrät
-Laskee Kiinteistövero-summia
-Värjää taulukon rivit:
-Vihreä (#e8f5e9): OK
-Punainen (#ffebee): Check
-Valkoinen: Ei validoitu
-Päivittää kaikki tilastot
-Näyttää yhteenvedon ponnahdusikkunassa
-Taulukko (QTableView):
-Näyttää ladatut kohteet nykyiselle kategorialle
-Sarakkeet (Rakennus): Pysyvä rakennustunnus, Kiinteistötunnus, Rakennuksen numero, Taso, Kommentti
-Sarakkeet (Maapohja): Kiinteistötunnus, Maapohjan Numero, Taso, Kommentti
-Lisäsarakkeet validoinnin jälkeen: Tila, Nykyinen taso, Huomio
-Vain luku (ei muokattavissa)
-Kaksoisnapsautus avaa vain luku -näkymän + Candidate Data
-Tilastot & kaaviot -välilehti:
+**Raporttityypit** (vähintään yksi valittava):
+- Rakennukset – uudet: CSV-raportti kohteista ilman muokattuja kenttiä
+- Rakennukset – muokatut: Excel-raportti, muutetut solut korostettu keltaisella
+- Maapohja – uudet: CSV-raportti maapohjista ilman muokattuja kenttiä
+- Maapohja – muokatut: Excel-raportti, muutetut solut korostettu keltaisella
 
-Rakennus - Tarkistus tilastot -ryhmä:
-OK kohteita: [määrä]
-Check kohteita: [määrä]
-Kiinteistövero lisä (siirrot): [summa] €
-Kiinteistövero erot (päivittyneet): [summa] €
-Maapohja - Tarkistus tilastot -ryhmä:
-OK kohteita: [määrä]
-Check kohteita: [määrä]
-Kiinteistövero lisä (siirrot): [summa] €
-Kiinteistövero erot (päivittyneet): [summa] €
-Kiinteistövero tilastojen laskenta -ryhmä:
-Selitysteksti laskentalogiikasta
-Kuvaa milloin lisä lasketaan (siirrot)
-Kuvaa milloin erot lasketaan (päivitetyt)
-Info-välilehti:
+**Tulostekansio:** Valitse kohdekansio Selaa…-painikkeella tai kirjoita polku suoraan.
 
+**OK:** Validoi valinnat ja luo raportit. Jos tiedosto on jo olemassa, kysyy vahvistuksen: Korvaa / Lisää (vain CSV) / Peruuta. Näyttää lopuksi yhteenvedon luoduista tiedostoista.
 
-Ladattu sessio -ryhmä:
-Otsikko: [istunnon projektin nimi]
-Polku: [istunnon projektin polku]
-Muokattu: [istunnon viimeisin muokkaus]
-Nykyinen projekti -ryhmä:
-Otsikko: [nykyisen projektin nimi]
-Polku: [nykyisen projektin polku]
-Muokattu: [nykyisen projektin viimeisin muokkaus]
-Yhteenveto-ryhmä:
-Kohteita: [kokonaismäärä]
-Täsmäsi: [löydetty]
-Ei täsmännyt: [ei löydetty]
-Huomio-viestien selitykset -ryhmä:
-Pitkä selitysteksti kaikista mahdollisista Huomio-viesteistä
-Kuvaa mitä kukin viesti tarkoittaa
-Auttaa tulkitsemaan validointituloksia
+**Peruuta:** Sulkee ikkunan luomatta raportteja.
+
+### Vuosivertailu-ikkuna
+
+**Avautuu kun:** Napsautat valikkopalkista Vertailu > Vuosivertailu
+
+**Lataa sessio…:** Avaa tiedostovalintaikkunan `.json`-istuntotiedoston lataamiseksi. Päivittää kaikki välilehdet, muttei vaikuta pääikkunan dataan.
+
+**Sulku:** Sulkee ikkunan tallentamatta muutoksia.
+
+#### Korjaus tarkistus -välilehti
+
+- **Vaihda kategoria:** Vaihtaa näkymän Rakennus ↔ Maapohja välillä (kehäkierto).
+- **Tarkista tiedot:** Suorittaa geometriapohjaisen validoinnin (1 m säde). Värjää rivit: vihreä = OK, punainen = Check. Näyttää yhteenvedon ponnahdusikkunassa.
+- **Taulukko:** Listaa ladatut kohteet nykyiselle kategorialle. Kaksoisnapsautus avaa [vain luku -näkymän](#vain-luku--näkymä).
+
+#### Tilastot & kaaviot -välilehti
+
+Näyttää yhteenvetotilastot sekä Rakennuksille että Maapohjalle:
+- OK ja Check kohteiden määrät
+- Kiinteistövero-lisä (siirrot) ja -erot (päivitetyt) euroina
+
+#### Info-välilehti
+
+Näyttää ladatun istunnon ja nykyisen projektin metatiedot (otsikko, polku, muokkausaika), kohteiden täsmäystilastoinnin sekä selityksen kaikille mahdollisille Huomio-viesteille.
