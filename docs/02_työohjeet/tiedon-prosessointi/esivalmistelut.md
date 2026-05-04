@@ -63,6 +63,11 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
   - `Kaavan käyttötarkoitus` (esim. "AO", "AP", "VL")
   - `Vesialueen pinta-ala`
 
+- Lisäarvoa tuottavat sarakkeet (Ei pakollisia):
+  - `Osoite` – helpottaa kohteiden tunnistamista tarkastuksessa
+  - `Omistaja` – omistajatiedon sisällyttäminen raportteihin
+  - `Rakennusoikeus` – Kiinteistön rakennusoikeus
+
 **Rakennusten tiedosto:**
 - Pakolliset sarakkeet:
   - `Pysyvä rakennustunnus (PRT)`
@@ -72,8 +77,21 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
   - `Kerrosala`
   - `Tilavuus`
 
+- Lisäarvoa tuottavat sarakkeet (Ei pakollisia):
+  - `Rakennusvuosi` – rakentamisvuosi, käyttökelpoinen vanhentuneiden tietojen tunnistamiseen
+  - `Rakennustyyppi` – käyttötarkoituskoodi (esim. "011" asuinrakennus, "121" rivitalo)
+  - `Osoite` – katuosoite tai sijaintikuvaus
+  - `Omistaja` – rakennuksen omistajan nimi
+  - `Huoneistojen lukumäärä` – tukee asuntomäärän tarkistusta
+  - `Lämmitystapa` – lisätietoa rakennuksen ominaisuuksista
+
 **Määräalojen tiedosto:**
-- Pakollinen sarake: `Määräalatunnus` (esim. "XXX-001-0001-0001-M501")
+- Pakollinen sarake: 
+  - `Määräalatunnus` (esim. "XXX-001-0001-0001-M501")
+
+- Lisäarvoa tuottavat sarakkeet (Ei pakollisia):
+  - `Pinta-ala` – määräalan pinta-ala neliömetreinä
+  - `Omistaja` – määräalan omistajan nimi
 
 **Aluejakojen tiedosto:**
 - Pakollinen sarake: `Alueen tunniste` (esim. Alueen nimi)
