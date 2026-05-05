@@ -129,7 +129,13 @@ Pidä samalla Taso 2 auki – tarkista onko samalla kiinteistöllä oransseja ku
 
 ### Raportointi
 
-Luo valmis raportti verottajalle painamalla “Luo tiedosto” -nappia. Tämä tekee kaikista käsitellyistä puuttuvista rakennuksista raportin. Lähetä lista verottajalle, päivitä rekisteri ja korjaa tunnisteet jatkotoimina.
+Luo raportit painamalla "Luo tiedosto" -nappia. Ohjelma luo automaattisesti oikeat tiedostot käsittelemienne kohteiden perusteella:
+
+- Kohteet tasolta **Rekisterin_rakennukset_puuttuvat_verotiedosta** päätyvät tiedostoon `Rakennus_puuttuvat.csv` — lähetä tämä verottajalle.
+- Kohteet tasolta **Veroaineiston_rakennukset_puuttuvat_rekisteristä** päätyvät tiedostoon `Rakennus_Rekisterikorjaus_Kunta.csv` — päivitä kunnan rekisteri.
+- Jos olet muokannut kohteen kenttiä, kohde lisätään myös asianomaiseen rekisterikorjaustiedostoon muutostietoineen.
+
+Lähetä raportit eteenpäin, päivitä rekisterit ja korjaa tunnisteet jatkotoimina.
 
 ![Luo tiedosto -painike](/img/system_images/btn_luo_tiedosto.svg)
 

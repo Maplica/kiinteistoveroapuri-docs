@@ -119,8 +119,13 @@ Valitse rivi vasemmasta ikkunasta, siirrä oikeaan käsittelyikkunaan. Tuplaklik
 
 ### Raportointi
 
-Luo valmis raportti verottajalle painamalla "Luo tiedosto" -nappia. Tämä tekee kaikista käsitellyistä kiinteistöistä raportin.
-Lähetä lista verottajalle, päivitä rekisteri ja korjaa virheelliset tiedot jatkotoimina.
+Luo raportit painamalla "Luo tiedosto" -nappia. Ohjelma luo automaattisesti oikeat tiedostot käsittelemienne kohteiden perusteella:
+
+- Muokkaamattomat kohteet päätyvät puuttuvat-raporttiin.
+- Kohteet, joiden verottajan puolen tietoja on muokattu, päätyvät rekisterikorjaustiedostoon verottajalle.
+- Kohteet, joiden kunnan puolen tietoja on muokattu, päätyvät rekisterikorjaustiedostoon kunnan rekisteriin.
+
+Lähetä raportit eteenpäin, päivitä rekisterit ja korjaa virheelliset tiedot jatkotoimina.
 
 Muista tallentaa käsitellyt kohteet ja QGIS-projekti lopettaessa.
 
