@@ -620,33 +620,10 @@ Tyylin avulla voidaan tarkistaa, mitä käyttötarkoituksia Verohallinnon tiedoi
 
 Alla tyylin värikoodaus käyttötarkoitusryhmän mukaan:
 
-| Väri | Kaavatunnus(t) | Käyttötarkoitusryhmä |
-|------|----------------|---------------------|
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(210,188,141)',border:'2px solid rgb(35,35,35)'}}></span> | A, AH, AM, AO, AP, AR | Asuntoalueet (pientalovaltaiset) |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(181,133,89)',border:'2px solid rgb(35,35,35)'}}></span> | AK, AL | Kerrostalo- ja asuntola-alueet |
-| � Tummanpunainen | C | Liike- ja toimistokeskustat |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(241,137,183)',border:'2px dashed rgb(35,35,35)'}}></span> | E, EA, EJ, EK, EMT, EN, EO, EP, ET | Erityisalueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(0,189,188)',border:'2px dashed rgb(35,35,35)'}}></span> | EH, EV | Erityiset huolto- ja virkistysalueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(237,130,46)',border:'2px solid rgb(35,35,35)'}}></span> | K, KL, KM, KT, KTY, P, PL, PV | Kauppa- ja pysäköintialueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,255,255)',border:'2px solid rgb(214,0,48)'}}></span> | L, LP, LR, LS, LT, LV, LK, LL | Liikennealueet |
-| � Vaaleanpunainen | LH, LPA, LPY, LTA, LHA | Lähiliikenne- ja huoltoalueet |
-| � Keltavihreä | M | Maa- ja metsätalousalue |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,228,0)',border:'2px solid rgb(35,35,35)'}}></span> | MA | Maatalousalue |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(189,192,89)',border:'2px solid rgb(35,35,35)'}}></span> | ME, MP | Metsätalousalueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(214,222,147)',border:'2px solid rgb(35,35,35)'}}></span> | MT | Maa- ja metsätalousalue (erityismääräyksin) |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(102,181,88)',border:'2px solid rgb(35,35,35)'}}></span> | MU, MY | Ulkoilu- ja yhteistoiminta-alueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,209,73)',border:'2px solid rgb(35,35,35)'}}></span> | R, RA, RP, RL, RM | Retkeily- ja loma-alueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(133,210,205)',border:'2px solid rgb(35,35,35)'}}></span> | S, SL, SM, SR | Suojelualueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(172,170,165)',border:'2px solid rgb(35,35,35)'}}></span> | T, T/KEM, TT, TV, TY | Teollisuusalueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(70,165,50)',border:'2px solid rgb(35,35,35)'}}></span> | V, VK, VL, VP, VR, VU, VV | Virkistysalueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(162,206,231)',border:'2px solid rgb(35,35,35)'}}></span> | W | Vesialueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(205,175,227)',border:'2px solid rgb(35,35,35)'}}></span> | Y, YH, YK, YL, YM, YO, YS, YU, YY | Yleisten rakennusten alueet |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,255,255)',border:'2px solid rgb(35,35,35)'}}></span> | NULL | Tieto puuttuu |
-| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,255,255)',border:'2px solid rgb(38,89,128)'}}></span> | (tyhjä) | Ei arvoa |
+![Tyylikuva: AK-merkinnät – kaavan mukaisen käyttötarkoituksen väriryhmät](/img/Tyylikuvat/tyyli_ak_merkinnat.svg)
 
 > **Tulkinta:** Jokainen väri edustaa tiettyä kaavamerkintäryhmää. Tyylin avulla tunnistaa nopeasti, millaisia kiinteistöjä alueella on: asuinalueet näkyvät beigenä tai ruskeana, teollisuus harmaana, virkistysalueet vihreinä ja vesialueet sinisenä. Erityisalueet (E-alkuiset) erottuvat katkoviivaisesta reunaviivastaan. Vertaa Verohallinnon kaavamerkintöjä kunnan omaan kaavoitukseen — ristiriidat voivat vaikuttaa kiinteistöveron määräytymiseen.
 
-![Tyylikuva: AK-merkinnät – kaavan mukaisen käyttötarkoituksen väriryhmät](/img/Tyylikuvat/tyyli_ak_merkinnat.svg)
 
 ---
 
