@@ -521,13 +521,13 @@ Alla tyylin symbolin kuvaus:
 #### 8. Kiinteistöt_Yhdistetty_vero_ja_tietokanta
 *(Yhdistetyt kiinteistöt: vero + tietokanta)*
 
-**Tarkoitus:** Kiinteistöt, jotka löytyvät sekä kunnan kiinteistötietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien kiinteistötiedot, kuten pinta-alat, omistajatiedot, kaavamerkinnät ja kiinteistöverot, rinnakkain vertailua varten. Taso toimii pääasiallisena tasona maapohjan verotusta tarkasteltaessa. Tähän kuuluu kaikki yhdistyneet tiedot, joten tämä antaa parhaan kuvan kunnan maapohjan kiinteistöveron jakautumisesta. Tasolle on määritelty viisi karttatyyliä: 1. Aluehinta (HotnCold), 2. Aluehinta (kategorinen), 3. Kaava-alue, 4. Kiinteistövero (euroina) ja 5. Ranta. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
+**Tarkoitus:** Kiinteistöt, jotka löytyvät sekä kunnan kiinteistötietokannasta että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien kiinteistötiedot, kuten pinta-alat, omistajatiedot, kaavamerkinnät ja kiinteistöverot, rinnakkain vertailua varten. Taso toimii pääasiallisena tasona maapohjan verotusta tarkasteltaessa. Tähän kuuluu kaikki yhdistyneet tiedot, joten tämä antaa parhaan kuvan kunnan maapohjan kiinteistöveron jakautumisesta. Tasolle on määritelty kuusi karttatyyliä: 1. Aluehinta (HotnCold), 2. Aluehinta (kategorinen), 3. Kaava-alue, 4. Kiinteistövero (euroina), 5. Ranta ja 6. AK-merkinnät. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
 
 ---
 
 **🎨 Käytettävissä olevat karttatyylit**
 
-Tälle tasolle on määritelty **5 erilaista karttatyyliä**, jotka korostavat kiinteistöjen eri ominaisuuksia:
+Tälle tasolle on määritelty **6 erilaista karttatyyliä**, jotka korostavat kiinteistöjen eri ominaisuuksia:
 
 ##### Tyyli 1: Aluehinta (HotnCold) – lämpökartta
 Näyttää kiinteistön aluehinnan **Turbo-värirampin** avulla 20 luokassa. Värit etenevät tumman violetista sinisen ja vihreän kautta keltaiseen ja tummanpunaiseen — kalleimmat kiinteistöt näkyvät punaisina, halvimmat violetin sävyissä.
@@ -612,6 +612,41 @@ Alla tyylin arvot ja värit:
 > **Tulkinta:** Vihreät kiinteistöt eivät ole rantakiinteistöjä, siniset ovat. Rantakiinteistöillä on usein eri veroprosentti, joten tyyli auttaa tarkistamaan, onko luokittelu tehty oikein.
 
 ![Tyylikuva: Ranta – vihreä (ei rantaa) vs syaani (rantakiinteistö)](/img/Tyylikuvat/tyyli_ranta.svg)
+
+##### Tyyli 6: AK-merkinnät (kaavan mukainen käyttötarkoitus)
+Näyttää kiinteistön **kaavan mukaisen käyttötarkoituksen** Verohallinnon aineistosta. Luokitus perustuu `Kaavan mukainen käyttötarkoitus__vero` -kenttään. Kullekin käyttötarkoitusryhmälle on oma värinsä, joten alueen maankäyttörakenne hahmottuu kartalta yhdellä silmäyksellä.
+
+Tyylin avulla voidaan tarkistaa, mitä käyttötarkoituksia Verohallinnon tiedoissa kiinteistöille on merkitty. Tietoa voidaan verrata kunnan omaan kaavoitukseen — jos merkinnöissä on ristiriita, verotus saattaa perustua virheelliseen tietoon.
+
+Alla tyylin värikoodaus käyttötarkoitusryhmän mukaan:
+
+| Väri | Kaavatunnus(t) | Käyttötarkoitusryhmä |
+|------|----------------|---------------------|
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(210,188,141)',border:'2px solid rgb(35,35,35)'}}></span> | A, AH, AM, AO, AP, AR | Asuntoalueet (pientalovaltaiset) |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(181,133,89)',border:'2px solid rgb(35,35,35)'}}></span> | AK, AL | Kerrostalo- ja asuntola-alueet |
+| � Tummanpunainen | C | Liike- ja toimistokeskustat |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(241,137,183)',border:'2px dashed rgb(35,35,35)'}}></span> | E, EA, EJ, EK, EMT, EN, EO, EP, ET | Erityisalueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(0,189,188)',border:'2px dashed rgb(35,35,35)'}}></span> | EH, EV | Erityiset huolto- ja virkistysalueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(237,130,46)',border:'2px solid rgb(35,35,35)'}}></span> | K, KL, KM, KT, KTY, P, PL, PV | Kauppa- ja pysäköintialueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,255,255)',border:'2px solid rgb(214,0,48)'}}></span> | L, LP, LR, LS, LT, LV, LK, LL | Liikennealueet |
+| � Vaaleanpunainen | LH, LPA, LPY, LTA, LHA | Lähiliikenne- ja huoltoalueet |
+| � Keltavihreä | M | Maa- ja metsätalousalue |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,228,0)',border:'2px solid rgb(35,35,35)'}}></span> | MA | Maatalousalue |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(189,192,89)',border:'2px solid rgb(35,35,35)'}}></span> | ME, MP | Metsätalousalueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(214,222,147)',border:'2px solid rgb(35,35,35)'}}></span> | MT | Maa- ja metsätalousalue (erityismääräyksin) |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(102,181,88)',border:'2px solid rgb(35,35,35)'}}></span> | MU, MY | Ulkoilu- ja yhteistoiminta-alueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,209,73)',border:'2px solid rgb(35,35,35)'}}></span> | R, RA, RP, RL, RM | Retkeily- ja loma-alueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(133,210,205)',border:'2px solid rgb(35,35,35)'}}></span> | S, SL, SM, SR | Suojelualueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(172,170,165)',border:'2px solid rgb(35,35,35)'}}></span> | T, T/KEM, TT, TV, TY | Teollisuusalueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(70,165,50)',border:'2px solid rgb(35,35,35)'}}></span> | V, VK, VL, VP, VR, VU, VV | Virkistysalueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(162,206,231)',border:'2px solid rgb(35,35,35)'}}></span> | W | Vesialueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(205,175,227)',border:'2px solid rgb(35,35,35)'}}></span> | Y, YH, YK, YL, YM, YO, YS, YU, YY | Yleisten rakennusten alueet |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,255,255)',border:'2px solid rgb(35,35,35)'}}></span> | NULL | Tieto puuttuu |
+| <span style={{display:'inline-block',width:'14px',height:'14px',background:'rgb(255,255,255)',border:'2px solid rgb(38,89,128)'}}></span> | (tyhjä) | Ei arvoa |
+
+> **Tulkinta:** Jokainen väri edustaa tiettyä kaavamerkintäryhmää. Tyylin avulla tunnistaa nopeasti, millaisia kiinteistöjä alueella on: asuinalueet näkyvät beigenä tai ruskeana, teollisuus harmaana, virkistysalueet vihreinä ja vesialueet sinisenä. Erityisalueet (E-alkuiset) erottuvat katkoviivaisesta reunaviivastaan. Vertaa Verohallinnon kaavamerkintöjä kunnan omaan kaavoitukseen — ristiriidat voivat vaikuttaa kiinteistöveron määräytymiseen.
+
+![Tyylikuva: AK-merkinnät – kaavan mukaisen käyttötarkoituksen väriryhmät](/img/Tyylikuvat/tyyli_ak_merkinnat.svg)
 
 ---
 
@@ -712,7 +747,7 @@ Alla tyylin Status-arvot, kuviotyypit ja värit:
 #### 10. Maara-ala_Yhdistetty_vero_ja_tietokanta
 *(Yhdistetyt määräalat: vero + tietokanta)*
 
-**Tarkoitus:** Määräalat, jotka löytyvät sekä kunnan kiinteistörekisteristä että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain vertailua varten — pinta-alat, kaavamerkinnät ja kiinteistöverot. Taso toimii pääasiallisena tasona maapohjan verotuksen tarkasteluun määräalojen osalta. Taso käyttää samoja karttatyylejä kuin Kiinteistöt-taso (taso 8): 1. Aluehinta (HotnCold), 2. Aluehinta (kategorinen), 3. Kaava-alue, 4. Kiinteistövero (euroina) ja 5. Ranta. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
+**Tarkoitus:** Määräalat, jotka löytyvät sekä kunnan kiinteistörekisteristä että Verohallinnon aineistosta ja on onnistuneesti yhdistetty toisiinsa. Taso sisältää molempien järjestelmien tiedot rinnakkain vertailua varten — pinta-alat, kaavamerkinnät ja kiinteistöverot. Taso toimii pääasiallisena tasona maapohjan verotuksen tarkasteluun määräalojen osalta. Taso käyttää samoja karttatyylejä kuin Kiinteistöt-taso (taso 8): 1. Aluehinta (HotnCold), 2. Aluehinta (kategorinen), 3. Kaava-alue, 4. Kiinteistövero (euroina) ja 5. Ranta. Huom: AK-merkinnät-tyyliä (tyyli 6) ei ole määritelty määräaloille. Alla selitys siitä, mitä ne esittävät ja millä tavalla.
 
 ---
 
@@ -1013,7 +1048,7 @@ GeoPackage-tasojen lisäksi tuotetaan kaksi Excel-tiedostoa niille tietueille, j
 | 5. Pistepuutteet | 1 | Keltainen/magenta/vihreä polygoni |
 | 6. Rakennusosat_Yhdistetty | 1 | Värikoodattu timantti (osan numero) |
 | 7. Veroaineiston_rakennusosat_puuttuvat | 1 | Punainen kolmio |
-| 8. Kiinteistöt_Yhdistetty | 5 | Aluehinta, Kaava, Kiinteistövero, Ranta |
+| 8. Kiinteistöt_Yhdistetty | 6 | Aluehinta, Kaava, Kiinteistövero, Ranta, AK-merkinnät |
 | 9. Rekisterin_Kiinteistöt_puuttuvat | 1 | Ristikko/pistekuvio (Status) |
 | 10. Määräalat_Yhdistetty | 5 | Samat kuin taso 8 |
 | 11. Rakennukset_Tilastot | 4 | Turbo-ramppi (vero, pinta-ala, tilavuus) |
