@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+  <defs>
+    <style>
+      text { font-family: "Segoe UI", Arial, sans-serif; }
+      .lbl    { font-size: 10.5px; fill: #343a40; }
+      .small  { font-size: 9px;    fill: #6b7280; }
+      .hdr    { font-size: 12px;   fill: white; font-weight: bold; }
+      .btn    { font-size: 10px;   fill: white; }
+      .result { font-size: 18px;   fill: #1e3a5f; font-weight: bold; }
+      .range  { font-size: 8.5px;  fill: #495057; }
+      .colhdr { font-size: 8.5px;  fill: white; font-weight: bold; }
+      .cell   { font-size: 9px;    fill: #212529; }
+      .grptit { font-size: 11px;   fill: #495057; font-weight: bold; }
+      .combo  { font-size: 9.5px;  fill: #343a40; }
+      .chklbl { font-size: 9px;    fill: #212529; }
+      .anno   { font-size: 8px;    fill: #2563eb; font-style: italic; }
+      .badge  { font-size: 8.5px;  fill: #374151; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- ── Dialog background ── -->
+  <rect width="900" height="560" fill="#f0f2f5" rx="6"/>
+
+  <!-- ── Title bar ── -->
+  <rect x="0" y="0" width="900" height="34" fill="#343a40" rx="6"/>
+  <rect x="0" y="28" width="900" height="6" fill="#343a40"/>
+  <text x="12" y="22" class="hdr">Kiinteistöveroanalyysi [BETA]</text>
+  <circle cx="877" cy="17" r="10" fill="#e5e7eb"/>
+  <text x="877" y="22" class="badge" text-anchor="middle">!</text>
+
+  <!-- ── Tool selector bar ── -->
+  <rect x="8" y="42" width="876" height="30" fill="#f8f9fa" rx="2" stroke="#e9ecef" stroke-width="1"/>
+  <text x="16" y="61" class="lbl">Laskentatyökalu:</text>
+  <rect x="132" y="46" width="706" height="22" fill="white" rx="3" stroke="#ced4da" stroke-width="1"/>
+  <text x="142" y="61" class="combo">Maapohja – Veroarvio</text>
+  <text x="824" y="61" class="small">▼</text>
+
+  <!-- ── GroupBox ── -->
+  <rect x="8" y="80" width="876" height="472" fill="white" rx="4" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="8" y="80" width="876" height="22" fill="#f8f9fa" rx="4" stroke="#dee2e6" stroke-width="1"/>
+  <rect x="8" y="94" width="876" height="8" fill="#f8f9fa"/>
+  <text x="24" y="96" class="grptit">Maapohja – Veroarvio uudelle palstalle</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- LEFT PANEL  x: 14 … 285 -->
+  <!-- ══════════════════════════════════════════════ -->
+
+  <!-- Maapohja-taso -->
+  <text x="18" y="122" class="lbl">Maapohja-taso:</text>
+  <rect x="120" y="109" width="162" height="22" fill="white" rx="3" stroke="#ced4da" stroke-width="1"/>
+  <text x="126" y="124" class="combo">Kiinteistot_Yhdistetty…</text>
+  <text x="270" y="124" class="small">▼</text>
+
+  <!-- Pick point button -->
+  <rect x="14" y="137" width="268" height="26" fill="#495057" rx="4"/>
+  <text x="148" y="154" class="btn" text-anchor="middle">📍  Valitse sijainti kartalta</text>
+
+  <!-- Koordinaatit -->
+  <text x="18" y="182" class="lbl">Koordinaatit:</text>
+  <text x="120" y="182" class="small">X: 6 812 403   Y: 458 221</text>
+
+  <!-- Pinta-ala -->
+  <text x="18" y="204" class="lbl">Pinta-ala (m²):</text>
+  <rect x="120" y="191" width="162" height="22" fill="white" rx="3" stroke="#ced4da" stroke-width="1"/>
+  <text x="201" y="206" class="combo" text-anchor="middle">2 500 m²</text>
+
+  <!-- Käyttötarkoitus label -->
+  <text x="18" y="228" class="lbl">Käyttötarkoitus:</text>
+  <!-- Toggle link -->
+  <text x="120" y="228" class="anno" fill="#2563eb">Valitse kaikki</text>
+
+  <!-- Listwidget -->
+  <rect x="120" y="232" width="162" height="102" fill="white" rx="2" stroke="#ced4da" stroke-width="1"/>
+  <!-- row 1 checked -->
+  <rect x="126" y="238" width="10" height="10" fill="#2563eb" rx="2"/>
+  <text x="141" y="248" class="chklbl">AO – Asuinalue</text>
+  <!-- row 2 checked -->
+  <rect x="126" y="252" width="10" height="10" fill="#2563eb" rx="2"/>
+  <text x="141" y="262" class="chklbl">AL – Asuin- ja liike</text>
+  <!-- row 3 unchecked -->
+  <rect x="126" y="266" width="10" height="10" fill="white" rx="2" stroke="#9ca3af" stroke-width="1"/>
+  <text x="141" y="276" class="chklbl">K – Keskusta</text>
+  <!-- row 4 unchecked -->
+  <rect x="126" y="280" width="10" height="10" fill="white" rx="2" stroke="#9ca3af" stroke-width="1"/>
+  <text x="141" y="290" class="chklbl">T – Teollisuus</text>
+  <!-- row 5 unchecked -->
+  <rect x="126" y="294" width="10" height="10" fill="white" rx="2" stroke="#9ca3af" stroke-width="1"/>
+  <text x="141" y="304" class="chklbl">M – Maa- ja metsätal.</text>
+  <!-- row 6 unchecked -->
+  <rect x="126" y="308" width="10" height="10" fill="white" rx="2" stroke="#9ca3af" stroke-width="1"/>
+  <text x="141" y="318" class="chklbl">EV – Erityisalue</text>
+  <!-- scrollbar -->
+  <rect x="274" y="233" width="6" height="100" fill="#e9ecef" rx="3"/>
+  <rect x="274" y="233" width="6" height="30" fill="#9ca3af" rx="3"/>
+
+  <!-- Veroprosentti -->
+  <text x="18" y="354" class="lbl">Veroprosentti:</text>
+  <rect x="120" y="341" width="162" height="22" fill="white" rx="3" stroke="#ced4da" stroke-width="1"/>
+  <text x="126" y="356" class="combo">Maapohja – yleinen (1,00 %)</text>
+  <text x="270" y="356" class="small">▼</text>
+
+  <!-- Hakusäde -->
+  <text x="18" y="380" class="lbl">Hakusäde (m):</text>
+  <rect x="120" y="367" width="162" height="22" fill="white" rx="3" stroke="#ced4da" stroke-width="1"/>
+  <text x="201" y="382" class="combo" text-anchor="middle">1 000</text>
+
+  <!-- Laske arvio button -->
+  <rect x="120" y="398" width="162" height="30" fill="#2563eb" rx="4"/>
+  <text x="201" y="417" class="btn" text-anchor="middle">Laske arvio</text>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- RIGHT PANEL  x: 296 … 876 -->
+  <!-- ══════════════════════════════════════════════ -->
+
+  <!-- Result label (active) -->
+  <rect x="296" y="108" width="572" height="44" fill="#eff6ff" rx="4" stroke="#93c5fd" stroke-width="1"/>
+  <text x="582" y="136" class="result" text-anchor="middle">Ka: 2 187,50 €</text>
+
+  <!-- Range label -->
+  <rect x="296" y="158" width="572" height="38" fill="#f8f9fa"/>
+  <rect x="296" y="158" width="3"   height="38" fill="#ced4da"/>
+  <text x="305" y="172" class="range">Laskentakaava: aluehinta-ka 23,50 €/m² × 2 500 m² × 0,75 × 1,00 % = 440,63 € (arvio)</text>
+  <text x="305" y="187" class="range">Vaihteleväli: 345,00 €  –  612,00 €  |  Referenssejä: 8 kpl</text>
+
+  <!-- Show on map button -->
+  <rect x="296" y="202" width="572" height="26" fill="#495057" rx="4"/>
+  <text x="582" y="219" class="btn" text-anchor="middle">Näytä referenssit kartalla</text>
+
+  <!-- Table header -->
+  <rect x="296" y="234" width="572" height="20" fill="#495057"/>
+  <!-- column dividers in header -->
+  <line x1="400" y1="234" x2="400" y2="254" stroke="#343a40" stroke-width="1"/>
+  <line x1="462" y1="234" x2="462" y2="254" stroke="#343a40" stroke-width="1"/>
+  <line x1="535" y1="234" x2="535" y2="254" stroke="#343a40" stroke-width="1"/>
+  <line x1="608" y1="234" x2="608" y2="254" stroke="#343a40" stroke-width="1"/>
+  <line x1="681" y1="234" x2="681" y2="254" stroke="#343a40" stroke-width="1"/>
+  <text x="300" y="248" class="colhdr">Kiinteistötunnus</text>
+  <text x="404" y="248" class="colhdr">Pinta-ala (m²)</text>
+  <text x="466" y="248" class="colhdr">Aluehinta (€/m²)</text>
+  <text x="539" y="248" class="colhdr">Verotusarvo (€)</text>
+  <text x="612" y="248" class="colhdr">Kiint.vero (€)</text>
+  <text x="685" y="248" class="colhdr">KV tällä aluehinnalla (€)</text>
+
+  <!-- Row 1 -->
+  <rect x="296" y="254" width="572" height="19" fill="white"/>
+  <text x="300" y="267" class="cell">091-001-0001-0001</text>
+  <text x="458" y="267" class="cell" text-anchor="end">1 850</text>
+  <text x="531" y="267" class="cell" text-anchor="end">21,30</text>
+  <text x="604" y="267" class="cell" text-anchor="end">29 456,25</text>
+  <text x="677" y="267" class="cell" text-anchor="end">294,56</text>
+  <text x="864" y="267" class="cell" text-anchor="end">300,00</text>
+
+  <!-- Row 2 (alt) -->
+  <rect x="296" y="273" width="572" height="19" fill="#f8f9fa"/>
+  <text x="300" y="286" class="cell">091-001-0002-0007</text>
+  <text x="458" y="286" class="cell" text-anchor="end">2 200</text>
+  <text x="531" y="286" class="cell" text-anchor="end">23,50</text>
+  <text x="604" y="286" class="cell" text-anchor="end">41 437,50</text>
+  <text x="677" y="286" class="cell" text-anchor="end">414,38</text>
+  <text x="864" y="286" class="cell" text-anchor="end">440,63</text>
+
+  <!-- Row 3 (selected/highlighted) -->
+  <rect x="296" y="292" width="572" height="19" fill="#dbeafe"/>
+  <text x="300" y="305" class="cell">091-001-0003-0014</text>
+  <text x="458" y="305" class="cell" text-anchor="end">3 100</text>
+  <text x="531" y="305" class="cell" text-anchor="end">26,00</text>
+  <text x="604" y="305" class="cell" text-anchor="end">60 450,00</text>
+  <text x="677" y="305" class="cell" text-anchor="end">604,50</text>
+  <text x="864" y="305" class="cell" text-anchor="end">487,50</text>
+
+  <!-- Row 4 -->
+  <rect x="296" y="311" width="572" height="19" fill="white"/>
+  <text x="300" y="324" class="cell">091-002-0001-0003</text>
+  <text x="458" y="324" class="cell" text-anchor="end">1 600</text>
+  <text x="531" y="324" class="cell" text-anchor="end">28,75</text>
+  <text x="604" y="324" class="cell" text-anchor="end">34 500,00</text>
+  <text x="677" y="324" class="cell" text-anchor="end">345,00</text>
+  <text x="864" y="324" class="cell" text-anchor="end">539,06</text>
+
+  <!-- Row 5 (alt) -->
+  <rect x="296" y="330" width="572" height="19" fill="#f8f9fa"/>
+  <text x="300" y="343" class="cell">091-002-0004-0002</text>
+  <text x="458" y="343" class="cell" text-anchor="end">4 500</text>
+  <text x="531" y="343" class="cell" text-anchor="end">33,00</text>
+  <text x="604" y="343" class="cell" text-anchor="end">111 375,00</text>
+  <text x="677" y="343" class="cell" text-anchor="end">1 113,75</text>
+  <text x="864" y="343" class="cell" text-anchor="end">618,75</text>
+
+  <!-- Ellipsis -->
+  <rect x="296" y="349" width="572" height="19" fill="white"/>
+  <text x="582" y="362" class="small" text-anchor="middle">⋮  (3 lisää riviä)</text>
+
+  <!-- Table border -->
+  <rect x="296" y="234" width="572" height="134" fill="none" stroke="#dee2e6" stroke-width="1"/>
+  <!-- vertical lines in data rows -->
+  <line x1="400" y1="254" x2="400" y2="368" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="462" y1="254" x2="462" y2="368" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="535" y1="254" x2="535" y2="368" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="608" y1="254" x2="608" y2="368" stroke="#dee2e6" stroke-width="1"/>
+  <line x1="681" y1="254" x2="681" y2="368" stroke="#dee2e6" stroke-width="1"/>
+
+  <!-- Poista valittu rivi button -->
+  <rect x="296" y="376" width="178" height="26" fill="#495057" rx="4"/>
+  <text x="385" y="393" class="btn" text-anchor="middle">Poista valittu rivi</text>
+
+  <!-- ── Annotation callouts ── -->
+
+  <!-- 1 — Käyttötarkoitus list -->
+  <line x1="283" y1="283" x2="310" y2="283" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="10" y="276" class="anno" fill="#e57400">◀</text>
+  <text x="2" y="266" class="anno" fill="#e57400" font-size="7">Monivalinta:</text>
+  <text x="2" y="276" class="anno" fill="#e57400" font-size="7">valitse yksi tai</text>
+  <text x="2" y="286" class="anno" fill="#e57400" font-size="7">useita luokkia</text>
+
+  <!-- 2 — KV tällä aluehinnalla column annotation -->
+  <line x1="760" y1="228" x2="760" y2="210" stroke="#2563eb" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="718" y="207" class="anno">Arvio tällä hinnalla →</text>
+
+  <!-- 3 — Selected row annotation -->
+  <line x1="868" y1="301" x2="886" y2="301" stroke="#e57400" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="870" y="297" class="anno" fill="#e57400" font-size="7">Valittu</text>
+  <text x="870" y="307" class="anno" fill="#e57400" font-size="7">→ Poista</text>
+
+  <!-- 4 — Poista button annotation -->
+  <line x1="475" y1="389" x2="475" y2="410" stroke="#e57400" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="428" y="422" class="anno" fill="#e57400">Poistaa valitun rivin listalta ja päivittää karttakorostuksen</text>
+
+</svg>

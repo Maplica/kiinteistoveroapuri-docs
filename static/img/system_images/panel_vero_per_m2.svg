@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="280" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="280" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Vero per m² rakennustyypeittäin</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- LEFT: input -->
+  <text x="16" y="52" fill="#374151" font-size="11">Taso:</text>
+  <rect x="70" y="38" width="240" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="78" y="53" fill="#111827" font-size="11">Rakennukset_Yhdistetty_vero_ja_tietokanta</text>
+
+  <rect x="70" y="72" width="110" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="88" y="88" fill="white" font-size="11">Laske analyysi</text>
+
+  <!-- Divider -->
+  <line x1="340" y1="30" x2="340" y2="270" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- Table -->
+  <rect x="356" y="36" width="330" height="20" fill="#0a3d7a"/>
+  <text x="362" y="50" fill="white" font-size="9" font-weight="bold">Rakennustyyppi</text>
+  <text x="460" y="50" fill="white" font-size="9" font-weight="bold">Kpl</text>
+  <text x="490" y="50" fill="white" font-size="9" font-weight="bold">Ka m²</text>
+  <text x="530" y="50" fill="white" font-size="9" font-weight="bold">Ka vero</text>
+  <text x="574" y="50" fill="white" font-size="9" font-weight="bold">Vero/m²</text>
+  <text x="620" y="50" fill="white" font-size="9" font-weight="bold">Poikkeama</text>
+
+  <!-- Row 1: green (near average) -->
+  <rect x="356" y="56" width="330" height="18" fill="#dcfce7"/>
+  <text x="362" y="69" fill="#111827" font-size="9">039 – Omakotitalo</text>
+  <text x="464" y="69" fill="#111827" font-size="9">218</text>
+  <text x="490" y="69" fill="#111827" font-size="9">156</text>
+  <text x="534" y="69" fill="#111827" font-size="9">420</text>
+  <text x="576" y="69" fill="#111827" font-size="9">2,69</text>
+  <text x="620" y="69" fill="#16a34a" font-size="9">+12 %</text>
+
+  <!-- Row 2: green -->
+  <rect x="356" y="74" width="330" height="18" fill="#dcfce7"/>
+  <text x="362" y="87" fill="#111827" font-size="9">199 – Muu asuinrakennus</text>
+  <text x="464" y="87" fill="#111827" font-size="9">87</text>
+  <text x="490" y="87" fill="#111827" font-size="9">210</text>
+  <text x="534" y="87" fill="#111827" font-size="9">560</text>
+  <text x="576" y="87" fill="#111827" font-size="9">2,67</text>
+  <text x="620" y="87" fill="#16a34a" font-size="9">+10 %</text>
+
+  <!-- Row 3: orange -->
+  <rect x="356" y="92" width="330" height="18" fill="#fef3c7"/>
+  <text x="362" y="105" fill="#111827" font-size="9">022 – Rivitalo</text>
+  <text x="464" y="105" fill="#111827" font-size="9">52</text>
+  <text x="490" y="105" fill="#111827" font-size="9">340</text>
+  <text x="534" y="105" fill="#111827" font-size="9">1 100</text>
+  <text x="576" y="105" fill="#111827" font-size="9">3,24</text>
+  <text x="620" y="105" fill="#d97706" font-size="9">+34 %</text>
+
+  <!-- Row 4: red -->
+  <rect x="356" y="110" width="330" height="18" fill="#fee2e2"/>
+  <text x="362" y="123" fill="#111827" font-size="9">931 – Varasto</text>
+  <text x="464" y="123" fill="#111827" font-size="9">34</text>
+  <text x="490" y="123" fill="#111827" font-size="9">820</text>
+  <text x="534" y="123" fill="#111827" font-size="9">1 820</text>
+  <text x="576" y="123" fill="#111827" font-size="9">2,22</text>
+  <text x="620" y="123" fill="#dc2626" font-size="9">−8 % (ei)</text>
+
+  <!-- Legend -->
+  <rect x="362" y="148" width="12" height="10" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="378" y="157" fill="#374151" font-size="9">±30 % ka:sta</text>
+  <rect x="432" y="148" width="12" height="10" fill="#fef3c7" stroke="#d97706" stroke-width="1"/>
+  <text x="448" y="157" fill="#374151" font-size="9">±30–50 %</text>
+  <rect x="502" y="148" width="12" height="10" fill="#fee2e2" stroke="#dc2626" stroke-width="1"/>
+  <text x="518" y="157" fill="#374151" font-size="9">&gt;50 %</text>
+</svg>

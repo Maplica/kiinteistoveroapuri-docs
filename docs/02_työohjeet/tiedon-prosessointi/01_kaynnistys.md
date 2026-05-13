@@ -111,7 +111,11 @@ Tallennusvälilehdellä määrityt polut määrittävät, minne prosessoinnin tu
 
 - ☑️ **"Sisällytä henkilötunnukset"** 
   - Rasti päällä (Kyllä) → Kaikki omistajatiedot mukana tuloksissa (Myös HETU)
+
+    ![Henkilötunnukset mukana](/img/system_images/checkbox_hetu_kylla.svg)
   - Rasti pois (Ei) → Kaikki omistajatiedot poistetaan tuloksista
+
+    ![Henkilötunnukset pois](/img/system_images/checkbox_hetu_ei.svg)
 
 ### C. Koordinaattijärjestelmä tulosteille:
 

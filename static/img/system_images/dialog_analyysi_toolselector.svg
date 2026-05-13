@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="240" font-family="Segoe UI, Arial, sans-serif">
+  <!-- Window chrome -->
+  <rect width="680" height="240" rx="6" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="0" y="0" width="680" height="32" rx="6" fill="#0a3d7a"/>
+  <rect x="0" y="20" width="680" height="12" fill="#0a3d7a"/>
+  <text x="16" y="21" fill="white" font-size="12" font-weight="bold">Kiinteistöveroanalyysi</text>
+
+  <!-- Selector row -->
+  <rect x="10" y="42" width="620" height="28" rx="4" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="18" y="62" fill="#343a40" font-size="11">Laskentatyökalu:</text>
+  <rect x="128" y="46" width="460" height="20" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="136" y="60" fill="#111827" font-size="11">Maapohja – Veroarvio</text>
+  <polygon points="576,52 584,52 580,60" fill="#6b7280"/>
+  <!-- "!" badge -->
+  <circle cx="650" cy="56" r="10" fill="#e5e7eb"/>
+  <text x="646" y="60" fill="#6b7280" font-size="10" font-weight="bold">!</text>
+
+  <!-- Dropdown open -->
+  <rect x="128" y="66" width="460" height="168" rx="3" fill="white" stroke="#9ca3af" stroke-width="1" filter="url(#shadow)"/>
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Section: Maapohja -->
+  <rect x="128" y="66" width="460" height="18" fill="#f3f4f6"/>
+  <text x="138" y="79" fill="#888888" font-size="10" font-weight="bold">── Maapohja ──</text>
+
+  <!-- Selected item highlight -->
+  <rect x="128" y="84" width="460" height="18" fill="#eff6ff"/>
+  <text x="138" y="97" fill="#1d4ed8" font-size="11">Maapohja – Veroarvio</text>
+
+  <text x="138" y="115" fill="#111827" font-size="11">Alennuskaava-laskuri</text>
+  <text x="138" y="133" fill="#111827" font-size="11">Rakentamattoman tontin vertailu</text>
+  <text x="138" y="151" fill="#111827" font-size="11">Rakennusoikeuden vajaakäyttö</text>
+  <text x="138" y="169" fill="#111827" font-size="11">Rantakiinteistön arvio</text>
+  <text x="138" y="187" fill="#111827" font-size="11">Aluehintojen jakaumaanalyysi</text>
+
+  <!-- Section: Rakennukset -->
+  <rect x="128" y="192" width="460" height="18" fill="#f3f4f6"/>
+  <text x="138" y="205" fill="#888888" font-size="10" font-weight="bold">── Rakennukset ──  (+ Yhteenveto, Ohje…)</text>
+</svg>

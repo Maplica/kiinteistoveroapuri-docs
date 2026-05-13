@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="300" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Rakennus – Laskenta alusta (JHA + ikäalennus)</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- LEFT: inputs -->
+  <text x="16" y="52" fill="#374151" font-size="11">Jälleenhankinta-arvo (JHA):</text>
+  <rect x="210" y="38" width="120" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="218" y="53" fill="#111827" font-size="11">200 000 €</text>
+
+  <text x="16" y="84" fill="#374151" font-size="11">Rakennustyyppi:</text>
+  <rect x="210" y="70" width="140" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="218" y="85" fill="#111827" font-size="11">Omakotitalo (039)</text>
+
+  <text x="16" y="116" fill="#374151" font-size="11">Materiaali:</text>
+  <rect x="210" y="102" width="100" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="218" y="117" fill="#111827" font-size="11">puu</text>
+
+  <text x="16" y="148" fill="#374151" font-size="11">Valmistumisvuosi:</text>
+  <rect x="210" y="134" width="80" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="218" y="149" fill="#111827" font-size="11">1985</text>
+
+  <text x="16" y="180" fill="#374151" font-size="11">Veroprosentti:</text>
+  <rect x="210" y="166" width="160" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="218" y="181" fill="#111827" font-size="11">Vakituinen asunto</text>
+
+  <rect x="210" y="202" width="130" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="226" y="218" fill="white" font-size="11">Laske verotusarvo</text>
+
+  <!-- Divider -->
+  <line x1="380" y1="30" x2="380" y2="290" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- RIGHT: result -->
+  <rect x="396" y="36" width="288" height="60" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="540" y="61" fill="#1d4ed8" font-size="17" font-weight="bold" text-anchor="middle">448 €</text>
+  <text x="540" y="82" fill="#374151" font-size="9" text-anchor="middle">Kiinteistövero (vakituinen asunto 0,45 %)</text>
+
+  <!-- Detail -->
+  <text x="396" y="118" fill="#374151" font-size="9">JHA:           200 000 €</text>
+  <text x="396" y="134" fill="#374151" font-size="9">Ikäalennus:    37,50 %  (ryhmä 1, puu, 41 v)</text>
+  <text x="396" y="150" fill="#374151" font-size="9">Verotusarvo:   125 000 € (JHA × 62,5 % × 0 floor)</text>
+  <text x="396" y="166" fill="#374151" font-size="9">Lattia (20 %): 40 000 €  (vähintään)</text>
+  <text x="396" y="182" fill="#374151" font-size="9">Lopullinen:    99 500 €  KV = 99 500 × 0,45 %</text>
+</svg>

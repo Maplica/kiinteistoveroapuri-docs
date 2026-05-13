@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="280" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="280" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Aluehintojen jakaumaanalyysi</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- LEFT: inputs -->
+  <text x="16" y="52" fill="#374151" font-size="11">Taso:</text>
+  <rect x="70" y="38" width="230" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="78" y="53" fill="#111827" font-size="11">Kiinteistot_Yhdistetty_vero_ja_tietokanta</text>
+
+  <rect x="70" y="72" width="110" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="88" y="88" fill="white" font-size="11">Laske jakauma</text>
+
+  <text x="70" y="114" fill="#888888" font-size="9">(kaikki käyttötarkoitukset)</text>
+
+  <!-- Divider -->
+  <line x1="340" y1="30" x2="340" y2="270" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- RIGHT: table -->
+  <rect x="356" y="36" width="330" height="20" fill="#0a3d7a"/>
+  <text x="362" y="50" fill="white" font-size="9" font-weight="bold">Käyttötarkoitus</text>
+  <text x="468" y="50" fill="white" font-size="9" font-weight="bold">Kpl</text>
+  <text x="500" y="50" fill="white" font-size="9" font-weight="bold">Min</text>
+  <text x="536" y="50" fill="white" font-size="9" font-weight="bold">Ka</text>
+  <text x="570" y="50" fill="white" font-size="9" font-weight="bold">Max</text>
+  <text x="606" y="50" fill="white" font-size="9" font-weight="bold">Std</text>
+
+  <!-- Row 1 -->
+  <rect x="356" y="56" width="330" height="18" fill="#eff6ff"/>
+  <text x="362" y="69" fill="#111827" font-size="9">A – Asuminen</text>
+  <text x="472" y="69" fill="#111827" font-size="9">412</text>
+  <text x="500" y="69" fill="#111827" font-size="9">8,0</text>
+  <text x="530" y="69" fill="#111827" font-size="9">24,5</text>
+  <text x="565" y="69" fill="#111827" font-size="9">85,0</text>
+  <text x="603" y="69" fill="#111827" font-size="9">11,2</text>
+
+  <!-- Row 2 -->
+  <rect x="356" y="74" width="330" height="18" fill="white"/>
+  <text x="362" y="87" fill="#111827" font-size="9">K – Kauppa</text>
+  <text x="472" y="87" fill="#111827" font-size="9">88</text>
+  <text x="500" y="87" fill="#111827" font-size="9">15,0</text>
+  <text x="530" y="87" fill="#111827" font-size="9">42,3</text>
+  <text x="565" y="87" fill="#111827" font-size="9">120,0</text>
+  <text x="603" y="87" fill="#111827" font-size="9">22,1</text>
+
+  <!-- Row 3 -->
+  <rect x="356" y="92" width="330" height="18" fill="#eff6ff"/>
+  <text x="362" y="105" fill="#111827" font-size="9">T – Teollisuus</text>
+  <text x="472" y="105" fill="#111827" font-size="9">176</text>
+  <text x="500" y="105" fill="#111827" font-size="9">4,0</text>
+  <text x="530" y="105" fill="#111827" font-size="9">9,8</text>
+  <text x="565" y="105" fill="#111827" font-size="9">35,0</text>
+  <text x="603" y="105" fill="#111827" font-size="9">7,4</text>
+
+  <text x="362" y="130" fill="#6b7280" font-size="9">(kaikki arvot €/m²)</text>
+</svg>

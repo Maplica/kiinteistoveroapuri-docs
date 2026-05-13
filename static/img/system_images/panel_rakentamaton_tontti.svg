@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="260" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="260" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Rakentamattoman tontin verovaikutus</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- LEFT: inputs -->
+  <text x="16" y="52" fill="#374151" font-size="11">Pinta-ala:</text>
+  <rect x="130" y="38" width="110" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="138" y="53" fill="#111827" font-size="11">1 000 m²</text>
+
+  <text x="16" y="84" fill="#374151" font-size="11">Aluehinta:</text>
+  <rect x="130" y="70" width="110" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="138" y="85" fill="#111827" font-size="11">25,00 €/m²</text>
+
+  <text x="16" y="116" fill="#374151" font-size="11">Kaavatyyppi:</text>
+  <rect x="130" y="102" width="200" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="138" y="117" fill="#111827" font-size="11">Asemakaava (ei alennuskaavaa)</text>
+
+  <rect x="130" y="136" width="110" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="148" y="152" fill="white" font-size="11">Laske vertailu</text>
+
+  <text x="16" y="180" fill="#888888" font-size="9" font-style="italic">Veroprosentit luetaan asetuksista.</text>
+
+  <!-- Divider -->
+  <line x1="360" y1="30" x2="360" y2="240" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- RIGHT: table -->
+  <rect x="376" y="36" width="308" height="20" fill="#0a3d7a"/>
+  <text x="382" y="50" fill="white" font-size="9" font-weight="bold">Tilanne</text>
+  <text x="480" y="50" fill="white" font-size="9" font-weight="bold">Veroprosentti</text>
+  <text x="556" y="50" fill="white" font-size="9" font-weight="bold">Verotusarvo (€)</text>
+  <text x="636" y="50" fill="white" font-size="9" font-weight="bold">KV (€/v)</text>
+
+  <!-- Row: rakennettu -->
+  <rect x="376" y="56" width="308" height="20" fill="#f0fdf4"/>
+  <text x="382" y="70" fill="#111827" font-size="9">Rakennettu tontti</text>
+  <text x="492" y="70" fill="#111827" font-size="9">1,00 %</text>
+  <text x="556" y="70" fill="#111827" font-size="9">18 750</text>
+  <text x="650" y="70" fill="#111827" font-size="9">188</text>
+
+  <!-- Row: rakentamaton -->
+  <rect x="376" y="76" width="308" height="20" fill="#fef2f2"/>
+  <text x="382" y="90" fill="#dc2626" font-size="9">Rakentamaton tontti</text>
+  <text x="492" y="90" fill="#dc2626" font-size="9">3,00 %</text>
+  <text x="556" y="90" fill="#dc2626" font-size="9">18 750</text>
+  <text x="636" y="90" fill="#dc2626" font-size="9">563</text>
+
+  <text x="382" y="118" fill="#374151" font-size="9">Lisävero rakentamattomuudesta: +375 €/vuosi</text>
+</svg>

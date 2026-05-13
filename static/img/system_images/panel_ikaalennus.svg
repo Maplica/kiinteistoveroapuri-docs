@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="380" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="380" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Ikäalennus &amp; Perusparannuslaskin (arvostamislaki § 30)</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- LEFT: inputs -->
+  <text x="16" y="50" fill="#374151" font-size="11">Rakennustyyppi:</text>
+  <rect x="160" y="36" width="150" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="168" y="51" fill="#111827" font-size="11">Omakotitalo (039)</text>
+
+  <text x="16" y="82" fill="#374151" font-size="11">Materiaali:</text>
+  <rect x="160" y="68" width="100" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="168" y="83" fill="#111827" font-size="11">kivi</text>
+
+  <text x="16" y="114" fill="#374151" font-size="11">Valmistumisvuosi:</text>
+  <rect x="160" y="100" width="80" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="168" y="115" fill="#111827" font-size="11">1975</text>
+
+  <text x="16" y="140" fill="#374151" font-size="11" font-weight="bold">Perusparannukset:</text>
+
+  <!-- Checkboxes -->
+  <rect x="16" y="150" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="161" fill="#374151" font-size="10">Ikkunat uusittu (−6 pp)</text>
+
+  <rect x="16" y="168" width="13" height="13" rx="2" fill="#2563eb" stroke="#2563eb" stroke-width="1"/>
+  <line x1="18" y1="176" x2="21" y2="180" stroke="white" stroke-width="2"/>
+  <line x1="21" y1="180" x2="28" y2="170" stroke="white" stroke-width="2"/>
+  <text x="34" y="179" fill="#374151" font-size="10">Vesijohto/viemärilaitteet uusittu (−5 pp)</text>
+
+  <rect x="16" y="186" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="197" fill="#374151" font-size="10">Sähkölaitteet uusittu (−5 pp)</text>
+
+  <rect x="16" y="204" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="215" fill="#374151" font-size="10">Ilmastointi asennettu (−5 pp)</text>
+
+  <rect x="16" y="222" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="233" fill="#374151" font-size="10">Lämmitysjärjestelmä uusittu (−5 pp)</text>
+
+  <rect x="16" y="240" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="251" fill="#374151" font-size="10">Vesikate uusittu (−3 pp)</text>
+
+  <rect x="16" y="258" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="269" fill="#374151" font-size="10">Ovet uusittu (−1 pp)</text>
+
+  <rect x="16" y="276" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="287" fill="#374151" font-size="10">Ulkoseinien pinnoitteet uusittu (−2 pp)</text>
+
+  <rect x="16" y="294" width="13" height="13" rx="2" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="34" y="305" fill="#374151" font-size="10">Ulkopuolinen lisäeristys (−8 pp)</text>
+
+  <rect x="16" y="318" width="110" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="30" y="334" fill="white" font-size="11">Laske ikäalennus</text>
+
+  <!-- Divider -->
+  <line x1="360" y1="30" x2="360" y2="370" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- RIGHT: result -->
+  <rect x="376" y="36" width="308" height="52" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="530" y="59" fill="#1d4ed8" font-size="15" font-weight="bold" text-anchor="middle">Netto-ikäalennus  46,00 %</text>
+  <text x="530" y="76" fill="#374151" font-size="9" text-anchor="middle">Ryhmä 1 · kivi · ikä 51 v · katto: 70 %</text>
+
+  <!-- Detail table -->
+  <rect x="376" y="102" width="308" height="20" fill="#0a3d7a"/>
+  <text x="382" y="116" fill="white" font-size="9" font-weight="bold">Erä</text>
+  <text x="580" y="116" fill="white" font-size="9" font-weight="bold">Arvo</text>
+
+  <rect x="376" y="122" width="308" height="16" fill="#eff6ff"/>
+  <text x="382" y="134" fill="#374151" font-size="9">Ikäalennusryhmä</text>
+  <text x="580" y="134" fill="#111827" font-size="9">1</text>
+
+  <rect x="376" y="138" width="308" height="16" fill="white"/>
+  <text x="382" y="150" fill="#374151" font-size="9">Materiaali</text>
+  <text x="580" y="150" fill="#111827" font-size="9">kivi</text>
+
+  <rect x="376" y="154" width="308" height="16" fill="#eff6ff"/>
+  <text x="382" y="166" fill="#374151" font-size="9">Ikä (vuotta)</text>
+  <text x="580" y="166" fill="#111827" font-size="9">51</text>
+
+  <rect x="376" y="170" width="308" height="16" fill="white"/>
+  <text x="382" y="182" fill="#374151" font-size="9">Brutto-ikäalennus</text>
+  <text x="580" y="182" fill="#111827" font-size="9">51,00 %</text>
+
+  <rect x="376" y="186" width="308" height="16" fill="#eff6ff"/>
+  <text x="382" y="198" fill="#374151" font-size="9">Perusparannus yhteensä</text>
+  <text x="580" y="198" fill="#16a34a" font-size="9">−5 pp</text>
+
+  <rect x="376" y="202" width="308" height="16" fill="white"/>
+  <text x="382" y="214" fill="#374151" font-size="9">Netto-ikäalennus (ennen kattoa)</text>
+  <text x="580" y="214" fill="#111827" font-size="9">46,00 %</text>
+
+  <rect x="376" y="218" width="308" height="16" fill="#eff6ff"/>
+  <text x="382" y="230" fill="#374151" font-size="9">Katto (max)</text>
+  <text x="580" y="230" fill="#111827" font-size="9">70 %</text>
+
+  <rect x="376" y="234" width="308" height="16" fill="white"/>
+  <text x="382" y="246" fill="#374151" font-size="9">Kattovaikutus</text>
+  <text x="580" y="246" fill="#16a34a" font-size="9">ei rajoita</text>
+</svg>

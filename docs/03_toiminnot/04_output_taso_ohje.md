@@ -1014,6 +1014,28 @@ GeoPackage-tasojen lisäksi tuotetaan kaksi Excel-tiedostoa niille tietueille, j
 
 ---
 
+### TaxBuildings_BadKuntaGeometry_[date].xlsx
+
+**Tarkoitus:** Verotuksen rakennustietueet, joiden kiinteistötunnus täsmää kuntapolygoniin, jolla on tyhjentynyt tai virheellinen geometria. Nämä eivät ole aidosti yhdistämättömiä tietueita — ongelma on kunta-aineiston geometriassa, ei verotietueessa. Tiedosto luodaan vain, jos yhtään tällaista tietuetta on.
+
+:::caution Kunta-aineiston tietolaatuvirheongelma
+Jos tämä tiedosto sisältää rivejä, sen aiheuttaa kuntapalstan tai määräalan shapefile-geometrioiden puuttuminen. Yleisin syy on M-geometria (Measured 3D Polygon) -muotoinen shapefile, jonka pyogrio muuntaa Polygon Z:ksi, mistä voi aiheutua null-geometrioita. Korjaa tai korvaa kunta-aineiston geometriavirheet ja aja prosessointi uudelleen.
+:::
+
+**Prosessoinnin valmistumisdialogi** näyttää oranssin varoituksen, jos kuntapolygonien null-geometrioita löytyi:
+
+![Prosessoinnin valmistumisdialogi (varoitus)](/img/system_images/dialog_completion_avaa_tiedostot.svg)
+
+> ⚠️ *Kunta-aineistossa N riviä ilman geometriaa (palsta: X, määräala: Y) — mahdollinen tietolaatuvirheongelma.*
+
+---
+
+### TaxBuildings_BadKuntaGeometry_[date]_RakennusOsa.xlsx
+
+**Tarkoitus:** Sama kuin yllä, mutta rakennusosa-tietueille (tietuetyyppi `12.10.01.21`). Luodaan vain tarvittaessa.
+
+---
+
 ## Tasojen tyylit – yhteenveto
 
 | Taso | QML-tyylejä | Päätyyli |

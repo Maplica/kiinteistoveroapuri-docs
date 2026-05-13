@@ -57,7 +57,12 @@ Mitä se tekee: Valitsee seuraavan näkyvän rivin vasemmasta taulukosta ja kesk
 
 Teksti: "Näytä kartalla"
 Vihjeteksti: Kohdenna karttanäkymä valittuun kohteeseen
-Mitä se tekee: Keskittää QGIS-karttapohjan valittuun kohteeseen (joko vasemmasta tai oikeasta taulukosta) mittakaavassa 1:1000. Jos vasemmasta taulukosta ei ole mitään valittuna, se valitsee ensimmäisen näkyvän rivin. Kohde korostetaan punaisella merkillä (ympyrä pisteille, ääriviiva monikulmioille). Tämä ei muuta nykyistä valintaa. Toimii molemmissa taulukoissa: vasemmassa (kohteet) ja oikeassa (lisätyt kohteet).
+Mitä se tekee: Kohdentaa QGIS-karttapohjan valittuihin kohteisiin. Toimintapa riippuu siitä, kuinka monta riviä on valittuna:
+
+- **Yksi rivi valittuna** — käyttäytyminen ennallaan: kartta keskitetään kohteeseen mittakaavassa 1:1000 ja kohde korostetaan punaisella merkillä.
+- **Useita rivejä valittuna** — kartta kohdentaa kaikkien valittujen kohteiden yhteiseen rajauslaatikkoon, 20 % padded kaikkiin suuntiin, ja kaikki valitut kohteet korostetaan yhtä aikaa punaisella.
+
+Toimii molemmissa taulukoissa: vasemmassa (kohteet) ja oikeassa (lisätyt kohteet). Tämä ei muuta nykyistä valintaa.
 
 ### Siirrä lisättyihin -painike
 
@@ -121,6 +126,8 @@ Ohjelma jakaa lisätyt kohteet kategorian ja muokkaustietojen perusteella eri CS
 
 ![kuva käyttöliittymästä](/img/sivukoko1.png)
 ![kuva käyttöliittymästä](/img/sivukoko2.png)
+
+![Sivukoko-valikko](/img/system_images/combobox_page_size.svg)
  
 Vaihtoehdot: 25, 50, 100, 250, 500, 1000, "Kaikki"
 
@@ -129,6 +136,8 @@ Mitä se tekee: Ohjaa, kuinka monta kohdetta näytetään sivua kohden vasemmass
 #### Sivuvalintapainikkeet
 
 ![kuva käyttöliittymästä](/img/sivuvalinta.png)
+
+![Edellinen sivu -painike](/img/system_images/btn_page_prev.svg) ![Sivuosoitin](/img/system_images/label_page_indicator.svg) ![Seuraava sivu -painike](/img/system_images/btn_page_next.svg)
 
 Toiminto: Siirry kohdetaulukon edelliselle (←) tai seuraavalle (→) sivulle. Painike on pois käytöstä (harmaa) kun valittuna on taulukon äärimmäinen sivu. Sivuosoitinteksti (Sivu X/Y) kuvaa valitun sivun numeroa ja päivittyy sivua vaihtaessa.
 
@@ -176,6 +185,7 @@ Mitä se tekee: Avaa monisivuisen [asetusten valintaikkunan](./02_prosessointias
 - **Pudotusvalikot** täytetään automaattisesti projektin tasojen kentillä.
 - **Taulukko**: Automaattinen sarakkeiden koon muutos, lisättyjen kohteiden näyttötila (verokentät/tietokantakentät/molemmat)
 - **Raportit**: Oletustulostekansio raporteille
+- **Verottajan tiedostot**: Rakennusosadatan sarakekorjaus (ylimääräisen sarakkeen automaattinen poisto)
 - **Lisäasetukset**: Varattu tuleville asetuksille (tyhjä tällä hetkellä)
 
 Muutokset otetaan käyttöön välittömästi kun napsautat "Käytä" tai "OK". Asetukset säilyvät istuntojen välillä. "Käytä"-painike tallentaa muutokset mutta pitää ikkunan auki; "OK" tallentaa ja sulkee; "Peruuta" sulkee tallentamatta.
@@ -212,11 +222,22 @@ Suodatetut sarakkeet näyttävät pisteen (•) otsikossaan. Suodattimet toimiva
 
 ### Kohdetaulukon rivit
 
-Hiiren vasemmalla-, oikealla- ja keskipainikkeella on kaikilla samat toiminnot.
+#### Hiiren vasen painike
 
-Napautus korostaa osoitetun rivin valituksi. Valitun rivin voi lisätä raporttiin painamalla [Siirrä lisättyihin](#siirrä-lisättyihin--painike) -painikkeella.
+Napautus korostaa osoitetun rivin valituksi. Useita rivejä voidaan valita samanaikaisesti:
+
+- **Ctrl + napsautus** — lisää yksittäisiä rivejä valintaan tai poistaa ne sieltä
+- **Shift + napsautus** — valitsee yhtenäisen alueen rivejä
+
+Valitun rivin voi lisätä raporttiin painamalla [Siirrä lisättyihin](#siirrä-lisättyihin--painike) -painikkeella.
 
 Kaksoisnapautus avaa rivin kohteen tiedot katseltavaksi uuteen ikkunaan.
+
+#### Hiiren oikea painike
+
+Avaa kontekstivalikon, jossa on toiminto:
+
+- **Kopioi solun arvo** — kopioi klikatun solun näyttöarvon järjestelmän leikepöydälle. Jos kursori ei ole minkään solun kohdalla (esim. viimeisen rivin alapuolella), toiminto näytetään mutta on poistettu käytöstä.
 
 ### Valintataulukon sarakeotsikot
 
@@ -232,18 +253,21 @@ Toimii samoin kuin [Kohdetaulukon sarakeotsikot](#kohdetaulukon-sarakeotsikot) �
 
 #### Hiiren vasen painike
 
-Napautus korostaa yksittäisen taulukon solun valituksi esimerkiksi arvojen kopiointia varten.
+Napautus korostaa yksittäisen taulukon solun valituksi.
 
-Kaksoisnapautus avaa kohteen tiedot erilliseen ikkunaan muokkausta varten.
+Kaksoisnapautus avaa kohteen tiedot erilliseen ikkunaan muokkausta varten. Kenttien muokkaus tapahtuu aina tämän dialogin kautta — suora solumuokkaus taulukossa ei ole mahdollista.
 
 #### Hiiren oikea painike
 
-Mitä se tekee: Avaa valikon kontekstivalikon vaihtoehdolla:
-- Tallenna: Pikatallenna nykyiseen istuntotiedostoon (harmaa jos ei polkua vielä valittu)
-- Tallenna nimellä: Valitse uusi tiedosto ja tallenna
-- Lataa: Lataa aiempi istunto (kysyy korvataanko vai liitetäänkö)
+Avaa kontekstivalikon seuraavilla toiminnoilla:
 
-Tämä tarjoaa nopean pääsyn istuntojen hallintaan ilman valikkopalkkia. Sama toiminnallisuus kuin valikkopalkissa, mutta kätevämpää kun työskentelet oikean taulukon kanssa.
+- **Kopioi solun arvo** — kopioi klikatun solun näyttöarvon järjestelmän leikepöydälle
+- *(erotin)*
+- **Tallenna** — pikatallenna nykyiseen istuntotiedostoon (poistettu käytöstä, jos polkua ei ole vielä valittu)
+- **Tallenna nimellä…** — valitse uusi tiedosto ja tallenna
+- **Lataa…** — lataa aiempi istunto (kysyy korvataanko vai liitetäänkö)
+
+Tämä tarjoaa nopean pääsyn sekä kopiointiin että istuntojen hallintaan ilman valikkopalkkia.
 
 ## Alaikkunoiden painikkeet
 

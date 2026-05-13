@@ -39,7 +39,16 @@ Tässä osiossa käydään läpi yleisimmät virhetilanteet ja niiden ratkaisut 
 | "CRS mismatch" | Eri koordinaattijärjestelmät | Plugin muuntaa automaattisesti, mutta tarkista että lähtö-CRS on oikein |
 | "Buildings outside parcels" | Koordinaatit väärin | Tarkista että kaikki tasot ovat samassa CRS:ssä |
 
-<!-- PLACEHOLDER: Kuvakaappaus geometria-ongelmasta kartalla (esim. rakennukset väärässä paikassa) -->
+**Kunta-aineiston M-geometria (Measured 3D Polygon):** Jos palsta- tai määräalashapefile on tallennettu M-geometria-muodossa, pyogrio muuntaa sen Polygon Z:ksi, mistä voi aiheutua null- tai tyhjiä geometrioita. Prosessointi havaitsee nämä automaattisesti ja tulostaa lokiin `[Kunta data quality]`-rivit:
+
+```
+[Kunta data quality] palsta rows with null/empty geometry: N
+[Kunta data quality] määräala rows with null/empty geometry: N
+```
+
+Vaikuttuneet verotietueet kirjoitetaan erilliseen `TaxBuildings_BadKuntaGeometry_<date>.xlsx`-tiedostoon (ks. [Excel-lisäraportit](../../../docs/03_toiminnot/04_output_taso_ohje.md)). Prosessoinnin valmistumisdialogi näyttää oranssin varoituksen, jos null-geometrioita löytyi.
+
+**Ratkaisu:** Vie kunta-aineisto uudelleen ilman M-koordinaatteja (QGIS: tallenna shapefile, poista valinta "Include Z dimension" ja "Include M dimension"), tai käytä suoraan GeoPackage-muotoa.
 
 ---
 

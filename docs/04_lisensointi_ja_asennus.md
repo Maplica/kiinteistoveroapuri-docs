@@ -29,6 +29,8 @@ QGIS-lisäosa on nyt valmis käyttöön.
 
 ## Lisenssikoodi
 
+![Lisenssiavain-kenttä](/img/system_images/groupbox_lisenssiavain.svg)
+
 Ensimmäistä kertaa prosessointia käynnistäessä ohjelma pyytää lisenssiavainta. Syötä saamasi lisenssikoodi prosessointiasetuksiin. Avain tarkistetaan kerran, jonka jälkeen se tallennetaan paikallisesti eikä sitä tarvitse syöttää uudelleen.
 
 Jos sinulla ei vielä ole lisenssiä tai avaimesi on vanhentunut, ota yhteyttä: contact.maplica@gmail.com

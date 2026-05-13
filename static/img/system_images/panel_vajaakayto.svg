@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="320" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="320" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Rakennusoikeuden vajaakäyttö – Kohtuullistaminen (KHO 2025:60)</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- LEFT: inputs -->
+  <text x="16" y="46" fill="#374151" font-size="10" font-weight="bold">Kaavan mukainen hinnoittelu:</text>
+  <text x="16" y="68" fill="#374151" font-size="11">Aluehinta (kaava):</text>
+  <rect x="170" y="54" width="110" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="178" y="69" fill="#111827" font-size="11">50,00 €/m²</text>
+
+  <text x="16" y="100" fill="#374151" font-size="11">Pinta-ala (kaava):</text>
+  <rect x="170" y="86" width="110" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="178" y="101" fill="#111827" font-size="11">2 000 m²</text>
+
+  <text x="16" y="126" fill="#374151" font-size="10" font-weight="bold">Tosiasiallinen käyttö:</text>
+  <text x="16" y="148" fill="#374151" font-size="11">Aluehinta (todellinen):</text>
+  <rect x="170" y="134" width="110" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="178" y="149" fill="#111827" font-size="11">15,00 €/m²</text>
+
+  <text x="16" y="180" fill="#374151" font-size="11">Pinta-ala (todellinen):</text>
+  <rect x="170" y="166" width="110" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="178" y="181" fill="#111827" font-size="11">2 000 m²</text>
+
+  <rect x="170" y="200" width="150" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="185" y="216" fill="white" font-size="11">Laske kohtuullistaminen</text>
+
+  <!-- Divider -->
+  <line x1="360" y1="30" x2="360" y2="310" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- RIGHT: result box -->
+  <rect x="376" y="36" width="308" height="52" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="530" y="56" fill="#1d4ed8" font-size="16" font-weight="bold" text-anchor="middle">Säästö: 844 €/vuosi</text>
+  <text x="530" y="76" fill="#374151" font-size="9" text-anchor="middle">Kohtuullistamisella −70 % verotusarvosta</text>
+
+  <!-- Table -->
+  <rect x="376" y="102" width="308" height="20" fill="#0a3d7a"/>
+  <text x="382" y="116" fill="white" font-size="9" font-weight="bold">Tilanne</text>
+  <text x="490" y="116" fill="white" font-size="9" font-weight="bold">Verotusarvo (€)</text>
+  <text x="600" y="116" fill="white" font-size="9" font-weight="bold">KV* (€/v)</text>
+
+  <rect x="376" y="122" width="308" height="20" fill="#fef2f2"/>
+  <text x="382" y="136" fill="#dc2626" font-size="9">Kaavan mukainen (ilman kohtuullistamista)</text>
+  <text x="500" y="136" fill="#dc2626" font-size="9">75 000</text>
+  <text x="610" y="136" fill="#dc2626" font-size="9">750</text>
+
+  <rect x="376" y="142" width="308" height="20" fill="#f0fdf4"/>
+  <text x="382" y="156" fill="#16a34a" font-size="9">Tosiasiallisen käytön mukaan (kohtuullistettu)</text>
+  <text x="500" y="156" fill="#16a34a" font-size="9">22 500</text>
+  <text x="610" y="156" fill="#16a34a" font-size="9">225</text>
+
+  <text x="382" y="184" fill="#555" font-size="9">* Veroprosenttina maapohjan yleinen veroprosentti asetuksista.</text>
+</svg>

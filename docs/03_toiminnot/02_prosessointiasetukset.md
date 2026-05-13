@@ -60,7 +60,26 @@ Ryhmälaatikko: *Lisättyjen kohteiden taulukon sarakkeet*
 
 Tekstikenttä: *Oletuskansio raporteille*
 Määrittelee oletussijainnin raporttitiedostojen tallennukseen.
+## Verottajan tiedostot -sivu
 
+![Verottajan tiedostot -asetukset](/img/system_images/groupbox_verottajan_tiedostot.svg)
+
+Tämä sivu sisältää asetukset verottajan tiedostojen käsittelyyn prosessoinnin yhteydessä.
+
+### Rakennusosadatan sarakekorjaus
+
+Joissakin verottajan vientitiedostoissa rakennusosa-tietueissa (tietuetyyppi `12.10.01.21`) esiintyy ylimääräinen sarake, joka siirtää kaikkia seuraavia sarakeotsikoita yhden position verran. Seuraavat asetukset hallitsevat automaattista korjausta:
+
+| Asetus | Kuvaus | Oletus |
+|---|---|---|
+| **Poista ylimääräinen sarake rakennusosatiedoista** | Ottaa käyttöön / poistaa käytöstä automaattisen sarakekorjauksen | Käytössä |
+| **Sarakkeen indeksi** | Nollaperusteinen indeksi ylimääräiselle sarakkeelle (Excel-sarake G = indeksi 6) | `6` |
+
+Spinbox-kentän indeksi on automaattisesti poistettu käytöstä, kun valintaruutu on tyhjennätty.
+
+:::tip Milloin tätä tarvitaan?
+Jos prosessointi tuottaa virheellisiä arvoja rakennusosa-tiedoissa (kentät väärälle paikalle siirtyneet), ota tämä korjaus käyttöön. Lokiviesti `[Asetukset] Rakennusosa: poistettu ylimääräinen sarake indeksistä N` vahvistaa, että korjaus oli tarpeellinen. Jos sarakkeiden määrä on jo oikea, korjausta ei suoriteta.
+:::
 ## Lisäasetukset-sivu
 
 Tällä hetkellä lisäasetuksia ei ole. Kategoria on varattu tulevaisuuden asetuksille.

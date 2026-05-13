@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="22" viewBox="0 0 55 22">
+  <!-- Checked checkbox box -->
+  <rect x="1" y="3" width="16" height="16" rx="3" ry="3"
+        fill="#4a9fd8" stroke="#1e5a8e" stroke-width="2"/>
+  <!-- White checkmark -->
+  <path d="M5 11 L8 15 L14 7" fill="none" stroke="white" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Label: "Ei" (No) -->
+  <text x="24" y="15" font-family="Arial, sans-serif" font-size="12" font-weight="bold"
+        fill="#333333">Ei</text>
+</svg>

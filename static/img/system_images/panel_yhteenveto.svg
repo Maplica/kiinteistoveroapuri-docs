@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="360" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="700" height="360" rx="6" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+  <text x="12" y="18" fill="#374151" font-size="11" font-weight="bold">Veropohja-yhteenveto</text>
+  <rect x="0" y="22" width="700" height="1" fill="#d1d5db"/>
+
+  <!-- Source selector -->
+  <text x="12" y="46" fill="#374151" font-size="10" font-weight="bold">Tasot</text>
+  <rect x="4" y="50" width="692" height="1" fill="#e5e7eb"/>
+  <text x="16" y="74" fill="#374151" font-size="11">Maapohja-taso:</text>
+  <rect x="160" y="60" width="250" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="168" y="75" fill="#111827" font-size="11">Kiinteistot_Yhdistetty_vero_ja_tietokanta</text>
+
+  <text x="16" y="104" fill="#374151" font-size="11">Rakennukset-taso:</text>
+  <rect x="160" y="90" width="250" height="22" rx="3" fill="white" stroke="#9ca3af" stroke-width="1"/>
+  <text x="168" y="105" fill="#111827" font-size="11">Rakennukset_Yhdistetty_vero_ja_tietokanta</text>
+
+  <rect x="160" y="122" width="120" height="24" rx="4" fill="#0a3d7a"/>
+  <text x="178" y="138" fill="white" font-size="11">Laske yhteenveto</text>
+
+  <!-- 3 total boxes -->
+  <!-- Maapohja -->
+  <rect x="8" y="158" width="218" height="64" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="117" y="175" fill="#374151" font-size="9" text-anchor="middle">Maapohja yhteensä (€)</text>
+  <text x="117" y="204" fill="#1d4ed8" font-size="16" font-weight="bold" text-anchor="middle">1 482 300 €</text>
+
+  <!-- Rakennukset -->
+  <rect x="240" y="158" width="218" height="64" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="349" y="175" fill="#374151" font-size="9" text-anchor="middle">Rakennukset yhteensä (€)</text>
+  <text x="349" y="204" fill="#16a34a" font-size="16" font-weight="bold" text-anchor="middle">3 241 800 €</text>
+
+  <!-- Grand total -->
+  <rect x="472" y="158" width="220" height="64" rx="5" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="582" y="175" fill="#374151" font-size="9" text-anchor="middle">Yhteensä kaikki (€)</text>
+  <text x="582" y="204" fill="#c2410c" font-size="16" font-weight="bold" text-anchor="middle">4 724 100 €</text>
+
+  <!-- Breakdown table -->
+  <text x="8" y="246" fill="#374151" font-size="10" font-weight="bold">Erittely käyttötarkoituksittain (maapohja)</text>
+  <rect x="8" y="250" width="684" height="1" fill="#e5e7eb"/>
+
+  <rect x="8" y="254" width="684" height="18" fill="#0a3d7a"/>
+  <text x="14" y="267" fill="white" font-size="9" font-weight="bold">Käyttötarkoitus</text>
+  <text x="350" y="267" fill="white" font-size="9" font-weight="bold">Kpl kiinteistöjä</text>
+  <text x="530" y="267" fill="white" font-size="9" font-weight="bold">Vero yhteensä (€)</text>
+
+  <rect x="8" y="272" width="684" height="18" fill="#eff6ff"/>
+  <text x="14" y="285" fill="#111827" font-size="9">A – Asuminen</text>
+  <text x="360" y="285" fill="#111827" font-size="9">412</text>
+  <text x="540" y="285" fill="#111827" font-size="9">923 450</text>
+
+  <rect x="8" y="290" width="684" height="18" fill="white"/>
+  <text x="14" y="303" fill="#111827" font-size="9">K – Kauppa</text>
+  <text x="360" y="303" fill="#111827" font-size="9">88</text>
+  <text x="540" y="303" fill="#111827" font-size="9">308 200</text>
+
+  <rect x="8" y="308" width="684" height="18" fill="#eff6ff"/>
+  <text x="14" y="321" fill="#111827" font-size="9">T – Teollisuus</text>
+  <text x="360" y="321" fill="#111827" font-size="9">176</text>
+  <text x="540" y="321" fill="#111827" font-size="9">250 650</text>
+</svg>
