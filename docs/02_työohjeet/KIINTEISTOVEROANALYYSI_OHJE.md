@@ -8,29 +8,6 @@ sidebar_position: 4
 
 ---
 
-## Sisällysluettelo
-
-1. [Yleistä](#1-yleistä)
-2. [Laskentatyökalun valinta](#2-laskentatyökalun-valinta)
-3. [Veroprosenttien asettaminen](#3-veroprosenttien-asettaminen)
-4. [Maapohja – Veroarvio](#4-maapohja--veroarvio)
-5. [Alennuskaava-laskuri](#5-alennuskaava-laskuri)
-6. [Rakentamattoman tontin vertailu](#6-rakentamattoman-tontin-vertailu)
-7. [Rakennusoikeuden vajaakäyttö](#7-rakennusoikeuden-vajaakäyttö)
-8. [Rantakiinteistön arvio](#8-rantakiinteistön-arvio)
-9. [Aluehintojen jakaumaanalyysi](#9-aluehintojen-jakaumaanalyysi)
-10. [Rakennus – Veroarvio (vertaileva)](#10-rakennus--veroarvio-vertaileva)
-11. [Rakennus – Laskenta alusta](#11-rakennus--laskenta-alusta)
-12. [Ikäalennus & Perusparannuslaskin](#12-ikäalennus--perusparannuslaskin)
-13. [Vero per m² rakennustyypeittäin](#13-vero-per-m²-rakennustyypeittäin)
-14. [Veropohja-yhteenveto](#14-veropohja-yhteenveto)
-15. [Ohje ja tietoa laskureista (sisäinen ohje)](#15-ohje-ja-tietoa-laskureista)
-16. [Karttakorostus](#16-karttakorostus)
-17. [Usein kysytyt kysymykset (FAQ)](#17-faq)
-18. [Viitteet](#18-viitteet)
-
----
-
 ## 1. Yleistä
 
 **Kiinteistöveroanalyysi** on KiinteistöveroApuri-liitännäisen analyysidialogi, joka kokoaa yhteen 12 laskentaa — maapohjan ja rakennusten veroarviolaskennan, tilastot, kohtuullistamissimuloinit ja yhteenvedon.
