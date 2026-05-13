@@ -101,7 +101,9 @@ Hakee QGIS-karttatasolta kaikki maapohjapalstat, joiden geometrian keskipiste on
 - **Aluehintastatistiikan** (minimi, keskiarvo, maksimi)
 - **Arvioidun kiinteistöveron** hypoteettiselle uudelle palstalle:
 
-$$\text{KV} = \text{Aluehinta}_\text{ka} \times \text{Pinta-ala} \times 0{,}75 \times \frac{\text{Veroprosentti}}{100}$$
+```
+KV = Aluehinta_ka × Pinta-ala × 0,75 × (Veroprosentti / 100)
+```
 
 Kerroin **0,75** on arvostamislain § 29 mukainen tavoitearvokerroin asemakaavoitetuille kiinteistöille.
 
@@ -179,9 +181,11 @@ Tuloksena saadaan **efektiivinen yksikköhinta (€/m²)** vyöhykejaon jälkeen
 
 ### Kaava (haja-asutus, raja 3 000 m²)
 
-$$V = \sum_{i} \text{ala}_i \times h_i$$
+```
+V = Σ (ala_i × h_i)
+```
 
-missä $h_i$ on vyöhykkeen $i$ alennettu yksikköhinta arvostamislain taulukon mukaisesti.
+missä `h_i` on vyöhykkeen `i` alennettu yksikköhinta arvostamislain taulukon mukaisesti.
 
 ### Käyttöesimerkki
 
@@ -218,7 +222,9 @@ Lisäksi näytetään lisäveron määrä (€/vuosi) rakentamattomuudesta.
 
 ### Kaava
 
-$$\text{KV}_\text{rakentamaton} = A \times h \times 0{,}75 \times \frac{p_\text{rakentamaton}}{100}$$
+```
+KV_rakentamaton = A × h × 0,75 × (p_rakentamaton / 100)
+```
 
 ### Käyttöesimerkki
 
@@ -256,9 +262,11 @@ Lasketaan kohtuullistettu verotusarvo ja sitä vastaava kiinteistövero (maapohj
 
 ### Kaava
 
-$$\text{Säästö} = \left(V_\text{kaava} - V_\text{todellinen}\right) \times \frac{p_\text{yleinen}}{100}$$
+```
+Säästö = (V_kaava - V_todellinen) × (p_yleinen / 100)
+```
 
-missä $V = A \times h \times 0{,}75$.
+missä `V = A × h × 0,75`.
 
 ### Käyttöesimerkki
 
@@ -296,9 +304,11 @@ Lisäksi **haja-asutusalueen** valintaruudusta voidaan soveltaa haja-asutusaluee
 
 ### Kaava
 
-$$\text{KV} = A \times h_\text{efektiivinen} \times 0{,}75 \times \frac{p}{100}$$
+```
+KV = A × h_efektiivinen × 0,75 × (p / 100)
+```
 
-missä $h_\text{efektiivinen} = h_\text{perusaluehinta} \times k_\text{ranta}$ (ja tarvittaessa alennuskaavakorjattu).
+missä `h_efektiivinen = h_perusaluehinta × k_ranta` (ja tarvittaessa alennuskaavakorjattu).
 
 ---
 
@@ -340,7 +350,9 @@ Tämä antaa nopeasti kuvan kunnan aluehintojen jakaumasta eri maankäyttöluoki
 
 Hakee lähialueen olemassa olevat rakennukset ja laskee niiden toteutuneen **vero per kerrosneliömetri** -suhteen. Tätä vertailusuhdetta sovelletaan uuden rakennuksen arviointiin:
 
-$$\text{KV-arvio} = \frac{\text{Vero}_\text{ref}}{\text{Kerrosala}_\text{ref}} \times \text{Kerrosala}_\text{uusi}$$
+```
+KV-arvio = (Vero_ref / Kerrosala_ref) × Kerrosala_uusi
+```
 
 Rakennukset, joilta puuttuu verotusarvo tai kiinteistövero, **näkyvät silti taulukossa** (`–`-arvoilla) mutta eivät vaikuta statistiikkaan.
 
@@ -391,11 +403,15 @@ Rakennukset, joilta puuttuu verotusarvo tai kiinteistövero, **näkyvät silti t
 
 Laskee rakennuksen verotusarvon täydellä laskentakaavalla jälleenhankinta-arvosta (JHA) ja ikäalennuksesta. Työkalu soveltuu, kun rakennuksen JHA tiedetään tai arvataan ja halutaan selvittää vuotuinen kiinteistövero:
 
-$$\text{Verotusarvo} = \max\!\left(JHA \times (1 - \alpha), \; 0{,}20 \times JHA\right)$$
+```
+Verotusarvo = max(JHA × (1 - α),  0,20 × JHA)
+```
 
-missä $\alpha$ on netto-ikäalennus (%) ja lattia on 20 % JHA:sta.
+missä `α` on netto-ikäalennus (%) ja lattia on 20 % JHA:sta.
 
-$$\text{KV} = \text{Verotusarvo} \times \frac{p}{100}$$
+```
+KV = Verotusarvo × (p / 100)
+```
 
 ### Syöttökentät
 
@@ -460,9 +476,11 @@ Laskee rakennuksen netto-ikäalennuksen arvostamislain § 30 mukaisesti: brutto-
 
 ### Laskentakaava
 
-$$\alpha_\text{netto} = \max\!\left(0,\; \min\!\left(\alpha_\text{katto},\; \alpha_\text{brutto} - \sum \Delta_i\right)\right)$$
+```
+α_netto = max(0, min(α_katto, α_brutto - Σ Δ_i))
+```
 
-missä $\alpha_\text{brutto} = \text{ikä} \times r$ ($r$ = alennusprosentti per vuosi ryhmän mukaan) ja $\Delta_i$ on raksittujen perusparannusten vähennykset prosenttipisteinä.
+missä `α_brutto = ikä × r` (`r` = alennusprosentti per vuosi ryhmän mukaan) ja `Δ_i` on raksittujen perusparannusten vähennykset prosenttipisteinä.
 
 ### Tulospaneeli
 
