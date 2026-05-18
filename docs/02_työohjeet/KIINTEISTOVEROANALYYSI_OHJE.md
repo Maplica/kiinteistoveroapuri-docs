@@ -100,13 +100,14 @@ Kerroin **0,75** on arvostamislain § 29 mukainen tavoitearvokerroin asemakaavoi
 - **Suuri sininen kenttä:** `Ka: X €` — arvioidun kiinteistöveron keskiarvo
 - **Tekstikenttä:** laskentakaava, vaihteluväli min–max, referenssien lukumäärä
 - **"Näytä referenssit kartalla":** korostaa nykyiset (ei poistetut) referenssit kartalla vihreänä
-- **Referenssitaulukko** (sarakkeet):
+- **Referenssitaulukko** (sarakkeet, leveys säädettävissä vetämällä sarakerajaa):
   - Kiinteistötunnus
   - Pinta-ala (m²)
   - Aluehinta (€/m²)
   - Verotusarvo (€)
   - Kiint.vero (€)
   - KV tällä aluehinnalla (€) — arvio uudelle palstalle tällä referenssin aluehinnalla
+- **Kaksoisnapsauta riviä** avataksesi yksityiskohtaisen popup-ikkunan, joka näyttää: kiinteistötunnus, käyttötarkoitus (kaavan mukainen), pinta-ala, aluehinta ja sen poikkeama ryhmän keskiarvosta (Δ ka%), verotusarvo, kirjattu kiinteistövero, laskentakaava (`aluehinta × pinta-ala × 0,75 × veroprosentti% = KV arvio €`) sekä ero kirjattuun eurona ja prosentteina (värikoodattu).
 - **"Poista valittu rivi":** poistaa valitun rivin taulukosta, päivittää tilastot ja karttakorostuksen
 
 > **Vinkki:** Poista selvästi poikkeavat referenssit ennen lopullisen arvion lukemista. Jos poistat liikaa, paina uudelleen **"Laske arvio"** — se hakee koko referenssilistan uudelleen.
@@ -333,11 +334,20 @@ KV-arvio = (Vero_ref / Kerrosala_ref) × Kerrosala_uusi
 
 Rakennukset, joilta puuttuu verotusarvo tai kiinteistövero, **näkyvät silti taulukossa** (`–`-arvoilla) mutta eivät vaikuta statistiikkaan.
 
+**Ikäalennus-normalisointi:** Jos valittu RakennusOsat-taso on saatavilla, työkalu hakee jokaisen referenssirakennuksen rakennusosat ja laskee pinta-ala-painotetun netto-ikäalennuksen (α). Tämän avulla lasketaan normalisoitu vero ("Ilman ikäal. €"), joka kuvaa rakennuksen veroa ikäalennuksesta puhdistettuna — eli arviota siitä, miten uusi vastaava rakennus verotettaisiin:
+
+$$\text{norm\_factor} = \frac{1}{\max(0{,}20,\; 1 - \alpha / 100)}$$
+
+$$\text{Ilman ikäal.} = \text{Vero} \times \text{norm\_factor}$$
+
+Jos rakennusosatietoja ei löydy, sarakkeeseen käytetään raakaa veroarvoa.
+
 ### Syöttökentät
 
 | Kenttä | Kuvaus | Oletus |
 |---|---|---|
 | **Rakennukset-taso** | QGIS-rakennustaso | – |
+| **RakennusOsat-taso** | QGIS-taso, jolta haetaan rakennusosien ikäalennustiedot normalisointia varten. Havaitaan automaattisesti ryhmästä, jonka nimi sisältää sekä "rakennus" että "osat" (kirjainkoosta riippumatta). Jos tasoa ei löydy, normalisointi käyttää raakoja arvoja. | autodetektoitu |
 | **Valitse sijainti kartalta** | Karttapistepoiminta | – |
 | **Kerrosala (m²)** | Uuden rakennuksen kerrosala | – |
 | **Rakennustyyppi** | Monivalintalista VRK-koodeista | kaikki |
@@ -346,17 +356,18 @@ Rakennukset, joilta puuttuu verotusarvo tai kiinteistövero, **näkyvät silti t
 
 ### Tulospaneeli
 
-- **Suuri kenttä:** `Ka: X €`
+- **Suuri kenttä:** `Ka: X €` — normalisoitujen KV-arvioiden keskiarvo; alla tieto "Ikäal. huomioitu: X/Y kpl"
 - **Teksti:** vero/m²-ka × kerrosala = arvio, vaihteluväli, referenssien lukumäärä
 - **"Näytä referenssit kartalla":** korostaa aktiiviset referenssirakennukset kartalla
 - **Referenssitaulukko** (sarakkeet):
   - Kiinteistötunnus
   - Tyyppi (VRK-koodi)
-  - Kerrosala (m²)
-  - Verotusarvo (€)
-  - Vero (€)
-  - Vero/m² (€)
-  - KV tällä aluehinnalla (€) — arvio uudelle rakennukselle tämän referenssin vero/m²-suhteella
+  - Kerrosala m²
+  - Vero €
+  - Ilman ikäal. € — vero normalisoituna ikäalennuksen poistamisen jälkeen
+  - €/m² (ilman ikäal.) — normalisoitu vero per kerrosneliömetri
+  - KV arvio € — arvio uudelle rakennukselle normalisoituun €/m²-suhteeseen perustuen
+- **Kaksoisnapsauta riviä** avataksesi yksityiskohtaisen popup-ikkunan, joka näyttää: rakennuksen perustiedot, rakennusosien ikäalennuserittely (laskentavuosi, materiaali, pinta-ala m², ikäal.%), pinta-ala-painotettu α ja normalisointitekijä sekä täydellinen laskentaketju (vero → norm_vero → €/m² → KV arvio €). Jos rakennusosatietoja ei löydy, popup ilmoittaa tästä ja näyttää raa'at arvot.
 - **"Poista valittu rivi":** poistaa rivin, päivittää tilastot ja karttakorostuksen
 
 ### Käyttöesimerkki
@@ -611,4 +622,4 @@ V: Rakennukselta puuttuu vero tai kerrosala verottajan rekisterissä. Tieto on m
 
 ---
 
-*Ohje päivitetty: 12.5.2026 | KiinteistöveroApuri-liitännäinen*
+*Ohje päivitetty: 15.5.2026 | KiinteistöveroApuri-liitännäinen*
