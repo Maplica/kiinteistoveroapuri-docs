@@ -336,9 +336,10 @@ Rakennukset, joilta puuttuu verotusarvo tai kiinteistövero, **näkyvät silti t
 
 **Ikäalennus-normalisointi:** Jos valittu RakennusOsat-taso on saatavilla, työkalu hakee jokaisen referenssirakennuksen rakennusosat ja laskee pinta-ala-painotetun netto-ikäalennuksen (α). Tämän avulla lasketaan normalisoitu vero ("Ilman ikäal. €"), joka kuvaa rakennuksen veroa ikäalennuksesta puhdistettuna — eli arviota siitä, miten uusi vastaava rakennus verotettaisiin:
 
-$$\text{norm\_factor} = \frac{1}{\max(0{,}20,\; 1 - \alpha / 100)}$$
-
-$$\text{Ilman ikäal.} = \text{Vero} \times \text{norm\_factor}$$
+```
+norm_factor = 1 / max(0.20, 1 - α / 100)
+Ilman ikäal. = Vero × norm_factor
+```
 
 Jos rakennusosatietoja ei löydy, sarakkeeseen käytetään raakaa veroarvoa.
 
