@@ -104,9 +104,25 @@ Seuraavien tasojen sarakkeet **täytyä löytyä tiedostosta**, jotta prosessoin
 - ❌ Vältä erikoismerkkejä: `äö!@$%`
 - ❌ Älä käytä liian lyhyitä nimiä: `data.gpkg`
 
+### Sarakkeiden nimeäminen loppukäyttäjää varten
+
+:::warning Tärkeää – nimeä kaikki sarakkeet ymmärrettävästi
+Alkuaineiston **kaikki sarakkeet** tulee nimetä selkeästi ja kuvaavasti. Loppukäyttäjä näkee sarakkeiden nimet mm. attribuuttitaulussa, tulosteissa ja raporteissa – epäselvät koodit tai lyhenteet hidastavat työtä ja lisäävät virheiden riskiä.
+
+- ✅ `Kokonaisala_m2` sen sijaan kuin `KA` tai `col_4`
+- ✅ `Kaavan_kayttotarkoitus` sen sijaan kuin `KKT` tai `field_7`
+- ✅ `Kiinteistotunnus` sen sijaan kuin `ID` tai `tunnus`
+
+Hyvä nimeämiskäytäntö tehdään **kerran aineistoa valmistellessa** – se säästää aikaa jokaisella tarkastuskierroksella ja kaikilla käyttäjillä.
+:::
+
 ---
 
 ## 2. Tutki tietosisältö
+
+:::tip Tutustukaa alkuaineistoihin – se kannattaa
+Kaikkien tarkastustyöhön osallistuvien käyttäjien on suositeltavaa **tutustua alkuaineistoihin** ennen prosessoinnin käynnistystä. Kun ymmärtää mitä tietoja aineistoissa on – mitä sarakkeet tarkoittavat, millaisia arvoja niihin on tallennettu ja miten eri aineistot liittyvät toisiinsa – on huomattavasti helpompi tunnistaa virheelliset tai puuttuvat tiedot sekä tulkita prosessoinnin tuloksia oikein.
+:::
 
 Avaa attribuuttitaulut QGIS:ssä ja varmista, että vaaditut sarakkeet löytyvät (ks. kohta 1 yllä). Jos sarakkeet ovat olemassa mutta nimetty eri tavalla kuin listassa, voit määrittää vastineet prosessointiasetuksissa.
 

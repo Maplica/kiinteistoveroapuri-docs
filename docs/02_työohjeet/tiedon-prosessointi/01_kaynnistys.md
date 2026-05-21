@@ -6,6 +6,12 @@ sidebar_position: 2
 
 Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Varmista ensin, että olet suorittanut [esivalmistelut](./esivalmistelut.md).
 
+:::tip Tutustuitko alkuaineistoihin?
+Jos et ole vielä tutustunut alkuaineistoihin, **nyt on hyvä hetki tehdä se** ennen prosessoinnin käynnistystä. Lataa jokainen aineisto erikseen QGIS:iin ja avaa attribuuttitaulukko (oikea klikkaus → Open Attribute Table) – näin tunnistat sarakkeiden nimet ja sisällön, ja osaat valita alla olevissa vaiheissa oikeat sarakkeet varmuudella.
+
+👉 Tarkemmat ohjeet aineiston tarkastamiseen löydät [esivalmisteluista](./esivalmistelut.md#2-tutki-tietosisält%C3%B6).
+:::
+
 ---
 
 ## Vaihe 1: Avaa KiinteistöveroApuri-plugin QGIS:ssä
@@ -29,8 +35,10 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
 
 1. **Valitse tiedosto:**
    - Klikkaa "Selaa" nappia
-   - Navigoi kiinteistöjen shapefile-tiedostoon
-   - Valitse `.shp` tiedosto (Huom! tiedostossa pitäisi olla kaikki kiinteistöjen palstat eriteltynä toisistaan → Eli tiedostossa yksi rivi per kiinteistön palsta)
+   - Navigoi kiinteistöjen paikkatietotiedostoon
+   - Valitse `.shp` (Shapefile) tai `.gpkg` (GeoPackage) -tiedosto
+     - Jos käytät GeoPackagea, valitse avautuvasta listasta oikea taso
+   - Huom! Tiedostossa pitäisi olla kaikki kiinteistöjen palstat eriteltynä toisistaan → yksi rivi per kiinteistön palsta
 
 2. **Valitse sarakkeet pudotusvalikoista:**
    - **Kiinteistötunnus** → valitse sarake joka sisältää kiinteistötunnukset
@@ -39,9 +47,12 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
      - Klikkaa "Valitse arvot" nappia
 
        ![Valitse arvot -painike](/img/system_images/btn_valitse_arvot.svg)
-     - Valitse checkbox-listasta ne **kaavamerkinnät jotka ovat yleisiä alueita**
-     - **Tärkeää:** Valitut kaavamerkinnät vaikuttavat siihen, miten nämä alueet huomioidaan prosessoinnissa
-     - Esim: VL (Virkistysalue), VP (Puisto), Katualueet
+     - Valitse checkbox-listasta ne **kaavamerkinnät jotka tarkoittavat yleisiä alueita** (julkiset alueet, joilla ei tyypillisesti ole verotettavaa kiinteistöä)
+     - Esim: `VL` (Virkistysalue), `VP` (Puisto), katualueet
+
+     :::warning Miksi tämä on tärkeää?
+     Merkityt kaavamerkinnät **jätetään pois kiinteistöverolaskennasta**. Jos yleinen alue jää merkitsemättä, se voi virheellisesti näyttää verotettavalta kohteelta. Jos taas vääriä merkintöjä valitaan, oikeita verotettavia kiinteistöjä voi jäädä pois tuloksista. Tarkista valinnat aina kunnan kaava-aineiston perusteella.
+     :::
    - **Vesialueen pinta-ala** → valitse vesialueen sarake
 
 ![Kiinteistöt-ryhmä](/img/system_images/groupbox_kiinteistot.svg)
@@ -50,14 +61,14 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
 
 ![Määrä-alat-ryhmä](/img/system_images/groupbox_maaraalat.svg)
 
-1. Valitse tiedosto
+1. Valitse `.shp`- tai `.gpkg`-tiedosto
 2. Valitse **Määräalatunnus** sarake
 
 ### C. Rakennusten tiedot:
 
 ![Rakennukset-ryhmä](/img/system_images/groupbox_rakennukset.svg)
 
-1. Valitse tiedosto
+1. Valitse `.shp`- tai `.gpkg`-tiedosto
 2. Valitse sarakkeet:
    - **PRT** (Pysyvä rakennustunnus)
    - **Kiinteistötunnus**
@@ -70,12 +81,18 @@ Tässä osiossa käydään läpi prosessoinnin aloittaminen vaihe vaiheelta. Var
 
 ![Aluejaot-ryhmä](/img/system_images/groupbox_aluejaot.svg)
 
-1. Valitse tiedosto
+1. Valitse `.shp`- tai `.gpkg`-tiedosto
 2. Valitse **Alueen tunniste** sarake (Sarake, joka erottaa alueen toisistaan esim. Nimi)
 
 ### E. Koordinaattijärjestelmä:
 
-1. Valitse "CRS" napista koordinaattijärjestelmä (Huolehdi, että kaikilla tasoilla on sama koordinaattijärjestelmä)
+1. Klikkaa "CRS"-nappia ja valitse koordinaattijärjestelmä
+
+   :::warning Valitse ennalta määritelty koordinaattijärjestelmä
+   Valitse koordinaattijärjestelmä aina **ennalta määriteltyjen koordinaattijärjestelmien listasta** (Predefined CRS). Älä käytä muokattuja tai käyttäjän määrittelemiä koordinaattijärjestelmiä (User-defined CRS) – ne voivat aiheuttaa virheitä sijaintilaskennassa tai yhteensovittamisessa muiden aineistojen kanssa.
+
+   Suomessa yleisin käytössä oleva järjestelmä on **ETRS89 / TM35FIN (EPSG:3067)**. Varmista, että kaikilla aineiston tasoilla on sama koordinaattijärjestelmä ennen prosessoinnin käynnistystä.
+   :::
 
 :::tip Vinkki
 Plugin muistaa aiemmat valinnat. Jos olet jo prosessoinut dataa aiemmin, kentät saattavat täyttyä automaattisesti.
@@ -101,11 +118,15 @@ Plugin muistaa aiemmat valinnat. Jos olet jo prosessoinut dataa aiemmin, kentät
 
 ### A. Tulostiedostot:
 
-Tallennusvälilehdellä määrityt polut määrittävät, minne prosessoinnin tulokset tallennetaan:
+Tallennusvälilehdellä **valitset kansion**, johon kaikki prosessoinnin lopputiedostot tallennetaan. Klikkaa "Selaa"-nappia ja valitse tai luo haluamasi kohdekansio – prosessointi tallentaa kaikki alla listatut tiedostot automaattisesti sinne.
 
 - **GeoPackage-tiedosto** - Sisältää kaikki paikkatiedon tasot (rakennukset, rakennusosat, kiinteistöt, määräalat) sekä yhdistetyt tiedot että puuttuvat/yhdistelemättömät kohteet
 - **Excel-tiedostot** - Puuttuvien ja yhdistelemättömien kohteiden yksityiskohtaisemmat listat taulukkomuodossa
 - **Tilastotiedot** - Alueittain lasketut tilastot (min, max, keskiarvo, summa) rakennuksista ja kiinteistöistä
+
+:::tip Kansion valinta
+Käytä selkeästi nimettyjä kansioita, esim. `tarkastus_2025/` tai `kiinteistovero_output_2025-05/`. Näin löydät tulostiedostot helposti myöhemmin ja eri vuosien tarkastukset pysyvät erillään.
+:::
 
 ### B. Henkilötunnukset:
 
