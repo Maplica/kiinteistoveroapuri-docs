@@ -131,9 +131,15 @@ Pidä samalla Taso 2 auki – tarkista onko samalla kiinteistöllä oransseja ku
 
 Luo raportit painamalla "Luo tiedosto" -nappia. Ohjelma luo automaattisesti oikeat tiedostot käsittelemienne kohteiden perusteella:
 
-- Kohteet tasolta **Rekisterin_rakennukset_puuttuvat_verotiedosta** päätyvät tiedostoon `Rakennus_puuttuvat.csv` — lähetä tämä verottajalle.
-- Kohteet tasolta **Veroaineiston_rakennukset_puuttuvat_rekisteristä** päätyvät tiedostoon `Rakennus_Rekisterikorjaus_Kunta.csv` — päivitä kunnan rekisteri.
-- Jos olet muokannut kohteen kenttiä, kohde lisätään myös asianomaiseen rekisterikorjaustiedostoon muutostietoineen.
+Jokainen kohde kirjoitetaan raporttiin sen mukaan, mitä kytkimiä olet asettanut muokkausdialogissa (kaksoisnapsautus oikeasta taulukosta):
+
+- Kohteet joilla **Lisää rakennus verotietoihin** -kytkin päällä → `Rakennukset_Ilmoitus_Lisays_verottajalle_VVVV-KK-PP.csv` — lähetä verottajalle.
+- Kohteet joilla **Poista verottajalta** -kytkin päällä → `Rakennukset_Ilmoitus_Poisto_verottajalle_VVVV-KK-PP.csv` — lähetä verottajalle.
+- Kohteet joilla **Rekisterikorjaus verotiedot** -kytkin päällä → `Rakennukset_Rekisterikorjaus_Vero_VVVV-KK-PP.csv` — sisäinen, verottajan rekisterin korjaukset.
+- Kohteet joilla **Lisää kunnan rekisteriin**, **Poista kunnan rekisteristä** tai **Rekisterikorjaus kunnan rekisteri** -kytkin päällä → `Rakennukset_Rekisterikorjaus_Kunta_VVVV-KK-PP.csv` — päivitä kunnan rekisteri.
+- Kohteet joilla `Status = 2` (merkitty rekisterikorjaukseksi oikea-klikkauksella) eivät päädy mihinkään raporttiin.
+
+Sama kohde voi kuulua useampaan raporttiin, jos useampi kytkin on päällä.
 
 Lähetä raportit eteenpäin, päivitä rekisterit ja korjaa tunnisteet jatkotoimina.
 

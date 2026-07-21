@@ -269,6 +269,20 @@ Avaa kontekstivalikon seuraavilla toiminnoilla:
 
 Tämä tarjoaa nopean pääsyn sekä kopiointiin että istuntojen hallintaan ilman valikkopalkkia.
 
+#### Rivien värikoodaus
+
+Oikean taulukon rivit värjätään automaattisesti kohteen tilan mukaan seuraavalla prioriteettijärjestyksellä:
+
+| Väri | Merkitys |
+|------|----------|
+| Oranssi (`#ffb74d`) | Validointivirhe — kohde hylättiin raportin luonnissa |
+| Vihreä (`#a5d6a7`) | Muokattu **ja** jo viety tiedostoon |
+| Keltainen (`#fff176`) | Muokattu, mutta ei vielä viety tiedostoon |
+| Sininen (`#90caf9`) | Ei muokattu, mutta jo viety tiedostoon |
+| *(ei väriä)* | Koskematon kohde |
+
+Vihreällä pohjalla olevalla rivillä näkyy tooltip: `Muokattu + Viety: [raporttityyppi] [päivämäärä]`.
+
 ## Alaikkunoiden painikkeet
 
 ### Sarakeotsikon suodatinvalintaikkunan painikkeet
@@ -334,7 +348,35 @@ Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-
 
 **Kommenttikenttä:** Avoin tekstikenttä vapaiden muistiinpanojen tallettamiseen
 
-**OK:** Tallentaa muutokset, päivittää keltaiset korostukset kartalla ja sulkee ikkunan.
+**Ilmoitustyyppi — kytkimet:**
+
+Dialogin alaosassa näytetään vaakarivillä kytkimet (switch-ohjaimet), joilla määritetään mihin raportteihin kohde kirjoitetaan. Vähintään yksi kytkin on aktivoitava ennen kuin OK-painike toimii.
+
+**Rakennukset-kytkimet:**
+
+| Kytkin | Selitys |
+|--------|---------|
+| Lisää rakennus verotietoihin | Kohde ilmoitetaan verottajalle lisättäväksi |
+| Lisää kunnan rekisteriin | Kohde lisätään kunnan rakennusrekisteriin |
+| Poista verottajalta | Kohde ilmoitetaan verottajalle poistettavaksi |
+| Poista kunnan rekisteristä | Kohde poistetaan kunnan rakennusrekisteristä |
+| Rekisterikorjaus verotiedot | Kenttäkorjaukset verottajan rekisteriin |
+| Rekisterikorjaus kunnan rekisteri | Kenttäkorjaukset kunnan rekisteriin |
+
+**Maapohja-kytkimet:**
+
+| Kytkin | Selitys |
+|--------|---------|
+| Lisättävä rakennuspaikka | Kohde ilmoitetaan verottajalle uutena rakennuspaikkana |
+| Poistettava rakennuspaikka | Kohde ilmoitetaan verottajalle poistettavaksi |
+| Rekisterikorjaus verottajan tiedot | Kenttäkorjaukset verottajan rekisteriin |
+| Rekisterikorjaus kunnan tietokanta | Kenttäkorjaukset kunnan rekisteriin |
+
+Ristiriitaiset kytkimet (esim. lisäys ja poisto samalle rekisterille) eivät voi olla päällä yhtä aikaa — toisen aktivointi sammuttaa toisen automaattisesti.
+
+**Palauta alkuperäinen (punainen painike):** Palauttaa kaikki kentät alkuperäisiin arvoihin (poistaa keltaisen korostuksen), sammuttaa kaikki kytkimet ja tyhjentää kommenttikentän. OK-painike toimii myös tässä tilassa, jolloin nollattu tila tallennetaan. Painike sijaitsee dialogin alarivissä vasemmalla ennen OK/Peruuta-painikkeita.
+
+**OK:** Tallentaa muutokset ja kytkintilat, päivittää korostukset kartalla ja sulkee ikkunan. Painike on estetty, kunnes vähintään yksi kytkin on aktivoitu tai **Palauta alkuperäinen** on käytetty.
 
 **Peruuta:** Hylkää kaikki muutokset ja sulkee ikkunan.
 
@@ -394,41 +436,43 @@ Avautuu kun: Napsautat hiiren oikealla [kohdetaulukon otsikoita](#kohdetaulukon-
 
 **Yhteystietokentät:** Kaupunki, Yhteyshenkilö, Tehtävänimike, Puhelin, Sähköposti.
 
+**Kuntanumero:** Pakollinen kenttä, kun valitaan Maapohja-lisäykset tai -poistot verottajalle. Kuntanumero kirjoitetaan manuaalisesti — sitä ei haeta aineistosta automaattisesti.
+
 **Raporttityypit** (vähintään yksi valittava):
 
+Jokaisella valintaruudulla on vihjekuvaus (tooltip), joka kertoo mihin raportti menee, mitkä kohteen kytkimet aktivoivat sen, tiedostonimen mallin ja CSV-sarakkeet.
+
 **Rakennukset**
-- Rakennukset – puuttuvat (ilmoitetaan verottajalle): Rakennukset, jotka puuttuvat verottajan rekisteristä. Tiedosto: `Rakennus_puuttuvat_VVVV-KK-PP.csv`.
-- Rakennukset – Rekisterikorjaus (Verottajan rekisteri): Rakennukset, joiden verottajan puolen tietoja on muokattu. Tiedosto: `Rakennus_Rekisterikorjaus_Vero_VVVV-KK-PP.csv`.
-- Rakennukset – Rekisterikorjaus (Kunnan rekisteri): Rakennukset, joiden kunnan puolen tietoja on muokattu. Tiedosto: `Rakennus_Rekisterikorjaus_Kunta_VVVV-KK-PP.csv`.
+
+| Valintaruutu | Aktivoidaan kohteen kytkimellä | Tiedosto |
+|---|---|---|
+| Lisää rakennuksia verotietoihin (Ilmoitus Lisäys) | Lisää rakennus verotietoihin | `Rakennukset_Ilmoitus_Lisays_verottajalle_VVVV-KK-PP.csv` |
+| Poista rakennuksia verotiedoista (Ilmoitus Poisto) | Poista verottajalta | `Rakennukset_Ilmoitus_Poisto_verottajalle_VVVV-KK-PP.csv` |
+| Kenttäkorjaukset verottajan rekisteriin | Rekisterikorjaus verotiedot | `Rakennukset_Rekisterikorjaus_Vero_VVVV-KK-PP.csv` |
+| Lisäykset, poistot ja korjaukset kunnan rekisteriin | Lisää kunnan rekisteriin, Poista kunnan rekisteristä tai Rekisterikorjaus kunnan rekisteri | `Rakennukset_Rekisterikorjaus_Kunta_VVVV-KK-PP.csv` |
 
 **Maapohja**
-- Maapohja – puuttuvat (ilmoitetaan verottajalle): Kiinteistöt, jotka puuttuvat verottajan rekisteristä. Tiedosto: `Maapohja_puuttuvat_VVVV-KK-PP.csv`.
-- Maapohja – Rekisterikorjaus (Verottajan rekisteri): Kiinteistöt, joiden verottajan puolen tietoja on muokattu. Tiedosto: `Maapohja_Rekisterikorjaus_Vero_VVVV-KK-PP.csv`.
-- Maapohja – Rekisterikorjaus (Kunnan rekisteri): Kiinteistöt, joiden kunnan puolen tietoja on muokattu. Tiedosto: `Maapohja_Rekisterikorjaus_Kunta_VVVV-KK-PP.csv`.
+
+| Valintaruutu | Aktivoidaan kohteen kytkimellä | Tiedosto |
+|---|---|---|
+| Lisää uudet rakennuspaikat verotukseen | Lisättävä rakennuspaikka | `Maapohja_Uudet_rakennuspaikat_VVVV-KK-PP.csv` |
+| Poista rakennuspaikat verotuksesta | Poistettava rakennuspaikka | `Maapohja_Poistettavat_rakennuspaikat_VVVV-KK-PP.csv` |
+| Kenttäkorjaukset verottajan kiinteistörekisteriin | Rekisterikorjaus verottajan tiedot | `Maapohja_Rekisterikorjaus_Vero_VVVV-KK-PP.csv` |
+| Kenttäkorjaukset kunnan kiinteistörekisteriin | Rekisterikorjaus kunnan tietokanta | `Maapohja_Rekisterikorjaus_Kunta_VVVV-KK-PP.csv` |
 
 *(VVVV-KK-PP = luontipäivämäärä, esim. 2026-05-05)*
 
-**Puuttuvat-raportit** (lähetetään verottajalle) sisältävät: Kaupunki, Yhteyshenkilö, Tehtävänimike, Puhelin, Sähköposti, Kiinteistötunnus.
+**Rakennukset-ilmoitukset verottajalle** (lähetetään Ilmoitin-palveluun ilman otsikkoriviä) sisältävät sarakkeet: Kaupunki, Yhteyshenkilö, Tehtävänimike, Puhelin, Sähköposti, Rakennustunnus.
 
-**Rekisterikorjaus-raportit** (sisäinen käyttö) eivät sisällä yhteystietoja. Kukin muutos on omalla rivillään, jotta tiedostoa on helppo suodattaa ja lajitella. Rakennus-rekisterikorjausraportit sisältävät: Kiinteistötunnus, PRT, Rakennuksen numero, Kenttä, Alkuperäinen arvo, Uusi arvo, Kommentti. Maapohja-rekisterikorjausraportit sisältävät: Kiinteistötunnus, Kenttä, Alkuperäinen arvo, Uusi arvo, Kommentti. Kenttien nimet näkyvät ilman teknisiä päätteitä. Kukin raportti näyttää vain sen puolen muutokset (kunta tai vero), jota raportti koskee.
+**Rekisterikorjaus-raportit** (sisäinen käyttö, otsikkorivi mukana) eivät sisällä yhteystietoja. Kukin muutos on omalla rivillään. Rakennus-rekisterikorjausraportit sisältävät: Kiinteistötunnus, PRT, Rakennuksen numero, Kenttä, Alkuperäinen arvo, Uusi arvo, Kommentti. Maapohja-rekisterikorjausraportit sisältävät: Kiinteistötunnus, Kenttä, Alkuperäinen arvo, Uusi arvo, Kommentti.
 
 **Miten kohde päätyy kuhunkin raporttiin:**
 
-| Tilanne | Raportti |
-|---------|----------|
-| Kohde on tasolta `Rekisterin_rakennukset_puuttuvat_verotiedosta (prosessoitu)` | Rakennukset – puuttuvat |
-| Kohde on tasolta `Veroaineiston_rakennukset_puuttuvat_rekisteristä (prosessoitu)` | Rakennukset – Rekisterikorjaus (Kunnan rekisteri) |
-| Kohde on tasolta `Rekisterin_Kiinteistöt_puuttuvat_verotiedosta (prosessoitu)` | Maapohja – puuttuvat |
-| Kohde muulta tasolta, ei muokkauksia | Puuttuvat (kategorian mukaan) |
-| Kohde muulta tasolta, `__kunta`-kenttiä muokattu | Rekisterikorjaus (Kunnan rekisteri) |
-| Kohde muulta tasolta, `__vero`-kenttiä muokattu | Rekisterikorjaus (Verottajan rekisteri) |
-| Kohde muulta tasolta, molempia muokattu | Sekä Kunnan että Verottajan rekisteri |
-
-Jos kohde on tunnetulta tasolta ja siihen on tehty muokkauksia, se lisätään sekä puuttuvat-raporttiin että asianomaiseen rekisterikorjausraporttiin.
+Raporttireititys perustuu **kohteen muokkausdialogissa asetettuihin kytkimiin** — ei tason nimeen tai muokattujen kenttien tyyppiin. Sama kohde voi kuulua useampaan raporttiin, jos useampi kytkin on päällä.
 
 **Tulostekansio:** Valitse kohdekansio Selaa…-painikkeella tai kirjoita polku suoraan.
 
-**OK:** Validoi valinnat ja luo raportit. Jos tiedosto on jo olemassa kohdekansiossa, ohjelma kysyy haluatko korvata sen vai tallentaa juoksevalla numerolla (esim. `Rakennus_puuttuvat_2026-05-05 (1).csv`). Näyttää lopuksi yhteenvedon luoduista tiedostoista.
+**OK:** Validoi valinnat ja luo raportit. Rivitason validointi ohittaa kohteet, joilta puuttuu pakollisia kenttiä (esim. Rakennustunnus/PRT). Jos tiedosto on jo olemassa kohdekansiossa, ohjelma kysyy haluatko korvata sen vai tallentaa juoksevalla numerolla (esim. `Rakennukset_Ilmoitus_Lisays_verottajalle_2026-05-05 (1).csv`). Näyttää lopuksi yhteenvedon kolmessa osassa: **Luotu** (onnistuneet tiedostot), **Ohitetut rivit** (puuttuvat pakolliset kentät) ja **Virheet** (kirjoitusvirheet).
 
 **Peruuta:** Sulkee ikkunan luomatta raportteja.
 
